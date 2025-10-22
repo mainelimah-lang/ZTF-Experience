@@ -1,0 +1,785 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Present Perfect</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="26a37c9a-53b8-80ff-b2dd-e36366ae23fe" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">Present Perfect</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe/Present_Simple_(5).png"><img style="width:20px;max-height:24px" src="Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe/Present_Simple_(5).png" alt="Present Simple (5).png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>23</td></tr></tbody></table></header><div class="page-body"><p id="27037c9a-53b8-801f-a01f-fd812bd48700" class="">
+</p><p id="27037c9a-53b8-80a0-b1e0-cd627f1b0e19" class="">
+</p><p id="27037c9a-53b8-80ae-840d-f81383e9acf1" class="">💡 The Present Perfect Tense is used to describe <strong>an event that occurred at an unspecified time in the past whose consequences are still active, visible, or important now</strong>. It is not just about what was done — it is about <strong>what is true now because of it</strong>.</p><p id="27037c9a-53b8-80d2-b76e-f2b6514699a2" class="">
+</p><p id="27037c9a-53b8-80dd-bba0-c9edcbe90736" class="">The <strong>present perfect</strong> creates an <strong>explicit link between past and present</strong>. It shows a <strong>direct cause-and-effect relationship</strong> between a past event and the current situation.</p><p id="27037c9a-53b8-80bf-a652-c2382be544b1" class="">
+</p><p id="27037c9a-53b8-8096-8449-da59c0d9511a" class="">For example, saying <em>“I lost my keys”</em> clearly places the event in the past and focuses on what happened. The conversation will naturally move on to when it happened or what was done next. </p><p id="27037c9a-53b8-80ff-b13e-fb1ff020bc09" class="">But saying <em>“I have lost my keys”</em> does more than report a past fact — it signals that the result is still true now: the keys are still missing. This has <strong>immediate, tangible consequences</strong> in the present — you can’t get into your house, start your car, or maybe you are late for work <strong>because of it.</strong></p><p id="27037c9a-53b8-80d2-a0bf-fe552d015ffb" class="">
+</p><p id="27037c9a-53b8-8018-992e-d88e56c11ce6" class="">When you say <em>“I’ve lost my keys,”</em> people immediately understand that you <strong>do not have them right now</strong>. The sentence brings the <strong>current situation</strong> into focus. In contrast, <em>“I lost my keys”</em> does not carry this implication; it simply describes a past event.</p><p id="27037c9a-53b8-80c9-9e38-d36b6432d19a" class="">
+</p><p id="27037c9a-53b8-8041-915b-d9051be075c9" class="">It is almost like this:</p><blockquote id="27037c9a-53b8-80d2-b315-e18000e7c5bc" class="">The simple past gives you the event,<p id="27037c9a-53b8-80a3-b6da-de7f9c9b0a38" class="">while the present perfect gives you the <strong>event’s shadow</strong> — its <strong>visible impact on the present</strong>.</p></blockquote><p id="27037c9a-53b8-8087-b38f-de6b36a65963" class="">
+</p><p id="27037c9a-53b8-801b-bbb9-da2ef7789f4e" class="">This “shadow,” however, fades when the result is no longer relevant. While <em>“I have lost my keys”</em> implies an ongoing problem — you are probably standing at the door searching for them — if those keys were lost twenty years ago and you just found them this morning, you would not say <em>“I have lost my keys”</em> anymore. You would say: <em>“I lost my keys twenty years ago. And guess what? I just found them.”</em></p><p id="27037c9a-53b8-80f5-8968-cc6a0a523223" class="">
+</p><p id="27037c9a-53b8-80c4-bb82-e08719d68c9a" class="">The <strong>relevance has shifted</strong>. The present perfect is used when the past event <strong>still affects the present</strong>, while the simple past is used when it <strong>no longer has an active impact</strong>.</p><p id="27037c9a-53b8-8011-bfb9-c3c3e703a836" class="">
+</p><p id="27037c9a-53b8-804f-9ef3-e3224d72d0be" class="">Consider another example: <em>“The train has arrived.”</em></p><p id="27037c9a-53b8-8034-9ec9-dad2e3f0e345" class="">The arrival happened moments ago, but the train is <strong>here now</strong>, available for boarding or disembarking. It’s an immediate update on the current situation. Saying <em>“The train arrived”</em> sounds like a completed story from the past, whereas <em>“The train has arrived”</em> <strong>highlights its current availability as a direct result of its recent arrival</strong>. The relevance is <strong>right now</strong> — <em>look, it’s here</em>.</p><p id="27037c9a-53b8-80de-baf3-ea99050cb58f" class="">
+</p><p id="27037c9a-53b8-80a7-b6d4-d62d0b21972c" class="">This contrast also appears in examples like:</p><ul id="27037c9a-53b8-80d9-835d-d5556465fae1" class="bulleted-list"><li style="list-style-type:disc"><strong>Past Simple</strong>: <em>“I saw that movie last week.”</em> → Focus on <strong>when</strong> it happened.</li></ul><ul id="27037c9a-53b8-808f-af33-f25291cf6dfb" class="bulleted-list"><li style="list-style-type:disc"><strong>Present Perfect</strong>: <em>“I have seen that movie.”</em> → Focus on the <strong>experience itself</strong>; you don’t need to watch it again because you <strong>already have</strong>.</li></ul><p id="27037c9a-53b8-806f-8f48-d232e559b98b" class="">
+</p><p id="27037c9a-53b8-8013-bd17-db78300a8310" class="">Another example:</p><p id="27037c9a-53b8-8085-819d-fe8fc08113b6" class=""><em>“Someone has broken the window.”</em></p><p id="27037c9a-53b8-800f-9077-eaadd0f9f475" class="">The breaking happened at an unknown time in the past. We may not know when or by whom, but the window is <strong>currently broken</strong>, bringing immediate implications: cold air coming in, security concerns, and a mess to clean up. The focus is not on the act of breaking, but on the <strong>present state of the window and the problem it represents</strong>.</p><p id="27037c9a-53b8-80f4-b1f5-f6b312a1b87e" class="">
+</p><hr id="27037c9a-53b8-8080-9d7c-cdc5c869e29e"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">👉 Patterns</summary><div class="indented"><p id="26f37c9a-53b8-8096-b46e-ca022515fab0" class="">We<strong> have talked</strong> about <strong>when</strong> we use the Present Simple. Now let’s explore <strong>how</strong> we use it:</p><p id="26f37c9a-53b8-8093-abb2-e2d1521e75db" class="">
+</p><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">✅ <strong>Affirmative Sentences</strong></summary><div class="indented"><div id="26f37c9a-53b8-80db-9aeb-fe263c05f5eb" class="column-list"><div id="26f37c9a-53b8-8052-b339-f4feb61eede5" style="width:50%" class="column"><p id="26f37c9a-53b8-80d3-815d-d713381d34c5" class="block-color-gray">▪️ <em>1st &amp; 2nd Person Singular &amp; Plural</em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="26f37c9a-53b8-8048-be9b-e3ed03e32de0"><div style="width:100%"><p id="26f37c9a-53b8-8090-bf6e-f621d4b0b532" class=""><strong>Subject + </strong><strong><span style="border-bottom:0.05em solid">have</span></strong><strong> + past participle verb + complement </strong></p></div></figure></div><div id="26f37c9a-53b8-808f-a86d-d86f8a645687" style="width:50%" class="column"><p id="26f37c9a-53b8-8083-b118-f8fd06f8d039" class="">▪️ <em><mark class="highlight-gray">3rd Person Singular [He, She ,It]</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="26f37c9a-53b8-8026-9d6e-e1c49ac965c3"><div style="width:100%"><p id="26f37c9a-53b8-8024-9c00-e5206b9fe7e6" class=""><strong>Subject + </strong><strong><span style="border-bottom:0.05em solid">has</span></strong><strong> + past participle verb + complement </strong></p></div></figure></div></div></div></details><hr id="26f37c9a-53b8-80c9-ae99-da1307781a89"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">❌ <strong>Negative Sentences</strong></summary><div class="indented"><div id="26f37c9a-53b8-8044-9894-da69fe1ffc95" class="column-list"><div id="26f37c9a-53b8-80d6-8b78-e14bdaaa54dd" style="width:50%" class="column"><p id="26f37c9a-53b8-80ee-aedc-f0ed3da2ce1f" class="">▪️ <em><mark class="highlight-gray">1st &amp; 2nd Person (Singular &amp; Plural):</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="26f37c9a-53b8-8015-aed8-f3ef760bb0fd"><div style="width:100%"><p id="26f37c9a-53b8-8074-8f12-c4d1ebee0ea5" class=""><strong>Subject + </strong><strong><span style="border-bottom:0.05em solid">haven’t</span></strong><strong> + past participle verb + complement </strong></p></div></figure><p id="26f37c9a-53b8-8048-a838-d8b7f38348b4" class=""><em><mark class="highlight-default">💡 haven’t = have + not</mark></em></p></div><div id="26f37c9a-53b8-80c3-8223-deea54911da5" style="width:50%" class="column"><p id="26f37c9a-53b8-8032-9d5c-ef0dcbf594c6" class="">▪️ <em><mark class="highlight-gray">3rd Person Singular:</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="26f37c9a-53b8-8024-b5b5-d65296effd47"><div style="width:100%"><p id="26f37c9a-53b8-80e2-a5f5-db7a0388faa8" class=""><strong>Subject + </strong><strong><span style="border-bottom:0.05em solid">hasn’t</span></strong><strong> + past participle verb + complement </strong></p></div></figure><p id="26f37c9a-53b8-8068-ac65-f409799123f0" class=""><em>💡 hasn’t = has + not</em></p></div></div></div></details><hr id="26f37c9a-53b8-80dd-9764-cd0113545855"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">❓ <strong>Yes/No Questions</strong></summary><div class="indented"><div id="26f37c9a-53b8-80ae-a61a-c942756959d7" class="column-list"><div id="26f37c9a-53b8-80f1-a8b8-f281e63892eb" style="width:50%" class="column"><p id="26f37c9a-53b8-80af-ab80-c353cc08dd09" class="">▪️ <em><mark class="highlight-gray">1st &amp; 2nd Person (Singular &amp; Plural):</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="26f37c9a-53b8-8039-8ca6-f35959a7430d"><div style="width:100%"><p id="26f37c9a-53b8-8095-ac76-d9b5318c4bb3" class=""><strong><span style="border-bottom:0.05em solid">Have</span></strong><strong> + subject + past participle verb + complement + ?</strong></p></div></figure><div id="26f37c9a-53b8-8074-b0fb-d419286adeeb" class="column-list"><div id="26f37c9a-53b8-803b-bf62-f6174dae5aa5" style="width:62.5%" class="column"><p id="26f37c9a-53b8-80c0-bbe2-cbbb925ac41b" class=""><em>👍 Yes, Subject + have</em></p></div><div id="26f37c9a-53b8-801c-b7b2-c63222d1b5b8" style="width:106.25%" class="column"><p id="26f37c9a-53b8-8020-a29f-c587b8f6601d" class=""><em>👎 No, Subject + haven’t</em></p></div></div></div><div id="26f37c9a-53b8-80e1-9a74-dcedce3682e9" style="width:50%" class="column"><p id="26f37c9a-53b8-8026-b12a-c2ee19a90fc1" class="">▪️ <em><mark class="highlight-gray">3rd Person Singular:</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="26f37c9a-53b8-804a-b28b-e4c8f5fcad26"><div style="width:100%"><p id="26f37c9a-53b8-80e0-83e7-f32a083707c8" class=""><strong><span style="border-bottom:0.05em solid">Has</span></strong><strong> + subject + past participle verb + complement + ?</strong></p></div></figure><div id="26f37c9a-53b8-807d-9c64-fa75507d960a" class="column-list"><div id="26f37c9a-53b8-8082-91b0-d2b51e838ebd" style="width:75%" class="column"><p id="26f37c9a-53b8-80ff-9357-ed0e2dc10161" class=""><em>👍 Yes, Subject + has</em></p></div><div id="26f37c9a-53b8-80e2-b4d6-d2ed398445bd" style="width:106.25%" class="column"><p id="26f37c9a-53b8-8030-b9db-de917c6a0be9" class=""><em>👎 No, Subject + hasn’t</em></p></div></div></div></div></div></details><hr id="27037c9a-53b8-8000-a401-c08dbaf135b7"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">❓ Wh-<strong>Questions</strong></summary><div class="indented"><div id="27037c9a-53b8-8124-a4df-f64e75279bcb" class="column-list"><div id="27037c9a-53b8-81b7-a981-e0e76f5966b2" style="width:50%" class="column"><p id="27037c9a-53b8-81f1-9e16-cffd5c743cf5" class="">▪️ <em><mark class="highlight-gray">1st &amp; 2nd Person (Singular &amp; Plural):</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="27037c9a-53b8-8159-9ec1-d3041879fdfc"><div style="width:100%"><p id="27037c9a-53b8-81d5-a168-d5b5f5742cfe" class=""><strong><a href="https://www.notion.so/Wh-words-17337c9a53b881b09bceedcf5f4a7eea?pvs=21">Wh-word</a></strong><mark class="highlight-default"><strong> +</strong></mark><strong> subject + have + past participle verb + complement + ?</strong></p></div></figure></div><div id="27037c9a-53b8-8149-95f9-c32ad193b812" style="width:50%" class="column"><p id="27037c9a-53b8-811c-8f4a-cc317c4a1f74" class="">▪️ <em><mark class="highlight-gray">3rd Person Singular:</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="27037c9a-53b8-8155-bb9b-c3c07ccbd111"><div style="width:100%"><p id="27037c9a-53b8-812f-8a9b-cafa9c55090a" class=""><mark class="highlight-default"><strong><a href="https://www.notion.so/Wh-words-17337c9a53b881b09bceedcf5f4a7eea?pvs=21">Wh-word</a></strong></mark><mark class="highlight-default"><strong> + s</strong></mark><strong>ubject + has + past participle verb + complement + ?</strong></p></div></figure></div></div></div></details><hr id="27037c9a-53b8-81af-83c5-d7b533f1a7dc"/></div></details><p id="27037c9a-53b8-80ef-8aaa-da99612716e6" class="">
+</p><p id="27037c9a-53b8-804a-9788-ea68e5982c44" class="">
+</p><p id="27037c9a-53b8-8076-a7a8-e1527716891f" class="">
+</p><p id="27037c9a-53b8-8046-ab8c-d430aac0896e" class="">
+</p><p id="27037c9a-53b8-80a4-9706-ceea6c25c2cd" class="">
+</p><p id="27037c9a-53b8-8083-9748-c88b5ee7e2f9" class="">
+</p><p id="27037c9a-53b8-802b-acf1-f51238e0e034" class="">
+</p><p id="27037c9a-53b8-8021-ad4b-f233d5725dd7" class="">
+</p><p id="27037c9a-53b8-80c3-ae01-e299f414b226" class="">
+</p><p id="27037c9a-53b8-80d5-a802-c898e60940c7" class="">
+</p><p id="27037c9a-53b8-8039-af7c-fc478970ea8d" class="">
+</p><p id="27037c9a-53b8-8092-9aaf-f8a97b6e407a" class="">
+</p><p id="27037c9a-53b8-8069-af78-fe2627a760fb" class="">
+</p><p id="27037c9a-53b8-801d-8b2b-e0eacf9f15af" class="">
+</p><p id="27037c9a-53b8-80d1-aec6-ffc58a060804" class="">
+</p><p id="27037c9a-53b8-80a4-b926-eca29876bccd" class="">
+</p><p id="27037c9a-53b8-80f4-aab9-e138a579e929" class="">
+</p><p id="27037c9a-53b8-80fc-847e-cfe25cf13b0a" class="">
+</p><p id="27037c9a-53b8-807a-9d37-e2299fc347b9" class="">
+</p><p id="27037c9a-53b8-802a-89ce-f26ad6ed5fa8" class="">
+</p><p id="27037c9a-53b8-8092-ac6f-eb47b97d82fb" class="">
+</p><p id="27037c9a-53b8-80b6-9db0-c11acd50a46e" class="">
+</p><p id="27037c9a-53b8-80ef-87e8-e102c254b719" class="">
+</p><p id="27037c9a-53b8-803a-86fd-eea7796b5e16" class="">
+</p><p id="27037c9a-53b8-8073-bebd-c72e2b7f83d4" class="">
+</p><p id="27037c9a-53b8-80c0-a6cd-cd13bc649364" class="">
+</p><p id="27037c9a-53b8-8014-8f75-e9780ef2cb30" class="">
+</p><p id="27037c9a-53b8-8085-8b9e-d7380ab857c6" class="">
+</p><p id="27037c9a-53b8-8038-be30-c327a5ad2513" class="">
+</p><p id="27037c9a-53b8-8088-be85-ef17b83e4b1e" class="">
+</p><p id="27037c9a-53b8-8021-bc81-f7c73b27948c" class="">
+</p><p id="27037c9a-53b8-80db-9ea8-c515609e4a27" class="">
+</p><p id="27037c9a-53b8-80a6-8583-cd80bc1c7df1" class="">
+</p><p id="27037c9a-53b8-8049-bf0f-f603cb36c19f" class="">
+</p><p id="27037c9a-53b8-8045-9587-c1fd93a866b9" class="">
+</p><p id="27037c9a-53b8-8050-b10e-c2e78d6b7e0a" class="">
+</p><p id="27037c9a-53b8-8065-a87b-d22192808de3" class="">
+</p><p id="27037c9a-53b8-80bc-a0c5-c1ea3193870c" class="">
+</p><p id="27037c9a-53b8-80c6-9743-f0b71ddf3bdb" class="">
+</p><p id="27037c9a-53b8-8061-865b-edc4e4e4f888" class="">
+</p><p id="27037c9a-53b8-80cf-bc9e-ffc1693f866b" class="">
+</p><p id="27037c9a-53b8-8062-b100-cdd100b570ff" class="">
+</p><p id="27037c9a-53b8-80f8-a242-e96c56f1a745" class="">
+</p><p id="27037c9a-53b8-8069-a4f6-e1d63d2b6257" class="">
+</p><p id="27037c9a-53b8-8000-9884-c987bb6a3a9c" class="">
+</p><p id="26a37c9a-53b8-8009-8720-e87a174cafd7" class="">The <strong>Present Perfect</strong> helps us describe:</p><div id="26f37c9a-53b8-80d3-b568-e84647552646" class="column-list"><div id="26f37c9a-53b8-80d6-bc56-c8a8fabf497d" style="width:43.75%" class="column"><blockquote id="26f37c9a-53b8-80a7-a67a-e3d418ee5031" class="">🍃 <strong>Past Actions with Present Relevance</strong><br/><ol type="1" id="27037c9a-53b8-8031-ad27-ecf4897d0feb" class="numbered-list" start="1"><li><strong>Theodore Roosevelt has officially named the Executive Mansion “The White House”</strong> in 1901, replacing earlier terms like “President’s Palace”</li></ol><ol type="1" id="27037c9a-53b8-803c-8658-cc03f3c8208d" class="numbered-list" start="2"><li><strong>LaMarcus Adna Thompson has invented the American roller coaster</strong> in 1884 as a diversion from vice, earning the title “Father of the American Rollercoaster”.</li></ol><ol type="1" id="27037c9a-53b8-80de-86d3-f598890ea6de" class="numbered-list" start="3"><li><strong>Fireworks have been astounding audiences since at least 200 B.C.</strong></li></ol><ol type="1" id="27037c9a-53b8-8011-b261-d840e5af627f" class="numbered-list" start="4"><li></li></ol><ol type="1" id="27037c9a-53b8-808b-bfb3-c7eabff35d6f" class="numbered-list" start="5"><li></li></ol><ol type="1" id="27037c9a-53b8-8090-8e3b-cc10ce3b6e2c" class="numbered-list" start="6"><li></li></ol></blockquote><p id="26f37c9a-53b8-8020-9b49-c2ed7aeb0043" class="">
+</p></div><div id="26f37c9a-53b8-8091-8db7-f05e355e5c0f" style="width:56.249999999999964%" class="column"><blockquote id="26f37c9a-53b8-8039-acd3-c26603d8ede0" class="">🍃 <strong>Ongoing Actions That Started in the Past<br/></strong><ol type="1" id="27037c9a-53b8-8057-958c-c749dd16701e" class="numbered-list" start="1"><li><em>The BBC has been broadcasting daily since November 14, 1922.</em></li></ol><ol type="1" id="27037c9a-53b8-8077-821f-f9d8f5a659e8" class="numbered-list" start="2"><li><em>NASA’s Curiosity rover has been exploring Mars since it landed on August 6, 2012.</em></li></ol><ol type="1" id="27037c9a-53b8-80c8-b25a-c2108a41b995" class="numbered-list" start="3"><li><em>Fireworks have been astounding audiences since at least 200 B.C.</em></li></ol><ol type="1" id="27037c9a-53b8-80fa-bdee-d8d7556ecd87" class="numbered-list" start="4"><li><em> The Mona Lisa has been on display at the Louvre in Paris since 1797.</em></li></ol></blockquote><p id="27037c9a-53b8-80dc-8676-f61214090833" class="">
+</p><p id="26f37c9a-53b8-80de-95b0-dcb00e4662da" class="">
+</p></div></div><p id="26a37c9a-53b8-806a-8842-e77974ac91ef" class="">
+</p><div id="26f37c9a-53b8-8062-a2ca-e42fc28df1a2" class="column-list"><div id="26f37c9a-53b8-8046-9f6d-fb3aa9b6aaa2" style="width:50%" class="column"><blockquote id="26f37c9a-53b8-804a-b552-cd3f13fbc690" class="">🍃 <strong>Life Experiences and Unfinished Time Periods</strong><br/><br/></blockquote><blockquote id="26f37c9a-53b8-80b2-9850-ee30d8724798" class="">🍃 <strong>Recent Actions and Changes</strong><br/><br/></blockquote></div><div id="26f37c9a-53b8-807a-b331-c7da483a9a43" style="width:50%" class="column"><blockquote id="26f37c9a-53b8-80bc-95a7-dddd1433c08d" class="">🍃 <strong>Repeated Actions Over Time</strong><br/><br/></blockquote><blockquote id="26f37c9a-53b8-8008-9ee3-fea1a646b15c" class="">🍃 <strong>Emphasis on Results Rather Than Actions</strong><br/></blockquote></div></div><hr id="26a37c9a-53b8-8013-8888-d906deabc6f7"/><p id="26a37c9a-53b8-8067-8632-e554e1971c74" class="">
+</p><p id="26a37c9a-53b8-8087-9ea1-fbc83da28e4d" class="">
+</p><p id="26f37c9a-53b8-80e0-962a-f80b79264fcc" class="">Example: When you say &quot;She has broken her leg,&quot; the breaking happened in the past (puppet master&#x27;s action), but she still can&#x27;t walk now (puppet&#x27;s response) - the invisible thread connects them.</p><p id="26f37c9a-53b8-80a7-847b-d8d632074a64" class="">&quot;Astronauts have played golf on the moon!&quot;</p><p id="26f37c9a-53b8-8059-aa99-ce044833e057" class="">Octopuses have escaped from aquarium tanks to venture into other tanks or even out into the ocean.&quot;</p><p id="26f37c9a-53b8-80b1-ba24-f31a1461f5d5" class="">The Eiffel Tower has been painted 19 times</p><p id="26f37c9a-53b8-8013-a5b0-d6dcbf2893ab" class="">Someone has balanced 101 spoons on their body!</p><p id="26f37c9a-53b8-800e-97f0-d3ca255a13e8" class="">The ice cream cone has been invented by accident!&quot;</p><p id="26f37c9a-53b8-8086-b492-fd603fc04b62" class="">The Beatles have sold over 600 million albums worldwide!</p><p id="26f37c9a-53b8-803f-a5a5-ebf2cad01bc0" class="">Some trees have been growing for over 5,000 years</p><p id="26f37c9a-53b8-8088-b2cc-fbe3266b9c22" class="">
+</p><p id="26a37c9a-53b8-8045-b809-f0053df0cb84" class="">
+</p><p id="26a37c9a-53b8-8017-aae3-ea087165703c" class="">
+</p><ol type="1" id="26f37c9a-53b8-80c9-95ab-ed34bc3ea87e" class="numbered-list" start="1"><li><em>I can&#x27;t unlock my phone because I&#x27;ve forgotten my password again!</em></li></ol><ol type="1" id="26f37c9a-53b8-80d6-9d56-cf2df7af36e5" class="numbered-list" start="2"><li><em>She can&#x27;t drive to work today - she&#x27;s crashed her car into a tree!</em></li></ol><ol type="1" id="26f37c9a-53b8-80e3-b2bb-e2bca00b431d" class="numbered-list" start="3"><li><em>The students are celebrating because they&#x27;ve passed their final exams!</em></li></ol><ol type="1" id="26f37c9a-53b8-8033-9e55-ffb874652606" class="numbered-list" start="4"><li><em>I&#x27;m not hungry for dinner because I&#x27;ve eaten a huge lunch.</em></li></ol><ol type="1" id="26f37c9a-53b8-80b6-ab5d-fe30ef9c05e9" class="numbered-list" start="5"><li><em>We can&#x27;t enter the building - someone has lost the key!</em></li></ol><p id="26a37c9a-53b8-80ab-b733-caaa9a74fe34" class="">
+</p><p id="26a37c9a-53b8-809b-a91d-de4ac3a7c9f7" class="">
+</p><hr id="26f37c9a-53b8-8029-9fb1-d8ea900e2e04"/><div id="26f37c9a-53b8-803d-89dc-f4a81c241c01" class="column-list"><div id="26f37c9a-53b8-805e-a5a2-f016522aed8f" style="width:81.25%" class="column"><p id="26f37c9a-53b8-80e7-b521-d8a773ab9971" class="">
+</p></div><div id="26f37c9a-53b8-8028-b513-c2560ee47b7c" style="width:31.25%" class="column"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">🧰🔧 Your Grammar Toolbox</summary><div class="indented"><p id="26f37c9a-53b8-8028-aef6-c50b8977c0c2" class="">
+</p><ul id="26f37c9a-53b8-803d-a360-ea5395f22ba5" class="bulleted-list"><li style="list-style-type:disc"><strong>Base verb</strong> = verb without “to”<br/></li></ul><ul id="26f37c9a-53b8-8099-b5bf-d33f8b7ac59c" class="bulleted-list"><li style="list-style-type:disc"><strong>Auxiliarly verbs Simple Present tense:</strong></li></ul><div id="26f37c9a-53b8-8099-91c4-cf488194896e" class="column-list"><div id="26f37c9a-53b8-80b8-8d97-df560a141181" style="width:56.25%" class="column"><ul id="26f37c9a-53b8-806b-b100-e378f0cbe739" class="bulleted-list"><li style="list-style-type:square"><em>👍 </em>Do</li></ul><ul id="26f37c9a-53b8-8040-acdc-c8aad79e1a1b" class="bulleted-list"><li style="list-style-type:disc"><em>👍 </em>Does</li></ul></div><div id="26f37c9a-53b8-8062-932a-dabf252fedc1" style="width:81.25%" class="column"><ul id="26f37c9a-53b8-809b-83dc-fd41781286f8" class="bulleted-list"><li style="list-style-type:disc"><em>👎 </em>Don’t = do + not</li></ul><ul id="26f37c9a-53b8-8076-9140-d0dc65b11ccf" class="bulleted-list"><li style="list-style-type:disc"><em>👎 </em>Doesn’t = does + not<br/></li></ul></div></div><ul id="26f37c9a-53b8-80b7-b5e3-c87d985cc681" class="bulleted-list"><li style="list-style-type:disc"><strong>🗣️ Pronunciation</strong><div id="26f37c9a-53b8-8035-8dc9-e655a3a3c4ef" class="column-list"><div id="26f37c9a-53b8-80b7-91ab-efc589b4549b" style="width:100%" class="column"><ul id="26f37c9a-53b8-803d-bb98-eb427a0031e7" class="bulleted-list"><li style="list-style-type:square">Do - /du:/<figure id="26f37c9a-53b8-80be-98fe-d0dc67e0280b"><div class="source"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/do.mp3">attachment:ba9347a7-8016-45f3-8998-9b0cd9867b3b:do.mp3</a></div></figure></li></ul><ul id="26f37c9a-53b8-80ba-883d-c85f1b5788fb" class="bulleted-list"><li style="list-style-type:disc">Does - /dʌz/<figure id="26f37c9a-53b8-802d-a894-d34f65f21966"><div class="source"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/does.mp3">attachment:bbe3f201-1cf4-49c6-9bfe-1dc4a9394d01:does.mp3</a></div></figure></li></ul></div><div id="26f37c9a-53b8-8071-9e90-dcd886083b9d" style="width:100%" class="column"><ul id="26f37c9a-53b8-8081-b631-d855abe072e1" class="bulleted-list"><li style="list-style-type:disc">Don’t - /doʊnt/<figure id="26f37c9a-53b8-8069-82b3-cdf8df6d5bcc"><div class="source"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/dont.mp3">attachment:17c4fe21-0dd6-4505-8630-05a483e5c3a8:dont.mp3</a></div></figure></li></ul><ul id="26f37c9a-53b8-8012-b521-cfa1dd181e8a" class="bulleted-list"><li style="list-style-type:disc">Doesn’t - /ˈdʌz.ənt/<figure id="26f37c9a-53b8-8054-9e28-fa7c047cbb63"><div class="source"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/doesnt.mp3">attachment:ddc51518-571c-46a4-91ae-8f399114fa2a:doesnt.mp3</a></div></figure></li></ul></div></div><p id="26f37c9a-53b8-802c-9a72-e22d699f9456" class="">
+</p></li></ul></div></details><p id="26f37c9a-53b8-8013-b751-f1ac711e84e0" class="">
+</p></div></div><p id="26f37c9a-53b8-802b-b3df-c4cfb5980fef" class="">
+</p><p id="26a37c9a-53b8-80d1-85af-d4db29402ce3" class="">
+</p><p id="26a37c9a-53b8-809d-9727-ee5b4e3cf0f9" class="">
+</p><hr id="26a37c9a-53b8-803e-b145-c57f0907c00b"/><p id="26a37c9a-53b8-8038-b698-f8e2fffd9403" class="">
+</p><h2 id="26a37c9a-53b8-80cf-aba5-c3b96c81079d" class=""><strong>Analogy 2: The Collection Box</strong></h2><p id="26a37c9a-53b8-8097-bc8c-c622103e6433" class="">Imagine your life as a big <strong>collection box</strong> where you keep all your experiences. When you use Present Perfect, you&#x27;re showing someone what&#x27;s currently in your collection box without saying exactly when you put each item there. &quot;I have visited France&quot; means France is in your experience collection box, but it doesn&#x27;t matter if you went there last year or five years ago - what matters is that this experience is part of who you are today.<a href="https://www.scribbr.com/verbs/present-perfect/">scribbr+2</a></p><p id="26a37c9a-53b8-80c5-ab8a-c6dcd59b1bbc" class="">
+</p><hr id="26a37c9a-53b8-80d4-8e24-fe7c190d7913"/><p id="27037c9a-53b8-80df-a7bd-c1575fd289d6" class="">
+</p><h1 id="27037c9a-53b8-806d-90de-d1086bbc7313" class="">Present Perfect Tense: Six Uses with Engaging Examples</h1><h2 id="27037c9a-53b8-8034-81d3-d7092474c6ba" class="">🍃 <strong>Past Actions with Present Relevance</strong></h2><ol type="1" id="27037c9a-53b8-8003-bbb3-cb6621952451" class="numbered-list" start="1"><li><strong>&quot;I can&#x27;t unlock my phone because I&#x27;ve forgotten my password again!&quot;</strong><a href="https://www.eslbase.com/grammar/present-perfect-simple/">eslbase</a><p id="27037c9a-53b8-800b-a8c9-c9bf5e2dfcf0" class="">The forgetting happened in the past, but creates the current inability to use the phone.</p></li></ol><ol type="1" id="27037c9a-53b8-8002-b7b2-f9d2866cb725" class="numbered-list" start="2"><li><strong>&quot;She can&#x27;t drive to work today - she&#x27;s crashed her car into a tree!&quot;</strong><a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect">learnenglish.britishcouncil</a><p id="27037c9a-53b8-80de-89ac-d529fad50807" class="">The accident occurred in the past, but its consequence (no car) affects the present moment.</p></li></ol><ol type="1" id="27037c9a-53b8-8047-874e-d81dc69b449c" class="numbered-list" start="3"><li><strong>&quot;The students are celebrating because they&#x27;ve passed their final exams!&quot;</strong><a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect">learnenglish.britishcouncil</a><p id="27037c9a-53b8-802e-b26a-d6984f41fe2e" class="">The exam results came in the past, but the joy and relief continue now.</p></li></ol><ol type="1" id="27037c9a-53b8-80a6-b3c6-cc8a30e03c2f" class="numbered-list" start="4"><li><strong>&quot;I&#x27;m not hungry for dinner because I&#x27;ve already eaten a huge lunch.&quot;</strong><a href="https://www.bbc.com/learningenglish/features/tenses_with_georgie/ep-240209">bbc</a><p id="27037c9a-53b8-8009-9f52-feb490197760" class="">The eating happened earlier, but the fullness persists in the present.</p></li></ol><ol type="1" id="27037c9a-53b8-80f3-854a-f1fb054ece07" class="numbered-list" start="5"><li><strong>&quot;He&#x27;s covered in paint because he&#x27;s been renovating his apartment all weekend.&quot;</strong><a href="https://www.wallstreetenglish.com/exercises/the-present-perfect-continuous/">wallstreetenglish</a><p id="27037c9a-53b8-8029-95d6-f9cc69f604fb" class="">The renovation work occurred over the weekend, but the visible evidence remains now.</p></li></ol><ol type="1" id="27037c9a-53b8-801b-99fa-f0d8653e493d" class="numbered-list" start="6"><li><strong>&quot;We can&#x27;t enter the building - someone has lost the key!&quot;</strong><a href="https://www.eslbase.com/grammar/present-perfect-simple/">eslbase</a><p id="27037c9a-53b8-8004-81f2-f0f686cf09d6" class="">The key was lost at some point in the past, creating the current access problem.</p></li></ol><hr id="27037c9a-53b8-809a-b81b-cd3d1e66a598"/><h2 id="27037c9a-53b8-8075-a45f-f6855bab816e" class="">🍃 <strong>Ongoing Actions That Started in the Past</strong></h2><ol type="1" id="27037c9a-53b8-809b-b6b7-d10a7edf535c" class="numbered-list" start="1"><li><strong>&quot;She&#x27;s lived in that colorful house by the beach for fifteen magical years.&quot;</strong><a href="https://www.eslbase.com/grammar/present-perfect-simple/">eslbase</a><p id="27037c9a-53b8-80c7-944d-f3ba20108e7b" class="">Started 15 years ago and continues today - she still lives there.</p></li></ol><ol type="1" id="27037c9a-53b8-804b-8acb-c17d2caecffc" class="numbered-list" start="2"><li><strong>&quot;My grandmother has baked birthday cakes professionally since 1985.&quot;</strong><a href="https://www.ef.com/wwen/english-resources/english-grammar/present-perfect/">ef</a><p id="27037c9a-53b8-80ae-bb84-efe72952be9e" class="">Began her baking career in 1985 and still works as a professional baker.</p></li></ol><ol type="1" id="27037c9a-53b8-80d0-8414-dc5180fd7f71" class="numbered-list" start="3"><li><strong>&quot;They&#x27;ve owned this cozy restaurant since their honeymoon in Italy.&quot;</strong><a href="https://www.ef.com/wwen/english-resources/english-grammar/present-perfect/">ef</a><p id="27037c9a-53b8-8013-b82a-f72bda5a7a9c" class="">Started owning it after their honeymoon and continue to own it now.</p></li></ol><ol type="1" id="27037c9a-53b8-80bc-8715-de55d8bd6f0d" class="numbered-list" start="4"><li><strong>&quot;I&#x27;ve played the violin since I was seven years old.&quot;</strong><a href="https://www.bbc.com/learningenglish/features/tenses_with_georgie/ep-240209">bbc</a><p id="27037c9a-53b8-80d1-81dd-feb23c3eb3e5" class="">Started playing as a child and continue playing today.</p></li></ol><ol type="1" id="27037c9a-53b8-8049-9b02-dfae4b53e8ce" class="numbered-list" start="5"><li><strong>&quot;We&#x27;ve been best friends since we met in kindergarten.&quot;</strong><a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect-simple-continuous">learnenglish.britishcouncil</a><p id="27037c9a-53b8-80de-9f61-c773525180aa" class="">The friendship began in childhood and continues in the present.</p></li></ol><ol type="1" id="27037c9a-53b8-809d-929d-f6ad4703b4d0" class="numbered-list" start="6"><li><strong>&quot;He&#x27;s worked as a firefighter for over two decades.&quot;</strong><a href="https://www.ef.com/wwen/english-resources/english-grammar/present-perfect/">ef</a><p id="27037c9a-53b8-801e-b00f-f38e67805664" class="">Started his firefighting career 20+ years ago and still works in that profession.</p></li></ol><hr id="27037c9a-53b8-8065-9882-f0721c147064"/><h2 id="27037c9a-53b8-8065-99f5-c28724c255dd" class="">🍃 <strong>Life Experiences and Unfinished Time Periods</strong></h2><ol type="1" id="27037c9a-53b8-8033-98b8-ee49cc87717b" class="numbered-list" start="1"><li><strong>&quot;Have you ever danced salsa on a rooftop under the stars?&quot;</strong><a href="https://englishcoachonline.com/blog/present-perfect-life-experiences/">englishcoachonline+1</a><p id="27037c9a-53b8-8055-bf13-db4217e765e3" class="">Asking about a life experience without specifying when it might have happened.</p></li></ol><ol type="1" id="27037c9a-53b8-8031-a065-c3596e7d79fd" class="numbered-list" start="2"><li><strong>&quot;She&#x27;s traveled to over thirty countries during her adventurous lifetime.&quot;</strong><a href="https://ecenglish.com/en/learn-english-for-free/grammar/using-the-present-perfect-to-talk-about-life-experiences/">ecenglish</a><p id="27037c9a-53b8-80ce-ad18-f28b05b1467f" class="">Her life continues, so she could potentially visit more countries.</p></li></ol><ol type="1" id="27037c9a-53b8-80dd-9ee6-ecfc513ced2a" class="numbered-list" start="3"><li><strong>&quot;I&#x27;ve never tasted authentic sushi, but I&#x27;d love to try it someday.&quot;</strong><a href="https://learnenglishkids.britishcouncil.org/grammar-vocabulary/grammar-practice/present-perfect-experiences">learnenglishkids.britishcouncil</a><p id="27037c9a-53b8-8052-a353-f8a07c75e5cf" class="">Life experience that hasn&#x27;t happened yet but could still occur.</p></li></ol><ol type="1" id="27037c9a-53b8-80a6-96d6-f90e8501db41" class="numbered-list" start="4"><li><strong>&quot;Have you ever met a celebrity in person?&quot;</strong><a href="https://www.talkenglish.com/video/lessondetails.aspx?ALID=4342">talkenglish</a><p id="27037c9a-53b8-80ab-9c0c-d3a548b5daa6" class="">Question about any time in the person&#x27;s life up to now.</p></li></ol><ol type="1" id="27037c9a-53b8-803d-a4a7-c27017a364d4" class="numbered-list" start="5"><li><strong>&quot;They&#x27;ve climbed three mountains this year - Mount Whitney, Mount Rainier, and Mount Washington.&quot;</strong><a href="https://grammartrack.com/courses/topics/present-perfect">grammartrack</a><p id="27037c9a-53b8-806c-ab7b-d070372181bc" class="">The year isn&#x27;t finished, so more climbing adventures are possible.</p></li></ol><ol type="1" id="27037c9a-53b8-8006-9595-f2597d17876e" class="numbered-list" start="6"><li><strong>&quot;We&#x27;ve visited that charming café several times since discovering it last month.&quot;</strong><a href="https://www.eslcafe.com/resources/grammar-lessons/present-perfect-tense/the-present-perfect-tense-4">eslcafe</a><p id="27037c9a-53b8-806e-971d-e6bf3837c023" class="">Multiple visits in an unfinished time period, with potential for more visits.</p></li></ol><hr id="27037c9a-53b8-807b-9f0d-c6622993ef22"/><h2 id="27037c9a-53b8-80e2-9ec5-f1feb54fdbea" class="">🍃 <strong>Recent Actions and Changes</strong></h2><ol type="1" id="27037c9a-53b8-80aa-bf2a-f7a07bd09360" class="numbered-list" start="1"><li><strong>&quot;The famous chef has just announced her retirement from the restaurant business!&quot;</strong><a href="https://www.bbc.com/learningenglish/features/tenses_with_georgie/ep-240209">bbc</a><p id="27037c9a-53b8-8029-b852-c0e1d8d4d020" class="">Very recent news with the word &quot;just&quot; emphasizing immediacy.</p></li></ol><ol type="1" id="27037c9a-53b8-8008-90e1-e396db3c36f2" class="numbered-list" start="2"><li><strong>&quot;I&#x27;ve just finished reading the most incredible mystery novel!&quot;</strong><a href="https://www.masterenglishgrammar.com/advanced-sentence-structures/67-just-yet-already-ever-never">masterenglishgrammar</a><p id="27037c9a-53b8-8059-819f-d6aa56610c4a" class="">Completed very recently, with excitement still fresh.</p></li></ol><ol type="1" id="27037c9a-53b8-80ff-82a8-c5621bb108de" class="numbered-list" start="3"><li><strong>&quot;The company has recently launched a revolutionary new product line.&quot;</strong><a href="https://www.eslbase.com/grammar/present-perfect-simple/">eslbase</a><p id="27037c9a-53b8-80b8-bb89-dba44aa6be7b" class="">Recent development with ongoing relevance to current business operations.</p></li></ol><ol type="1" id="27037c9a-53b8-80e2-95b9-e58c21de8b28" class="numbered-list" start="4"><li><strong>&quot;She&#x27;s just received an acceptance letter from her dream university!&quot;</strong><a href="https://www.masterenglishgrammar.com/advanced-sentence-structures/67-just-yet-already-ever-never">masterenglishgrammar</a><p id="27037c9a-53b8-80d0-8ead-c52c8e7e1f1d" class="">Very recent good news that&#x27;s still emotionally impactful.</p></li></ol><ol type="1" id="27037c9a-53b8-808f-9b62-caa240d0a4a4" class="numbered-list" start="5"><li><strong>&quot;They&#x27;ve recently moved into a stunning penthouse apartment downtown.&quot;</strong><a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect">learnenglish.britishcouncil</a><p id="27037c9a-53b8-80fa-abc4-dd091c96a087" class="">Recent relocation with continuing effects on their current living situation.</p></li></ol><ol type="1" id="27037c9a-53b8-806f-a4d6-df17b79f3081" class="numbered-list" start="6"><li><strong>&quot;The theater has just reopened after extensive renovations!&quot;</strong><a href="https://www.bbc.co.uk/learningenglish/course/lower-intermediate/unit-14/tab/grammar">bbc</a><p id="27037c9a-53b8-8000-bb75-f1e216aa5c81" class="">Very recent reopening with immediate relevance to current entertainment options.</p></li></ol><hr id="27037c9a-53b8-80db-9c74-eca14454c558"/><h2 id="27037c9a-53b8-8031-b45e-f00d87b226e7" class="">🍃 <strong>Repeated Actions Over Time</strong></h2><ol type="1" id="27037c9a-53b8-80c3-aaea-e9c2029aec58" class="numbered-list" start="1"><li><strong>&quot;My grandmother has baked over 500 birthday cakes throughout her amazing career as a baker.&quot;</strong><a href="https://www.grammarly.com/blog/grammar/present-perfect-tense/">grammarly+1</a><p id="27037c9a-53b8-805b-8d31-d4d032971f3b" class="">Multiple occurrences of cake baking with potential for more in the future.</p></li></ol><ol type="1" id="27037c9a-53b8-8055-aa9c-cfd41779ecda" class="numbered-list" start="2"><li><strong>&quot;I&#x27;ve seen that romantic comedy at least a dozen times, and I still cry every time!&quot;</strong><a href="https://www.eslcafe.com/resources/grammar-lessons/present-perfect-tense/the-present-perfect-tense-4">eslcafe</a><p id="27037c9a-53b8-80ae-b77d-cfa6562d06e7" class="">Repeated viewings with likelihood of watching it again.</p></li></ol><ol type="1" id="27037c9a-53b8-8028-b88e-f1ee7c200768" class="numbered-list" start="3"><li><strong>&quot;We&#x27;ve eaten at that Italian restaurant many times since it opened.&quot;</strong>youtube<p id="27037c9a-53b8-80e0-97c1-ed27022ecac1" class="">Multiple dining experiences with potential for future visits.</p></li></ol><ol type="1" id="27037c9a-53b8-80cb-8b10-cab54b5e2d30" class="numbered-list" start="4"><li><strong>&quot;She&#x27;s won the local tennis tournament three years in a row.&quot;</strong><a href="https://www.gingersoftware.com/content/grammar-rules/verbs/the-present-perfect-simple-tense">gingersoftware</a><p id="27037c9a-53b8-80fd-893d-e806e670f447" class="">Repeated victories with the possibility of winning again.</p></li></ol><ol type="1" id="27037c9a-53b8-8013-8c72-f4b9bf4c45e1" class="numbered-list" start="5"><li><strong>&quot;They&#x27;ve traveled to Paris several times for both business and pleasure.&quot;</strong><a href="https://www.eslcafe.com/resources/grammar-lessons/present-perfect-tense/the-present-perfect-tense-4">eslcafe</a><p id="27037c9a-53b8-8008-a1f6-cb51a373d45f" class="">Multiple trips to the same destination with potential for future visits.</p></li></ol><ol type="1" id="27037c9a-53b8-80d8-8872-e8f6539a5f33" class="numbered-list" start="6"><li><strong>&quot;I&#x27;ve called customer service four times today about the same problem!&quot;</strong><a href="https://grammartrack.com/courses/topics/present-perfect">grammartrack</a><p id="27037c9a-53b8-809e-a868-e1c50ef714c5" class="">Repeated attempts within an unfinished time period (today).</p></li></ol><hr id="27037c9a-53b8-80b0-a444-d1f7742ba412"/><h2 id="27037c9a-53b8-8064-8a65-eb49663a14f1" class="">🍃 <strong>Emphasis on Results Rather Than Actions</strong></h2><ol type="1" id="27037c9a-53b8-80b2-ab96-c305ce2859d8" class="numbered-list" start="1"><li><strong>&quot;Look at this incredible transformation - they&#x27;ve completely renovated the old theater into a modern cultural center!&quot;</strong><a href="https://www.englishpage.com/verbpage/presentperfect.html">englishpage+1</a><p id="27037c9a-53b8-80f8-b3fc-db26ba5ac311" class="">Focus on the visible outcome rather than the renovation process.</p></li></ol><ol type="1" id="27037c9a-53b8-803e-8c30-d367c4908b11" class="numbered-list" start="2"><li><strong>&quot;She&#x27;s mastered five different languages and can now work as an international translator.&quot;</strong><a href="https://www.grammarly.com/blog/grammar/present-perfect-tense/">grammarly</a><p id="27037c9a-53b8-80f8-9c99-dc0e159c0597" class="">Emphasis on the achievement and current ability rather than the learning process.</p></li></ol><ol type="1" id="27037c9a-53b8-8092-98ca-eefd0010c8e5" class="numbered-list" start="3"><li><strong>&quot;We&#x27;ve raised over $50,000 for the charity - what an amazing accomplishment!&quot;</strong><a href="https://www.gingersoftware.com/content/grammar-rules/verbs/the-present-perfect-simple-tense">gingersoftware</a><p id="27037c9a-53b8-8054-97c9-e2accd300b24" class="">Focus on the impressive result rather than the fundraising activities.</p></li></ol><ol type="1" id="27037c9a-53b8-8096-8d12-f8dc1315cc1f" class="numbered-list" start="4"><li><strong>&quot;He&#x27;s built a successful tech company from scratch and now employs 200 people.&quot;</strong><a href="https://www.grammarly.com/blog/grammar/present-perfect-tense/">grammarly</a><p id="27037c9a-53b8-8068-9309-fa50d0571df3" class="">Emphasis on the current successful business rather than the building process.</p></li></ol><ol type="1" id="27037c9a-53b8-80d0-9870-d3c3d7fea019" class="numbered-list" start="5"><li><strong>&quot;The scientists have discovered a new species of butterfly in the Amazon rainforest!&quot;</strong><a href="https://grammartrack.com/courses/topics/present-perfect">grammartrack</a><p id="27037c9a-53b8-80b0-8e4b-d3c7aa5fe526" class="">Focus on the significant discovery rather than the research process.</p></li></ol><ol type="1" id="27037c9a-53b8-809e-9163-d0e51aa7b8b3" class="numbered-list" start="6"><li><strong>&quot;I&#x27;ve finally organized my entire photo collection - 10,000 pictures sorted and labeled!&quot;</strong><a href="https://englishmaster.co.uk/2024/11/25/everyday-grammar-confusing-tenses-present-perfect-simple-and-present-perfect-progressive-continuous/">englishmaster</a><p id="27037c9a-53b8-8022-b0af-eaefbdee38c7" class="">Emphasis on the completed organization rather than the time-consuming process.</p></li></ol><p id="27037c9a-53b8-8068-a46b-fc32c05aa5c5" class="">Each example demonstrates how Present Perfect creates that essential <strong>bridge between past and present</strong>, making past events feel relevant, ongoing, or significant to our current moment.<a href="https://www.scribbr.com/verbs/present-perfect/">scribbr+1</a></p><ol type="1" id="27037c9a-53b8-80f8-a783-fe1eab2595bd" class="numbered-list" start="1"><li><a href="https://www.eslbase.com/grammar/present-perfect-simple/">https://www.eslbase.com/grammar/present-perfect-simple/</a></li></ol><ol type="1" id="27037c9a-53b8-80aa-87c5-ecb6edbeb23c" class="numbered-list" start="2"><li><a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect">https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect</a></li></ol><ol type="1" id="27037c9a-53b8-801b-a27a-f55f435914ef" class="numbered-list" start="3"><li><a href="https://www.bbc.com/learningenglish/features/tenses_with_georgie/ep-240209">https://www.bbc.com/learningenglish/features/tenses_with_georgie/ep-240209</a></li></ol><ol type="1" id="27037c9a-53b8-8076-8b17-ea2304f4aae0" class="numbered-list" start="4"><li><a href="https://www.wallstreetenglish.com/exercises/the-present-perfect-continuous/">https://www.wallstreetenglish.com/exercises/the-present-perfect-continuous/</a></li></ol><ol type="1" id="27037c9a-53b8-8035-be0e-ea38262e28ef" class="numbered-list" start="5"><li><a href="https://www.ef.com/wwen/english-resources/english-grammar/present-perfect/">https://www.ef.com/wwen/english-resources/english-grammar/present-perfect/</a></li></ol><ol type="1" id="27037c9a-53b8-8023-9b3e-f19ddd837f70" class="numbered-list" start="6"><li><a href="https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect-simple-continuous">https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/present-perfect-simple-continuous</a></li></ol><ol type="1" id="27037c9a-53b8-80a5-a3f7-f8905cbed355" class="numbered-list" start="7"><li><a href="https://englishcoachonline.com/blog/present-perfect-life-experiences/">https://englishcoachonline.com/blog/present-perfect-life-experiences/</a></li></ol><ol type="1" id="27037c9a-53b8-80d8-b3cb-d3bf9562106e" class="numbered-list" start="8"><li><a href="https://learnenglishkids.britishcouncil.org/grammar-vocabulary/grammar-practice/present-perfect-experiences">https://learnenglishkids.britishcouncil.org/grammar-vocabulary/grammar-practice/present-perfect-experiences</a></li></ol><ol type="1" id="27037c9a-53b8-80b5-a51d-cae84d8acf24" class="numbered-list" start="9"><li><a href="https://ecenglish.com/en/learn-english-for-free/grammar/using-the-present-perfect-to-talk-about-life-experiences/">https://ecenglish.com/en/learn-english-for-free/grammar/using-the-present-perfect-to-talk-about-life-experiences/</a></li></ol><ol type="1" id="27037c9a-53b8-8066-81f9-ebc0cc9c48bd" class="numbered-list" start="10"><li><a href="https://www.talkenglish.com/video/lessondetails.aspx?ALID=4342">https://www.talkenglish.com/video/lessondetails.aspx?ALID=4342</a></li></ol><ol type="1" id="27037c9a-53b8-80fb-bd1c-df783cb37ee5" class="numbered-list" start="11"><li><a href="https://grammartrack.com/courses/topics/present-perfect">https://grammartrack.com/courses/topics/present-perfect</a></li></ol><ol type="1" id="27037c9a-53b8-8015-9658-c7ef7603eea7" class="numbered-list" start="12"><li><a href="https://www.eslcafe.com/resources/grammar-lessons/present-perfect-tense/the-present-perfect-tense-4">https://www.eslcafe.com/resources/grammar-lessons/present-perfect-tense/the-present-perfect-tense-4</a></li></ol><ol type="1" id="27037c9a-53b8-804d-832f-c4477666dbe6" class="numbered-list" start="13"><li><a href="https://www.masterenglishgrammar.com/advanced-sentence-structures/67-just-yet-already-ever-never">https://www.masterenglishgrammar.com/advanced-sentence-structures/67-just-yet-already-ever-never</a></li></ol><ol type="1" id="27037c9a-53b8-807f-ad87-d6b7279dead3" class="numbered-list" start="14"><li><a href="https://www.bbc.co.uk/learningenglish/course/lower-intermediate/unit-14/tab/grammar">https://www.bbc.co.uk/learningenglish/course/lower-intermediate/unit-14/tab/grammar</a></li></ol><ol type="1" id="27037c9a-53b8-80ea-ad15-ddb68c380d27" class="numbered-list" start="15"><li><a href="https://www.grammarly.com/blog/grammar/present-perfect-tense/">https://www.grammarly.com/blog/grammar/present-perfect-tense/</a></li></ol><ol type="1" id="27037c9a-53b8-80c2-891f-f6b247436d39" class="numbered-list" start="16"><li><a href="https://www.englishpage.com/verbpage/presentperfect.html">https://www.englishpage.com/verbpage/presentperfect.html</a></li></ol><ol type="1" id="27037c9a-53b8-804b-926a-f8b38af039a8" class="numbered-list" start="17"><li><a href="https://www.youtube.com/watch?v=tZ6oxw3_STo">https://www.youtube.com/watch?v=tZ6oxw3_STo</a></li></ol><ol type="1" id="27037c9a-53b8-8069-89f4-d843f228e4b0" class="numbered-list" start="18"><li><a href="https://www.gingersoftware.com/content/grammar-rules/verbs/the-present-perfect-simple-tense">https://www.gingersoftware.com/content/grammar-rules/verbs/the-present-perfect-simple-tense</a></li></ol><ol type="1" id="27037c9a-53b8-80a5-b60d-c4ca46c3b71c" class="numbered-list" start="19"><li><a href="https://englishmaster.co.uk/2024/11/25/everyday-grammar-confusing-tenses-present-perfect-simple-and-present-perfect-progressive-continuous/">https://englishmaster.co.uk/2024/11/25/everyday-grammar-confusing-tenses-present-perfect-simple-and-present-perfect-progressive-continuous/</a></li></ol><ol type="1" id="27037c9a-53b8-807f-809a-d5ed03df2ff1" class="numbered-list" start="20"><li><a href="https://www.scribbr.com/verbs/present-perfect/">https://www.scribbr.com/verbs/present-perfect/</a></li></ol><ol type="1" id="27037c9a-53b8-80d3-b022-c15fd661abe9" class="numbered-list" start="21"><li><a href="https://www.bachelorprint.com/language-rules/tenses/present-perfect/">https://www.bachelorprint.com/language-rules/tenses/present-perfect/</a></li></ol><ol type="1" id="27037c9a-53b8-80dd-b74b-e35ec866baba" class="numbered-list" start="22"><li><a href="https://mundoeducacao.uol.com.br/ingles/present-perfect-continuous.htm">https://mundoeducacao.uol.com.br/ingles/present-perfect-continuous.htm</a></li></ol><ol type="1" id="27037c9a-53b8-80a1-83c5-d78259eb5672" class="numbered-list" start="23"><li><a href="https://www.bbc.co.uk/learningenglish/course/lower-intermediate/unit-26/session-2">https://www.bbc.co.uk/learningenglish/course/lower-intermediate/unit-26/session-2</a></li></ol><ol type="1" id="27037c9a-53b8-80c3-81f7-d99c9e2febcc" class="numbered-list" start="24"><li><a href="https://lingochampion.com/en-US/grammar-guides/en/tenses/present-perfect/">https://lingochampion.com/en-US/grammar-guides/en/tenses/present-perfect/</a></li></ol><ol type="1" id="27037c9a-53b8-8052-af60-cbe58ff492a3" class="numbered-list" start="25"><li><a href="https://www.lingoda.com/blog/en/present-perfect-life-experiences/">https://www.lingoda.com/blog/en/present-perfect-life-experiences/</a></li></ol><ol type="1" id="27037c9a-53b8-802c-bdd7-fe377f125b6a" class="numbered-list" start="26"><li><a href="https://www.scribbr.com/verbs/present-perfect-continuous/">https://www.scribbr.com/verbs/present-perfect-continuous/</a></li></ol><ol type="1" id="27037c9a-53b8-808c-8324-f62821545ebe" class="numbered-list" start="27"><li><a href="https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/present-perfect">https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/present-perfect</a></li></ol><ol type="1" id="27037c9a-53b8-80e1-b13c-c36f31fc2337" class="numbered-list" start="28"><li><a href="https://www.grammarly.com/blog/grammar/present-perfect-continuous-tense/">https://www.grammarly.com/blog/grammar/present-perfect-continuous-tense/</a></li></ol><ol type="1" id="27037c9a-53b8-801b-b741-e89c4b4507a5" class="numbered-list" start="29"><li><a href="https://www.speakconfidentenglish.com/present-perfect-to-talk-about-experiences/">https://www.speakconfidentenglish.com/present-perfect-to-talk-about-experiences/</a></li></ol><ol type="1" id="27037c9a-53b8-8099-a2d4-cd3666e21fc5" class="numbered-list" start="30"><li><a href="https://dictionary.cambridge.org/us/grammar/british-grammar/present-perfect-continuous-i-have-been-working">https://dictionary.cambridge.org/us/grammar/british-grammar/present-perfect-continuous-i-have-been-working</a></li></ol><ol type="1" id="27037c9a-53b8-8028-b67a-d92cbd6550a4" class="numbered-list" start="31"><li><a href="https://www.wallstreetenglish.com/exercises/the-present-perfect-tense-and-the-passive-voice/">https://www.wallstreetenglish.com/exercises/the-present-perfect-tense-and-the-passive-voice/</a></li></ol><ol type="1" id="27037c9a-53b8-8041-a7b1-f881a084a6b4" class="numbered-list" start="32"><li><a href="https://entrepoetasepoesias.com.br/2025/05/24/6-present-perfect-a-complete-grammar-guide-with-examples/">https://entrepoetasepoesias.com.br/2025/05/24/6-present-perfect-a-complete-grammar-guide-with-examples/</a></li></ol><ol type="1" id="27037c9a-53b8-80a4-868e-e9030283e41a" class="numbered-list" start="33"><li><a href="https://www.perfect-english-grammar.com/present-perfect-use.html">https://www.perfect-english-grammar.com/present-perfect-use.html</a></li></ol><ol type="1" id="27037c9a-53b8-8008-b85c-cd3c3a5587c7" class="numbered-list" start="34"><li><a href="https://www.scribd.com/presentation/531692088/1-Present-Perfect-Simple-Revision-Repeated-Actions-in-the-Past">https://www.scribd.com/presentation/531692088/1-Present-Perfect-Simple-Revision-Repeated-Actions-in-the-Past</a></li></ol><ol type="1" id="27037c9a-53b8-8060-933d-d9ee827df24c" class="numbered-list" start="35"><li><a href="https://www.english-efl.com/lessons/present-perfect/">https://www.english-efl.com/lessons/present-perfect/</a></li></ol><ol type="1" id="27037c9a-53b8-8054-801c-df874836de31" class="numbered-list" start="36"><li><a href="https://englisheducationlab.net/demystifying-the-present-perfect-tense-from-confusion-to-clarity/">https://englisheducationlab.net/demystifying-the-present-perfect-tense-from-confusion-to-clarity/</a></li></ol><ol type="1" id="27037c9a-53b8-80a7-9208-fadd6c4ffea7" class="numbered-list" start="37"><li><a href="https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/perfect-aspect">https://learnenglish.britishcouncil.org/grammar/english-grammar-reference/perfect-aspect</a></li></ol></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

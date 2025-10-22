@@ -1,0 +1,802 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Sounds of English</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="22537c9a-53b8-805f-a767-f67780a29c24" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">The Sounds of English</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/ChatGPT_Image_Oct_10_2025_12_03_30_AM.png"><img style="width:20px;max-height:24px" src="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/ChatGPT_Image_Oct_10_2025_12_03_30_AM.png" alt="ChatGPT Image Oct 10, 2025, 12_03_30 AM.png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>3</td></tr></tbody></table></header><div class="page-body"><ul id="22537c9a-53b8-80ff-b3a9-da7f08c19666" class="toggle"><li><details open=""><summary><strong>🌍 The International Phonetic Alphabet</strong></summary><p id="22537c9a-53b8-8079-9ccb-f6ac3dfd4ffb" class="">
+</p><p id="22537c9a-53b8-8073-b96e-ed76e32821aa" class="">💡 Imagine if every time you saw the letter <strong>“a”</strong> in English, it made the <strong>same</strong> sound. That would make life easier, right? But English doesn’t work that way. Think about these examples:</p><p id="22537c9a-53b8-8003-8956-e0b005415884" class="">
+</p><blockquote id="22537c9a-53b8-808e-b8e0-f2d74cf63d8d" class="">🐱 <em>cat<br/></em>👨‍👧 <em>father<br/>ℹ️</em> <em>about<br/></em>🍰 <em>cake</em></blockquote><p id="22537c9a-53b8-8048-90e4-ea20bc58f38a" class="">
+</p><p id="22537c9a-53b8-804c-a165-f004348e8c23" class="">All of them have the letter <strong>“a”</strong>, but each one sounds completely different! 🤯</p><p id="22537c9a-53b8-800d-9bed-c3fe39f42a61" class="">
+</p><p id="22537c9a-53b8-8007-80a3-f2846bc8c579" class="">English spelling is notoriously unreliable. One letter can represent many different sounds. That’s where the <strong>IPA</strong> comes in.</p><p id="22537c9a-53b8-8032-8bad-e715411ee434" class="">
+</p><ul id="22537c9a-53b8-80eb-9e3b-e36d521f6a1e" class="toggle"><li><details open=""><summary><strong>🌍 What Is the The IPA?</strong></summary><p id="28f37c9a-53b8-8033-86e7-e7c42cce5ede" class="">
+</p><p id="22537c9a-53b8-805d-9fa0-d65e60967432" class="">The <strong>IPA</strong>, International Phonetic Alphabet, is a writing system that uses <strong>symbols</strong> to represent <strong>the sounds of human speech</strong>, showing exactly how words are pronounced. Each symbol corresponds to the <strong>same sound</strong> across languages, helping you pronounce words <strong>accurately</strong> and <strong>confidently</strong> — a big advantage since <strong>English spelling often doesn’t match pronunciation</strong>. It helps you avoid confusion, strengthen your speaking and listening skills, and build a solid foundation from the start.</p><p id="28f37c9a-53b8-8039-b240-c7f55e80c531" class="">Plus, you can apply what you learn to <strong>any other language</strong> you study. 😉</p><p id="28f37c9a-53b8-8080-8c57-fa814f97f8f4" class="">
+</p></details></li></ul><hr id="22537c9a-53b8-8092-a475-d2ced5d8441c"/><ul id="28f37c9a-53b8-80cd-88ac-f2150f0caec6" class="toggle"><li><details open=""><summary>💡 <strong>Meet the symbols</strong></summary><p id="28f37c9a-53b8-80f5-81f3-e0cd826683a8" class="">
+</p><p id="28f37c9a-53b8-80ff-854e-f58ed9e5372c" class="">Short Vowels —  ɪ  e  æ  ʌ  ʊ  ɒ</p><p id="28f37c9a-53b8-801c-a101-c7460326ee30" class="">Long Vowels —  iː  ɑː  ɔː  ɜː  uː</p><p id="28f37c9a-53b8-80b5-8914-daccb08c2bfc" class="">The Schwa — ə</p><p id="28f37c9a-53b8-8032-bd06-d6da8601c4ae" class="">Diphthongs — eɪ  aɪ  ɔɪ  aʊ  oʊ  ɪə  eə  ʊə</p><p id="28f37c9a-53b8-8084-83a0-e1771f687f6a" class="">Plosives —  p  b  t  d  k  g</p><p id="28f37c9a-53b8-809d-8920-fda6cbf9f1b7" class="">Fricatives —  f  v  θ  ð  s  z  ʃ  ʒ  h</p><p id="28f37c9a-53b8-8056-ac36-e5e28ab18fba" class="">Nasals —  m  n  ŋ</p><p id="28f37c9a-53b8-805e-bb98-fa2ed3e6ac4d" class="">Liquids —  l  r</p><p id="28f37c9a-53b8-806e-86da-c0370c5ee383" class="">Glides —  w  j</p><p id="28f37c9a-53b8-809a-a45e-cc78a0f8432c" class="">Affricates —  tʃ  dʒ</p></details></li></ul><hr id="28f37c9a-53b8-8057-8c01-ec8bf279cb34"/><ul id="22537c9a-53b8-80f9-b3ed-c5618ac57610" class="toggle"><li><details open=""><summary><strong>✍️ Reading IPA Transcription</strong></summary><p id="22537c9a-53b8-803e-b1b0-ecf2cc260011" class="">
+</p><p id="22537c9a-53b8-80f7-86bb-fd36a42ff48c" class="">Let’s take the word <strong>transportation</strong> as an example:</p><h1 id="22537c9a-53b8-8014-8bcf-f6c5f1d430ee" class=""><mark class="highlight-red"><strong>/ˌ</strong></mark><strong>træn </strong><mark class="highlight-red"><strong>. </strong></mark><strong>spɔ</strong><mark class="highlight-red"><strong>ːˈ</strong></mark><strong>teɪ </strong><mark class="highlight-red"><strong>. </strong></mark><strong>ʃən</strong><mark class="highlight-red"><strong>/</strong></mark></h1><p id="22537c9a-53b8-80a5-8d20-f8090b752e65" class="">
+</p><table id="22537c9a-53b8-8025-8525-ed7c9a91bc39" class="simple-table"><tbody><tr id="22537c9a-53b8-8050-8186-ddc1c6b2b932"><td id="eSN&gt;" class="" style="width:93px"><strong>/</strong>...<strong>/</strong></td><td id="JXFj" class="" style="width:151.7291717529297px">Phonemic Markers</td><td id="khjr" class="" style="width:248.2916717529297px">Shows you <strong>how to the say</strong> the word</td><td id="d=Mp" class=""><mark class="highlight-red"><strong>/</strong></mark><strong>ˌtræn.spɔːˈteɪ.ʃən</strong><mark class="highlight-red"><strong>/</strong></mark></td></tr><tr id="22537c9a-53b8-80e7-92a2-e899a71834d8"><td id="eSN&gt;" class="" style="width:93px"><strong>.</strong></td><td id="JXFj" class="" style="width:151.7291717529297px">Syllable separator</td><td id="khjr" class="" style="width:248.2916717529297px">Breaks the word into <strong>syllables</strong></td><td id="d=Mp" class=""><mark class="highlight-default"><strong>/ˌtræn</strong></mark><mark class="highlight-red"><strong>.</strong></mark><mark class="highlight-default"><strong>spɔːˈteɪ</strong></mark><mark class="highlight-red"><strong>.</strong></mark><mark class="highlight-default"><strong>ʃən/</strong></mark></td></tr><tr id="22537c9a-53b8-8093-b543-c186db5410f6"><td id="eSN&gt;" class="" style="width:93px"><strong>ˈ</strong></td><td id="JXFj" class="" style="width:151.7291717529297px">Primary stress</td><td id="khjr" class="" style="width:248.2916717529297px">Shows which syllable is <strong>the strongest</strong> when you say the word</td><td id="d=Mp" class=""><strong>/</strong><mark class="highlight-red"><strong>ˈ</strong></mark><strong>teɪ/</strong></td></tr><tr id="22537c9a-53b8-8002-827c-f52787b71894"><td id="eSN&gt;" class="" style="width:93px"><strong>ˌ</strong></td><td id="JXFj" class="" style="width:151.7291717529297px">Secondary stress</td><td id="khjr" class="" style="width:248.2916717529297px">Shows which syllable is <strong>a bit strong</strong>, but not the strongest</td><td id="d=Mp" class=""><strong>/</strong><mark class="highlight-red"><strong>ˌ</strong></mark><strong>træn/</strong></td></tr><tr id="22537c9a-53b8-8016-9098-ea06d55263e5"><td id="eSN&gt;" class="" style="width:93px"><strong>ː</strong></td><td id="JXFj" class="" style="width:151.7291717529297px">Long vowel</td><td id="khjr" class="" style="width:248.2916717529297px">Shows that the vowel sound should be<strong> longer</strong> than usual</td><td id="d=Mp" class=""><strong>/spɔ</strong><mark class="highlight-red"><strong>ː</strong></mark><strong>/</strong></td></tr></tbody></table></details></li></ul><hr id="22537c9a-53b8-80e4-9d17-ceb0de1aa2ab"/><p id="28f37c9a-53b8-801e-b505-c8129d07a953" class="">
+</p></details></li></ul><hr id="28f37c9a-53b8-80b1-b7c7-cd02b48c0d69"/><ul id="22237c9a-53b8-8035-b1c0-d04dae9826bc" class="toggle"><li><details open=""><summary><strong>Vowel Sounds</strong></summary><ul id="22137c9a-53b8-8072-8a68-c987ec89a463" class="toggle"><li><details open=""><summary><strong>Short vowels</strong></summary><ul id="22137c9a-53b8-800b-8697-d60ce02164fa" class="toggle"><li><details open=""><summary><strong>/ɪ/</strong></summary><p id="22237c9a-53b8-80a3-b561-c402db9a4482" class="">Position your tongue in the middle of your mouth, relaxed lips.</p><p id="22237c9a-53b8-8026-a6c3-dabeb7e87c35" class="">
+</p><ul id="20037c9a-53b8-80ab-8819-e5056fde3051" class="toggle"><li><details open=""><summary>👦 Kid - /kɪd/</summary><figure id="22237c9a-53b8-80b0-80f6-ea8b528ed112"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Kid.mp3">attachment:9ce52afa-2f81-4e86-a345-a3187ac313df:Kid.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80de-aea0-e0c8b842b872" class="toggle"><li><details open=""><summary>💰 Bill - /bɪl/</summary><figure id="22237c9a-53b8-8088-bf4a-d6e6667715c7"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Bill.mp3">attachment:abcc3d06-bdd9-471e-b00d-096eb5cca9f3:Bill.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8002-a6f3-c90b156c4813" class="toggle"><li><details open=""><summary>✈️ Trip - /trɪp/</summary><figure id="22237c9a-53b8-80a2-9c6a-d457e420cf94"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Trip.mp3">attachment:3ac2ddda-c93b-4c6c-a510-200d10162a15:Trip.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8011-a109-f7cd6647ede6" class="toggle"><li><details open=""><summary>🏙️ City - /ˈsɪt.i/</summary><figure id="22237c9a-53b8-80ef-85bc-c507ee9a06b8"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/City.mp3">attachment:62c8f867-c711-4c84-8cb0-1dad9d5b0980:City.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80d2-b34a-ebe93f7f87fd" class="toggle"><li><details open=""><summary>⏱️ Minute - /ˈmɪn.ɪt/</summary><figure id="22237c9a-53b8-809a-b445-f311f441a693"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Minute.mp3">attachment:b36a6250-54bc-4395-ac87-9da48846746c:Minute.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-805b-ba94-d567dea40e50" class="toggle"><li><details open=""><summary>💼 Business - /ˈbɪz.nɪs/</summary><figure id="22237c9a-53b8-8083-b1fe-e1118217d833"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Business.mp3">attachment:489d4500-64e9-49fc-b616-f256d745c154:Business.mp3</a></div></figure><p id="22237c9a-53b8-8085-93ce-c2db46418237" class="">
+</p></details></li></ul><p id="22237c9a-53b8-80fa-8715-da79b8737283" class="">
+</p></details></li></ul><ul id="22137c9a-53b8-8013-9249-dd04460ac323" class="toggle"><li><details open=""><summary><strong>/e/</strong></summary><p id="22237c9a-53b8-80ce-89e8-c46f772ece89" class="">Tongue in middle, lips slightly spread</p><p id="22237c9a-53b8-80f4-933b-d575a1cde3b0" class="">
+</p><ul id="22137c9a-53b8-80b0-a784-d81287425ab1" class="toggle"><li><details open=""><summary>🏁 End - /end/</summary><figure id="22237c9a-53b8-8020-aaca-ef7202ff1adf"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/End.mp3">attachment:aa79a5b9-4c29-4b1d-8565-1a4673ea36fc:End.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8003-b8f6-f232064592ff" class="toggle"><li><details open=""><summary>🧠 Head - /hed/</summary><figure id="22237c9a-53b8-8064-95b6-eb92638156e2"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Head.mp3">attachment:81dce4ca-3e99-40cb-ac25-154a88eefcba:Head.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-806f-8323-f79bc6710f72" class="toggle"><li><details open=""><summary>🆘 Help - /help/</summary><figure id="22237c9a-53b8-800e-a9ea-f0f017191edd"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Help.mp3">attachment:b96bf8d3-2661-4db2-a897-9342954bd352:Help.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-802e-aada-e69d55b0d135" class="toggle"><li><details open=""><summary>👬 Friend - /frend/</summary><figure id="22237c9a-53b8-80a9-8a47-f1f434f631f4"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Friend.mp3">attachment:18953d3d-0849-45a4-8dcd-a5b129beb3eb:Friend.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8016-8e6b-e3c068520b02" class="toggle"><li><details open=""><summary>🎓 Education - /ˌed.jʊˈkeɪ.ʃən/</summary><figure id="22237c9a-53b8-8098-9565-e5ebff4cc8e2"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Education.mp3">attachment:335e53f8-0544-485a-bea2-3127884017fd:Education.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80cf-b3d6-d146700817a6" class="toggle"><li><details open=""><summary>👨‍👩‍👧‍👦 Parents - /ˈper.ənts/</summary><figure id="22237c9a-53b8-8088-a1f6-dabbb3aa1dc9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Parents.mp3">attachment:cc426fa2-576a-4f9c-8c47-5197543aeede:Parents.mp3</a></div></figure></details></li></ul><p id="22137c9a-53b8-80b7-b03a-e3c360ca9694" class="">
+</p></details></li></ul><ul id="22237c9a-53b8-80a8-941b-d51a10cd501d" class="toggle"><li><details open=""><summary><strong>/æ/</strong></summary><p id="22237c9a-53b8-80a3-a820-d2eb6def83bc" class="">Tongue lower, lips more open than /e/</p><p id="22237c9a-53b8-8002-a05e-fd3528ee0c9c" class="">
+</p><ul id="20037c9a-53b8-8063-a412-e4f3c4d4cd14" class="toggle"><li><details open=""><summary>🐘 Animal - /ˈænɪməl/</summary><figure id="22237c9a-53b8-80c4-8632-f7e94827fc1a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Animal.mp3">attachment:76896c09-548e-4e78-acd0-890a1f659d2b:Animal.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80bb-a62c-ede9a799e395" class="toggle"><li><details open=""><summary>🏘️Adress - /ˈædres/</summary><figure id="22237c9a-53b8-80ce-9443-e07193a727cc"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Adress.mp3">attachment:39e34716-35e1-420e-868f-74bdd4c5bd6c:Adress.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80fa-8def-f164674f83e7" class="toggle"><li><details open=""><summary>👨‍👩‍👧‍👦 Family -  /ˈfæm.əl.i/</summary><figure id="22237c9a-53b8-80d8-8309-fff2cdd886ed"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Family.mp3">attachment:066a9ff9-4ad3-4d39-a809-900f532b9aba:Family.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8019-99bb-c1bd0c079600" class="toggle"><li><details open=""><summary>🗺️ Map - /mæp/</summary><figure id="22237c9a-53b8-80e9-a4e4-fdf538c75650"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Map.mp3">attachment:29786b06-4db5-48db-aa25-24b93ab86029:Map.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8063-852b-db7535356222" class="toggle"><li><details open=""><summary>🏦 Bank - /bæŋk/</summary><figure id="22237c9a-53b8-80a7-b1cb-c4ae3032895e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Bank.mp3">attachment:d7d2509a-baae-486d-8b32-1ef32428ac7c:Bank.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8033-b241-fc13f2bb52d8" class="toggle"><li><details open=""><summary>🏫 Class - /klæs/</summary><figure id="22237c9a-53b8-80e2-ad16-e144a9ea6358"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Class.mp3">attachment:bda044f1-2778-493b-b1d4-0730fbcb0b9f:Class.mp3</a></div></figure></details></li></ul><p id="22237c9a-53b8-8015-b915-c599efe486ab" class="">
+</p></details></li></ul><ul id="22137c9a-53b8-8016-95b6-d982dae25b75" class="toggle"><li><details open=""><summary><strong>/ʌ/</strong></summary><p id="22237c9a-53b8-806f-ae3d-ff780fb937e1" class="">Tongue at bottom, lips neutral</p><p id="22237c9a-53b8-8070-990b-d59f099f0171" class="">
+</p><ul id="20037c9a-53b8-8069-98cb-cbfe00ce6fbf" class="toggle"><li><details open=""><summary>🧸 Stuff - /stʌf/</summary><figure id="22237c9a-53b8-80a1-9100-d205ee2ac0f9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Stuff.mp3">attachment:8a7d02c7-d4b8-4ce7-b184-1ba5a75b27ba:Stuff.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-809b-98cf-d53bde2622d9" class="toggle"><li><details open=""><summary>👦 Son – /sʌn/</summary><figure id="23c37c9a-53b8-8089-83f7-e730320290b7"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Son.mp3">attachment:32134638-222c-40c6-a1c3-bce9cf285d18:Son.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80ca-a53a-eabf50f7cdd6" class="toggle"><li><details open=""><summary>💰 Money - /ˈmʌn.i/</summary><figure id="22237c9a-53b8-8045-b3a1-f42b8f3a82b4"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Money.mp3">attachment:08a34924-829c-46f4-96f2-e2feece07608:Money.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80e2-b348-d003d8bb03f6" class="toggle"><li><details open=""><summary>🏞️ Country - /ˈkʌn.tri/</summary><figure id="22237c9a-53b8-80c9-9ba1-fe3625e6b66a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Country.mp3">attachment:b597e563-2367-4b41-9ded-34893302381f:Country.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-806c-a00d-ccc87efb162f" class="toggle"><li><details open=""><summary>🎨 Culture - /ˈkʌl.tʃər/</summary><figure id="22237c9a-53b8-802c-b6fe-e6f07e63c2d9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Culture.mp3">attachment:3c39c7c9-c579-42e8-afbc-226a6bda26ba:Culture.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80b4-87d6-f75d3ff5cc82" class="toggle"><li><details open=""><summary>🏢 Company - /ˈkʌm.pə.ni/</summary><figure id="22237c9a-53b8-801a-a90c-da94d4841b7d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Company.mp3">attachment:da070746-385a-4bbe-92fb-6150d3cc91d0:Company.mp3</a></div></figure></details></li></ul><p id="22237c9a-53b8-8061-ab26-f6a71aca9575" class="">
+</p></details></li></ul><ul id="22237c9a-53b8-800a-83c8-ec65085f3919" class="toggle"><li><details open=""><summary><strong>/ʊ/</strong></summary><p id="22237c9a-53b8-8035-ac8b-ce4130eeb5ed" class="">Tongue high in back, lips slightly rounded</p><p id="22237c9a-53b8-801a-82b8-e7e95cbe6441" class="">
+</p><ul id="20037c9a-53b8-80e6-ae91-e6d66b135928" class="toggle"><li><details open=""><summary>📚 Book - /bʊk/</summary><figure id="22237c9a-53b8-8099-a569-c88461ea7573"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Book.mp3">attachment:30c0a909-eac7-429f-bc03-577564f82a85:Book.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80cd-b495-dcf2fe7d5058" class="toggle"><li><details open=""><summary>🚪 Room - /rʊm/</summary><figure id="22237c9a-53b8-800f-b5fe-c62b86549801"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Room.mp3">attachment:fc32b1e9-3530-46be-80cd-4802d528acae:Room.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8061-b1db-cdb1d338d699" class="toggle"><li><details open=""><summary>💸 Poor - /pʊr/</summary><figure id="22237c9a-53b8-805c-b35d-cf22ad8b0e03"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Poor.mp3">attachment:eabe03ff-324e-4eaf-9baa-b83818368c1f:Poor.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80a8-8e2a-f0575459c686" class="toggle"><li><details open=""><summary>🎯 Goal - /ɡoʊl/</summary><figure id="22237c9a-53b8-80db-b37c-e35b3b35bddf"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Goal.mp3">attachment:08f67e1a-171d-43ff-91db-546182e55b24:Goal.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80dc-9e7d-deadb9cafd21" class="toggle"><li><details open=""><summary>👕 Clothes - /kloʊz/</summary><figure id="22237c9a-53b8-8062-afad-f9c85d7509e1"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Clothes.mp3">attachment:6e33d31a-246f-4ca2-895a-96e292870af6:Clothes.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-804c-8b8a-cb66f5199a1b" class="toggle"><li><details open=""><summary>🏙️ Town - /taʊn/</summary><figure id="22237c9a-53b8-80ef-98e2-e91d60a3c6ed"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Town.mp3">attachment:e511dd63-71f1-4c49-bca9-18ca48b4e2f0:Town.mp3</a></div></figure></details></li></ul><p id="22237c9a-53b8-8034-9284-f9a7ab3c9794" class="">
+</p></details></li></ul><ul id="22237c9a-53b8-80e3-865c-d86dfdc1da41" class="toggle"><li><details open=""><summary><strong>/ɒ/</strong></summary><p id="22237c9a-53b8-80a9-a2bf-d78282c58044" class="">Tongue low and back, lips slightly rounded</p><p id="22237c9a-53b8-8083-9753-f96c610959f6" class="">
+</p><ul id="22237c9a-53b8-8087-8391-d5fc8b53fc24" class="toggle"><li><details open=""><summary>🏢 Office - /ˈɑː.fɪs/</summary><figure id="22237c9a-53b8-8089-abac-dac4511222fd"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Office.mp3">attachment:a918d49f-3deb-47aa-98c5-d75164e0f887:Office.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80f1-a66b-e12ac99f9ba5" class="toggle"><li><details open=""><summary>🧍 Body - /ˈbɑː.di/</summary><figure id="22237c9a-53b8-80d9-910a-c8fad46ddef5"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Body.mp3">attachment:c55055f0-320c-4cc2-a2a7-195fb6b97f87:Body.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80c2-b6ee-caa55464c553" class="toggle"><li><details open=""><summary>💵 Dollar - /ˈdɑl·ər/</summary><figure id="22237c9a-53b8-802c-8e63-e3d5d0613108"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Dollar.mp3">attachment:e65d02b9-7a53-43b7-85c5-b90f7152120d:Dollar.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8000-84af-d2953a416b7e" class="toggle"><li><details open=""><summary>❗ Problem - /ˈprɑː.bləm/</summary><figure id="22237c9a-53b8-8088-ade5-e66e718c57f3"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Problem.mp3">attachment:dde56eb0-170f-49a6-9d79-2aa2ed93a4b6:Problem.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-803a-9f80-d5ee7ffc79b0" class="toggle"><li><details open=""><summary>📦 Object - /ˈɑːb.dʒekt/</summary><figure id="22237c9a-53b8-807e-8642-ec95286798f6"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Object.mp3">attachment:d2522470-e1f9-42bd-af77-0a1e35a4273e:Object.mp3</a></div></figure></details></li></ul><p id="22737c9a-53b8-800f-ad74-fddda0744d4b" class="">
+</p></details></li></ul><p id="22737c9a-53b8-80af-a86e-de24e2ff23c0" class="">
+</p></details></li></ul><ul id="22237c9a-53b8-8056-8687-c4931582cc23" class="toggle"><li><details open=""><summary><strong>Long vowels</strong></summary><ul id="22237c9a-53b8-80cb-9e8a-fb1af5de85d3" class="toggle"><li><details open=""><summary><strong>/iː/</strong></summary><p id="22237c9a-53b8-8099-8875-f1efd27e74aa" class="">Tongue high and forward, lips spread like smiling<br/></p><ul id="20037c9a-53b8-80c8-b7bb-d5d308cf672d" class="toggle"><li><details open=""><summary>🟰 Equal - /ˈiː.kwəl/</summary><figure id="22237c9a-53b8-80cc-a137-d290f496ca4c"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/equal.mp3">attachment:8e543662-480f-40da-a874-ef33ccf8c93c:equal.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8083-bf2d-d91ffe5b79b3" class="toggle"><li><details open=""><summary>📅 Week - /wiːk/</summary><figure id="22237c9a-53b8-8060-b13f-dd3350f2da73"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/week.mp3">attachment:27df7f5a-635a-456c-b3e8-a7ce2b293bc7:week.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8040-abd5-e640bbc2f342" class="toggle"><li><details open=""><summary>🛣️ Street - /striːt/</summary><figure id="22237c9a-53b8-807f-b5a0-d59a55a388b7"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/street.mp3">attachment:77c8c480-b24c-4d1c-bd0f-5402bb606442:street.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-807e-b2b0-e99ad99c0ef3" class="toggle"><li><details open=""><summary>🧩 Piece - /piːs/</summary><figure id="22237c9a-53b8-809f-87ac-d30269716b10"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/piece.mp3">attachment:05c14d98-e32e-48b1-a690-106b003018d8:piece.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-804e-b96a-eada4e56ddc1" class="toggle"><li><details open=""><summary>☮️ Peace - /piːs/</summary><figure id="22237c9a-53b8-806d-8a56-c5db29eb4091"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/peace.mp3">attachment:dc2b03c8-f43a-400d-ab8f-93843c3f1589:peace.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-800c-893f-dd2ba189fe32" class="toggle"><li><details open=""><summary>🙏 Please - /pliːz/</summary><figure id="22237c9a-53b8-807d-bdb2-c68b6bab949f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/please.mp3">attachment:dd4a26e1-3b1c-4f01-b621-327a836d2881:please.mp3</a></div></figure></details></li></ul><p id="22237c9a-53b8-80ff-a151-da9cf91f147e" class="">
+</p></details></li></ul><ul id="22237c9a-53b8-807a-97ea-d46630c60fcf" class="toggle"><li><details open=""><summary><strong>/ɑː/</strong></summary><p id="22237c9a-53b8-8012-b091-ec0a133e14ab" class="">Tongue at bottom, mouth wide open</p><p id="22237c9a-53b8-80a0-b007-c486c46079ba" class="">
+</p><ul id="22237c9a-53b8-8048-909b-d99f6344da0c" class="toggle"><li><details open=""><summary>🎨 Art - /ɑːrt/</summary><figure id="22237c9a-53b8-802e-8f9f-d21074c8c943"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/art.mp3">attachment:1dfe0204-91cb-4fb0-a524-fa795e5fdd48:art.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80bc-b49a-cc7294252523" class="toggle"><li><details open=""><summary>🎨 Artist – /ˈɑːr.tɪst/</summary><figure id="23c37c9a-53b8-80b6-830d-fef7b2aeb59a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/artist.mp3">attachment:f6d59201-ddba-4b99-8649-7c63c338ad23:artist.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8012-9b2a-eb4d61d24f49" class="toggle"><li><details open=""><summary>❤️ Heart - /hɑːrt/</summary><figure id="22237c9a-53b8-80aa-aacc-cd87220118c4"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/heart.mp3">attachment:69a39e9a-dbf7-4c6a-88b9-dbccb5a51d8c:heart.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8032-94fd-c8a09f6da6e0" class="toggle"><li><details open=""><summary>🌳 Park - /pɑːrk/</summary><figure id="22237c9a-53b8-8066-a6c8-f07e839d14f5"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/park.mp3">attachment:9089f027-40dc-4e2c-bb78-0230ae9eb6d8:park.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80f1-829c-e66daf5bc9f1" class="toggle"><li><details open=""><summary><img alt="images" src="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/images.jpeg" style="width:1em;height:1em"/> Wall - /wɑːl/</summary><figure id="22237c9a-53b8-8026-b1c9-fe0087595be3"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/wall.mp3">attachment:bd9fac9c-b07b-40dd-bb78-7a8127db46f2:wall.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8039-827f-dcf5f132dea4" class="toggle"><li><details open=""><summary>💳 Card - /kɑːrd/</summary><figure id="22237c9a-53b8-80ff-804c-f6afe047a8c3"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/card.mp3">attachment:2b590aa9-2516-41d0-b2a9-c0d6ae42d04b:card.mp3</a></div></figure></details></li></ul><p id="22237c9a-53b8-80d8-9c61-f3feca84ceca" class="">
+</p></details></li></ul><ul id="22237c9a-53b8-8068-b2b6-dfadc04faf86" class="toggle"><li><details open=""><summary><strong>/ɔː/</strong></summary><p id="22237c9a-53b8-8072-a5ea-d8b326db4240" class="">Tongue low and back, lips rounded</p><p id="22237c9a-53b8-8055-bf27-ec168c621cc9" class="">
+</p><ul id="22237c9a-53b8-80f9-bb57-fe81e53b7e73" class="toggle"><li><details open=""><summary>🛍️ Order - /ˈɔːr.dɚ/</summary><figure id="22237c9a-53b8-809d-af0d-eb3cb260b2a0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/order.mp3">attachment:d2f7646c-86fd-417d-97b4-5ef526e224fd:order.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80b7-9e72-fce7d62876cc" class="toggle"><li><details open=""><summary>✍️ Author - /ˈɔ·θər/</summary><figure id="22237c9a-53b8-8082-aef6-db88d3239259"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/author.mp3">attachment:e22c71a5-3fc1-4c9c-8a00-291087a8b9a9:author.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8068-bc46-d7d46a8bca0d" class="toggle"><li><details open=""><summary>🧑‍🏫 Course -  /kɔːrs/</summary><figure id="22237c9a-53b8-8047-b1d6-e8ddf6915a92"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/course.mp3">attachment:aed05e9b-0c71-4a9d-83aa-6314da488b1e:course.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80b9-ad56-cc6ffefffb84" class="toggle"><li><details open=""><summary>⚖️ Law - /lɔː/</summary><figure id="22237c9a-53b8-802d-b238-e3bf9b462b17"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/law.mp3">attachment:70e32949-684a-4db1-8248-ac55cc4bbe02:law.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80e3-8054-f33d30216812" class="toggle"><li><details open=""><summary>🚪 Door - /dɔːr/</summary><figure id="22237c9a-53b8-80e9-97fb-d0f206af27b6"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/door.mp3">attachment:fe0fea8d-36cf-4cb3-975e-06cd9a8141d9:door.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8084-9a81-e953b7610faf" class="toggle"><li><details open=""><summary>👧 Daughter - /ˈdɑ:.tər/</summary><figure id="22237c9a-53b8-80a8-b702-e4952fc8263f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/daughter.mp3">attachment:47c161f2-66a9-4c64-a303-778fb94bd799:daughter.mp3</a></div></figure></details></li></ul><p id="22237c9a-53b8-80e6-a800-e2016c90b341" class="">
+</p></details></li></ul><ul id="22237c9a-53b8-8065-8f13-da62dacc2bf8" class="toggle"><li><details open=""><summary><mark class="highlight-default"><strong>/ɜː/</strong></mark></summary><p id="22237c9a-53b8-8002-a7a2-cdeb4d5612a4" class="">Tongue in center, lips neutral</p><p id="22237c9a-53b8-805d-988f-dace094d58ac" class="">
+</p><ul id="20037c9a-53b8-803e-beb7-f4a260f69c9d" class="toggle"><li><details open=""><summary>💼 Work - /wɜːrk/</summary><figure id="22237c9a-53b8-8078-b4eb-df5f5b8e6f99"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/work.mp3">attachment:b44e9bd7-6d1d-4b5e-b39d-5b712c36348f:work.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8056-a43a-cdc954a0af28" class="toggle"><li><details open=""><summary>🔠 Word - /wɜːrd/</summary><figure id="22237c9a-53b8-805e-b7cc-d84799e9ab30"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/word.mp3">attachment:da4338e4-df8b-4b42-95f7-53759ba75ef2:word.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80dd-9638-e2e53f8d4246" class="toggle"><li><details open=""><summary>🌎 World - /wɜːrld/</summary><figure id="22237c9a-53b8-80c7-844c-c77371724364"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/world.mp3">attachment:a6970ab1-f913-46fd-aba8-3417dd553655:world.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8044-bac5-c7f9d5ba7d48" class="toggle"><li><details open=""><summary>👧 Girl - /ɡɜːrl/</summary><figure id="22237c9a-53b8-80a9-9209-eeccd1610274"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/girl.mp3">attachment:eb4b1e4d-1163-4e8d-a35a-34794c725779:girl.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80cc-8fd2-e11e03198ad4" class="toggle"><li><details open=""><summary>🐦 Bird - /bɝːd/</summary><figure id="22237c9a-53b8-8068-838a-fe54144d5c56"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/bird.mp3">attachment:95677535-bd1b-4202-a383-904611e1044f:bird.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80c2-901e-d7e7c9a31a39" class="toggle"><li><details open=""><summary>👩‍⚕️ Nurse - /nɝːs/</summary><figure id="22237c9a-53b8-80c8-8b0d-d51418e2762d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/nurse.mp3">attachment:c309eb5a-07d9-443f-88d4-14c1112d9d02:nurse.mp3</a></div></figure></details></li></ul><p id="22237c9a-53b8-805e-9b2b-da7b0f79d75c" class="">
+</p></details></li></ul><ul id="22237c9a-53b8-803f-ba50-d48bf0d4af36" class="toggle"><li><details open=""><summary><strong>/uː/</strong></summary><p id="22237c9a-53b8-80be-a3f1-c0823a892416" class="">Tongue high in back, lips tightly rounded</p><p id="22237c9a-53b8-801a-9d16-e97ca2dfa251" class="">
+</p><ul id="22237c9a-53b8-80ca-85a7-ffe77b7ac86d" class="toggle"><li><details open=""><summary>🎞️ Movie - /ˈmuː.vi/</summary><figure id="22237c9a-53b8-8004-9795-eb4ebe510133"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/movie.mp3">attachment:77a4f5cb-56d0-4e95-ba45-3e439b18202a:movie.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8026-920e-df56ce42a3b5" class="toggle"><li><details open=""><summary>🏊 Pool - /puːl/</summary><figure id="22237c9a-53b8-806f-8dba-c704a8a89e9f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/pool.mp3">attachment:106700d9-a6f3-422c-a086-1e57232359ea:pool.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8058-ac97-f9698581f072" class="toggle"><li><details open=""><summary>📰 News - /nuːz/</summary><figure id="22237c9a-53b8-80ef-bdb7-dc3247bfeb69"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/news.mp3">attachment:bb87b467-bd6e-4209-b8b2-aeeb64a2f6d6:news.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8038-9a81-d5ced99169c2" class="toggle"><li><details open=""><summary>😂 Mood - /muːd/</summary><figure id="22237c9a-53b8-806f-b127-fd4b6987d481"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/mood.mp3">attachment:4fde5fc8-9df3-47fe-ab6b-4678b8e91fc7:mood.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-80af-9ac9-d264a7d96a3d" class="toggle"><li><details open=""><summary>🌜 Moon - /muːn/</summary><figure id="22237c9a-53b8-8033-b0e1-d7d11c599af5"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/moon.mp3">attachment:49a83ead-6cf1-4851-aa51-52df55529636:moon.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-808e-9897-dafc2b17d975" class="toggle"><li><details open=""><summary>📋 Menu - /ˈmen.juː/</summary><figure id="22237c9a-53b8-806d-ac09-d4ddbfc24a98"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/menu.mp3">attachment:82569aa5-a531-430c-af01-79f754e3ab9e:menu.mp3</a></div></figure></details></li></ul><p id="22237c9a-53b8-805a-b699-c1560e914460" class="">
+</p></details></li></ul><p id="22e37c9a-53b8-8039-94e4-f38735964150" class="">
+</p></details></li></ul></details></li></ul><hr id="28f37c9a-53b8-8062-bc32-d637da787f1e"/><ul id="22d37c9a-53b8-8068-a825-ce876d6fd651" class="toggle"><li><details open=""><summary><strong>The Schwa Sound 👑</strong></summary><p id="22d37c9a-53b8-80c1-a772-fd9ad9999b11" class="">
+</p><p id="22d37c9a-53b8-80d6-a57f-f89356c62981" class="">💡 The <strong>schwa sound, </strong>represented by the upside-down “e” <strong>/ə/</strong>, is produced with the tongue <mark class="highlight-default">relaxed and positioned in the center of the mouth. This sound appears </mark><mark class="highlight-default"><strong>only in</strong></mark><mark class="highlight-default"> </mark><mark class="highlight-default"><strong>unstressed syllables</strong></mark><mark class="highlight-default">.</mark></p><p id="22d37c9a-53b8-801a-b9dc-dd528bd5556e" class="">
+</p><blockquote id="22d37c9a-53b8-809e-b4e6-fdc922cbd567" class=""><em><mark class="highlight-default"> Any vowel letter (a, e, i, o, u, y) can be reduced to</mark></em><em><mark class="highlight-default"><strong> /ə/ </strong></mark></em><em><mark class="highlight-default">sound</mark></em></blockquote><p id="22d37c9a-53b8-80de-9db7-d430ac6286ad" class=""><div class="indented"><ul id="22d37c9a-53b8-803b-ada9-d725e55446d3" class="toggle"><li><details open=""><summary>📅 <strong>A</strong>ppointm<strong>e</strong>nt - /<strong>ə</strong>ˈpɔɪnt.m<strong>ə</strong>nt/</summary><figure id="23a37c9a-53b8-8068-a9a2-f030e306687c"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Appointment.mp3">attachment:b6c8a454-eae7-4411-94ad-11c9160ff9fb:Appointment.mp3</a></div></figure></details></li></ul><ul id="22d37c9a-53b8-802b-a444-c7e9bf68443b" class="toggle"><li><details open=""><summary>⭐ <strong>A</strong>bil<strong>i</strong>ty - /<strong>ə</strong>ˈbɪl.<strong>ə</strong>.t̬i/</summary><figure id="23a37c9a-53b8-8008-893d-d7d108f4b29a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Ability.mp3">attachment:e5bac456-9d05-46d7-ac7c-3d80537bd91e:Ability.mp3</a></div></figure></details></li></ul><ul id="22d37c9a-53b8-808e-9d8b-c07a75662549" class="toggle"><li><details open=""><summary>🍋 L<strong>e</strong>mon - /ˈlem.<strong>ə</strong>n/</summary><figure id="23a37c9a-53b8-8084-952b-f29494ba6a00"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Lemon.mp3">attachment:4cf172c4-d773-4e1e-9a20-66e1c2100101:Lemon.mp3</a></div></figure></details></li></ul><ul id="22d37c9a-53b8-8066-9d01-d0571e5b2cf8" class="toggle"><li><details open=""><summary>🎨 Col<strong>o</strong>r - /ˈkʌl.<strong>ə</strong>r/</summary><figure id="23a37c9a-53b8-80aa-aae0-e1243435c0a4"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Color.mp3">attachment:cdefe14d-cf66-402e-b24f-6263b10173d0:Color.mp3</a></div></figure></details></li></ul><ul id="22d37c9a-53b8-8071-9b57-c56bbfea538b" class="toggle"><li><details open=""><summary>👮 P<strong>o</strong>lice - /p<strong>ə</strong>ˈliːs/</summary><figure id="23a37c9a-53b8-80c9-8e7d-fd2d72165eb9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Police.mp3">attachment:47baff28-a8fb-4fe2-b247-3e1ec74954f3:Police.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-802d-a2c4-ebf9054987eb" class="toggle"><li><details open=""><summary>⏭️ Fut<strong>u</strong>re - /ˈfjuːtʃ<strong>ə</strong>r/</summary><figure id="23a37c9a-53b8-80f2-99c1-c83f96d24901"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Future.mp3">attachment:3ce7ebd5-7ed3-48a1-851f-b97d515b40d7:Future.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-80be-b540-e56a08f1ece0" class="toggle"><li><details open=""><summary>🫂 C<strong>o</strong>mmun<strong>i</strong>ty - /k<strong>ə</strong>ˈmjuː.n<strong>ə</strong>.ti/</summary><figure id="23a37c9a-53b8-8090-bc6d-e0944c5e666d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Community.mp3">attachment:c4fac371-b088-481b-9c71-68058a4d70ed:Community.mp3</a></div></figure></details></li></ul><ul id="22d37c9a-53b8-80d8-9f04-e0a752c9bbb3" class="toggle"><li><details open=""><summary>📦 S<strong>u</strong>pply - /s<strong>ə</strong>ˈplaɪ/</summary><figure id="23a37c9a-53b8-800f-a8e7-c15ba2ac6516"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Supply.mp3">attachment:6e83f85f-df7a-4454-ab88-0f886e7514cb:Supply.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-8009-ae8a-d4e23fdb8334" class="toggle"><li><details open=""><summary>💉 S<strong>y</strong>ringe - /s<strong>ə</strong>ˈrɪndʒ/</summary><figure id="23a37c9a-53b8-80b7-97cb-e1bbaa3aa647"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Syringe.mp3">attachment:d7f97ee8-ef34-4be5-9021-7bec25396f68:Syringe.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-800b-bf76-fe3670db33d2" class="toggle"><li><details open=""><summary>🫁 Ox<strong>y</strong>gen - /ˈɑːk.s<strong>ə</strong>.dʒən/</summary><figure id="23a37c9a-53b8-80e1-8e1d-e0ce1df54c06"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Oxygen.mp3">attachment:479bf746-9f4b-4d65-b502-fe41cc8a8d60:Oxygen.mp3</a></div></figure></details></li></ul></div></p><p id="22d37c9a-53b8-806f-9392-c46ddc873701" class="">
+</p></details></li></ul><hr id="28f37c9a-53b8-80a8-9140-dab599dfd1c7"/><ul id="22737c9a-53b8-809a-a4b9-c1de23970103" class="toggle"><li><details open=""><summary><strong>Diphthongs</strong></summary><ul id="22137c9a-53b8-80e1-86ea-e1db57969217" class="toggle"><li><details open=""><summary><strong>/eɪ/</strong></summary><p id="22737c9a-53b8-8076-b389-dc65e74c8185" class="">Start with /e/, glide to /ɪ/</p><p id="22737c9a-53b8-8036-8aa0-e2c8368d3e45" class="">
+</p><ul id="22137c9a-53b8-8026-a6b9-c32bdc6c8b6d" class="toggle"><li><details open=""><summary>🎂 Age - /eɪdʒ/</summary><figure id="23a37c9a-53b8-8083-b7fe-c4f44865d3d9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Age.mp3">attachment:08a68660-0ea7-4451-a0bf-ec0d22b91a78:Age.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8057-85d8-f4c130be1130" class="toggle"><li><details open=""><summary>☀️ Day - /deɪ/</summary><figure id="23a37c9a-53b8-804e-b30c-f75b632161f4"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Day.mp3">attachment:e80a133f-81fe-4e03-ad79-21c00aa194b1:Day.mp3</a></div></figure></details></li></ul><ul id="22137c9a-53b8-802a-8e4f-f1ea2bb06a74" class="toggle"><li><details open=""><summary>📅 Today - /təˈdeɪ/</summary><figure id="23a37c9a-53b8-80ce-aa8d-cf3845a9e16e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Today.mp3">attachment:3eab1fab-6f94-42c0-974a-b52b006ebcea:Today.mp3</a></div></figure></details></li></ul><ul id="22137c9a-53b8-8033-910b-e80c78adb917" class="toggle"><li><details open=""><summary>🏷️ Name - /neɪm/</summary><figure id="23a37c9a-53b8-80d0-bf2b-c81f55813997"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Name.mp3">attachment:8b323e1f-29e8-4db7-969d-e5aa95bfca8a:Name.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80b2-ad7d-f5c7afb0262c" class="toggle"><li><details open=""><summary>📍 Place - /pleɪs/</summary><figure id="23a37c9a-53b8-80a3-abbc-c2ee360558e9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Place.mp3">attachment:c0aaea24-9b2c-4383-ab17-66bdade8609b:Place.mp3</a></div></figure></details></li></ul><ul id="22137c9a-53b8-8024-8378-cb0b7b45cd7c" class="toggle"><li><details open=""><summary>🎮 Game - /ɡeɪm/</summary><figure id="23a37c9a-53b8-80fb-ab71-dbd076bda763"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Game.mp3">attachment:dffa21e0-4b80-4ec3-91c9-9baf41694ef3:Game.mp3</a></div></figure></details></li></ul><p id="22137c9a-53b8-80ec-9be3-e325f792dd61" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-809b-b1aa-db6406371cbf" class="toggle"><li><details open=""><summary><strong>/aɪ/</strong></summary><p id="22737c9a-53b8-8040-945c-c457f26e2de2" class="">Start with /a/, glide to /ɪ/<br/></p><ul id="20037c9a-53b8-80bc-b003-f3fe9e8e5808" class="toggle"><li><details open=""><summary>💡 Idea - /aɪˈdɪə/</summary><figure id="23a37c9a-53b8-80a7-ab30-f1ab064bf289"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Idea.mp3">attachment:a23b501d-c3e6-4723-af25-bf4781e1f7bf:Idea.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-80e9-b636-e6b454c7c95b" class="toggle"><li><details open=""><summary>👁️ Eye - /aɪ/  </summary><figure id="23a37c9a-53b8-806b-bcc7-e74c7ababf27"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Eye.mp3">attachment:dcaad884-b231-4977-9b01-8796674468bc:Eye.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-807f-9309-c544b5dffe66" class="toggle"><li><details open=""><summary>🏝️ Island - /ˈaɪ.lənd/</summary><figure id="23a37c9a-53b8-8098-9b34-d30248d6647e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Island.mp3">attachment:d481d564-e1aa-4566-9a74-9cf8d3f29bd6:Island.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-8047-bf45-d69b6f0e6845" class="toggle"><li><details open=""><summary>🧬 Life - /laɪf/</summary><figure id="23a37c9a-53b8-8027-afd2-cfc44420a83b"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Life.mp3">attachment:6e3ff003-df8f-4889-aea9-fcdad0a93bb4:Life.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-803c-b44d-f32ecdcc755f" class="toggle"><li><details open=""><summary>🧩 Item - /ˈaɪ.t̬əm/</summary><figure id="23a37c9a-53b8-8074-9afb-c69401a0329f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Item.mp3">attachment:457f1bae-a162-4643-bc0a-fcebc7c8d22a:Item.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-8096-9409-de2ef0ce04e4" class="toggle"><li><details open=""><summary>💲 Price - /praɪs/</summary><figure id="23a37c9a-53b8-802b-84cc-e86f0a175058"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Price.mp3">attachment:d6662231-665b-4ce7-90b5-85f5f0cfbcb9:Price.mp3</a></div></figure></details></li></ul><p id="22737c9a-53b8-80cc-a482-ea0a36f13d00" class="">
+</p></details></li></ul><ul id="22637c9a-53b8-80bd-9a66-cac86e77295a" class="toggle"><li><details open=""><summary><strong>/ɔɪ/</strong> </summary><p id="22737c9a-53b8-809f-990a-ed598308ac81" class="">Start with /ɔ/, glide to /ɪ/<br/></p><ul id="20037c9a-53b8-8066-b79f-d88d4f1bac98" class="toggle"><li><details open=""><summary>👦 Boy - /bɔɪ/</summary><figure id="23a37c9a-53b8-8096-bd22-fbcf3b71b3cb"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Boy.mp3">attachment:4cdb5f24-19c5-4f32-a16c-597d5e9bb180:Boy.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80fb-88c3-d744f14984a0" class="toggle"><li><details open=""><summary>🔊 Noise - /nɔɪz/</summary><figure id="23a37c9a-53b8-807f-9bc2-de05844ec060"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Noise.mp3">attachment:99176541-0bcb-49de-9b29-18005609f2cf:Noise.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80bd-b445-ff27165e7bf7" class="toggle"><li><details open=""><summary>🗣️ Voice - /vɔɪs/</summary><figure id="23a37c9a-53b8-8090-9460-eefa6d06c20b"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Voice.mp3">attachment:6c63d4e7-a0c9-4c02-bd1d-3295dc50e4e0:Voice.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-80a9-af49-c72ff26cb986" class="toggle"><li><details open=""><summary>▪️ Point - /pɔɪnt/</summary><figure id="23a37c9a-53b8-8075-bb4b-d25f84ded637"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Point.mp3">attachment:054d4692-d8c5-46fc-8b6a-354be11a5950:Point.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8055-822f-f2c7c7be1674" class="toggle"><li><details open=""><summary>⚖️ Lawyer - /ˈlɔɪ·ər/</summary><figure id="23a37c9a-53b8-80b1-83dc-dd12999a0b64"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Lawyer.mp3">attachment:c762d955-1a04-406b-9077-74b9586813e5:Lawyer.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-8063-b518-c87d9579b698" class="toggle"><li><details open=""><summary>👨‍💼 Employee - /ɪmˈplɔɪ.iː/</summary><figure id="23a37c9a-53b8-8014-a55d-c7e68b6a8f43"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Employee.mp3">attachment:33969c08-ed61-4085-b67d-ed1ad5840fea:Employee.mp3</a></div></figure></details></li></ul><p id="22737c9a-53b8-801e-ac3a-eb56c4acb109" class="">
+</p></details></li></ul><ul id="22637c9a-53b8-80e5-a73e-f2f053d75065" class="toggle"><li><details open=""><summary><mark class="highlight-default"><strong>/aʊ/</strong></mark></summary><p id="22737c9a-53b8-8096-bc35-d65bb6c29efa" class="">Start with /a/, glide to /ʊ/</p><p id="22737c9a-53b8-8093-85f9-d924a1ab2bfe" class="">
+</p><ul id="20037c9a-53b8-80b0-bad7-eeb2acddfa8a" class="toggle"><li><details open=""><summary>🕐 Hour - /<strong>aʊ</strong>r/</summary><figure id="23a37c9a-53b8-80e0-8e2a-df648b6b46e5"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Hour.mp3">attachment:fad69a0b-58fe-4723-8e2e-8a42a3169ec9:Hour.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-8084-8004-ddc8bb036e17" class="toggle"><li><details open=""><summary>☁️ Cloud - /kl<strong>aʊ</strong>d/</summary><figure id="23a37c9a-53b8-80a6-a6f1-e4d53409ba80"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Cloud.mp3">attachment:726597cf-cfca-433f-938e-4197bee8819d:Cloud.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-80ca-b126-fd5d49a6ff26" class="toggle"><li><details open=""><summary>🚿 Shower - /ˈʃ<strong>ɑʊ</strong>·ər/</summary><figure id="23a37c9a-53b8-807f-aae7-c401e403531f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Shower.mp3">attachment:6b5cbfe4-f7fe-4f81-b57b-ceb6b61e958f:Shower.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8021-8252-ed19fea2a3c4" class="toggle"><li><details open=""><summary>🌸 Flower - /ˈfl<strong>ɑʊ</strong>·ər/</summary><figure id="23a37c9a-53b8-8022-8eef-f26a5bc4c3eb"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Flower.mp3">attachment:5b2ae696-bb0f-4c05-8d30-b7104d849080:Flower.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-806c-92f5-ddb3f2aa310e" class="toggle"><li><details open=""><summary>🎶 Sound - /s<strong>aʊ</strong>nd/</summary><figure id="23a37c9a-53b8-8099-988b-d6f2c9d36746"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Sound.mp3">attachment:fb6eda57-1aa0-455b-91d1-e7e73c624fd5:Sound.mp3</a></div></figure></details></li></ul><ul id="22637c9a-53b8-8022-bff7-c2f8aaa6756f" class="toggle"><li><details open=""><summary>🧾 Account - /əˈk<strong>aʊ</strong>nt/</summary><figure id="23a37c9a-53b8-8045-b1f8-eea3aa103b72"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Account.mp3">attachment:de669010-19db-4dd6-a727-80a8e5593acd:Account.mp3</a></div></figure></details></li></ul><p id="22e37c9a-53b8-8080-993e-e93b93293c97" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-803a-8640-f86594da39eb" class="toggle"><li><details open=""><summary><strong>/oʊ/</strong></summary><p id="22e37c9a-53b8-8011-9397-ec430b725d25" class="">Start with /ə/ or /o/ and glide to /ʊ/</p><ul id="20037c9a-53b8-80ee-a4c9-de7db6fd9708" class="toggle"><li><details open=""><summary>👎 No - /noʊ/</summary><figure id="23a37c9a-53b8-801d-820a-cd36e94a1af7"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/No.mp3">attachment:69caebaa-e0fb-4554-a3de-b6491ae2d009:No.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8096-9411-f52da89e18fb" class="toggle"><li><details open=""><summary>🏨 Hotel - /hoʊˈtel/</summary><figure id="23a37c9a-53b8-801e-bded-ca09a2b0c547"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Hotel.mp3">attachment:fc17d80b-9285-44cf-a745-b11926298fec:Hotel.mp3</a></div></figure></details></li></ul><ul id="22737c9a-53b8-8029-918e-f155294bbf6d" class="toggle"><li><details open=""><summary>🏠 Home - /hoʊm/</summary><figure id="23a37c9a-53b8-80c7-85c1-fd1a13d8d281"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Home.mp3">attachment:64abea89-21ba-41e0-9c15-6f1170714ce5:Home.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8089-8d5b-d1351efb15a5" class="toggle"><li><details open=""><summary>👚 Clothes - /kloʊz/</summary><figure id="23a37c9a-53b8-8060-b904-d8c3fb15412c"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Clothes%201.mp3">attachment:8dcc387f-f0a9-470d-b491-c7400cbd5df6:Clothes.mp3</a></div></figure></details></li></ul><ul id="22737c9a-53b8-8089-8fd6-c8a26b24df38" class="toggle"><li><details open=""><summary>🛣️ Road - /roʊd/</summary><figure id="23a37c9a-53b8-805b-a5bb-d21a652239b2"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Road.mp3">attachment:75cae499-523c-4183-ae17-0daaaf4817d0:Road.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80d6-8fde-eddcc1ae1b50" class="toggle"><li><details open=""><summary>🍃 Flow - /floʊ/</summary><figure id="23a37c9a-53b8-8084-8b68-fc7d00bc28cc"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Flow.mp3">attachment:fb34ec9f-a711-4d0d-b070-8a0c69a9c6f9:Flow.mp3</a></div></figure></details></li></ul></details></li></ul><ul id="22e37c9a-53b8-8022-a968-c72d92165da0" class="toggle"><li><details open=""><summary><strong>/ɪə/</strong></summary><p id="23037c9a-53b8-80cd-be37-cadf30d2e3eb" class="">Start with /ɪ/, glide to /ə/</p><p id="23b37c9a-53b8-80f1-9495-e75fe01e7bcb" class="">
+</p><ul id="20037c9a-53b8-80d9-aa65-c6e02d5e2f14" class="toggle"><li><details open=""><summary>📅 Year - /j<strong>ɪə</strong>r/</summary><figure id="23b37c9a-53b8-80ff-9388-f846c28f113a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Year.mp3">attachment:a0e494f0-3abe-4ef8-9b9a-e4ad8fbfd597:Year.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80a9-8248-c0fe8a5c0f15" class="toggle"><li><details open=""><summary>👂 Ear - /<strong>ɪə</strong>r/</summary><figure id="23b37c9a-53b8-8048-8901-cefd384261d1"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Ear.mp3">attachment:1aa6b7cb-41e7-444b-aa7d-6cea6a827881:Ear.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-801a-87dd-ed83e0b5aaf9" class="toggle"><li><details open=""><summary>🔥 Fire - /’fa<strong>ɪə</strong>r/</summary><figure id="23b37c9a-53b8-803f-8727-fce3d235f454"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Fire.mp3">attachment:168e7999-e73f-49e5-aa45-bf079d654158:Fire.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-80dc-8eb6-d01c7099d682" class="toggle"><li><details open=""><summary>💡 Idea - /aɪˈd<strong>ɪə</strong>/</summary><figure id="23b37c9a-53b8-802e-8699-f17aec1691f2"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Idea%201.mp3">attachment:7c5322b0-bbb7-4fe5-ab11-19a9042e0195:Idea.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-8090-b781-d69252b41a6a" class="toggle"><li><details open=""><summary>💼 Career – /kəˈr<strong>ɪə</strong>r/</summary><figure id="23b37c9a-53b8-809d-be54-e09bf8179555"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Career.mp3">attachment:4eb38300-ec91-4f95-bc7b-e30f43b2f2bc:Career.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-802b-af82-f93450af6088" class="toggle"><li><details open=""><summary>🧑‍🔬 Engineer - /ˌendʒɪˈn<strong>ɪə</strong>r/</summary><figure id="23b37c9a-53b8-80bc-bc85-d9b3c50f471c"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Engineer.mp3">attachment:9c266ed0-4532-46b5-bf89-05b8ac808d84:Engineer.mp3</a></div></figure></details></li></ul><p id="23637c9a-53b8-80fe-beea-f097bfde947e" class="">
+</p></details></li></ul><ul id="22e37c9a-53b8-80ce-8e90-d2e020a1ba33" class="toggle"><li><details open=""><summary><strong>/eə/</strong></summary><p id="22e37c9a-53b8-8047-8280-db0de1192589" class="">Start with /e/, glide to /ə/</p><p id="22e37c9a-53b8-8078-8df1-daa2c12aab7e" class="">
+</p><ul id="22e37c9a-53b8-801a-94c3-ed307ed89b24" class="toggle"><li><details open=""><summary>💇‍♀️ Hair - /h<strong>eə</strong>r/</summary><figure id="23c37c9a-53b8-80e4-a3ab-f96fa09c370a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Hair.mp3">attachment:4e38090d-1d96-4dfc-a45d-0fb5f4f88695:Hair.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-80dc-894d-d3628d868f38" class="toggle"><li><details open=""><summary>2️⃣ Pair - /p<strong>eə</strong>r/</summary><figure id="23c37c9a-53b8-804c-8a24-ed6c85c615b0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Pair.mp3">attachment:ea740dbf-4aed-4dbd-a6ee-e6d38b634be7:Pair.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-80f6-ac69-d115f67ae7a8" class="toggle"><li><details open=""><summary>🧘 Care - /k<strong>eə</strong>r/</summary><figure id="23c37c9a-53b8-80ca-bce4-c34a70915b5e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Care.mp3">attachment:5596b60c-f9e2-4dc9-8ec3-b35eac3f042a:Care.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-8053-918c-eda8331c5de6" class="toggle"><li><details open=""><summary>🌬️ Air - /<strong>eə</strong>r/</summary><figure id="23c37c9a-53b8-80a3-9cc5-d774ba7eef65"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Air.mp3">attachment:a6794c97-a368-4918-8fa7-a9e522164665:Air.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-80a7-8266-e8278f0a7e6d" class="toggle"><li><details open=""><summary>⚖️ Fair - /f<strong>eə</strong>r/</summary><figure id="23c37c9a-53b8-80f0-99d4-e013209e422e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Fair.mp3">attachment:55b938ef-804b-4751-b084-1933486bddd0:Fair.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-80d7-80a8-e1276b156520" class="toggle"><li><details open=""><summary>🪑 Chair - /tʃ<strong>eə</strong>r/</summary><figure id="23c37c9a-53b8-8023-b5a0-fe4235005dc0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Chair.mp3">attachment:a6023360-f02c-4da7-bf77-0b235b7ff9ca:Chair.mp3</a></div></figure></details></li></ul><p id="22e37c9a-53b8-802b-8cd5-f1970d85e5f1" class="">
+</p></details></li></ul><ul id="22e37c9a-53b8-8077-8906-d5538cc40cd8" class="toggle"><li><details open=""><summary><strong>/ʊə/</strong></summary><p id="22e37c9a-53b8-80e4-9046-fb79ad549b4a" class="">Start with /ʊ/, glide to /ə/</p><p id="22e37c9a-53b8-804b-9ad7-ff8cb69583f0" class="">
+</p><ul id="22e37c9a-53b8-803d-be24-c6472d47f7d3" class="toggle"><li><details open=""><summary>💧 Pure – /pj<strong>ʊə</strong>r/</summary><figure id="23c37c9a-53b8-8078-82f9-dab56641105d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Pure.mp3">attachment:ffaae23d-3453-4787-b29d-762fa9095a6b:Pure.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-807b-8339-fbd6d462a246" class="toggle"><li><details open=""><summary>⚡ Power - /ˈpa<strong>ʊə</strong>r/</summary><figure id="23c37c9a-53b8-8081-9e82-f5d57c6521a0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Power.mp3">attachment:af26268f-1029-4f49-9b75-50b78111dd81:Power.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-801e-b792-f6a3d2a6d235" class="toggle"><li><details open=""><summary>🚌 Tour - /t<strong>ʊə</strong>r/</summary><figure id="23c37c9a-53b8-80bf-9e9b-cd15b9f57504"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Tour.mp3">attachment:11610e8c-843a-4e36-80ef-322478ab3fa5:Tour.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-80ee-b002-e5593a1ff06b" class="toggle"><li><details open=""><summary>🗼 Tower -  /ˈta<strong>ʊə</strong>r/</summary><figure id="23c37c9a-53b8-806d-90b0-f10fab2816df"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Tower.mp3">attachment:ffdf0337-19b0-4b6e-8e51-46a16f1c8f14:Tower.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-806e-910f-d0be0605f1b0" class="toggle"><li><details open=""><summary>🔒 Security - /sɪˈkj<strong>ʊə</strong>.rə.ti/</summary><figure id="23c37c9a-53b8-8088-88bd-c30f9f7f7c57"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Security.mp3">attachment:b7a6a2e6-fce7-41ba-a782-51d974b2a945:Security.mp3</a></div></figure></details></li></ul><ul id="22e37c9a-53b8-80a4-8918-cd0aeb17760e" class="toggle"><li><details open=""><summary>📢 Disclosure – /dɪsˈkl<strong>əʊ</strong>.ʒə/</summary><figure id="23c37c9a-53b8-8014-bd66-effb2cc7e47a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Disclosure.mp3">attachment:534792a8-2a71-4008-84d6-bbf38d23a21d:Disclosure.mp3</a></div></figure></details></li></ul><p id="22e37c9a-53b8-804c-a7f0-f2d1576ffb46" class="">
+</p></details></li></ul></details></li></ul><hr id="28f37c9a-53b8-8005-b67b-e145b60100cb"/><ul id="23037c9a-53b8-8010-b719-eabbd482855d" class="toggle"><li><details open=""><summary><strong>Consonant Sounds</strong></summary><ul id="20037c9a-53b8-8037-93ec-e4a608711aa6" class="toggle"><li><details open=""><summary><strong>/p/</strong></summary><p id="23037c9a-53b8-8000-855c-e764fbe8d331" class="">Close both lips, release with puff of air</p><p id="23037c9a-53b8-80b2-8b5a-d30462291ddb" class="">
+</p><ul id="23037c9a-53b8-802c-993b-fe3583cae4e1" class="toggle"><li><details open=""><summary>🤝 Partner – /ˈpɑːrt.nɚ/</summary><figure id="23c37c9a-53b8-809f-ac33-c5a75aca6eda"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Partner.mp3">attachment:460c7b9b-f0da-4e5c-ad0a-34a9e7a8b6ad:Partner.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-80f0-a2aa-da51d9e0e049" class="toggle"><li><details open=""><summary>📦 Package – /ˈpæk.ɪdʒ/</summary><figure id="23c37c9a-53b8-805e-959a-f8614b1f47ec"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Package.mp3">attachment:a2d7acbd-e4d6-4b6f-a1ce-478f6f5887de:Package.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-8011-90ce-fa3b1bb639cb" class="toggle"><li><details open=""><summary>💳 Payment – /ˈpeɪ.mənt/</summary><figure id="23c37c9a-53b8-809d-8f5f-c61c788ae004"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Payment.mp3">attachment:2d593079-fbba-45cf-ac1a-7f568048b97d:Payment.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-806e-9dfe-f6366e47757a" class="toggle"><li><details open=""><summary>🔍 Particular – /pɚˈtɪ.kjə.lɚ/</summary><figure id="23c37c9a-53b8-8033-afa7-f6f1776c7bb9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Particular.mp3">attachment:2d9985c2-3740-472c-9859-94cec757c8a9:Particular.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-8080-9ab2-f5a3b3e59081" class="toggle"><li><details open=""><summary>🎓 Professional – /prəˈfeʃ.ə.nəl/</summary><figure id="23c37c9a-53b8-8071-ba8e-d77fed594e87"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Professional.mp3">attachment:39f8d153-8ebf-4759-9355-3ac5cc767232:Professional.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-8074-846e-fe0bc903b271" class="toggle"><li><details open=""><summary>🖼️ Picture – /ˈpɪk.tʃɚ/</summary><figure id="23c37c9a-53b8-80c3-bbb1-c7f8a5faca11"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Picture.mp3">attachment:81b0e703-a0c7-47fe-b824-47b2a515fcab:Picture.mp3</a></div></figure></details></li></ul><p id="23037c9a-53b8-80c0-81fe-ca9a112cf7f4" class="">
+</p></details></li></ul><ul id="23037c9a-53b8-805f-9714-fc0ecde6655e" class="toggle"><li><details open=""><summary><mark class="highlight-default"><strong>/b/</strong></mark></summary><p id="23037c9a-53b8-80fb-bca1-da9c7090a793" class="">Like /p/ but with vocal cord vibration<br/></p><ul id="23037c9a-53b8-8059-8fbc-d138678f5b5f" class="toggle"><li><details open=""><summary>👦 Brother – /ˈbrʌð.ɚ/</summary><figure id="23c37c9a-53b8-80b8-9bc2-d4142200c91a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Brother.mp3">attachment:e7ae7041-75a8-44ed-bb23-0d12fad89a2e:Brother.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-8067-99b8-e7d9bfb0b342" class="toggle"><li><details open=""><summary>💰 Budget – /ˈbʌdʒ.ɪt/</summary><figure id="23c37c9a-53b8-80c8-91e3-d4a5eef421e9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Budget.mp3">attachment:f2cc9d90-3b20-4059-bac6-c7ef34396c88:Budget.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-8099-a6de-edc937d949cb" class="toggle"><li><details open=""><summary>🏖️ Beach – /biːtʃ/</summary><figure id="23c37c9a-53b8-80ae-b3fa-d177ea5ebfdf"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Beach.mp3">attachment:f89c8874-c464-40b1-92b1-c726ce12743b:Beach.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-80f8-95e7-eabca975c709" class="toggle"><li><details open=""><summary>🎂 Birthday – /ˈbɝːθ.deɪ/</summary><figure id="23c37c9a-53b8-808c-b205-fa2ad3a269af"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Birthday.mp3">attachment:572f4daa-4bba-4faa-9ae5-18708893dd7f:Birthday.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-807d-8381-c2eb284f0b92" class="toggle"><li><details open=""><summary>🍳 Breakfast – /ˈbrek.fəst/</summary><figure id="23c37c9a-53b8-8077-bc00-e8b865dd9614"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Breakfast.mp3">attachment:c2e50f0e-3266-4300-bae1-46bde79cc327:Breakfast.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-800b-a895-d8e5c0e4c695" class="toggle"><li><details open=""><summary>🍞 Bread – /bred/</summary><figure id="23c37c9a-53b8-8085-8458-d6768c782e48"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Bread.mp3">attachment:d568d85f-67a2-4288-bb25-7a6da9d7779a:Bread.mp3</a></div></figure></details></li></ul></details></li></ul><ul id="20037c9a-53b8-80dd-8310-e6285cc8baa2" class="toggle"><li><details open=""><summary><strong>/t/</strong></summary><p id="23237c9a-53b8-803e-96ce-dd3504e37d0c" class="">Tongue tip touches roof of mouth behind teeth</p><p id="23237c9a-53b8-8067-8172-ed5df5bfc51a" class="">
+</p><ul id="20037c9a-53b8-809e-a5dc-e2debded1e56" class="toggle"><li><details open=""><summary>🗓️ Tomorrow – /təˈmɑː.roʊ/</summary><figure id="23c37c9a-53b8-8007-b2f7-d3f7d70736da"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Tomorrow.mp3">attachment:8f64fdc8-fa80-49bd-ae83-3f09567985e8:Tomorrow.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-805d-ae1a-ce0f5a567aa8" class="toggle"><li><details open=""><summary>🌡️ Temperature – /ˈtem.pɚ.tʃɚ/</summary><figure id="23c37c9a-53b8-8066-a2ab-e52cc50f6c8e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Temperature.mp3">attachment:d1719ea1-8bb1-4aac-81b9-7053150eb4bd:Temperature.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-802a-ad89-ea2f4f228680" class="toggle"><li><details open=""><summary>🚦 Traffic – /ˈtræ.fɪk/</summary><figure id="23c37c9a-53b8-8051-a5ec-d21965b3c5dd"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Traffic.mp3">attachment:2fb49bd2-416d-4af6-afb9-e8a9403355bd:Traffic.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8054-8cdc-c7944b02cad2" class="toggle"><li><details open=""><summary>🚌 Transportation – /ˌtræn.spɚˈteɪ.ʃən/</summary><figure id="23c37c9a-53b8-80e7-b108-ee3fe417bdee"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Transportation.mp3">attachment:3bc51eac-0760-4b0c-906a-66ac0e040bcf:Transportation.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-809b-b89f-e0bcf206d9b4" class="toggle"><li><details open=""><summary>💻 Technology – /tekˈnɑː.lə.dʒi/</summary><figure id="23c37c9a-53b8-8064-b5b7-d8d9c00ba0e0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Technology.mp3">attachment:f2eebd1c-d5b5-425c-8abc-a0772886bced:Technology.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-808d-896f-d285b4605e3d" class="toggle"><li><details open=""><summary>🌳 Tree – /triː/</summary><figure id="23c37c9a-53b8-8051-8bd7-cd4fb2f4f805"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Tree.mp3">attachment:0419abc9-4ab7-4688-9d1d-00a4482b5cfa:Tree.mp3</a></div></figure></details></li></ul><p id="23237c9a-53b8-80ca-b525-d17110f5ca3e" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-80b9-a00d-e858609c4c4f" class="toggle"><li><details open=""><summary><strong>/d/</strong></summary><p id="23237c9a-53b8-8085-9f20-c8bc0ed4d11d" class="">Like /t/ but with vocal cord vibration</p><p id="23237c9a-53b8-801c-9a0b-dac5e56380d1" class="">
+</p><ul id="23237c9a-53b8-80a4-83a9-f3b1d0a76cfd" class="toggle"><li><details open=""><summary>🧑‍⚕️ Doctor – /ˈdɑːk.tɚ/</summary><figure id="23c37c9a-53b8-8061-b836-f8f505182950"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Doctor.mp3">attachment:00570b22-f8b8-4e79-8d6e-459f31350ec6:Doctor.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-80d2-94bc-d2ca5ea5b0c2" class="toggle"><li><details open=""><summary>📄 Document – /ˈdɑː.kjə.mənt/</summary><figure id="23c37c9a-53b8-8049-af00-d80d992b2e6f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Document.mp3">attachment:14abad43-fa2f-4a93-a36d-5b7b05c6dc8a:Document.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8019-b01b-d73384150720" class="toggle"><li><details open=""><summary>🍽️ Dinner – /ˈdɪn.ɚ/</summary><figure id="23c37c9a-53b8-80ad-a9b3-c5691139654e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Dinner.mp3">attachment:0e740871-b5f5-4b61-990e-5ccc444b21df:Dinner.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-805b-9246-d64f62affb79" class="toggle"><li><details open=""><summary>💤 Dream – /driːm/</summary><figure id="23c37c9a-53b8-809b-b7c9-fb7212a9889d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Dream.mp3">attachment:8597229e-4931-4a46-bbca-d8c53302cb89:Dream.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8009-9d32-f3606486278f" class="toggle"><li><details open=""><summary>⚠️ Danger – /ˈdeɪn.dʒɚ/</summary><figure id="23c37c9a-53b8-805a-87c9-c7b02b229441"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Danger.mp3">attachment:0a6bdfe3-1a89-43a5-9965-66758a0271a2:Danger.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8067-bba1-f6d6a9f8f128" class="toggle"><li><details open=""><summary>🚗 Driver – /ˈdraɪ.vɚ/</summary><figure id="23c37c9a-53b8-8022-8c41-f3f2a9a7d7ab"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Driver.mp3">attachment:66a390b3-861f-49a7-a239-2341cf05d2c1:Driver.mp3</a></div></figure></details></li></ul><p id="23237c9a-53b8-8095-9c99-d2d66d52e547" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-804a-929c-d54354a49dcc" class="toggle"><li><details open=""><summary><strong>/k/</strong></summary><p id="23237c9a-53b8-809f-9392-deeac051cc11" class="">Back of tongue touches soft palate</p><p id="23237c9a-53b8-8074-afce-c4c044107240" class="">
+</p><ul id="23037c9a-53b8-80ce-8b61-f2c2200ea803" class="toggle"><li><details open=""><summary>❄️ Cold – /koʊld/</summary><figure id="23c37c9a-53b8-80db-96d3-ec04d587efe7"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Cold.mp3">attachment:27de6aa3-e9ad-42fe-a278-ab993f34d24f:Cold.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-8073-9000-f80b9bd65974" class="toggle"><li><details open=""><summary>⏰ Clock – /klɑːk/</summary><figure id="23c37c9a-53b8-8089-9e81-da69b5a35d52"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Clock.mp3">attachment:66fe361c-a6a4-48f8-9624-f4cf95e337bb:Clock.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-809b-a854-d7793c722ea8" class="toggle"><li><details open=""><summary>💼 Career – /kəˈrɪr/</summary></details></li></ul><ul id="23037c9a-53b8-8049-b667-ddbd8c80f316" class="toggle"><li><details open=""><summary>🎓 College – /ˈkɑː.lɪdʒ/</summary><figure id="23c37c9a-53b8-8092-a56b-daac5a3eed2e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/College.mp3">attachment:1a31898d-babc-4cac-8d94-5af18a5da3ca:College.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-80fb-9d9b-c015df4869bf" class="toggle"><li><details open=""><summary>🔗 Connection – /kəˈnek.ʃən/</summary><figure id="23c37c9a-53b8-80cb-8fd8-cc2077a4daec"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Connection.mp3">attachment:b3b0d4c8-1af6-4242-90be-3dc18bc1e7dd:Connection.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-805e-8508-ece1680887e4" class="toggle"><li><details open=""><summary>💬 Conversation – /ˌkɑːn.vɚˈseɪ.ʃən/</summary><figure id="23c37c9a-53b8-80ab-8afb-f385484de671"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Conversation.mp3">attachment:bd41d1f5-ba8b-474e-a179-e4a33c324d31:Conversation.mp3</a></div></figure></details></li></ul><p id="23237c9a-53b8-8089-b143-cfbc49ef0b2f" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-8022-8f53-cf4cd77dea2f" class="toggle"><li><details open=""><summary><strong>/g/</strong></summary><p id="23237c9a-53b8-80cf-a95f-ef2e2fa1164b" class="">Like /k/ but with vocal cord vibration</p><p id="23237c9a-53b8-80bb-8b2c-ee1d83e8866b" class="">
+</p><ul id="23237c9a-53b8-809b-83c9-c2aec450c30b" class="toggle"><li><details open=""><summary>👥 Group – /ɡruːp/</summary><figure id="23c37c9a-53b8-80fe-b3ed-c82e82780f61"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Group.mp3">attachment:f6cbc25c-0acf-4f47-b1ae-236afa6d4fa9:Group.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8091-83ee-c9528ed1cff0" class="toggle"><li><details open=""><summary>🌺 Garden – /ˈɡɑːr.dn/</summary><figure id="23c37c9a-53b8-804f-9cdb-e60a920c72ff"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Garden.mp3">attachment:54c1640b-03d3-473b-b622-d7ae4a90df29:Garden.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8025-acd9-c77d8becf122" class="toggle"><li><details open=""><summary>🧳 Guest – /ɡest/</summary><figure id="23c37c9a-53b8-80ea-a576-e5d7341a8058"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Guest.mp3">attachment:45df234c-b6eb-46f1-9675-945847bb5b01:Guest.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-80da-ae79-e128f69ebfee" class="toggle"><li><details open=""><summary>🪙 Gold – /ɡoʊld/</summary><figure id="23c37c9a-53b8-806a-96ce-d008e67b310e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Gold.mp3">attachment:36db3a5d-21a2-4c57-bd26-b220437deef8:Gold.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8084-bfaa-d2d0238230e3" class="toggle"><li><details open=""><summary>🏛️ Government – /ˈɡʌv.ɚn.mənt/</summary><figure id="23c37c9a-53b8-8075-873f-f3c1db450e03"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Government.mp3">attachment:16ca88ed-bf9d-4762-a0c5-8b5bc4698a6e:Government.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8003-b80c-eb5e82720bab" class="toggle"><li><details open=""><summary>🚪 Gate – /ɡeɪt/</summary><figure id="23c37c9a-53b8-80c6-92b8-f3727b751815"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Gate.mp3">attachment:cf01077f-1200-45ce-a1d1-eb6705af0579:Gate.mp3</a></div></figure></details></li></ul><p id="23c37c9a-53b8-8045-96f3-d42df0770715" class="">
+</p></details></li></ul></details></li></ul><hr id="28f37c9a-53b8-80cf-897a-d1fdb6fe10f8"/><ul id="23237c9a-53b8-8072-ad87-f2f8243ca208" class="toggle"><li><details open=""><summary><strong>Fricatives</strong></summary><ul id="20037c9a-53b8-808c-b2e2-cc6b3dad50ee" class="toggle"><li><details open=""><summary><strong>/f/</strong></summary><p id="23237c9a-53b8-8019-882c-c7f4d4353248" class=""> Lower lip touches upper teeth</p><p id="23237c9a-53b8-8032-b7d5-c50fa35220d3" class="">
+</p><ul id="20037c9a-53b8-8055-94de-e38c2696b039" class="toggle"><li><details open=""><summary>🌍 Foreign – /ˈfɔːr.ən/</summary><figure id="23c37c9a-53b8-8082-869e-f0825df53d05"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Foreign.mp3">attachment:3addae21-fbfe-4640-9fda-8759f5627bff:Foreign.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8072-ad72-c4336f820c84" class="toggle"><li><details open=""><summary>🙂 Face – /feɪs/</summary><figure id="23c37c9a-53b8-8041-bd0d-ff9c6b818dbc"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Face.mp3">attachment:ff724f05-b781-4075-8e5c-3bbac61348c7:Face.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-80ae-b6c4-dd119a4844c0" class="toggle"><li><details open=""><summary>💖 Favorite – /ˈfeɪ.və.rɪt/</summary><figure id="23c37c9a-53b8-80e9-96d3-d798c668e4f9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Favorite.mp3">attachment:1e9504e2-3900-45c7-82b9-4ce9b3c33e89:Favorite.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-809c-a404-dc58feab5bfc" class="toggle"><li><details open=""><summary>🗽 Freedom – /ˈfriː.dəm/</summary><figure id="23c37c9a-53b8-8007-834b-e4a89b0c0421"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Freedom.mp3">attachment:226c406c-41aa-482a-899e-a671c15a1f5b:Freedom.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-804f-b61c-d3c8b35d4dc7" class="toggle"><li><details open=""><summary>👗 Fashion – /ˈfæʃ.ən/</summary><figure id="23c37c9a-53b8-802f-a25c-d90ae267470e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Fashion.mp3">attachment:425cd696-fee4-456f-b9d2-7758bb9ad6d8:Fashion.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-80da-9ecd-d5b4988217ff" class="toggle"><li><details open=""><summary>🧘 Physical – /ˈfɪz.ɪ.kəl/</summary><figure id="23c37c9a-53b8-80a8-b34c-ddf3a8b9fa88"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Physical.mp3">attachment:3e715bd5-4080-4e24-b6c6-4fb4149f72e4:Physical.mp3</a></div></figure></details></li></ul><p id="20037c9a-53b8-8035-ad6e-ca36fac74476" class="">
+</p></details></li></ul><ul id="23837c9a-53b8-8021-9d16-f9a65841fad2" class="toggle"><li><details open=""><summary><mark class="highlight-default"><strong>/v/</strong></mark></summary><p id="23837c9a-53b8-809d-bc9b-e2653dd7149e" class="">Like /f/ but with vocal cord vibration</p><p id="23837c9a-53b8-80a6-b1cc-d46aef1b740c" class="">
+</p><ul id="23837c9a-53b8-804a-ab1b-df3023cc93f3" class="toggle"><li><details open=""><summary>💎 Value – /ˈvæl.juː/</summary><figure id="23c37c9a-53b8-805e-88cb-f379b075e348"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/value.mp3">attachment:f3969323-a9c2-4e29-ac2a-6443551464aa:value.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8085-954b-dd2f1ac633bb" class="toggle"><li><details open=""><summary>📹 Video – /ˈvɪ.di.oʊ/</summary><figure id="23c37c9a-53b8-80eb-b4e2-c313918bfef8"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/video.mp3">attachment:f3e76795-4eba-4f15-8172-67a25265dd6a:video.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8024-8bcf-fddfa6459e91" class="toggle"><li><details open=""><summary>🔊 Volume – /ˈvɑːl.juːm/</summary><figure id="23c37c9a-53b8-800f-9496-c759df0202b1"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/volume.mp3">attachment:624f5607-b6a0-46c1-8720-b53d0be0eaa5:volume.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-808a-8e85-d51592562605" class="toggle"><li><details open=""><summary>🚗 Vehicle – /ˈviː.ə.kəl/</summary><figure id="23c37c9a-53b8-8088-954e-d88bc8a4f496"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/vehicle.mp3">attachment:b6d263d3-b34b-40bc-9f28-4488d5e4a00c:vehicle.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80e4-9f16-fa1fbcda0a59" class="toggle"><li><details open=""><summary>🦠 Virus – /ˈvaɪ.rəs/</summary><figure id="23c37c9a-53b8-80e7-823c-d77fa26de33c"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/virus.mp3">attachment:9cd80e00-68dd-4c79-9a7d-d71c1941b6fc:virus.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-809a-9087-e6bd92f7ae09" class="toggle"><li><details open=""><summary>💥 Violence – /ˈvaɪ.ə.ləns/</summary><figure id="23c37c9a-53b8-80b5-9016-f650c06da538"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/violence.mp3">attachment:1cc045da-06dc-498c-9cc5-71a234059305:violence.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-8076-9e3d-de89ff158d73" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-8015-a234-d108dd6e2d96" class="toggle"><li><details open=""><summary><mark class="highlight-default"><strong>/θ/</strong></mark></summary><p id="23237c9a-53b8-800c-972d-f9da1929e2fa" class="">Tongue tip between teeth</p><p id="23237c9a-53b8-80fc-9856-ea020a2fa1a0" class="">
+</p><ul id="23037c9a-53b8-8096-be30-d6e52f140278" class="toggle"><li><details open=""><summary>🏥 Health – /helθ/</summary><figure id="23c37c9a-53b8-80cf-bdca-d6a4d2b0b1ed"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Health.mp3">attachment:9b83a0e7-4125-402b-bc0b-0275c2470b4d:Health.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-80fe-9deb-c389593c65b0" class="toggle"><li><details open=""><summary>📅 Month – /mʌnθ/</summary><figure id="23c37c9a-53b8-8034-b4a8-dd7a293e5ca9"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Month.mp3">attachment:ed13d791-f7f7-4414-bd9f-d5dbe7cd163b:Month.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-8050-a8f1-c4763f79d4a1" class="toggle"><li><details open=""><summary>💪 Strength – /streŋθ/</summary><figure id="23c37c9a-53b8-80af-9b66-ea8c9395bb95"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Strength.mp3">attachment:3c91b473-7078-4ba4-9017-9fb9d4969c31:Strength.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-80e3-957b-f9e562e6f8e8" class="toggle"><li><details open=""><summary>🌍 Earth – /ɝːθ/</summary><figure id="23c37c9a-53b8-803b-b2d8-e467d18e0548"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Earth.mp3">attachment:fe0b8057-a891-4c09-97e6-c67153aeb902:Earth.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-8063-9f42-eb5b76822dad" class="toggle"><li><details open=""><summary>🥤 Thirst – /θɝːst/</summary><figure id="23c37c9a-53b8-80f5-a671-cdd8719852e0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Thirst.mp3">attachment:7762e8cb-f806-4dab-871a-ff24467f8a6a:Thirst.mp3</a></div></figure></details></li></ul><ul id="23037c9a-53b8-80d9-bd6b-c36f542ccd9a" class="toggle"><li><details open=""><summary>🧘 Therapy – /ˈθer.ə.pi/</summary><figure id="23c37c9a-53b8-80c7-a11d-faea8e73961f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Therapy.mp3">attachment:9407afdf-6736-4286-9154-3cf617102c3c:Therapy.mp3</a></div></figure></details></li></ul><p id="23237c9a-53b8-8073-b52f-d377da1cf62b" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-804d-a6c5-de67ece95752" class="toggle"><li><details open=""><summary><strong>/ð/</strong></summary><p id="23837c9a-53b8-809e-9de5-fae9cbc8dbae" class="">Like /θ/ but with vocal cord vibration<br/></p><ul id="23837c9a-53b8-8024-9b73-cd7bdc77e92b" class="toggle"><li><details open=""><summary>🌦️ Weather - /ˈwe.ðər/</summary><figure id="23c37c9a-53b8-804c-bc7d-d66070f5d32b"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Weather.mp3">attachment:0f374b01-76f6-4ea6-b563-0b9f8931a913:Weather.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-809f-9d79-fc8e4bfc9b4c" class="toggle"><li><details open=""><summary>👕 Clothing - /ˈkloʊ.ðɪŋ/</summary><figure id="23c37c9a-53b8-80ee-a486-c67ba7a8ad6e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Clothing.mp3">attachment:f21d9580-fc77-4462-a42c-e7908cf8cd47:Clothing.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-804e-a437-e59706dcca61" class="toggle"><li><details open=""><summary>👵 Grandmother - /ˈɡrænˌmʌ.ðər/ </summary><figure id="23c37c9a-53b8-8066-a4d9-d99ef1c9faa4"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Grandmother.mp3">attachment:a9ee06dc-eed3-4c6e-a408-1a97d799ae59:Grandmother.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8069-91d4-e2ec25aaa670" class="toggle"><li><details open=""><summary>🧥 Leather - /ˈle.ðər/</summary><figure id="23c37c9a-53b8-80ed-97d0-f54d6a92ba84"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Leather.mp3">attachment:9051cb95-f58e-4663-a994-e2a79818a6ff:Leather.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8096-9a5d-c97757a0a68c" class="toggle"><li><details open=""><summary>🤱 Mother - /ˈmʌð·ər/</summary><figure id="22237c9a-53b8-8087-a761-d3c938c8eefb"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Mother.mp3">attachment:bdc06287-0ede-4536-b32f-c3eb152c838e:Mother.mp3</a></div></figure></details></li></ul><ul id="20037c9a-53b8-8023-98a1-dcb2e588f80f" class="toggle"><li><details open=""><summary>👨 Father - /ˈfɑːðər/</summary><figure id="22237c9a-53b8-8049-a9aa-c7f1ce46e8e7"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/father.mp3">attachment:b3715bc4-eda6-4354-9dd0-ba0e650fb2b3:father.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-8036-93a0-de0b72e0f044" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-808a-b3d9-c35ff634ec7e" class="toggle"><li><details open=""><summary><strong>/s/</strong></summary><p id="23237c9a-53b8-80d0-81fe-c421d2d29974" class="">Tongue creates narrow channel behind teeth</p><p id="23237c9a-53b8-8078-911e-eb7f68e11a46" class="">
+</p><ul id="23237c9a-53b8-8078-bf66-d27db5dee838" class="toggle"><li><details open=""><summary>🍂 Season – /ˈsiː.zən/</summary><figure id="23c37c9a-53b8-8067-82d8-de3eb95f166f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Season.mp3">attachment:586f57b6-162a-400b-9a17-27548a4e17bc:Season.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-803f-ab3c-fe7d1b99ba46" class="toggle"><li><details open=""><summary>📏 Size – /saɪz/</summary><figure id="23c37c9a-53b8-80cd-9236-c295b8253fbe"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Size.mp3">attachment:ed09be05-def5-4452-971f-aeb157872c8d:Size.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-80fc-a878-e561fc328b1f" class="toggle"><li><details open=""><summary>↔️ Side – /saɪd/</summary><figure id="23c37c9a-53b8-8043-8a29-c1d17d040daf"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Side.mp3">attachment:812d1a76-5daf-4db4-80ed-dc91f36b7a32:Side.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8008-af53-cf47a58bd842" class="toggle"><li><details open=""><summary>💰 Sale – /seɪl/</summary><figure id="23c37c9a-53b8-809c-8d6d-f739c3913b6f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Sale.mp3">attachment:597b810b-ee08-46e4-be4d-111e62991f0f:Sale.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-806e-9b0e-fc61d886f7a8" class="toggle"><li><details open=""><summary>🎯 Skill – /skɪl/</summary><figure id="23c37c9a-53b8-8023-a3cd-dca05e59efc2"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Skill.mp3">attachment:74c4c9df-3bce-4086-a610-26750f2b1605:Skill.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-808c-a41d-ec0d043e6e06" class="toggle"><li><details open=""><summary>☁️ Sky – /skaɪ/</summary><figure id="23c37c9a-53b8-80b5-a953-e9e9a09adc6e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Sky.mp3">attachment:1b01f9f0-007e-4afb-aaef-26233ecec15b:Sky.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-807c-9283-f641363d4232" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-8037-83d1-e02fa9f11e8c" class="toggle"><li><details open=""><summary><strong>/z/</strong></summary><p id="23837c9a-53b8-80cc-a5db-d6f8f98e8995" class="">Like /s/ but with vocal cord vibration</p><p id="23837c9a-53b8-80b5-865d-c15e0cb518e5" class="">
+</p><ul id="23837c9a-53b8-80c1-b418-c627cd6674eb" class="toggle"><li><details open=""><summary>📊 Result - /rɪˈzʌlt/</summary><figure id="23c37c9a-53b8-807a-a0c4-c4926df26d4b"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Result.mp3">attachment:b0f60ad9-d729-440a-b2b4-14253187989c:Result.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8046-b7c9-ffcaddf46cf3" class="toggle"><li><details open=""><summary>🧪 Example - /ɪɡˈzæm.pəl/</summary><figure id="23c37c9a-53b8-808d-9c19-f635517bb49e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Example.mp3">attachment:3b1fa03f-4719-4f89-b832-47d72c769dbb:Example.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80ab-9f12-c0c35af6aa19" class="toggle"><li><details open=""><summary>🎨 Design - /dɪˈzaɪn/</summary><figure id="23c37c9a-53b8-80ec-ad94-c5d5e51a205b"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Design.mp3">attachment:00c5f330-f3a4-4605-b329-d60d59c3dda2:Design.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-808f-a213-fe52d3d9f51a" class="toggle"><li><details open=""><summary>🏛️ Museum - /mjuˈzi.əm/</summary><figure id="23c37c9a-53b8-801c-93aa-d4a696599cd1"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Museum.mp3">attachment:4680fc08-c4e3-425f-86ca-bcf8e0ecfc2f:Museum.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80c6-9fb3-e0352297d70a" class="toggle"><li><details open=""><summary>😰 Anxiety - /æŋˈzaɪ.ə.ti/</summary><figure id="23c37c9a-53b8-80f6-a3a2-cf6958f24361"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Anxiety.mp3">attachment:33302bf2-abf1-4814-aa27-b895e2d9692f:Anxiety.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8060-96d1-dbd5f7fe9877" class="toggle"><li><details open=""><summary>🎼 Musician - /mjuˈzɪ.ʃən/</summary><figure id="23c37c9a-53b8-8079-86fd-d1efafdd785e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Musician.mp3">attachment:ae314231-e25a-4549-9ec4-e0f684cbd9b3:Musician.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-8065-862a-fe7e878cf6ff" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-80dc-b28b-cda43ed80f4c" class="toggle"><li><details open=""><summary><strong>/ʃ/</strong></summary><p id="23237c9a-53b8-805b-b781-f4d3db237a62" class="">Tongue further back than /s/, lips slightly rounded</p><p id="23237c9a-53b8-8082-8972-ce03996a1537" class="">
+</p><ul id="23237c9a-53b8-80bf-9033-e5fc9a35ace0" class="toggle"><li><details open=""><summary>🤝 Social – /ˈsoʊ.ʃəl/</summary><figure id="23c37c9a-53b8-8043-86fe-d362d2223740"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Social.mp3">attachment:cf3d8de3-3f39-47e9-848c-10f101199e92:Social.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-80bf-9891-e34cdbd116f5" class="toggle"><li><details open=""><summary>🚉 Station – /ˈsteɪ.ʃən/</summary><figure id="23c37c9a-53b8-8033-ac81-e9b7cf775a2a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Station.mp3">attachment:1f0336f4-6113-410f-8970-1c4863b61316:Station.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8075-a8ea-cb4f9693a0fe" class="toggle"><li><details open=""><summary>💑 Relationship – /rɪˈleɪ.ʃən.ʃɪp/      </summary><figure id="23c37c9a-53b8-8013-af2f-ee8725c72158"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Relationship.mp3">attachment:26511a23-f4be-4dce-a65c-4e1b352b56f8:Relationship.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8057-8cc9-cbf01324f21a" class="toggle"><li><details open=""><summary>❗ Issue – /ˈɪʃ.uː/   </summary><figure id="23c37c9a-53b8-8037-a650-e287c13e65ff"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Issue.mp3">attachment:328ba76d-e461-4ac7-b216-370aa93b9b1b:Issue.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-80fb-838c-d73202240146" class="toggle"><li><details open=""><summary>👀 Attention – /əˈten.ʃən/ </summary><figure id="23c37c9a-53b8-805a-a17b-c9192d891845"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Attention.mp3">attachment:c41ee739-e30a-4413-8fa7-70fd4bce6f35:Attention.mp3</a></div></figure></details></li></ul><ul id="23237c9a-53b8-8060-86c4-f582172f82f8" class="toggle"><li><details open=""><summary>🌎 International – /ˌɪn.tɚˈnæʃ.ən.əl/</summary><figure id="23c37c9a-53b8-8089-9d0b-fe88672a8153"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/International.mp3">attachment:16520990-9524-4c2e-be7a-aab093c1c134:International.mp3</a></div></figure></details></li></ul><p id="23237c9a-53b8-805c-894e-cdf15c0eeeb4" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-80e4-b651-dc6b824ef720" class="toggle"><li><details open=""><summary><strong>/ʒ/</strong></summary><p id="23837c9a-53b8-8014-83e5-d1aa72f88c7b" class="">Like /ʃ/ but with vocal cord vibration</p><p id="23837c9a-53b8-8010-9236-d198e1f3fb43" class="">
+</p><ul id="23837c9a-53b8-803d-b256-f19d2fa7f478" class="toggle"><li><details open=""><summary>🤔 Decision – /dɪˈsɪ.ʒən/</summary><figure id="23c37c9a-53b8-8073-837a-d9aae482b683"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Decision.mp3">attachment:ee79bc0c-0821-4d64-b547-693b83d1ab7d:Decision.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-807f-83ce-fa8bb68402ee" class="toggle"><li><details open=""><summary>📺 Television – /ˈtel.ə.vɪ.ʒən/</summary><figure id="23c37c9a-53b8-8047-89f9-c3a0e6f5dd5e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Television.mp3">attachment:04214d45-bbb0-436c-91a9-96ecc7bdd224:Television.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-807b-a8f2-faffbc131828" class="toggle"><li><details open=""><summary>✅ Conclusion – /kənˈkluː.ʒən/</summary><figure id="23c37c9a-53b8-809e-938e-f0e9eaf6851d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Conclusion.mp3">attachment:7c10c26f-417e-4db5-8eea-21a8ab44dc3c:Conclusion.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80c8-aa4e-e015395e0ab6" class="toggle"><li><details open=""><summary>🧩 Version – /ˈvɜːr.ʒən/</summary><figure id="23c37c9a-53b8-80af-8740-e956c1869f69"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Version.mp3">attachment:abea8849-d50a-4dfa-9e42-b551896783a8:Version.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80c7-87dd-d800d9d7a362" class="toggle"><li><details open=""><summary>😵 Confusion – /kənˈfjuː.ʒən/</summary><figure id="23c37c9a-53b8-804a-9670-f94fd50b7569"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Confusion.mp3">attachment:8fc8266d-f948-4b0e-8dc0-9488873fc393:Confusion.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80dc-83eb-d9aaf5d7ba9d" class="toggle"><li><details open=""><summary>➗ Equation – /ɪˈkweɪ.ʒən/</summary><figure id="23c37c9a-53b8-80b3-80a0-f7f8d910020b"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Equation.mp3">attachment:4ebbb461-4d8a-4bea-b5ad-a88ecaa1b06c:Equation.mp3</a></div></figure></details></li></ul></details></li></ul><ul id="23537c9a-53b8-80d7-a4e6-f4b2947ec911" class="toggle"><li><details open=""><summary><strong>/h/</strong></summary><p id="23837c9a-53b8-80e4-a872-ee0d72e560eb" class="">Air passes through open throat</p><p id="23837c9a-53b8-80d6-9ac3-ddb7d4f260b8" class="">
+</p><ul id="23837c9a-53b8-80e4-9798-f397b03ddf75" class="toggle"><li><details open=""><summary>📚 History - /ˈhɪs.tə.ri/</summary><figure id="23c37c9a-53b8-802c-bcdf-f4f6e8352451"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/History.mp3">attachment:4606ead6-eef5-4194-bedf-d568dea5e9a9:History.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-803f-8fb2-d81144e9f503" class="toggle"><li><details open=""><summary>🎉 Holiday - /ˈhɑː.lə.deɪ/</summary><figure id="23c37c9a-53b8-80a9-be34-ded43194e61a"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Holiday.mp3">attachment:59f340d6-e08a-4c59-aaf9-19454924b55a:Holiday.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8065-9642-da7c868403e7" class="toggle"><li><details open=""><summary>🏥 Hospital - /ˈhɑː.spɪ.təl/</summary><figure id="23c37c9a-53b8-8074-9e4b-eb62a5187a83"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Hospital.mp3">attachment:c16db138-a7af-408f-9f15-ada1b0bf22f1:Hospital.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8035-bcb0-da79796cf536" class="toggle"><li><details open=""><summary>👨‍🦰 Husband - /ˈhʌz.bənd/</summary><figure id="23c37c9a-53b8-80d6-a314-c70324c00b33"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Husband.mp3">attachment:4d8244b1-1426-4a3a-a23c-4be3d48d95b3:Husband.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80c2-b9d9-fb7ffb12501f" class="toggle"><li><details open=""><summary>🔁 Habit - /ˈhæ.bɪt/</summary><figure id="23c37c9a-53b8-801f-bd2e-c9e3c5cad53f"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Habit.mp3">attachment:4708ce56-adec-44a0-9cb9-f51d5c6a955f:Habit.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8056-a690-e63f3a4e0856" class="toggle"><li><details open=""><summary>😊 Happiness - /ˈhæ.pɪ.nəs/ </summary><figure id="23c37c9a-53b8-8055-aec8-dc39c3d1e2a0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Happiness.mp3">attachment:47801485-91b8-4ecb-900b-0cf448f9e02a:Happiness.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-805a-87e0-d06f866745aa" class="">
+</p></details></li></ul><p id="23c37c9a-53b8-8068-bf61-da2ca0a03f63" class="">
+</p></details></li></ul><hr id="28f37c9a-53b8-8082-ae00-ef4039bc3320"/><ul id="23837c9a-53b8-80f9-b9fb-ca961020d8b4" class="toggle"><li><details open=""><summary><strong>Nasals</strong></summary><ul id="20037c9a-53b8-8041-a5b7-d40a24c0725b" class="toggle"><li><details open=""><summary><strong>/m/</strong></summary><p id="23837c9a-53b8-80fa-8519-eaab8779e7a4" class="">Close both lips, air through nose</p><p id="23837c9a-53b8-8077-bdc3-d367e9a49df5" class="">
+</p><ul id="23837c9a-53b8-800a-88b2-c3f51cb858af" class="toggle"><li><details open=""><summary>🎵 Music - /ˈmjuː.zɪk/</summary><figure id="23c37c9a-53b8-80ee-a045-ca049f5d4187"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Music.mp3">attachment:d71b882a-1906-4373-a38f-85471ff1fdae:Music.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8085-aa98-f43a919c0ba9" class="toggle"><li><details open=""><summary>🌅 Morning - /ˈmɔːr.nɪŋ/</summary><figure id="23c37c9a-53b8-8084-82f6-d372c2a6ca81"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Morning.mp3">attachment:0bc535d0-0a71-4518-ab57-cb733b8c677a:Morning.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80fd-abb1-e6416e57c649" class="toggle"><li><details open=""><summary>💬 Message - /ˈmes.ɪdʒ/</summary><figure id="23c37c9a-53b8-80f4-810d-dd0ae881552c"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Message.mp3">attachment:18580b4f-ec11-49a7-98fd-a4fd5648ba05:Message.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8056-bbd7-c2469e76b7d9" class="toggle"><li><details open=""><summary>💪 Muscle - /ˈmʌ.səl/</summary><figure id="23c37c9a-53b8-80da-8359-d6b6ebf4a7fe"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Muscle.mp3">attachment:2d08abbe-8271-4203-9d83-c5dfa7a98fd2:Muscle.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-800d-909a-dfaff4c6679e" class="toggle"><li><details open=""><summary>🪞 Mirror - /ˈmɪr.ər/</summary><figure id="23c37c9a-53b8-8049-a15b-ef8372ff07a1"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Mirror.mp3">attachment:29e29699-621f-4d6d-aa56-f4e122a65c82:Mirror.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8084-9792-f42bc7539bf3" class="toggle"><li><details open=""><summary>🧠 Memory - /ˈmem.ə.ri/</summary><figure id="23c37c9a-53b8-8076-b52a-e0276b56a9d4"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Memory.mp3">attachment:3ba4c90d-dda9-48e4-a437-5b9ab5573fae:Memory.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-80c5-89df-da6cda7e77c3" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-8039-bdfb-c495d9e74d23" class="toggle"><li><details open=""><summary><strong>/n/</strong></summary><p id="23837c9a-53b8-8057-98bf-c65c09c2d9a2" class="">Tongue tip touches roof of mouth, air through nose</p><p id="23837c9a-53b8-80e9-8cfb-e3ecb6d25407" class="">
+</p><ul id="23837c9a-53b8-80c8-8b62-dc676a74febb" class="toggle"><li><details open=""><summary>🌿 Nature – /ˈneɪ.tʃər/</summary><figure id="23c37c9a-53b8-804f-8b52-edb716186a95"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Nature.mp3">attachment:87aaa03d-6c31-452d-b1b2-4bae90a3a89e:Nature.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-801b-b8a1-f8f55b79c39b" class="toggle"><li><details open=""><summary>🔢 Number – /ˈnʌm.bər/</summary><figure id="23c37c9a-53b8-8029-9df8-e86bd676c4fa"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Number.mp3">attachment:c3223667-61fb-4ead-b9a9-cfc894ac1e87:Number.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8062-afaf-ea8300862a20" class="toggle"><li><details open=""><summary>🌐 Network – /ˈnet.wɜːrk/</summary><figure id="23c37c9a-53b8-803e-96bf-e4cb5c174cbe"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Network.mp3">attachment:b849f90d-d6ad-4d1f-a7df-87d81e00fecc:Network.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80d6-a29b-da739998c9e8" class="toggle"><li><details open=""><summary>🌃 Night – /naɪt/</summary><figure id="23c37c9a-53b8-8035-a5c9-c94c7c073400"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Night.mp3">attachment:5091b46b-a5f9-49df-a705-511dce0c4b49:Night.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80ec-a6d2-cef470bbafbf" class="toggle"><li><details open=""><summary>🦵 Knee – /niː/</summary><figure id="23c37c9a-53b8-80cf-871f-ebc713280442"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Knee.mp3">attachment:17bfe31f-d13a-4898-a3ca-afd73b2f91a5:Knee.mp3</a></div></figure></details></li></ul><ul id="22237c9a-53b8-8041-9e41-db2a73436739" class="toggle"><li><details open=""><summary>🧠 Knowledge - /ˈnɑː.lɪdʒ/</summary><figure id="22237c9a-53b8-80b8-a242-ecc640cf7ea1"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Knowledge.mp3">attachment:daa5bd0e-9a1d-4ee3-9c2d-dadceb344b0c:Knowledge.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-8024-b7aa-f3901e23b1ca" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-80b9-b1ae-df718af71f33" class="toggle"><li><details open=""><summary><strong>/ŋ/</strong></summary><p id="23837c9a-53b8-8078-aa69-e7ee26691987" class="">Back of tongue touches soft palate, air through nose</p><p id="23837c9a-53b8-80b4-a12a-da6438f4211c" class="">
+</p><ul id="23837c9a-53b8-80ad-82be-d8edfd32ab98" class="toggle"><li><details open=""><summary>🔲 Thing - /θɪŋ/</summary><figure id="23c37c9a-53b8-8056-8e88-eaa26fa79d3b"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Thing.mp3">attachment:c64b2ca7-3a0b-4f20-b7c0-dac41991c68e:Thing.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80be-b062-f500417f27ed" class="toggle"><li><details open=""><summary>🌆 Evening - /ˈiːv.nɪŋ/</summary><figure id="23c37c9a-53b8-80fa-bb71-ec07619a07d0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Evening.mp3">attachment:dd970f77-0d00-4fa4-9f48-daa9fc5f8d4a:Evening.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8024-bcbc-c2bc011d5760" class="toggle"><li><details open=""><summary>🎵 Song - /sɔːŋ/</summary><figure id="23c37c9a-53b8-80e6-9ffd-cdc7d0308ceb"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Song.mp3">attachment:68bf5b5a-9d2c-4626-a0d4-8f05ec330d4f:Song.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8088-bc8f-e26ba70a8880" class="toggle"><li><details open=""><summary>👑 King - /kɪŋ/</summary><figure id="23c37c9a-53b8-80da-baeb-c4d646644b27"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/King.mp3">attachment:0803d582-525c-4888-b597-0f4b22abc467:King.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80c4-b2e6-cab7bcd346b5" class="toggle"><li><details open=""><summary>👶 Young - /jʌŋ/</summary><figure id="23c37c9a-53b8-80c5-8cc2-fd947dc2fb96"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Young.mp3">attachment:89015940-8d34-475b-86b8-b9bf0cd58753:Young.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80d0-9350-f9a8949967ba" class="toggle"><li><details open=""><summary>💍 Ring - /rɪŋ/</summary><figure id="23c37c9a-53b8-80f7-afc3-f523f610d154"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Ring.mp3">attachment:ee027b32-d582-47d1-91cc-75e7f2769048:Ring.mp3</a></div></figure></details></li></ul></details></li></ul><p id="23837c9a-53b8-8060-af9b-c5f407bd1fb0" class="">
+</p></details></li></ul><hr id="28f37c9a-53b8-804a-9b61-f0cfbc3b6ccd"/><ul id="23837c9a-53b8-8076-ae99-ca6afcb6e1fc" class="toggle"><li><details open=""><summary><strong>Liquids</strong></summary><ul id="20037c9a-53b8-8003-8fd3-dd427c902fb4" class="toggle"><li><details open=""><summary><mark class="highlight-default"><strong>/l/</strong></mark></summary><p id="23837c9a-53b8-80f3-8456-f34cedafc999" class="">Tongue tip touches roof, air flows around sides</p><p id="23837c9a-53b8-8098-86d6-f9a10833c731" class="">
+</p><ul id="23837c9a-53b8-806c-9781-e7a1a5ec01de" class="toggle"><li><details open=""><summary>📚 Library – /ˈlaɪ.brer.i/</summary><figure id="23c37c9a-53b8-8002-8a4c-e03cbe9a5271"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Library.mp3">attachment:10e3db3e-e4ce-46a8-a6d8-89790323f233:Library.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-801d-a7a3-f74bd12e9a1d" class="toggle"><li><details open=""><summary>👩 Lady – /ˈleɪ.di/</summary><figure id="23c37c9a-53b8-8006-89ab-d9268c94fdb7"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Lady.mp3">attachment:2a65d408-4f4f-478c-b266-cf96e3085321:Lady.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-802c-a32e-c1838ff3180e" class="toggle"><li><details open=""><summary>🧪 Laboratory – /ˈlæ.brə.tɔːr.i/</summary><figure id="23c37c9a-53b8-80fd-b4cb-f7fe3343709c"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Laboratory.mp3">attachment:d76106a8-0978-4830-8310-7473957b18cb:Laboratory.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80c8-a876-e66fe6117536" class="toggle"><li><details open=""><summary>🎓 Lecture – /ˈlek.tʃər/</summary><figure id="23c37c9a-53b8-8032-85a7-e70e60c1c8a4"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Lecture.mp3">attachment:889701ec-9b3c-4389-9a03-dfa850de9467:Lecture.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8052-9f9e-c277ae32f445" class="toggle"><li><details open=""><summary>🧠 Logic – /ˈlɑː.dʒɪk/</summary><figure id="23c37c9a-53b8-80c4-817c-e4974ccd1f7e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Logic.mp3">attachment:b40e2eac-fc87-42cc-a24d-5ed33b6c3669:Logic.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80f8-835c-d1d874b8f543" class="toggle"><li><details open=""><summary>😂 Laughter – /ˈlæf.tər/</summary><figure id="23c37c9a-53b8-8076-bd54-f2c9ae14fd20"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Laughter.mp3">attachment:9d5decf3-07bd-4041-8b42-0f4f5c2bca46:Laughter.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-80e3-b425-f0faf4e441d6" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-80e6-9748-ec6f21184623" class="toggle"><li><details open=""><summary><strong>/r/</strong></summary><p id="23837c9a-53b8-806e-a4f7-f4b761d9767c" class="">Tongue tip curled up slightly, doesn&#x27;t touch roof</p><p id="23c37c9a-53b8-80cb-a093-c4c3a0b3c910" class="">
+</p><ul id="23837c9a-53b8-8038-9eec-e315a257c465" class="toggle"><li><details open=""><summary>🍽️ Restaurant – /ˈres.tə.rɑːnt/</summary><figure id="23c37c9a-53b8-80aa-94ce-fa6fe0b2bb48"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Restaurant.mp3">attachment:b7ee09c6-a153-406a-9a52-ddfcaea33d48:Restaurant.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-804e-aabc-c94b644540d3" class="toggle"><li><details open=""><summary>🗺️ Region – /ˈriː.dʒən/</summary><figure id="23c37c9a-53b8-800c-87f0-f056326f12a3"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Region.mp3">attachment:d6e5a3b4-a401-435b-873b-e5370669dd3f:Region.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80fc-ab9a-d1300db2231a" class="toggle"><li><details open=""><summary>✍️ Writer – /ˈraɪ.tər/</summary><figure id="23c37c9a-53b8-806d-9aab-ddd9e917a431"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Writer.mp3">attachment:6992df63-54e1-4537-94fe-10ab901f468c:Writer.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8081-805f-c3f2721e479d" class="toggle"><li><details open=""><summary>📖 Reader – /ˈriː.dər/</summary><figure id="23c37c9a-53b8-80a2-bbc6-eb7e755129d5"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Reader.mp3">attachment:7e3a2d70-d282-4e3c-ac9c-570ff8464c8d:Reader.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80de-9a2f-c12453a86ce0" class="toggle"><li><details open=""><summary>📻 Radio – /ˈreɪ.di.oʊ/</summary><figure id="23c37c9a-53b8-8060-8d41-d7ffe83e1d9e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Radio.mp3">attachment:9e1fc234-c8a2-46ec-ae8a-a4a6af474a01:Radio.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8046-bcdd-eb1257853520" class="toggle"><li><details open=""><summary>🔬 Research – /ˈriː.sɜːrtʃ/</summary><figure id="23c37c9a-53b8-800d-bd1a-db854d9dd71d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Research.mp3">attachment:a2bd3cce-042d-4a0f-a79a-5dc90beceed7:Research.mp3</a></div></figure></details></li></ul><p id="23837c9a-53b8-8016-9a14-fa6d2988968e" class="">
+</p></details></li></ul></details></li></ul><hr id="28f37c9a-53b8-8082-b8c3-d70575491427"/><ul id="23837c9a-53b8-8000-8a80-d4bc2ff6af5f" class="toggle"><li><details open=""><summary><strong>Glides</strong></summary><ul id="20037c9a-53b8-8020-b9dc-ce515ed9e9e4" class="toggle"><li><details open=""><summary><strong>/w/</strong></summary><p id="23837c9a-53b8-800f-ad8b-e9fdf7b68985" class="">Lips rounded, tongue high in back</p><p id="23837c9a-53b8-80b6-b2b2-f7fa5f03e99f" class="">
+</p><ul id="23837c9a-53b8-801e-bfc3-c6e6be0af95a" class="toggle"><li><details open=""><summary>👷 Worker – /ˈwɜːr.kər/</summary><figure id="23c37c9a-53b8-80b9-9b38-fbd0f084e79d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Worker.mp3">attachment:bfebdaab-539a-4d16-b36b-01b9093cbb4d:Worker.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80d0-96af-c8df381d5a90" class="toggle"><li><details open=""><summary>🪟 Window – /ˈwɪn.doʊ/</summary><figure id="23c37c9a-53b8-8069-ae15-d14417e7aad0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Window.mp3">attachment:b8f9995d-62b2-4e37-95a2-c129e742557b:Window.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8053-a7b8-f390a455ebbb" class="toggle"><li><details open=""><summary>📅 Weekend – /ˈwiːk.end/</summary><figure id="23c37c9a-53b8-80cf-aaf0-f0b2f66f3e77"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Weekend.mp3">attachment:9a35807f-d902-47de-a063-71dfbcf2b99c:Weekend.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80cf-b7eb-efc595c3d19a" class="toggle"><li><details open=""><summary>❄️ Winter – /ˈwɪn.tər/</summary><figure id="23c37c9a-53b8-806a-a58f-d1cea2beed85"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Winter.mp3">attachment:2b9f0576-46b4-4705-a42a-60cb4e3c3999:Winter.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-801c-8166-e2f387ba336e" class="toggle"><li><details open=""><summary>👰 Wife – /waɪf/</summary><figure id="23c37c9a-53b8-805d-a82f-ce50369b5fed"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Wife.mp3">attachment:79d8f60b-7ee4-4c59-852a-1567a31e0c9a:Wife.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-808f-bce5-de36e33baec9" class="toggle"><li><details open=""><summary>🌊 Wave – /weɪv/</summary><figure id="23c37c9a-53b8-80c1-a372-e5a0fab40374"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Wave.mp3">attachment:5e974266-e1f9-499d-8f4b-95ded081c5fc:Wave.mp3</a></div></figure></details></li></ul><p id="20037c9a-53b8-80e2-826e-f034abc29bb6" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-8016-a7fc-f918f7d41f10" class="toggle"><li><details open=""><summary><strong>/j/</strong></summary><p id="23837c9a-53b8-80e6-990f-c89d662a4613" class="">Tongue high in front, lips spread</p><p id="23837c9a-53b8-807b-bdb2-c3be5b83a695" class="">
+</p><ul id="23837c9a-53b8-8075-ad8b-cd4f5be25df5" class="toggle"><li><details open=""><summary>👍 Yes – /jes/</summary><figure id="23c37c9a-53b8-80bd-837e-db92ebec7620"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Yes.mp3">attachment:23318d57-a4a9-4f59-b003-4b1f2b7024ce:Yes.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8002-b52a-da2a74aa2754" class="toggle"><li><details open=""><summary>👉 You – /juː/</summary><figure id="23c37c9a-53b8-8022-bcd2-cface56bf2b3"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/You.mp3">attachment:dab282fd-f46d-49cb-91d4-e16967b39a11:You.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8026-98d6-ce4cd2cb9cfa" class="toggle"><li><details open=""><summary>🎓 University – /ˌjuː.nəˈvɝː.sə.ti/</summary><figure id="23c37c9a-53b8-8039-b236-d3f78a5bf489"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/University.mp3">attachment:f2c64b67-88db-409b-abb6-6eb434681726:University.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80d8-b3b5-e01914c4fe2a" class="toggle"><li><details open=""><summary>🌌 Universe – /ˈjuː.nə.vɝːs/</summary><figure id="23c37c9a-53b8-80ea-873a-cac088586c89"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Universe.mp3">attachment:fcbf7599-9530-41d0-9949-7828d9976213:Universe.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8032-bf6c-e0f58881761d" class="toggle"><li><details open=""><summary>🧥 Uniform – /ˈjuː.nə.fɔːrm/</summary><figure id="23c37c9a-53b8-804f-986e-da132f7de885"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Uniform.mp3">attachment:0024535c-b8a6-4bc1-a3a1-40bc5d425db5:Uniform.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80c6-bcb0-ffe483993c23" class="toggle"><li><details open=""><summary>🧑 Human – /ˈhjuː.mən/</summary><figure id="23c37c9a-53b8-8031-9620-d682dade82b0"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Human.mp3">attachment:c1347e68-af6b-4a86-b54d-bd01811c5555:Human.mp3</a></div></figure></details></li></ul></details></li></ul><p id="23837c9a-53b8-8045-90ca-ffc44e180cc4" class="">
+</p></details></li></ul><hr id="28f37c9a-53b8-8081-bdf6-c7fb51c63b48"/><ul id="23837c9a-53b8-80ea-9256-f8b9d40c98e7" class="toggle"><li><details open=""><summary><strong>Affricates</strong></summary><ul id="20037c9a-53b8-8053-a33f-dd5df571c52a" class="toggle"><li><details open=""><summary><strong>/tʃ/</strong></summary><p id="23837c9a-53b8-8030-85db-d84aeaf3a429" class="">/t/ sound immediately followed by /ʃ/</p><p id="23837c9a-53b8-800f-9008-fa94614a2eac" class="">
+</p><ul id="23837c9a-53b8-803d-8461-f4e3d8f232b2" class="toggle"><li><details open=""><summary>🧗 Challenge – /ˈtʃæ.lɪndʒ/</summary><figure id="23c37c9a-53b8-802b-96a2-d82633ab765d"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Challenge.mp3">attachment:e73cbf7e-099a-4ea0-8b26-52253942aaf1:Challenge.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80e7-91a5-cb2a67e0855f" class="toggle"><li><details open=""><summary>📖 Chapter – /ˈtʃæp.tər/</summary><figure id="23c37c9a-53b8-8040-9970-f94aac4d503e"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Chapter.mp3">attachment:6cc19a7d-f9e5-4575-bddc-ab0416baaa1e:Chapter.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80a9-bac7-c335b5b0c2cc" class="toggle"><li><details open=""><summary>📺 Channel – /ˈtʃæ.nəl/</summary><figure id="23c37c9a-53b8-80ee-baaa-e023b1941d5c"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Channel.mp3">attachment:5ed3f478-d7de-4e88-92c7-08e4108deaac:Channel.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80ce-ac77-d595228cdbe3" class="toggle"><li><details open=""><summary>👶 Childhood – /ˈtʃaɪld.hʊd/</summary><figure id="23c37c9a-53b8-8024-801a-c4eb56484050"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Childhood.mp3">attachment:389e5e25-bca9-4d26-96dd-4e056bc9c568:Childhood.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8016-849d-e132c7190269" class="toggle"><li><details open=""><summary>⛪ Church – /tʃɜːrtʃ/</summary><figure id="23c37c9a-53b8-8046-86f3-e16acc1cebda"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Church.mp3">attachment:a911fe22-b939-450f-97a1-52caab3c8bfb:Church.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8078-9172-d9af952a17b7" class="toggle"><li><details open=""><summary>🍫 Chocolate – /ˈtʃɑː.klət/</summary><figure id="23c37c9a-53b8-8019-8509-f3f958803e48"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Chocolate.mp3">attachment:a8777c61-ef86-428d-822a-fb5449dbac42:Chocolate.mp3</a></div></figure></details></li></ul><p id="20037c9a-53b8-80df-8c65-fdf0cfbf18e1" class="">
+</p></details></li></ul><ul id="20037c9a-53b8-80fa-8f11-e7f2e8d0dca1" class="toggle"><li><details open=""><summary><strong>/dʒ/</strong></summary><p id="23837c9a-53b8-8012-846b-e1ffc5424053" class="">/d/ sound immediately followed by /ʒ/</p><p id="23837c9a-53b8-8026-8b93-f37115f7f7c8" class="">
+</p><ul id="23837c9a-53b8-805c-8d46-e563bffa88da" class="toggle"><li><details open=""><summary>💼 Job – /dʒɑːb/</summary><figure id="23c37c9a-53b8-809e-a41a-c9edc3578e71"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Job.mp3">attachment:9e33419f-1976-4a17-8b9f-a5cbf93cd320:Job.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80c4-bb45-e83aca043b35" class="toggle"><li><details open=""><summary>😂 Joke – /dʒoʊk/</summary><figure id="23c37c9a-53b8-801d-943a-fa03167a8bbb"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Joke.mp3">attachment:0520df39-fd2e-4eb1-b7dd-aba38f93807f:Joke.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-805f-9f9f-e726ee61ec41" class="toggle"><li><details open=""><summary>🧥 Jacket – /ˈdʒæ.kɪt/</summary><figure id="23c37c9a-53b8-8075-b779-d10cb1793b41"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Jacket.mp3">attachment:b81de09c-4ef5-4528-83e8-1cf3d0c3c16a:Jacket.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-8099-9d79-fdc5c80176f2" class="toggle"><li><details open=""><summary>🌉 Bridge – /brɪdʒ/</summary><figure id="23c37c9a-53b8-80f2-87e9-fcd37809a82b"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Bridge.mp3">attachment:42aa73d6-317d-448a-95a4-2992324930a0:Bridge.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-804f-90e4-ecb09293b4b5" class="toggle"><li><details open=""><summary>🗣️ Language – /ˈlæŋ.ɡwɪdʒ/</summary><figure id="23c37c9a-53b8-8012-a002-cbdb02457ac1"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Language.mp3">attachment:c1d8ef8a-54e5-4929-b2f2-39dc0641c3a9:Language.mp3</a></div></figure></details></li></ul><ul id="23837c9a-53b8-80cd-9c60-efb8c48f0073" class="toggle"><li><details open=""><summary>📅 Schedule – /ˈskedʒ.uːl/</summary><figure id="23c37c9a-53b8-80c2-9fa1-f5b0c6b7a9ba"><div class="source"><a href="The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/Schedule.mp3">attachment:e370d67f-de6b-43a5-8ae6-a78a92cecdbb:Schedule.mp3</a></div></figure></details></li></ul></details></li></ul></details></li></ul><hr id="28f37c9a-53b8-8034-8ce5-f4706076dcc3"/><p id="20037c9a-53b8-807e-8cdb-db99c3952f64" class="">
+</p><p id="20037c9a-53b8-801a-a8d2-d7507d885221" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,0 +1,766 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Your First Words</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="21c37c9a-53b8-80e1-86ae-ca355eb6805a" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">Your First Words</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/Your_First_20_Words_-_Thumbnails_(3).png"><img style="width:20px;max-height:24px" src="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/Your_First_20_Words_-_Thumbnails_(3).png" alt="Your First 20 Words - Thumbnails (3).png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>2</td></tr></tbody></table></header><div class="page-body"><p id="27a37c9a-53b8-81fb-b54f-df8932885da6" class="">💡 You’ve mastered The Alphabet! You can spell words clearly, you’ve trained your ear for the letter sounds, and you’re starting to feel more confident in English. 🥳👏</p><p id="27a37c9a-53b8-8107-9b60-f116179c70ac" class="">
+</p><blockquote id="27a37c9a-53b8-81d2-b764-e6aa3a9d3f3b" class="">Now, it’s time for the <strong>first real vocabulary</strong> you’ll carry into<strong> everyday conversations</strong>. </blockquote><p id="28d37c9a-53b8-8021-9184-c8382236e75b" class="">
+</p><p id="28d37c9a-53b8-800e-919e-e8366fc6f2e2" class="">These 20 words <strong>weren’t chosen randomly</strong>. They <strong>break the rules</strong> with irregular plurals, <strong>challenge your pronunciation</strong> with sounds and combinations that don’t exist in Portuguese, and have <strong>high communicative value</strong>, meaning you’ll use them constantly in real life. <strong>Ready? </strong>⚡</p><p id="27a37c9a-53b8-81cb-ba13-c1d69679c70f" class="">
+</p><ul id="27a37c9a-53b8-8132-8290-c69489e6eb79" class="toggle"><li><details open=""><summary>🗣️<strong> Learn &amp; Listen &amp; Repeat</strong></summary><p id="27a37c9a-53b8-81e7-88a6-e59537ce2010" class="">
+</p><p id="27a37c9a-53b8-8123-83c4-d0adc8294df2" class="">Below, you’ll find <strong>your 20 first words</strong>. Each one includes its <em>phonemic transcription</em> and a <em>3x audio repetition</em> to help you <strong>speak with clarity and precision</strong>. This is your moment to train both your <strong>ear</strong> and your <strong>voice</strong>. Take your time and enjoy the process. Let’s go! 🎧🗣️🔁</p><p id="27a37c9a-53b8-8181-9685-e221b49b1238" class="">
+</p><div id="27a37c9a-53b8-8189-8144-efeb7832a150" class="column-list"><div id="27a37c9a-53b8-81e6-b8f5-f213442c5b50" style="width:50%" class="column"><ul id="27a37c9a-53b8-8114-b391-d1a19e8752ac" class="toggle"><li><details open=""><summary>👤 <strong>Person</strong> - /ˈpɜː.sən/</summary><figure id="27a37c9a-53b8-81fd-9c44-e49aa8e5bbe8"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/person.mp3">attachment:4e651820-a99d-4694-8405-a8ba449b8c75:person.mp3</a></div></figure><p id="27a37c9a-53b8-81bb-a79c-d32556f7c546" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-813a-adc9-fe0b0ab4f622" class="toggle"><li><details open=""><summary>👥 <strong>People</strong> - /ˈpiː.pəl/</summary><figure id="27a37c9a-53b8-814a-b0f2-c48ac822e338"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/people.mp3">attachment:e2357f2d-2487-4812-a818-20ff06a17657:people.mp3</a></div></figure><p id="27a37c9a-53b8-81f4-a88a-e0af277c1d25" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-815b-8214-d158b8d37904" class="toggle"><li><details open=""><summary>👩 <strong>Woman</strong> - /ˈwʊm.ən/</summary><figure id="27a37c9a-53b8-8102-87ac-d0a9a74cdc2c"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/woman.mp3">attachment:29096f0a-c6c9-4384-9039-e25c05ec00cb:woman.mp3</a></div></figure><p id="27a37c9a-53b8-811f-8e5d-dda8cb42112b" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-8186-be7f-d30375415f98" class="toggle"><li><details open=""><summary>👩👩 <strong>Women</strong> - /ˈwɪm.ɪn/</summary><figure id="27a37c9a-53b8-815c-9781-ecaed7e6e640"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/women.mp3">attachment:43318cfb-fb3e-4abd-9c3a-5f8909beef8d:women.mp3</a></div></figure><p id="27a37c9a-53b8-8198-beb8-f18021af7575" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-8127-a1b3-e58b91759e9b" class="toggle"><li><details open=""><summary>👨 <strong>Man </strong>- /mæn/</summary><figure id="27a37c9a-53b8-810e-a9c3-eec6e8c1ba64"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/man.mp3">attachment:a5dd7c6d-5cad-45e8-a8b9-8eb9dfcbe443:man.mp3</a></div></figure><p id="27a37c9a-53b8-81d9-a917-c0005cc84c9e" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-81b0-a263-d3710eb4570f" class="toggle"><li><details open=""><summary>👨👨 <strong>Men</strong> - /men/</summary><figure id="27a37c9a-53b8-81da-b94f-eb15d0104a13"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/men.mp3">attachment:6eec7ae0-100f-48bb-85b8-87481902148c:men.mp3</a></div></figure><p id="27a37c9a-53b8-811f-a140-ea3d303e88c6" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-81e5-8bbc-df7611cb444a" class="toggle"><li><details open=""><summary>👶 <strong>Child</strong> - /tʃaɪld/</summary><figure id="27a37c9a-53b8-81dc-b337-eb21fd5af044"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/child.mp3">attachment:c260860a-23f4-4c20-8e90-2f98eb107d1a:child.mp3</a></div></figure><p id="27a37c9a-53b8-81f1-a130-e0d6cc11ed37" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-810b-b107-eb0ff049dc27" class="toggle"><li><details open=""><summary>👶👶 <strong>Children</strong> - /ˈtʃɪl.dren/</summary><figure id="27a37c9a-53b8-81d3-8678-e93999fc64a8"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/children.mp3">attachment:6c3a2229-ba3a-43aa-be1f-e42955414939:children.mp3</a></div></figure><p id="27a37c9a-53b8-81d0-8e79-e40a43b3a03d" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-8182-b55d-f669e8282c77" class="toggle"><li><details open=""><summary>🤝 <strong>Friend</strong> - /frend/</summary><figure id="27a37c9a-53b8-8188-9491-c71b079eb355"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/friend.mp3">attachment:f7eaae08-7a99-4579-9e77-1061a71d0cab:friend.mp3</a></div></figure><p id="27a37c9a-53b8-8104-b0c5-d17694de797e" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-8152-87b5-ef16a0474c30" class="toggle"><li><details open=""><summary>🇧🇷 <strong>Brazil</strong> - /brəˈzɪl/</summary><figure id="27a37c9a-53b8-812f-b946-e6a65f663851"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/Brazil.mp3">attachment:b3fa2395-1226-4efc-addd-4a6652c74bc2:Brazil.mp3</a></div></figure><p id="27a37c9a-53b8-817b-84e2-dd6befb9a6a0" class="">
+</p></details></li></ul><p id="27a37c9a-53b8-819f-be54-c1ff9b12761d" class="">
+</p></div><div id="27a37c9a-53b8-8179-9dee-eb5b5aea84f8" style="width:50%" class="column"><ul id="27a37c9a-53b8-8135-9c43-cd9f0b6a84bf" class="toggle"><li><details open=""><summary>🗺️ <strong>World</strong> - /wɜːld/</summary><figure id="27a37c9a-53b8-81e3-ac99-d6912551148a"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/world.mp3">attachment:1edcf348-8392-403d-a939-f4605cf2ada7:world.mp3</a></div></figure><p id="27a37c9a-53b8-8146-8024-ec237ec97f8e" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-81bf-abba-d4786efc5248" class="toggle"><li><details open=""><summary>💰 <strong>Money</strong> - /ˈmʌn.i/</summary><figure id="27a37c9a-53b8-81ae-ae3f-ed8ca1fefb84"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/money.mp3">attachment:bd828f0c-3ae8-4bb9-b623-6836edb149a3:money.mp3</a></div></figure><p id="27a37c9a-53b8-8116-a59a-f99c2e107f67" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-8121-9d03-c30247faba15" class="toggle"><li><details open=""><summary>⏰ <strong>Time</strong> - /taɪm/</summary><figure id="27a37c9a-53b8-81b2-ae4e-e4557d55cc3c"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/time.mp3">attachment:7762bbae-6054-4273-985e-20783137e8ec:time.mp3</a></div></figure><p id="27a37c9a-53b8-81d6-801b-de68f25516f4" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-8179-aedc-f191b91cf64f" class="toggle"><li><details open=""><summary>👩‍🏫 <strong>Teacher</strong> - /ˈtiː.tʃər/</summary><figure id="27a37c9a-53b8-81c4-8fb5-ce6a97948c8c"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/teacher.mp3">attachment:d3832e2f-08d0-4171-b7c8-aeb16de7172f:teacher.mp3</a></div></figure></details></li></ul><ul id="27a37c9a-53b8-8172-8c1d-e06dce11c564" class="toggle"><li><details open=""><summary>🧠 <strong>Knowledge</strong> - /ˈnɑː.lɪdʒ/</summary><figure id="27a37c9a-53b8-8103-8f44-c5a84b924278"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/knowledge.mp3">attachment:d2e1fb3c-87f6-4dcd-aed0-122b3032ec4d:knowledge.mp3</a></div></figure></details></li></ul><ul id="27a37c9a-53b8-8138-b413-e69629452068" class="toggle"><li><details open=""><summary>❤️ <strong>Love</strong> - /lʌv/</summary><figure id="27a37c9a-53b8-8126-aa65-e3a106fa248c"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/love.mp3">attachment:585413ff-ceef-4235-b26e-3a8c08cc5493:love.mp3</a></div></figure><p id="27a37c9a-53b8-8138-b717-ea6d2b3acdb9" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-81d2-bc0b-ec3b4b58b95e" class="toggle"><li><details open=""><summary>🌎 <strong>Culture </strong>- /ˈkʌl.tʃɚ/</summary><figure id="27a37c9a-53b8-81d8-9c89-e6841fef2bfc"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/culture.mp3">attachment:b86d75ea-8bbd-4e7d-b87e-c945ca6c5067:culture.mp3</a></div></figure><p id="27a37c9a-53b8-814c-9ca4-cf6ca4adfbcf" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-81e1-886c-d3d26b51fa54" class="toggle"><li><details open=""><summary>💼 <strong>Business</strong> - /ˈbɪz.nɪs/</summary><figure id="27a37c9a-53b8-815f-ba07-dce94389087f"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/business.mp3">attachment:b6e90f43-6481-4cad-8dcb-2459e13250f5:business.mp3</a></div></figure><p id="27a37c9a-53b8-812a-b947-d7db38fe8507" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-819c-ab3a-d5fbeed2257a" class="toggle"><li><details open=""><summary>🍽️ <strong>Food</strong> - /fuːd/</summary><figure id="27a37c9a-53b8-8196-bb41-ff39dd9c8d0d"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/food.mp3">attachment:4aa3dafe-e399-43ab-846c-c25651439d8a:food.mp3</a></div></figure><p id="27a37c9a-53b8-81ad-9247-c10c9d74dd8a" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-8120-9bf0-df9865319669" class="toggle"><li><details open=""><summary>💧 <strong>Water</strong> - /ˈwɔːtər/</summary><figure id="27a37c9a-53b8-8129-913d-cb99cf8f9dc7"><div class="source"><a href="Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/water.mp3">attachment:afe19fef-93ef-4161-a26e-a9ad2020b005:water.mp3</a></div></figure></details></li></ul><p id="27a37c9a-53b8-8113-9019-e78d0059daa8" class="">
+</p></div></div></details></li></ul><hr id="27a37c9a-53b8-8198-a293-dedfbf2a6943"/><ul id="27a37c9a-53b8-8145-a236-fb077a855069" class="toggle"><li><details open=""><summary><strong> </strong>👁️<strong>👂🗣️🔁 One Pass, No Pause</strong></summary><p id="27a37c9a-53b8-8151-8c26-f5f429cb3873" class="">
+</p><p id="27a37c9a-53b8-81f2-902e-c858bdb3b81b" class="">You’ve trained each <strong>word</strong> one by one. Now it’s time to <strong>connect</strong> them. Press play, <strong>follow along</strong>, and feel this <strong>vocabulary set</strong> as a whole — from the first word to the last. 🚀</p><p id="28d37c9a-53b8-8008-a151-f4c355b22a9f" class="">
+</p><figure id="28d37c9a-53b8-8012-8a56-fcd4ad08ffef"><div class="source"><a href="https://youtu.be/3nSEsnw8jwE">https://youtu.be/3nSEsnw8jwE</a></div></figure><p id="27a37c9a-53b8-8138-9abb-f4bdd97ba36f" class="">
+</p></details></li></ul><hr id="27a37c9a-53b8-8183-aa3b-ffe2916e7c3d"/><ul id="27a37c9a-53b8-8047-9a04-d37ff6103871" class="toggle"><li><details open=""><summary>🃏 <strong>Flashcards</strong></summary><p id="28d37c9a-53b8-8067-9264-c3a5d407c4fa" class="">
+</p><p id="28d37c9a-53b8-8040-88d7-f5d928daad78" class="">See it 👀 — say it 🗣️ — flip it 🔄 — listen to it👂 — and score yourself ❌✅ </p><p id="28d37c9a-53b8-800c-b405-c3060c64f466" class="">
+</p><ul id="28d37c9a-53b8-80d3-ac4e-fe3c6c7bf919" class="toggle"><li><details open=""><summary>🇧🇷 Translation</summary><p id="28d37c9a-53b8-807a-a1a6-d91d69b44ef3" class="">Veja 👀 — diga 🗣️ — vire 🔄 — ouça 👂 — e marque se acertou ❌✅</p></details></li></ul><p id="28d37c9a-53b8-8045-83d2-fce83a367702" class="">
+</p><figure id="28d37c9a-53b8-80c8-a3ee-c65539312ba2"><div class="source"><a href="https://wordwall.net/play/86692/033/490">https://wordwall.net/play/86692/033/490</a></div></figure><p id="27a37c9a-53b8-8024-b8ba-fca68098b14a" class="">
+</p></details></li></ul><hr id="27a37c9a-53b8-8044-929e-e000b7e7b7ae"/><ul id="27a37c9a-53b8-8004-934e-d4c02605c2ec" class="toggle"><li><details open=""><summary>🪅 <strong>Practice Time</strong></summary><p id="27a37c9a-53b8-8054-b0aa-e740e2477b33" class="">
+</p><p id="27a37c9a-53b8-80a5-8759-d6c3d580cbcc" class="">You’ve listened, repeated, and trained your voice — now it’s time to test what you’ve learned<strong>.</strong></p><p id="27a37c9a-53b8-800f-9e5c-e6bec2d479bd" class="">
+</p><ul id="27a37c9a-53b8-8000-b00f-ec42608d49a9" class="toggle"><li><details open=""><summary><strong>🎲 Picture Match</strong></summary><p id="27a37c9a-53b8-80a9-9df0-dbea184c5d2f" class="">
+</p><p id="27a37c9a-53b8-8042-90ab-ff391ac86ba3" class="">
+</p><figure id="27a37c9a-53b8-80d9-b1ac-d582e5e1c14c"><div class="source"><a href="https://wordwall.net/play/95621/924/228">https://wordwall.net/play/95621/924/228</a></div></figure><p id="27a37c9a-53b8-8054-a226-d5b0329b3887" class="">
+</p></details></li></ul><ul id="27a37c9a-53b8-8031-aa5e-e5f7de02cfac" class="toggle"><li><details open=""><summary><strong>🎲 Dictation</strong></summary><p id="27a37c9a-53b8-8068-a784-e121f4d2ebf4" class="">
+</p><figure id="27a37c9a-53b8-8049-818b-f81b1f9fc8c2"><div class="source"><a href="https://wordwall.net/play/96244/015/698">https://wordwall.net/play/96244/015/698</a></div></figure><p id="27a37c9a-53b8-80ce-aa63-e5fd2c342cbe" class="">
+</p></details></li></ul><p id="27a37c9a-53b8-8038-bea4-e19b02e2c753" class="">
+</p></details></li></ul><hr id="27a37c9a-53b8-80a1-8e10-d08602c82a6d"/><ul id="27a37c9a-53b8-814e-828c-dd76910ec2c4" class="toggle"><li><details open=""><summary><strong>🎧 ZTF Podcast Episode #2 - Beyond The Alphabet: Your First 20 Words in English</strong></summary><p id="28d37c9a-53b8-8087-a820-d15cdb89fd59" class="">
+</p><figure id="28d37c9a-53b8-80f1-8536-c8ee5f2dc7f3"><div class="source"><a href="https://youtu.be/AbGTTWHVHhs">https://youtu.be/AbGTTWHVHhs</a></div></figure><div id="28d37c9a-53b8-8036-a198-f87fee1fe811" class="column-list"><div id="28d37c9a-53b8-808f-8cbf-e61d194e004d" style="width:50%" class="column"><ul id="28d37c9a-53b8-801e-bfeb-ff51d0e90b1f" class="toggle"><li><details open=""><summary>🇺🇸 <strong>English Transcription</strong></summary><p id="28d37c9a-53b8-80fc-954e-cc8470480964" class="">
+</p><ol type="1" id="28d37c9a-53b8-807f-bda7-fdff9644bcec" class="numbered-list" start="1"><li>Welcome to the “Deep Dive”.</li></ol><ol type="1" id="28d37c9a-53b8-800b-967d-d3ddfdc6bb38" class="numbered-list" start="2"><li>Okay, so maybe you&#x27;ve just tackled the English alphabet.</li></ol><ol type="1" id="28d37c9a-53b8-8065-8d34-e9003dc99582" class="numbered-list" start="3"><li>You&#x27;re feeling pretty good about it.</li></ol><ol type="1" id="28d37c9a-53b8-803d-a9ff-d98d2e71b85e" class="numbered-list" start="4"><li>You know the letters, the basic sounds.</li></ol><ol type="1" id="28d37c9a-53b8-8058-bf12-c85f4384f68c" class="numbered-list" start="5"><li>Congratulations.</li></ol><ol type="1" id="28d37c9a-53b8-80e9-ad2b-eb883baea5d2" class="numbered-list" start="6"><li>That&#x27;s a huge first step.</li></ol><ol type="1" id="28d37c9a-53b8-80ff-b41e-c97e952b7d49" class="numbered-list" start="7"><li>Absolutely.</li></ol><ol type="1" id="28d37c9a-53b8-80df-82e2-c91c707e55c9" class="numbered-list" start="8"><li>It feels great to get those fundamentals down.</li></ol><ol type="1" id="28d37c9a-53b8-8034-a777-f4d7448dfcd2" class="numbered-list" start="9"><li>It really does.</li></ol><ol type="1" id="28d37c9a-53b8-8027-bbe5-c2d6633d3332" class="numbered-list" start="10"><li>But then comes the question, what next?</li></ol><ol type="1" id="28d37c9a-53b8-8012-ba9f-ce8fad2d3fb3" class="numbered-list" start="11"><li>You&#x27;ve got the building blocks, but what words do you actually learn first?</li></ol><ol type="1" id="28d37c9a-53b8-802c-a438-f5d3f0e32510" class="numbered-list" start="12"><li>The ones that let you start, you know, actually saying things.</li></ol><ol type="1" id="28d37c9a-53b8-80c4-b50b-dc459c338ac7" class="numbered-list" start="13"><li>Right.</li></ol><ol type="1" id="28d37c9a-53b8-80e5-b6b1-d76d21f91364" class="numbered-list" start="14"><li>And are those first words just picked out of a hat or is there a real method?</li></ol><ol type="1" id="28d37c9a-53b8-80b9-af36-f7ea76a8a23f" class="numbered-list" start="15"><li>Exactly.</li></ol><ol type="1" id="28d37c9a-53b8-80bc-8e16-f7f28ee7ed5d" class="numbered-list" start="16"><li>Is it just a random grab bag?</li></ol><ol type="1" id="28d37c9a-53b8-8074-a500-fa4be536ab81" class="numbered-list" start="17"><li>Okay, let&#x27;s unpack this.</li></ol><ol type="1" id="28d37c9a-53b8-8095-9e61-c11f3e640e64" class="numbered-list" start="18"><li>Well, what&#x27;s truly fascinating here, especially for students in the ZTF Experience English Course, is that it&#x27;s definitely not random.</li></ol><ol type="1" id="28d37c9a-53b8-80cb-aae9-faa0f20aac16" class="numbered-list" start="19"><li>We&#x27;re talking about a very specific, carefully chosen list.</li></ol><ol type="1" id="28d37c9a-53b8-809a-8a5d-c9f7036f9769" class="numbered-list" start="20"><li>The first 20 words they get right after mastering the alphabet.</li></ol><ol type="1" id="28d37c9a-53b8-805d-a6f9-f35eff838e15" class="numbered-list" start="21"><li>Okay, the first 20?</li></ol><ol type="1" id="28d37c9a-53b8-8015-90f1-c6991041e083" class="numbered-list" start="22"><li>Interesting.</li></ol><ol type="1" id="28d37c9a-53b8-8081-8929-d26badb9286f" class="numbered-list" start="23"><li>And you might think, okay, start easy.</li></ol><ol type="1" id="28d37c9a-53b8-802a-84eb-ce64ba232cbc" class="numbered-list" start="24"><li>But that&#x27;s not the main goal here.</li></ol><ol type="1" id="28d37c9a-53b8-801b-9d8b-db93b61dbf73" class="numbered-list" start="25"><li>These words, they&#x27;re actually picked because they challenge you.</li></ol><ol type="1" id="28d37c9a-53b8-80ca-903b-c53b60f05293" class="numbered-list" start="26"><li>They break rules.</li></ol><ol type="1" id="28d37c9a-53b8-807a-adef-d61f7d33ac71" class="numbered-list" start="27"><li>They tackle tricky pronunciation points right away.</li></ol><ol type="1" id="28d37c9a-53b8-809e-8887-cecfe6066128" class="numbered-list" start="28"><li>And they have huge communicative value.</li></ol><ol type="1" id="28d37c9a-53b8-806e-85e2-cd7d54e97fd6" class="numbered-list" start="29"><li>Hmm.</li></ol><ol type="1" id="28d37c9a-53b8-8053-9d82-c5e542d9a716" class="numbered-list" start="30"><li>Breaking rules from the start.</li></ol><ol type="1" id="28d37c9a-53b8-8016-92ea-dba2a158e63a" class="numbered-list" start="31"><li>Yeah.</li></ol><ol type="1" id="28d37c9a-53b8-8045-b5a1-e4ffe25f6707" class="numbered-list" start="32"><li>It&#x27;s about building a really solid, resilient foundation from day one, not just handing out easy wins.</li></ol><ol type="1" id="28d37c9a-53b8-80c6-abe8-f770044de525" class="numbered-list" start="33"><li>That sounds bold.</li></ol><ol type="1" id="28d37c9a-53b8-80fe-9430-fc1ab1f9b1ae" class="numbered-list" start="34"><li>My first instinct would be, you know, give beginners something predictable, build their confidence slowly.</li></ol><ol type="1" id="28d37c9a-53b8-805d-9bc7-eeba10e95435" class="numbered-list" start="35"><li>Why hit them with curveballs right out of the gate?</li></ol><ol type="1" id="28d37c9a-53b8-8045-875f-d47d4f8fc1ed" class="numbered-list" start="36"><li>Isn&#x27;t that a bit overwhelming?</li></ol><ol type="1" id="28d37c9a-53b8-800a-9e45-f1f28d738c8f" class="numbered-list" start="37"><li>That&#x27;s a great question.</li></ol><ol type="1" id="28d37c9a-53b8-804a-96d2-e253d0dadeea" class="numbered-list" start="38"><li>It really gets to the core of, well, effective language learning.</li></ol><ol type="1" id="28d37c9a-53b8-808a-af27-cb2152d6d3b2" class="numbered-list" start="39"><li>It might seem counterintuitive, sure.</li></ol><ol type="1" id="28d37c9a-53b8-80e2-8a8b-c9fe90abf5a6" class="numbered-list" start="40"><li>But getting learners used to these curveballs early, it actually helps prevent what we sometimes call sticky mistakes.</li></ol><ol type="1" id="28d37c9a-53b8-808b-87e2-d097d7303009" class="numbered-list" start="41"><li>Sticky mistakes.</li></ol><ol type="1" id="28d37c9a-53b8-8053-91f0-e6c3e23b575a" class="numbered-list" start="42"><li>Yeah, those errors that people pick up early and then just stick.</li></ol><ol type="1" id="28d37c9a-53b8-809c-99ac-d85ef3ca937f" class="numbered-list" start="43"><li>They become incredibly hard to unlearn later.</li></ol><ol type="1" id="28d37c9a-53b8-804b-886a-f15a426748ee" class="numbered-list" start="44"><li>So by showing the exceptions almost as part of the initial rules, the brain starts building a more accurate, more flexible picture of English from the get-go.</li></ol><ol type="1" id="28d37c9a-53b8-8016-a4b0-f97a2ff84769" class="numbered-list" start="45"><li>Oh, okay.</li></ol><ol type="1" id="28d37c9a-53b8-8080-8780-d0d997f3914c" class="numbered-list" start="46"><li>So you&#x27;re kind of preempting bad habits.</li></ol><ol type="1" id="28d37c9a-53b8-80f4-ac03-f95eabb24736" class="numbered-list" start="47"><li>Exactly.</li></ol><ol type="1" id="28d37c9a-53b8-8068-aa95-de1adbcabe54" class="numbered-list" start="48"><li>You&#x27;re training the brain to expect English to be, well, a bit quirky sometimes.</li></ol><ol type="1" id="28d37c9a-53b8-80de-bdce-c1146e9df921" class="numbered-list" start="49"><li>Okay.</li></ol><ol type="1" id="28d37c9a-53b8-8020-886d-ea3d1fa444b7" class="numbered-list" start="50"><li>So let&#x27;s dive into some of these rule breakers then.</li></ol><ol type="1" id="28d37c9a-53b8-8054-be23-c1cbaaeadf61" class="numbered-list" start="51"><li>The very first words on this list are all about people.</li></ol><ol type="1" id="28d37c9a-53b8-809f-b20b-d215751d32f9" class="numbered-list" start="52"><li>We start with “person”, okay, singular, and then immediately “people”, not “persons”.</li></ol><ol type="1" id="28d37c9a-53b8-80fe-9f63-e0b8918bc10f" class="numbered-list" start="53"><li>Right.</li></ol><ol type="1" id="28d37c9a-53b8-809d-aeb6-dd3f5758e490" class="numbered-list" start="54"><li>Straight into an irregular plural.</li></ol><ol type="1" id="28d37c9a-53b8-8086-9e3c-c874ce46213c" class="numbered-list" start="55"><li>And then it continues.</li></ol><ol type="1" id="28d37c9a-53b8-8080-86fe-f0ba4b01aaea" class="numbered-list" start="56"><li>“Woman” becomes “women”, “man” becomes “men”, and “child” becomes “children”.</li></ol><ol type="1" id="28d37c9a-53b8-8071-9774-fdab17f50641" class="numbered-list" start="57"><li>None of these just add an “s”.</li></ol><ol type="1" id="28d37c9a-53b8-809c-afd7-e6b82460b6db" class="numbered-list" start="58"><li>Precisely.</li></ol><ol type="1" id="28d37c9a-53b8-809c-bc3c-ff974e751487" class="numbered-list" start="59"><li>And if we think about the bigger picture, why these specific ones?</li></ol><ol type="1" id="28d37c9a-53b8-80e8-b00b-e7f57de41f97" class="numbered-list" start="60"><li>Well, it immediately tells the learner, hey, plurals aren&#x27;t always simple in English.</li></ol><ol type="1" id="28d37c9a-53b8-8043-a92f-cdf623b1f1ed" class="numbered-list" start="61"><li>If you only learn the “add s” rule first.</li></ol><ol type="1" id="28d37c9a-53b8-80e9-8881-d4d9d904a11c" class="numbered-list" start="62"><li>You&#x27;ll automatically say “childs” or “mans”.</li></ol><ol type="1" id="28d37c9a-53b8-80f1-9c96-dda97340de34" class="numbered-list" start="63"><li>Exactly.</li></ol><ol type="1" id="28d37c9a-53b8-8028-93a0-ed66e529ed2c" class="numbered-list" start="64"><li>And those become those sticky mistakes.</li></ol><ol type="1" id="28d37c9a-53b8-80fd-9f18-e1d29def5acd" class="numbered-list" start="65"><li>By seeing “children” and “men” right at the start, that common error hopefully never even forms.</li></ol><ol type="1" id="28d37c9a-53b8-8088-aa25-f3fcc5c0234e" class="numbered-list" start="66"><li>It&#x27;s proactive.</li></ol><ol type="1" id="28d37c9a-53b8-80ac-b016-c4eac35ec0ca" class="numbered-list" start="67"><li>That makes a lot of sense for avoiding those ingrained errors.</li></ol><ol type="1" id="28d37c9a-53b8-8031-b582-c8b67de48c93" class="numbered-list" start="68"><li>But there&#x27;s more going on there, isn&#x27;t there?</li></ol><ol type="1" id="28d37c9a-53b8-80b9-9635-e9fe33e6f10b" class="numbered-list" start="69"><li>Especially with “man” to “men” or “woman” to “women”.</li></ol><ol type="1" id="28d37c9a-53b8-80b0-aebd-e1c8e3934ec4" class="numbered-list" start="70"><li>It&#x27;s not just the ending changing.</li></ol><ol type="1" id="28d37c9a-53b8-8072-a079-cda2f21cd201" class="numbered-list" start="71"><li>That&#x27;s right.</li></ol><ol type="1" id="28d37c9a-53b8-800e-a52a-c3d0e340d807" class="numbered-list" start="72"><li>These are fascinating examples of internal vowel changes.</li></ol><ol type="1" id="28d37c9a-53b8-80c6-a637-e3e99e1ed2f6" class="numbered-list" start="73"><li>The actual vowel sound inside the word shifts to make it plural.</li></ol><ol type="1" id="28d37c9a-53b8-8091-802f-c6a968bcccd2" class="numbered-list" start="74"><li>Okay.</li></ol><ol type="1" id="28d37c9a-53b8-80be-893f-c117d17bf111" class="numbered-list" start="75"><li>Explain that a bit more.</li></ol><ol type="1" id="28d37c9a-53b8-80c7-9646-fc37b5d7f00e" class="numbered-list" start="76"><li>So think about “man”.</li></ol><ol type="1" id="28d37c9a-53b8-8033-bbf1-f5fc2b1eef50" class="numbered-list" start="77"><li>That “a sound” is like in “cat”, right, “a”.</li></ol><ol type="1" id="28d37c9a-53b8-80f1-89b8-c0f91beca0e0" class="numbered-list" start="78"><li>But “men” has an “e sound”, like in “bed”.</li></ol><ol type="1" id="28d37c9a-53b8-80f6-92a9-c667c826e25b" class="numbered-list" start="79"><li>Yeah.</li></ol><ol type="1" id="28d37c9a-53b8-80b3-b515-e9bf778aff76" class="numbered-list" start="80"><li>Completely different vowel.</li></ol><ol type="1" id="28d37c9a-53b8-80b9-a01d-d1e52a376e0d" class="numbered-list" start="81"><li>Ah, I hear it now.</li></ol><ol type="1" id="28d37c9a-53b8-803c-b2b5-fa8835b8a936" class="numbered-list" start="82"><li>And “woman”, the first syllable sounds like “woo”, but in women, it sounds like “wee”.</li></ol><ol type="1" id="28d37c9a-53b8-8046-a564-d3693e628513" class="numbered-list" start="83"><li>Again, the internal sound changes and the spelling changes a bit too.</li></ol><ol type="1" id="28d37c9a-53b8-805c-8eb1-d8afd47ffabd" class="numbered-list" start="84"><li>For learners whose native language, like Portuguese, usually just changes endings for plurals, this is a whole new concept.</li></ol><ol type="1" id="28d37c9a-53b8-8011-ab2a-ceca145076a2" class="numbered-list" start="85"><li>So it&#x27;s training their ears as much as their vocabulary.</li></ol><ol type="1" id="28d37c9a-53b8-801d-a52f-f05890f4a61a" class="numbered-list" start="86"><li>Absolutely.</li></ol><ol type="1" id="28d37c9a-53b8-806c-a975-f1be3eac01bd" class="numbered-list" start="87"><li>They have to listen for these subtle internal shifts that change the meaning.</li></ol><ol type="1" id="28d37c9a-53b8-80ee-b537-d715dc1fb91a" class="numbered-list" start="88"><li>It&#x27;s a mini lesson in English vowels right there.</li></ol><ol type="1" id="28d37c9a-53b8-8069-b2e3-c8b8e2966c26" class="numbered-list" start="89"><li>Wow.</li></ol><ol type="1" id="28d37c9a-53b8-80d5-a9b8-e3fa56ec05e0" class="numbered-list" start="90"><li>Okay.</li></ol><ol type="1" id="28d37c9a-53b8-80c6-ba14-e88f1be45154" class="numbered-list" start="91"><li>So it&#x27;s not just memorizing.</li></ol><ol type="1" id="28d37c9a-53b8-801f-8d27-e94fb67b1f59" class="numbered-list" start="92"><li>It&#x27;s really attuning your ear, huge step for a beginner.</li></ol><ol type="1" id="28d37c9a-53b8-80c9-8da6-e525c25af050" class="numbered-list" start="93"><li>And then after those people words, the list gives us “friend”.</li></ol><ol type="1" id="28d37c9a-53b8-80d1-baa9-de59c087c6cd" class="numbered-list" start="94"><li>Now that seems pretty straightforward, but maybe not.</li></ol><ol type="1" id="28d37c9a-53b8-807d-a625-e5aa1149b8cf" class="numbered-list" start="95"><li>Well, it is straightforward in English, but it highlights another difference.</li></ol><ol type="1" id="28d37c9a-53b8-805f-a837-c343a2a545e9" class="numbered-list" start="96"><li>“Friend” is completely gender neutral.</li></ol><ol type="1" id="28d37c9a-53b8-80a3-a484-d58155820bd6" class="numbered-list" start="97"><li>Right.</li></ol><ol type="1" id="28d37c9a-53b8-8044-8312-e24e7c7bcd40" class="numbered-list" start="98"><li>Unlike in Portuguese, where you&#x27;d have “amigo” for a male friend and “amiga” for a female friend.</li></ol><ol type="1" id="28d37c9a-53b8-8034-8c0d-c7d634fa5dc2" class="numbered-list" start="99"><li>Exactly.</li></ol><ol type="1" id="28d37c9a-53b8-8070-aab6-e8fbed1249ba" class="numbered-list" start="100"><li>So “friend” forces learners to kind of adjust their mental categories.</li></ol><ol type="1" id="28d37c9a-53b8-80dc-a726-d16621c77317" class="numbered-list" start="101"><li>One English word covers concepts that might need two words in their own language.</li></ol><ol type="1" id="28d37c9a-53b8-8098-8d1c-d34129951723" class="numbered-list" start="102"><li>It shows that language isn&#x27;t just different words.</li></ol><ol type="1" id="28d37c9a-53b8-806b-abca-f0dd5e9ecef6" class="numbered-list" start="103"><li>It&#x27;s sometimes a different way of, well, slicing up the world.</li></ol><ol type="1" id="28d37c9a-53b8-8018-8c60-f584eb4b656a" class="numbered-list" start="104"><li>Fascinating.</li></ol><ol type="1" id="28d37c9a-53b8-8055-a898-c64cff6e9258" class="numbered-list" start="105"><li>Another layer of challenge or maybe just difference right there.</li></ol><ol type="1" id="28d37c9a-53b8-8012-b5f3-dfe8e372293b" class="numbered-list" start="106"><li>Okay.</li></ol><ol type="1" id="28d37c9a-53b8-80b4-bc81-fd449d88cc0d" class="numbered-list" start="107"><li>Let&#x27;s shift gears.</li></ol><ol type="1" id="28d37c9a-53b8-80e0-88b3-ee3661a7d218" class="numbered-list" start="108"><li>The next group of words you mentioned are specifically chosen to challenge pronunciation.</li></ol><ol type="1" id="28d37c9a-53b8-808d-9efa-f35e92808eea" class="numbered-list" start="109"><li>These are the ones with sounds or sound combinations that often don&#x27;t exist or work differently in Portuguese.</li></ol><ol type="1" id="28d37c9a-53b8-80f2-acb0-f27b54b605c4" class="numbered-list" start="110"><li>And where do we start with these pronunciation puzzles?</li></ol><ol type="1" id="28d37c9a-53b8-80e8-92b4-e8ff4d1e3a49" class="numbered-list" start="111"><li>Fittingly, perhaps with “Brazil”.</li></ol><ol type="1" id="28d37c9a-53b8-8040-8dd5-d89b4237cdef" class="numbered-list" start="112"><li>Brazil.</li></ol><ol type="1" id="28d37c9a-53b8-80ba-b72c-e88533e8d242" class="numbered-list" start="113"><li>Why “Brazil”?</li></ol><ol type="1" id="28d37c9a-53b8-80c7-9c8d-c348e7cdf4d7" class="numbered-list" start="114"><li>Seems easy enough.</li></ol><ol type="1" id="28d37c9a-53b8-806e-88c7-e1583cfb76ea" class="numbered-list" start="115"><li>Well, think about it.</li></ol><ol type="1" id="28d37c9a-53b8-8044-b768-c5b55aa48027" class="numbered-list" start="116"><li>It&#x27;s the student&#x27;s home country.</li></ol><ol type="1" id="28d37c9a-53b8-80a9-a805-c8a41d51a08f" class="numbered-list" start="117"><li>It&#x27;s almost guaranteed they&#x27;ll want to say, “I&#x27;m from Brazil” very early on.</li></ol><ol type="1" id="28d37c9a-53b8-80d5-8fd9-c5af2ec96b43" class="numbered-list" start="118"><li>Ah, practical application.</li></ol><ol type="1" id="28d37c9a-53b8-8075-a62c-e1ccc6a6b741" class="numbered-list" start="119"><li>Exactly.</li></ol><ol type="1" id="28d37c9a-53b8-8080-821f-fdb09e481f9f" class="numbered-list" start="120"><li>Getting the pronunciation of their own country right confidently from the start, that&#x27;s incredibly useful and frankly, empowering.</li></ol><ol type="1" id="28d37c9a-53b8-8055-940a-e12132277f26" class="numbered-list" start="121"><li>It connects the language directly to their identity.</li></ol><ol type="1" id="28d37c9a-53b8-801f-b41d-c4d5596b2fb1" class="numbered-list" start="122"><li>That&#x27;s really clever.</li></ol><ol type="1" id="28d37c9a-53b8-80e8-a794-f57fbddb5d51" class="numbered-list" start="123"><li>Start with something essential to them.</li></ol><ol type="1" id="28d37c9a-53b8-80c6-a8bc-d02b56652075" class="numbered-list" start="124"><li>Okay.</li></ol><ol type="1" id="28d37c9a-53b8-8052-a1d8-db5c2b5e640f" class="numbered-list" start="125"><li>What&#x27;s next?</li></ol><ol type="1" id="28d37c9a-53b8-8069-99db-db3579d496f9" class="numbered-list" start="126"><li>This one sounds like a classic challenge.</li></ol><ol type="1" id="28d37c9a-53b8-8070-9588-e0c4fcf4d738" class="numbered-list" start="127"><li>“World”.</li></ol><ol type="1" id="28d37c9a-53b8-80e5-98ac-dd35aa485186" class="numbered-list" start="128"><li>Oh, yes.</li></ol><ol type="1" id="28d37c9a-53b8-804a-b648-d5ae4371766a" class="numbered-list" start="129"><li>“World”.</li></ol><ol type="1" id="28d37c9a-53b8-8004-9a93-efafaf06da22" class="numbered-list" start="130"><li>Just saying it.</li></ol><ol type="1" id="28d37c9a-53b8-8040-ba51-e87ef8f3c317" class="numbered-list" start="131"><li>You, listening right now, try it.</li></ol><ol type="1" id="28d37c9a-53b8-8039-81da-f0b3bb596fea" class="numbered-list" start="132"><li>Feel what your mouth does.</li></ol><ol type="1" id="28d37c9a-53b8-80ff-818a-c0ce819e89ae" class="numbered-list" start="133"><li>“World”.</li></ol><ol type="1" id="28d37c9a-53b8-8015-a7c2-deb99243e680" class="numbered-list" start="134"><li>You&#x27;ve got that “woo” at the start and the “r” sound like in bird.</li></ol><ol type="1" id="28d37c9a-53b8-80f8-be30-d2c2c71e0a8f" class="numbered-list" start="135"><li>Then you have to manage the “l” and the “ld” right after each other.</li></ol><ol type="1" id="28d37c9a-53b8-807b-9af5-f4b52340edf1" class="numbered-list" start="136"><li>Why is that so tough?</li></ol><ol type="1" id="28d37c9a-53b8-8048-9b9b-dd1655f62570" class="numbered-list" start="137"><li>It&#x27;s a real workout for the mouth.</li></ol><ol type="1" id="28d37c9a-53b8-8005-a7de-d4768c2dba50" class="numbered-list" start="138"><li>But the main event is that “r” sound, that vocalic “r”, blending straight into the l”.</li></ol><ol type="1" id="28d37c9a-53b8-8083-acee-ed8d7275c930" class="numbered-list" start="139"><li>Portuguese doesn&#x27;t really make the tongue do that kind of gymnastics in one syllable.</li></ol><ol type="1" id="28d37c9a-53b8-8012-8c81-d8d3e6be073c" class="numbered-list" start="140"><li>Gymnastics is a good word for it.</li></ol><ol type="1" id="28d37c9a-53b8-8096-a4c8-c9077479ec9b" class="numbered-list" start="141"><li>It really is.</li></ol><ol type="1" id="28d37c9a-53b8-8028-901a-f95fd8f2b4eb" class="numbered-list" start="142"><li>It&#x27;s a full phonetic workout in one common word.</li></ol><ol type="1" id="28d37c9a-53b8-8026-8947-e14078fb8afc" class="numbered-list" start="143"><li>Is that typical for our students, that feeling of your tongue being tied in knots?</li></ol><ol type="1" id="28d37c9a-53b8-8084-b93e-cd6df021cdd0" class="numbered-list" start="144"><li>Oh, absolutely.</li></ol><ol type="1" id="28d37c9a-53b8-80d9-b68e-f1a38c5364fa" class="numbered-list" start="145"><li>You can almost see them concentrating, trying to get their mouth to cooperate.</li></ol><ol type="1" id="28d37c9a-53b8-8018-9156-e1879b314360" class="numbered-list" start="146"><li>But when they finally nail it, the look of achievement is fantastic.</li></ol><ol type="1" id="28d37c9a-53b8-8040-8e03-d64c9c19d7b5" class="numbered-list" start="147"><li>I bet.</li></ol><ol type="1" id="28d37c9a-53b8-8083-ad99-f54f908a2300" class="numbered-list" start="148"><li>Okay.</li></ol><ol type="1" id="28d37c9a-53b8-80bb-94d2-cb15768fbe2e" class="numbered-list" start="149"><li>After world, we get “money”.</li></ol><ol type="1" id="28d37c9a-53b8-80ef-af2c-dc650d05ca3e" class="numbered-list" start="150"><li>What&#x27;s the trap here?</li></ol><ol type="1" id="28d37c9a-53b8-805e-887e-d254f4e8dee2" class="numbered-list" start="151"><li>It&#x27;s that ending ”ey”.</li></ol><ol type="1" id="28d37c9a-53b8-8019-a8c4-eddea0129134" class="numbered-list" start="152"><li>In “money”, it&#x27;s actually a short “e” sound like in “bee”.</li></ol><ol type="1" id="28d37c9a-53b8-8055-b3cf-cde84347e965" class="numbered-list" start="153"><li>Very common mistake.</li></ol><ol type="1" id="28d37c9a-53b8-8035-9e22-ec4a271d9c0d" class="numbered-list" start="154"><li>Got it.</li></ol><ol type="1" id="28d37c9a-53b8-8003-87ac-e373130dbfff" class="numbered-list" start="155"><li>And then “time”.</li></ol><ol type="1" id="28d37c9a-53b8-8073-a6b0-dca282973a4d" class="numbered-list" start="156"><li>Simple.</li></ol><ol type="1" id="28d37c9a-53b8-80dc-80e0-dc78f94f44a9" class="numbered-list" start="157"><li>Four letters.</li></ol><ol type="1" id="28d37c9a-53b8-802b-ba6a-f95c5352c7d3" class="numbered-list" start="158"><li>Deceptively simple.</li></ol><ol type="1" id="28d37c9a-53b8-8065-9eeb-d526447b17cc" class="numbered-list" start="159"><li>Time introduces the magic of the “silent e”.</li></ol><ol type="1" id="28d37c9a-53b8-801c-8a22-c4ecd773e662" class="numbered-list" start="160"><li>Ah!</li></ol><ol type="1" id="28d37c9a-53b8-80ae-9979-d8da5f7d85f4" class="numbered-list" start="161"><li>The “silent e”.</li></ol><ol type="1" id="28d37c9a-53b8-8023-938e-f3fc5f0d9688" class="numbered-list" start="162"><li>That “e” at the end isn&#x27;t pronounced.</li></ol><ol type="1" id="28d37c9a-53b8-80f2-9498-d5cbac7c35c8" class="numbered-list" start="163"><li>And it&#x27;s used all the time.</li></ol><ol type="1" id="28d37c9a-53b8-80ec-ba3e-d4fdfca93d2e" class="numbered-list" start="164"><li>So getting it right early builds confidence.</li></ol><ol type="1" id="28d37c9a-53b8-8059-be4b-d2e668a5a4c5" class="numbered-list" start="165"><li>What&#x27;s after “time”?</li></ol><ol type="1" id="28d37c9a-53b8-8020-951e-f0197724af3e" class="numbered-list" start="166"><li>“Teacher”.</li></ol><ol type="1" id="28d37c9a-53b8-80a6-826f-c58be0e9bce6" class="numbered-list" start="167"><li>Now the sounds themselves aren&#x27;t totally alien, but the way the “t” is produced at the start of a word in English is often different.</li></ol><ol type="1" id="28d37c9a-53b8-800d-898b-f836b957283d" class="numbered-list" start="168"><li>For many Brazilian Portuguese speakers, the “t” is often softer, maybe dentalized, with a tongue right behind the teeth.</li></ol><ol type="1" id="28d37c9a-53b8-80bd-af6a-dd1ce26a48cc" class="numbered-list" start="169"><li>In English, especially this initial “t”, it&#x27;s usually alveolar, a bit further back.</li></ol><ol type="1" id="28d37c9a-53b8-80e1-b657-dc5a9f32daea" class="numbered-list" start="170"><li>And often it has a little puff of air aspiration.</li></ol><ol type="1" id="28d37c9a-53b8-809c-a26d-ff5cdac5b721" class="numbered-list" start="171"><li>Think of saying “t” almost while smiling.</li></ol><ol type="1" id="28d37c9a-53b8-80d0-96f3-edbd8fb8573c" class="numbered-list" start="172"><li>It&#x27;s subtle, but it affects clarity.</li></ol><ol type="1" id="28d37c9a-53b8-8039-9c0c-d08b513cfd28" class="numbered-list" start="173"><li>Interesting.</li></ol><ol type="1" id="28d37c9a-53b8-8037-b731-e19a16f0dc07" class="numbered-list" start="174"><li>And there&#x27;s a cultural point too.</li></ol><ol type="1" id="28d37c9a-53b8-8062-938c-e5a8a0e024b5" class="numbered-list" start="175"><li>Yeah.</li></ol><ol type="1" id="28d37c9a-53b8-80ae-8661-fd761fe529e7" class="numbered-list" start="176"><li>It&#x27;s worth mentioning.</li></ol><ol type="1" id="28d37c9a-53b8-80b2-a8e7-f10425230a69" class="numbered-list" start="177"><li>In Brazil, it&#x27;s super common to call almost any instructor “teacher”.</li></ol><ol type="1" id="28d37c9a-53b8-802b-b2ad-e65d0d9b8a62" class="numbered-list" start="178"><li>But in English-speaking countries, that&#x27;s not always the case.</li></ol><ol type="1" id="28d37c9a-53b8-805f-bc6c-cc7aea3a8b1b" class="numbered-list" start="179"><li>You might use professor or other titles, especially in higher education.</li></ol><ol type="1" id="28d37c9a-53b8-80a8-98b3-c7a31af189d8" class="numbered-list" start="180"><li>So “teacher” also opens the door to that little cultural nuance about usage.</li></ol><ol type="1" id="28d37c9a-53b8-8012-b630-cad37ee4e004" class="numbered-list" start="181"><li>Fascinating how much can be layered into one word choice.</li></ol><ol type="1" id="28d37c9a-53b8-803a-b6fb-cfdcac55be05" class="numbered-list" start="182"><li>Okay, next up, “knowledge”.</li></ol><ol type="1" id="28d37c9a-53b8-8065-891e-dc37acb940ca" class="numbered-list" start="183"><li>What&#x27;s a challenge hiding in “knowledge”?</li></ol><ol type="1" id="28d37c9a-53b8-8064-881a-c5cec8c63055" class="numbered-list" start="184"><li>It&#x27;s a classic silent letter, that “K” at the beginning.</li></ol><ol type="1" id="28d37c9a-53b8-8015-88e8-f3a790cd4052" class="numbered-list" start="185"><li>Totally silent.</li></ol><ol type="1" id="28d37c9a-53b8-802c-90d3-ecabca62d147" class="numbered-list" start="186"><li>Right.</li></ol><ol type="1" id="28d37c9a-53b8-80d3-8200-d8f4bb22ea29" class="numbered-list" start="187"><li>Like in “knife” or “know”.</li></ol><ol type="1" id="28d37c9a-53b8-80da-8188-d04b4e4bf527" class="numbered-list" start="188"><li>Exactly.</li></ol><ol type="1" id="28d37c9a-53b8-80a5-9606-d05b2633c18d" class="numbered-list" start="189"><li>It&#x27;s a pattern learners just have to learn.</li></ol><ol type="1" id="28d37c9a-53b8-8078-a222-ffec0b4df0d8" class="numbered-list" start="190"><li>You can&#x27;t always sound out every letter you see in English.</li></ol><ol type="1" id="28d37c9a-53b8-80ef-beab-da730dec26c6" class="numbered-list" start="191"><li>That&#x27;s a key lesson.</li></ol><ol type="1" id="28d37c9a-53b8-8065-8bee-f4d3930f3b4f" class="numbered-list" start="192"><li>Definitely.</li></ol><ol type="1" id="28d37c9a-53b8-8001-b42f-df9ad47e08ed" class="numbered-list" start="193"><li>And after “knowledge”?</li></ol><ol type="1" id="28d37c9a-53b8-808d-adf8-dc95203f4c24" class="numbered-list" start="194"><li>“Love”.</li></ol><ol type="1" id="28d37c9a-53b8-80d9-95eb-cc53288fca02" class="numbered-list" start="195"><li><mark class="highlight-default">Another one that&#x27;s very frequently mispronounced.</mark></li></ol><ol type="1" id="28d37c9a-53b8-8086-974d-c633e4577110" class="numbered-list" start="196"><li>The vowel sound in “love” is that “short e” sound.</li></ol><ol type="1" id="28d37c9a-53b8-806c-938e-f9a2a5232b14" class="numbered-list" start="197"><li>And that sound is tricky.</li></ol><ol type="1" id="28d37c9a-53b8-80c4-9233-ea3cafae516e" class="numbered-list" start="198"><li>That specific sound doesn&#x27;t really exist in Portuguese.</li></ol><ol type="1" id="28d37c9a-53b8-801c-934b-ea055ad032a0" class="numbered-list" start="199"><li>So it&#x27;s a completely new sound for learners to hear and produce.</li></ol><ol type="1" id="28d37c9a-53b8-8083-a52c-ced519e8b9aa" class="numbered-list" start="200"><li>Plus, like time, the “e” at the end of “love” is silent.</li></ol><ol type="1" id="28d37c9a-53b8-80ee-b8e6-de6afa0683b5" class="numbered-list" start="201"><li>So a “silent e” and a brand new vowel sound.</li></ol><ol type="1" id="28d37c9a-53b8-80c9-833b-d0884d32d355" class="numbered-list" start="202"><li>Wow.</li></ol><ol type="1" id="28d37c9a-53b8-8032-b8d6-c1ddc6d5b33c" class="numbered-list" start="203"><li>“Love” is working hard.</li></ol><ol type="1" id="28d37c9a-53b8-80c3-a20d-e9a8a98e1bc2" class="numbered-list" start="204"><li>It really is.</li></ol><ol type="1" id="28d37c9a-53b8-8084-881b-fc75382933ff" class="numbered-list" start="205"><li>And rounding out this pronunciation section, the list also includes “culture” and “business”.</li></ol><ol type="1" id="28d37c9a-53b8-803e-bb14-d47c2affd455" class="numbered-list" start="206"><li>And I assume they have their own phonetic hurdles for Brazilian learners.</li></ol><ol type="1" id="28d37c9a-53b8-80ad-941d-c42d3d38b128" class="numbered-list" start="207"><li>They certainly do.</li></ol><ol type="1" id="28d37c9a-53b8-8039-aea6-ffc6770af2ae" class="numbered-list" start="208"><li>Similar pitfalls, different combinations.</li></ol><ol type="1" id="28d37c9a-53b8-80d0-803e-c1fe8b46559c" class="numbered-list" start="209"><li>Each one in this pronunciation section is deliberately chosen to target a specific common difficulty right from the start.</li></ol><ol type="1" id="28d37c9a-53b8-809a-acf1-fd476e5aed4e" class="numbered-list" start="210"><li>It&#x27;s very intentional, almost like phonetic surgery.</li></ol><ol type="1" id="28d37c9a-53b8-8047-bdf3-d5442d204782" class="numbered-list" start="211"><li>Phonetic surgery.</li></ol><ol type="1" id="28d37c9a-53b8-80dd-bd04-cf89231aa8fe" class="numbered-list" start="212"><li>I like that.</li></ol><ol type="1" id="28d37c9a-53b8-808e-b14d-e192ca7ff0df" class="numbered-list" start="213"><li>Okay.</li></ol><ol type="1" id="28d37c9a-53b8-80f0-b6a2-dfe6b154f544" class="numbered-list" start="214"><li>Let&#x27;s move to the final group.</li></ol><ol type="1" id="28d37c9a-53b8-8063-903c-c222c74057d4" class="numbered-list" start="215"><li>These are words chosen for their high communicative value.</li></ol><ol type="1" id="28d37c9a-53b8-80d0-9aab-e4b757f556cc" class="numbered-list" start="216"><li>The essentials, right?</li></ol><ol type="1" id="28d37c9a-53b8-801a-afa1-c18dd1dce7de" class="numbered-list" start="217"><li>Exactly.</li></ol><ol type="1" id="28d37c9a-53b8-8031-b543-e23c17af2a1b" class="numbered-list" start="218"><li>These are the words you, our listener, are going to need and use constantly in real life.</li></ol><ol type="1" id="28d37c9a-53b8-8020-9daf-f505bb26bae5" class="numbered-list" start="219"><li>Very practical.</li></ol><ol type="1" id="28d37c9a-53b8-805c-b1d1-c30bd31188fe" class="numbered-list" start="220"><li>What are the first ones here?</li></ol><ol type="1" id="28d37c9a-53b8-80f0-9ff3-f8dae0e6459e" class="numbered-list" start="221"><li>We start with the absolute basics, “food” and “water”.</li></ol><ol type="1" id="28d37c9a-53b8-8000-a704-e3d4df53c5de" class="numbered-list" start="222"><li>Can&#x27;t get much more essential than that.</li></ol><ol type="1" id="28d37c9a-53b8-800f-a932-cb96b1357ae7" class="numbered-list" start="223"><li>Right.</li></ol><ol type="1" id="28d37c9a-53b8-802f-ab13-d16f62b98a53" class="numbered-list" start="224"><li>If we connect this to the bigger picture, these are fundamental needs.</li></ol><ol type="1" id="28d37c9a-53b8-800b-8437-de1263deaefa" class="numbered-list" start="225"><li>You&#x27;ll use them in countless daily situations.</li></ol><ol type="1" id="28d37c9a-53b8-80fb-bec2-fe675a095ddd" class="numbered-list" start="226"><li>But even these have phonetic points.</li></ol><ol type="1" id="28d37c9a-53b8-80bd-a30e-c8b9961e99f9" class="numbered-list" start="227"><li>For food, notice the “u” sound.</li></ol><ol type="1" id="28d37c9a-53b8-80ae-8715-cf83bbb08ced" class="numbered-list" start="228"><li>It&#x27;s the “long u” sound, like in “moon” or “blue”.</li></ol><ol type="1" id="28d37c9a-53b8-8039-9b9b-db12b0648a12" class="numbered-list" start="229"><li>Not the short, like in “good” or “book”.</li></ol><ol type="1" id="28d37c9a-53b8-80c0-89ac-fa704b1ecfad" class="numbered-list" start="230"><li>Correct.</li></ol><ol type="1" id="28d37c9a-53b8-80eb-bb4f-e9ebc4845f56" class="numbered-list" start="231"><li>Getting that “long u” right in “food” is important.</li></ol><ol type="1" id="28d37c9a-53b8-80ad-a783-d4a20469f7f8" class="numbered-list" start="232"><li>And “water”.</li></ol><ol type="1" id="28d37c9a-53b8-80fa-872b-e97141e1e2dc" class="numbered-list" start="233"><li>Another seemingly simple one, but pronunciation can vary.</li></ol><ol type="1" id="28d37c9a-53b8-80dd-98c6-cd6db4c8b2b1" class="numbered-list" start="234"><li>It definitely can.</li></ol><ol type="1" id="28d37c9a-53b8-80da-8036-f3e39a541e05" class="numbered-list" start="235"><li>And that&#x27;s a lesson in itself.</li></ol><ol type="1" id="28d37c9a-53b8-8008-b91e-fb9907945b51" class="numbered-list" start="236"><li>In American English, quite often, that “t” in the middle of water isn&#x27;t a “sharp t” sound.</li></ol><ol type="1" id="28d37c9a-53b8-80f8-96a5-d85ec90c0a55" class="numbered-list" start="237"><li>It becomes a “flap t”, which sounds very much like a quick, “soft d”.</li></ol><ol type="1" id="28d37c9a-53b8-80b4-bad4-c1644c111845" class="numbered-list" start="238"><li>So less “water” and more like “water”.</li></ol><ol type="1" id="28d37c9a-53b8-8002-a4f7-d102b873ff0a" class="numbered-list" start="239"><li>Exactly.</li></ol><ol type="1" id="28d37c9a-53b8-806c-892e-f61bbb85a1b4" class="numbered-list" start="240"><li>Water.</li></ol><ol type="1" id="28d37c9a-53b8-8007-abc1-daa391d5106d" class="numbered-list" start="241"><li>So even these incredibly basic words, “food” and “water”, they&#x27;re not just vocabulary items.</li></ol><ol type="1" id="28d37c9a-53b8-8090-b8dd-d1aa247fb007" class="numbered-list" start="242"><li>They carry important phonetic details.</li></ol><ol type="1" id="28d37c9a-53b8-80bd-b110-d6216046850c" class="numbered-list" start="243"><li>Nailing these early on, it builds huge confidence because you can immediately talk about essential things correctly.</li></ol><ol type="1" id="28d37c9a-53b8-8088-a834-fffb094365cb" class="numbered-list" start="244"><li>It allows you to connect and communicate right away.</li></ol><ol type="1" id="28d37c9a-53b8-80e7-9568-d0f3cf8c46d8" class="numbered-list" start="245"><li>Precisely.</li></ol><ol type="1" id="28d37c9a-53b8-8097-8b26-f4cd37b0eb58" class="numbered-list" start="246"><li>These high-value words are the immediate building blocks for real-world interaction.</li></ol><ol type="1" id="28d37c9a-53b8-8078-8275-d4acbbe725bb" class="numbered-list" start="247"><li>Tackling their sounds early, understanding their utility, it equips learners to start speaking naturally from the get-go.</li></ol><ol type="1" id="28d37c9a-53b8-80ca-9761-f4ed7106bed1" class="numbered-list" start="248"><li>What an incredible deep dive!</li></ol><ol type="1" id="28d37c9a-53b8-801b-bd6b-f421f24dffdb" class="numbered-list" start="249"><li>And this really raises an important question for you, the listener.</li></ol><ol type="1" id="28d37c9a-53b8-8046-bb99-c71ec7713983" class="numbered-list" start="250"><li>How do these specific words, chosen for their challenges and their usefulness, start to shape your first impressions and your basic understanding of a new language like English?</li></ol><ol type="1" id="28d37c9a-53b8-8020-9c89-c02aaedaa4ed" class="numbered-list" start="251"><li>How do they empower you, even with just these 20, to actually begin speaking?</li></ol><ol type="1" id="28d37c9a-53b8-802e-8899-c31c50addf4b" class="numbered-list" start="252"><li>Something to think about.</li></ol><ol type="1" id="28d37c9a-53b8-8013-bb20-f04bcf4ee1be" class="numbered-list" start="253"><li>Definitely.</li></ol><ol type="1" id="28d37c9a-53b8-805a-9019-e04934c4cce6" class="numbered-list" start="254"><li>I really hope you found this exploration insightful, maybe had a few aha moments with us today.</li></ol><ol type="1" id="28d37c9a-53b8-803d-95b5-c1551aa1f9ee" class="numbered-list" start="255"><li>It&#x27;s just amazing how much thought goes into laying that initial groundwork, making sure every single word counts for more than just its dictionary definition.</li></ol><ol type="1" id="28d37c9a-53b8-8013-9bd6-cf317c6eb477" class="numbered-list" start="256"><li>Thanks so much for joining us for this deep dive.</li></ol><ol type="1" id="28d37c9a-53b8-80ad-bfb2-f32fd58ee2d6" class="numbered-list" start="257"><li>Farewell for now, and keep exploring.</li></ol></details></li></ul></div><div id="28d37c9a-53b8-80bb-ac40-e33d12b6e703" style="width:50%" class="column"><ul id="c725ab3e-e141-412d-87e1-9156024edd20" class="toggle"><li><details open=""><summary>🇧🇷 <strong>Portuguese Transcription</strong></summary><p id="28d37c9a-53b8-8151-96cf-c4497d7336f9" class="">
+</p><ol type="1" id="28d37c9a-53b8-8137-a2a6-d75eabe61019" class="numbered-list" start="1"><li>Bem-vindo ao “Mergulho Profundo”.</li></ol><ol type="1" id="28d37c9a-53b8-817e-9d61-ed8f2ed6d29e" class="numbered-list" start="2"><li>Ok, então talvez você tenha acabado de enfrentar o alfabeto inglês.</li></ol><ol type="1" id="28d37c9a-53b8-8155-a4c8-efc8cf951bf0" class="numbered-list" start="3"><li>Você está se sentindo muito bem com isso.</li></ol><ol type="1" id="28d37c9a-53b8-813f-8f7b-f45493aef54a" class="numbered-list" start="4"><li>Você conhece as letras, os sons básicos.</li></ol><ol type="1" id="28d37c9a-53b8-8155-85f7-ea2c2dd5fa7b" class="numbered-list" start="5"><li>Parabéns.</li></ol><ol type="1" id="28d37c9a-53b8-817a-b4a9-d735dc9f5335" class="numbered-list" start="6"><li>Esse é um grande primeiro passo.</li></ol><ol type="1" id="28d37c9a-53b8-8131-9ca4-db0130b51fff" class="numbered-list" start="7"><li>Com certeza.</li></ol><ol type="1" id="28d37c9a-53b8-810b-9ce8-f30572d3ed53" class="numbered-list" start="8"><li>É ótimo dominar esses fundamentos.</li></ol><ol type="1" id="28d37c9a-53b8-8139-b1e4-ce5d3f22a5ee" class="numbered-list" start="9"><li>Realmente é.</li></ol><ol type="1" id="28d37c9a-53b8-81fd-b542-c147e4575be7" class="numbered-list" start="10"><li>Mas então vem a pergunta, o que vem a seguir?</li></ol><ol type="1" id="28d37c9a-53b8-8111-b763-dd1d0c34ea84" class="numbered-list" start="11"><li>Você tem os alicerces, mas quais palavras você realmente aprende primeiro?</li></ol><ol type="1" id="28d37c9a-53b8-816d-91af-dbc4ef30b6f4" class="numbered-list" start="12"><li>Aquelas que permitem que você comece, sabe, a realmente dizer coisas.</li></ol><ol type="1" id="28d37c9a-53b8-81c5-830a-c841a371dc81" class="numbered-list" start="13"><li>Certo.</li></ol><ol type="1" id="28d37c9a-53b8-81d8-a0fd-f94306155e87" class="numbered-list" start="14"><li>E essas primeiras palavras são escolhidas aleatoriamente ou há um método de verdade?</li></ol><ol type="1" id="28d37c9a-53b8-81e5-a19e-f2e9223122aa" class="numbered-list" start="15"><li>Exatamente.</li></ol><ol type="1" id="28d37c9a-53b8-81d0-8219-cdbd6923691a" class="numbered-list" start="16"><li>É apenas uma seleção aleatória?</li></ol><ol type="1" id="28d37c9a-53b8-81b8-8cec-dfc0b6eab1b5" class="numbered-list" start="17"><li>Ok, vamos desvendar isso.</li></ol><ol type="1" id="28d37c9a-53b8-8146-af4d-f9380ebadcc1" class="numbered-list" start="18"><li>Bem, o que é realmente fascinante aqui, especialmente para os alunos do ZTF Experience English Course, é que definitivamente não é aleatório.</li></ol><ol type="1" id="28d37c9a-53b8-8192-95e8-c79ebfe89b4c" class="numbered-list" start="19"><li>Estamos falando de uma lista muito específica, cuidadosamente escolhida.</li></ol><ol type="1" id="28d37c9a-53b8-8120-9670-c7f6ecb74b8f" class="numbered-list" start="20"><li>As primeiras 20 palavras que eles aprendem logo após dominar o alfabeto.</li></ol><ol type="1" id="28d37c9a-53b8-816d-99cb-f12f0f1a0da1" class="numbered-list" start="21"><li>Ok, as primeiras 20?</li></ol><ol type="1" id="28d37c9a-53b8-8117-8991-df93c3ec2b01" class="numbered-list" start="22"><li>Interessante.</li></ol><ol type="1" id="28d37c9a-53b8-8162-a23c-d7f200adf8d1" class="numbered-list" start="23"><li>E você pode pensar, ok, comece pelo fácil.</li></ol><ol type="1" id="28d37c9a-53b8-8135-8472-e9aa997c063e" class="numbered-list" start="24"><li>Mas esse não é o objetivo principal aqui.</li></ol><ol type="1" id="28d37c9a-53b8-8135-9e72-e6c22a0220f5" class="numbered-list" start="25"><li>Essas palavras, na verdade, são escolhidas porque desafiam você.</li></ol><ol type="1" id="28d37c9a-53b8-812e-a335-cdb7d5598445" class="numbered-list" start="26"><li>Elas quebram regras.</li></ol><ol type="1" id="28d37c9a-53b8-81b4-a04b-d7345293151a" class="numbered-list" start="27"><li>Elas enfrentam pontos espinhosos de pronúncia logo de cara.</li></ol><ol type="1" id="28d37c9a-53b8-81a9-844c-c4d1dedf72a8" class="numbered-list" start="28"><li>E elas têm um valor comunicativo enorme.</li></ol><ol type="1" id="28d37c9a-53b8-8174-8b09-d0d86ee77d1f" class="numbered-list" start="29"><li>Hmm.</li></ol><ol type="1" id="28d37c9a-53b8-81f4-8a63-e62b0e3ede78" class="numbered-list" start="30"><li>Quebrando regras desde o início.</li></ol><ol type="1" id="28d37c9a-53b8-811d-b23a-c02ce1a7fcf9" class="numbered-list" start="31"><li>Sim.</li></ol><ol type="1" id="28d37c9a-53b8-8164-bec0-f034ab77f37c" class="numbered-list" start="32"><li>A ideia é construir uma base realmente sólida e resiliente desde o primeiro dia, não apenas distribuir vitórias fáceis.</li></ol><ol type="1" id="28d37c9a-53b8-81ef-b100-c5f8716f5160" class="numbered-list" start="33"><li>Isso parece ousado.</li></ol><ol type="1" id="28d37c9a-53b8-8182-8739-e05236660389" class="numbered-list" start="34"><li>Meu primeiro instinto seria, sabe, dar aos iniciantes algo previsível, construir a confiança deles aos poucos.</li></ol><ol type="1" id="28d37c9a-53b8-8131-a104-fe0dbde3f40e" class="numbered-list" start="35"><li>Por que lançar desafios imprevisíveis logo de cara?</li></ol><ol type="1" id="28d37c9a-53b8-8132-9a53-fb0a24aface7" class="numbered-list" start="36"><li>Isso não é um pouco de mais?</li></ol><ol type="1" id="28d37c9a-53b8-8119-9fa4-f9142b182bb1" class="numbered-list" start="37"><li>Otima pergunta.</li></ol><ol type="1" id="28d37c9a-53b8-8136-bcc1-eabd1a497037" class="numbered-list" start="38"><li>Ela vai direto ao cerne do, bem, aprendizado eficaz de línguas.</li></ol><ol type="1" id="28d37c9a-53b8-818f-9b76-f1f92d478eb3" class="numbered-list" start="39"><li>Pode parecer contra-intuitivo, claro.</li></ol><ol type="1" id="28d37c9a-53b8-81f7-8767-cf6991b423d2" class="numbered-list" start="40"><li>Mas acostumar os alunos a esses desvios logo no começo na verdade ajuda a evitar o que às vezes chamamos de erros persistentes.</li></ol><ol type="1" id="28d37c9a-53b8-8169-8a65-e457d769b38c" class="numbered-list" start="41"><li>Erros persistentes.</li></ol><ol type="1" id="28d37c9a-53b8-8190-9cfe-c65167f66d0d" class="numbered-list" start="42"><li>Sim, aqueles erros que as pessoas adquirem cedo e depois simplesmente ficam.</li></ol><ol type="1" id="28d37c9a-53b8-81df-b533-e1e93a0f91ac" class="numbered-list" start="43"><li>Eles se tornam incrivelmente difíceis de desaprender depois.</li></ol><ol type="1" id="28d37c9a-53b8-817a-8849-c346d56fc024" class="numbered-list" start="44"><li>Então, ao mostrar as exceções quase como parte das regras iniciais, o cérebro começa a construir desde o começo uma visão mais precisa e flexível do inglês.</li></ol><ol type="1" id="28d37c9a-53b8-8100-b406-c7a6fe0d3d76" class="numbered-list" start="45"><li>Ah, ok.</li></ol><ol type="1" id="28d37c9a-53b8-81a1-bc54-cfda630e98d9" class="numbered-list" start="46"><li>Então você está meio que prevenindo maus hábitos.</li></ol><ol type="1" id="28d37c9a-53b8-81fd-b89c-d39cc783d4d3" class="numbered-list" start="47"><li>Exatamente.</li></ol><ol type="1" id="28d37c9a-53b8-814f-a725-db2c4184fe86" class="numbered-list" start="48"><li>Você está treinando o cérebro para esperar que o inglês seja, bem, um pouco peculiar às vezes.</li></ol><ol type="1" id="28d37c9a-53b8-8133-8bd7-d0f9d94e076b" class="numbered-list" start="49"><li>Ok.</li></ol><ol type="1" id="28d37c9a-53b8-81e2-ad00-e86bfbcf8747" class="numbered-list" start="50"><li>Então vamos mergulhar em alguns desses quebra-regras.</li></ol><ol type="1" id="28d37c9a-53b8-8159-8ceb-dbc85fd8c377" class="numbered-list" start="51"><li>As primeiras palavras dessa lista são todas sobre pessoas.</li></ol><ol type="1" id="28d37c9a-53b8-81d8-8e82-efe546c70be3" class="numbered-list" start="52"><li>Começamos com “person”, ok, singular, e então imediatamente “people”, não “persons”.</li></ol><ol type="1" id="28d37c9a-53b8-811b-aa6e-ee519aa2505e" class="numbered-list" start="53"><li>Certo.</li></ol><ol type="1" id="28d37c9a-53b8-81bf-9001-d20ee0d28f34" class="numbered-list" start="54"><li>Direto para um plural irregular.</li></ol><ol type="1" id="28d37c9a-53b8-81fe-817b-f4163b44c35f" class="numbered-list" start="55"><li>E então continua.</li></ol><ol type="1" id="28d37c9a-53b8-8178-865d-f2cfa911e97e" class="numbered-list" start="56"><li>“Woman” se torna “women”, “man” se torna “men”, e “child” se torna “children”.</li></ol><ol type="1" id="28d37c9a-53b8-8197-9f27-e5288393dcdf" class="numbered-list" start="57"><li>Nenhuma dessas apenas adiciona um “s”.</li></ol><ol type="1" id="28d37c9a-53b8-8143-9055-dc50deed2b36" class="numbered-list" start="58"><li>Precisamente.</li></ol><ol type="1" id="28d37c9a-53b8-81ac-8884-c21933cea45a" class="numbered-list" start="59"><li>E se pensarmos no quadro maior, por que essas específicas?</li></ol><ol type="1" id="28d37c9a-53b8-81e2-9db6-c1849d9edd59" class="numbered-list" start="60"><li>Bem, isso imediatamente diz ao aluno: olha, plurais nem sempre são simples em inglês.</li></ol><ol type="1" id="28d37c9a-53b8-8160-8b9b-f2b437cef034" class="numbered-list" start="61"><li>Se você aprende primeiro só a regra de “acrescentar s”.</li></ol><ol type="1" id="28d37c9a-53b8-8104-8415-f130e682cf95" class="numbered-list" start="62"><li>Você automaticamente dirá “childs” ou “mans”.</li></ol><ol type="1" id="28d37c9a-53b8-8184-bfcf-dcde99324ec8" class="numbered-list" start="63"><li>Exatamente.</li></ol><ol type="1" id="28d37c9a-53b8-81b8-b561-e98630989c55" class="numbered-list" start="64"><li>E esses se tornam aqueles erros persistentes.</li></ol><ol type="1" id="28d37c9a-53b8-8197-ac57-fedfc966ab95" class="numbered-list" start="65"><li>Ao ver “children” e “men” logo de início, esse erro comum, com sorte, nem chega a se formar.</li></ol><ol type="1" id="28d37c9a-53b8-81d5-af11-fadac793f14d" class="numbered-list" start="66"><li>É proativo.</li></ol><ol type="1" id="28d37c9a-53b8-81f5-b971-c31a2ba62791" class="numbered-list" start="67"><li>Isso faz muito sentido para evitar esses erros enraizados.</li></ol><ol type="1" id="28d37c9a-53b8-81b2-a083-e3d8e1f0b030" class="numbered-list" start="68"><li>Mas tem mais coisas acontecendo aí, não tem?</li></ol><ol type="1" id="28d37c9a-53b8-81c9-a339-c23db91fcbaa" class="numbered-list" start="69"><li>Especialmente com “man” para “men” ou “woman” para “women”.</li></ol><ol type="1" id="28d37c9a-53b8-81a2-9fec-f400d1d2a035" class="numbered-list" start="70"><li>Não é apenas a terminação que muda.</li></ol><ol type="1" id="28d37c9a-53b8-818a-9440-c332d493a04a" class="numbered-list" start="71"><li>Isso mesmo.</li></ol><ol type="1" id="28d37c9a-53b8-8187-b39d-d3a73aafb6d2" class="numbered-list" start="72"><li>Esses são exemplos fascinantes de mudanças internas de vogais.</li></ol><ol type="1" id="28d37c9a-53b8-81e4-986e-cee383350f9f" class="numbered-list" start="73"><li>O som da vogal dentro da palavra muda para torná-la plural.</li></ol><ol type="1" id="28d37c9a-53b8-81e0-916b-f377916b7bd5" class="numbered-list" start="74"><li>Ok.</li></ol><ol type="1" id="28d37c9a-53b8-8196-8085-d68bf405f17b" class="numbered-list" start="75"><li>Explique isso um pouco mais.</li></ol><ol type="1" id="28d37c9a-53b8-81d0-b1cf-dccf2ca0f0e9" class="numbered-list" start="76"><li>Então pense em “man”.</li></ol><ol type="1" id="28d37c9a-53b8-819c-8bf3-e6729a9b9433" class="numbered-list" start="77"><li>Aquele “som de a” é como em “cat”, certo, “a”.</li></ol><ol type="1" id="28d37c9a-53b8-8181-989f-d5595d55811a" class="numbered-list" start="78"><li>Mas “men” tem um “som de e”, como em “bed”.</li></ol><ol type="1" id="28d37c9a-53b8-81e0-802b-ea20dd527704" class="numbered-list" start="79"><li>Sim.</li></ol><ol type="1" id="28d37c9a-53b8-81f5-bc13-f09a4de0b42c" class="numbered-list" start="80"><li>Uma vogal completamente diferente.</li></ol><ol type="1" id="28d37c9a-53b8-81bd-a1a5-efa117c87412" class="numbered-list" start="81"><li>Ah, eu ouço agora.</li></ol><ol type="1" id="28d37c9a-53b8-8100-9c6f-c692c1a83529" class="numbered-list" start="82"><li>E “woman”, a primeira sílaba soa como “woo”, mas em women, soa como “wee”.</li></ol><ol type="1" id="28d37c9a-53b8-8163-8b36-f448cb18d52a" class="numbered-list" start="83"><li>Novamente, o som interno muda e a escrita muda um pouco também.</li></ol><ol type="1" id="28d37c9a-53b8-8166-b807-eef23d70fe8d" class="numbered-list" start="84"><li>Para alunos cuja língua nativa, como o português, geralmente só muda as terminações no plural, isso é um conceito totalmente novo.</li></ol><ol type="1" id="28d37c9a-53b8-8156-8833-ef42ca4728d4" class="numbered-list" start="85"><li>Então é um treino do ouvido tanto quanto do vocabulário.</li></ol><ol type="1" id="28d37c9a-53b8-8129-b76e-e7c7341bb0f2" class="numbered-list" start="86"><li>Absolutamente.</li></ol><ol type="1" id="28d37c9a-53b8-81f9-b674-ebe3fe1b597b" class="numbered-list" start="87"><li>Eles precisam perceber essas mudanças internas sutis que alteram o significado.</li></ol><ol type="1" id="28d37c9a-53b8-81a3-a2b7-e23f9f085247" class="numbered-list" start="88"><li>É uma mini aula sobre vogais em inglês ali mesmo.</li></ol><ol type="1" id="28d37c9a-53b8-8149-9ab0-e044e38c5cd0" class="numbered-list" start="89"><li>Uau.</li></ol><ol type="1" id="28d37c9a-53b8-81a7-a95b-eac4500c634f" class="numbered-list" start="90"><li>Ok.</li></ol><ol type="1" id="28d37c9a-53b8-81f5-9ae2-ce7dde023147" class="numbered-list" start="91"><li>Então não é apenas memorizar.</li></ol><ol type="1" id="28d37c9a-53b8-81cb-966b-fc4faf5f1bc1" class="numbered-list" start="92"><li>É realmente afinar o ouvido, um grande passo para um iniciante.</li></ol><ol type="1" id="28d37c9a-53b8-813d-8fa1-faae31a2a8ff" class="numbered-list" start="93"><li>E então, após essas palavras sobre pessoas, a lista nos dá “friend”.</li></ol><ol type="1" id="28d37c9a-53b8-8132-addb-cc08acdc36ca" class="numbered-list" start="94"><li>Agora isso parece bastante direto, mas talvez não.</li></ol><ol type="1" id="28d37c9a-53b8-81fd-b6b8-cbe22eb09650" class="numbered-list" start="95"><li>Bem, é direto em inglês, mas destaca outra diferença.</li></ol><ol type="1" id="28d37c9a-53b8-813e-8353-d70518834c50" class="numbered-list" start="96"><li>“Friend” é completamente neutro quanto ao gênero.</li></ol><ol type="1" id="28d37c9a-53b8-8185-b281-f573c35185a7" class="numbered-list" start="97"><li>Certo.</li></ol><ol type="1" id="28d37c9a-53b8-8187-8941-d6f63238fc74" class="numbered-list" start="98"><li>Ao contrário do português, onde você teria “amigo” para um amigo do sexo masculino e “amiga” para uma amiga do sexo feminino.</li></ol><ol type="1" id="28d37c9a-53b8-81b8-8aea-c79e8357646b" class="numbered-list" start="99"><li>Exatamente.</li></ol><ol type="1" id="28d37c9a-53b8-816e-a271-c64f44e74194" class="numbered-list" start="100"><li>Então “friend” obriga o aluno a meio que ajustar suas categorias mentais.</li></ol><ol type="1" id="28d37c9a-53b8-8106-a6b1-cf92b49d33d3" class="numbered-list" start="101"><li>Uma palavra em inglês cobre conceitos que podem precisar de duas palavras na língua deles.</li></ol><ol type="1" id="28d37c9a-53b8-812e-982e-e0d1e537e575" class="numbered-list" start="102"><li>MIsso mostra que idioma não é só ter palavras diferentes.</li></ol><ol type="1" id="28d37c9a-53b8-817a-9835-e30cb90bea95" class="numbered-list" start="103"><li>Às vezes é uma maneira diferente de, bem, dividir o mundo.</li></ol><ol type="1" id="28d37c9a-53b8-81b7-a063-f375ce883266" class="numbered-list" start="104"><li>Fascinante.</li></ol><ol type="1" id="28d37c9a-53b8-818c-88fa-d923137f777c" class="numbered-list" start="105"><li>Mais uma camada de desafio ou talvez apenas de diferença aí.</li></ol><ol type="1" id="28d37c9a-53b8-81dd-8c7e-d83a454a93b0" class="numbered-list" start="106"><li>Ok.</li></ol><ol type="1" id="28d37c9a-53b8-8111-9fa7-c03f6f6f6624" class="numbered-list" start="107"><li>Vamos mudar de assunto.</li></ol><ol type="1" id="28d37c9a-53b8-81d7-84e7-d7dfa2efd99c" class="numbered-list" start="108"><li>O próximo grupo de palavras que você mencionou é especificamente escolhido para desafiar a pronúncia.</li></ol><ol type="1" id="28d37c9a-53b8-8194-98fc-fefb7c57ed21" class="numbered-list" start="109"><li>São aquelas com sons ou combinações de sons que muitas vezes não existem ou funcionam de maneira diferente em português.</li></ol><ol type="1" id="28d37c9a-53b8-81d5-b51d-c52f530788e0" class="numbered-list" start="110"><li>E por onde começamos com esses quebra-cabeças de pronúncia?</li></ol><ol type="1" id="28d37c9a-53b8-81e7-8e52-eccae8eea2f1" class="numbered-list" start="111"><li>De forma bem apropriada, talvez com “Brazil”.</li></ol><ol type="1" id="28d37c9a-53b8-8176-9c4a-c38f12154740" class="numbered-list" start="112"><li>“Brazil”.</li></ol><ol type="1" id="28d37c9a-53b8-8136-90aa-c181049a1a3f" class="numbered-list" start="113"><li>Por que “Brazil”?</li></ol><ol type="1" id="28d37c9a-53b8-81fd-9e86-c5664493409e" class="numbered-list" start="114"><li>Parece fácil.</li></ol><ol type="1" id="28d37c9a-53b8-814f-97f1-c1351a87cfb0" class="numbered-list" start="115"><li>Bem, pense nisso.</li></ol><ol type="1" id="28d37c9a-53b8-819a-b26b-fececb964abf" class="numbered-list" start="116"><li>É o país de origem do aluno.</li></ol><ol type="1" id="28d37c9a-53b8-8116-a44c-dbb8df76c238" class="numbered-list" start="117"><li>É quase certo que eles vão querer dizer, “I&#x27;m from Brazil” muito cedo.</li></ol><ol type="1" id="28d37c9a-53b8-819f-a896-feaf25f708fa" class="numbered-list" start="118"><li>Ah, aplicação prática.</li></ol><ol type="1" id="28d37c9a-53b8-81f4-83f2-f985ed72b987" class="numbered-list" start="119"><li>Exatamente.</li></ol><ol type="1" id="28d37c9a-53b8-818a-86df-f13832dc6c90" class="numbered-list" start="120"><li>Acertar a pronúncia do próprio país com confiança desde o início, isso é incrivelmente útil e, sinceramente, empoderador.</li></ol><ol type="1" id="28d37c9a-53b8-81d9-9fa5-fa13ef0c7a85" class="numbered-list" start="121"><li>Isso conecta o idioma diretamente à identidade deles.</li></ol><ol type="1" id="28d37c9a-53b8-8180-8383-ccd058f876bf" class="numbered-list" start="122"><li>Isso é muito esperto.</li></ol><ol type="1" id="28d37c9a-53b8-819e-8881-ddf1122c70a7" class="numbered-list" start="123"><li>Comecar com algo essencial para eles.</li></ol><ol type="1" id="28d37c9a-53b8-8141-bc2c-c9e3f69bbd2d" class="numbered-list" start="124"><li>Ok.</li></ol><ol type="1" id="28d37c9a-53b8-81e4-b965-ead248d5a485" class="numbered-list" start="125"><li>O que vem a seguir?</li></ol><ol type="1" id="28d37c9a-53b8-8110-b5eb-fb3d5206ddd5" class="numbered-list" start="126"><li>Este soa como um desafio clássico.</li></ol><ol type="1" id="28d37c9a-53b8-8157-959c-f1049c31a217" class="numbered-list" start="127"><li>“World”.</li></ol><ol type="1" id="28d37c9a-53b8-819f-86f1-c06535b2947c" class="numbered-list" start="128"><li>Oh, sim.</li></ol><ol type="1" id="28d37c9a-53b8-8120-8965-f3c952668cbd" class="numbered-list" start="129"><li>“World”.</li></ol><ol type="1" id="28d37c9a-53b8-81e1-955f-c6b1b2ad7b8f" class="numbered-list" start="130"><li>Só de dizer isso.</li></ol><ol type="1" id="28d37c9a-53b8-81b1-80b4-e06010a4e505" class="numbered-list" start="131"><li>Você, que está ouvindo agora, tente falar.</li></ol><ol type="1" id="28d37c9a-53b8-8116-9bfa-d54cc3467ab6" class="numbered-list" start="132"><li>Sinta o que sua boca faz.</li></ol><ol type="1" id="28d37c9a-53b8-816d-aec7-f4f20e737017" class="numbered-list" start="133"><li>“World”.</li></ol><ol type="1" id="28d37c9a-53b8-8109-bb10-d3b7f5080e73" class="numbered-list" start="134"><li>Você tem aquele “woo” no início e o som “r” como em bird.</li></ol><ol type="1" id="28d37c9a-53b8-8119-9691-d5b012331131" class="numbered-list" start="135"><li>Então você tem que gerenciar o “l” e o “ld” logo em seguida.</li></ol><ol type="1" id="28d37c9a-53b8-81ef-b517-cacb0791a383" class="numbered-list" start="136"><li>Por que isso é tão difícil?</li></ol><ol type="1" id="28d37c9a-53b8-81b3-a567-fba9ced99224" class="numbered-list" start="137"><li>É um verdadeiro treino para a boca.</li></ol><ol type="1" id="28d37c9a-53b8-8146-84f7-e6cc8dcdb2f3" class="numbered-list" start="138"><li>Mas o grande destaque é aquele som de “r”, o “r” vocálico, deslizando direto para o “l”.</li></ol><ol type="1" id="28d37c9a-53b8-8178-bac0-fd92c381439e" class="numbered-list" start="139"><li>O português não costuma fazer a língua fazer esse tipo de ginástica em uma sílaba só.</li></ol><ol type="1" id="28d37c9a-53b8-8137-bd7a-e0229bea09d9" class="numbered-list" start="140"><li>Ginástica é uma boa palavra para isso.</li></ol><ol type="1" id="28d37c9a-53b8-819c-b916-f0e089d6e9de" class="numbered-list" start="141"><li>Realmente é.</li></ol><ol type="1" id="28d37c9a-53b8-81c6-94b2-ebe30df2c595" class="numbered-list" start="142"><li>É um treino fonético completo em uma palavra comum.</li></ol><ol type="1" id="28d37c9a-53b8-8134-895e-dab2860dadd5" class="numbered-list" start="143"><li>Isso é típico para os nossos alunos, essa sensação de a língua ficar toda enrolada?</li></ol><ol type="1" id="28d37c9a-53b8-8162-8c44-ff9bfc3d5bef" class="numbered-list" start="144"><li>Oh, absolutamente.</li></ol><ol type="1" id="28d37c9a-53b8-81c2-8455-e3f696a754f8" class="numbered-list" start="145"><li>Você pode quase vê-los se concentrando, tentando fazer a boca cooperar.</li></ol><ol type="1" id="28d37c9a-53b8-8133-b78d-dd9850527b24" class="numbered-list" start="146"><li>Mas quando eles finalmente acertam, a expressão de conquista é fantástica.</li></ol><ol type="1" id="28d37c9a-53b8-8174-8609-c696d491b93c" class="numbered-list" start="147"><li>Aposto que sim.</li></ol><ol type="1" id="28d37c9a-53b8-81a5-aa3e-ebfa26a72b55" class="numbered-list" start="148"><li>Ok.</li></ol><ol type="1" id="28d37c9a-53b8-8190-951d-ca210cd0336e" class="numbered-list" start="149"><li>Depois de “world”, temos “money”.</li></ol><ol type="1" id="28d37c9a-53b8-8176-9328-fe355f339527" class="numbered-list" start="150"><li>Qual é a armadilha aqui?</li></ol><ol type="1" id="28d37c9a-53b8-8137-9b2c-d9c78f5ba742" class="numbered-list" start="151"><li>É aquela terminação “ey”.</li></ol><ol type="1" id="28d37c9a-53b8-81ac-898a-cb2e9e09c244" class="numbered-list" start="152"><li>Em “money”, na verdade é um som curto de “e”, como em “bee”.</li></ol><ol type="1" id="28d37c9a-53b8-81c7-bdad-ddb092c7bdcb" class="numbered-list" start="153"><li>Erro muito comum.</li></ol><ol type="1" id="28d37c9a-53b8-81e3-9ead-c4a3a1ae8da0" class="numbered-list" start="154"><li>Entendi.</li></ol><ol type="1" id="28d37c9a-53b8-81a6-bb8c-ea54bf1b8c1b" class="numbered-list" start="155"><li>E então “time”.</li></ol><ol type="1" id="28d37c9a-53b8-810c-b673-c4835294a9e3" class="numbered-list" start="156"><li>Simples.</li></ol><ol type="1" id="28d37c9a-53b8-81c0-a186-dd4244c3167f" class="numbered-list" start="157"><li>Quatro letras.</li></ol><ol type="1" id="28d37c9a-53b8-8197-b9c6-d26f6d2d20a7" class="numbered-list" start="158"><li>Enganosamente simples.</li></ol><ol type="1" id="28d37c9a-53b8-81f9-b6cd-e5561d4e5763" class="numbered-list" start="159"><li>“Time” introduz a magia do “e silencioso”.</li></ol><ol type="1" id="28d37c9a-53b8-814f-b735-dc9ca1c16d68" class="numbered-list" start="160"><li>Ah!</li></ol><ol type="1" id="28d37c9a-53b8-8149-9deb-e99ab8dadf39" class="numbered-list" start="161"><li>O “e silencioso”.</li></ol><ol type="1" id="28d37c9a-53b8-81db-b35f-e157071ae9fb" class="numbered-list" start="162"><li>Aquele “e” no final não é pronunciado.</li></ol><ol type="1" id="28d37c9a-53b8-81a9-914c-f93ab5b912a8" class="numbered-list" start="163"><li>E isso é usado o tempo todo.</li></ol><ol type="1" id="28d37c9a-53b8-8108-91bf-d13df9e97380" class="numbered-list" start="164"><li>Então acertar isso cedo constrói confiança.</li></ol><ol type="1" id="28d37c9a-53b8-8181-a60b-e59a860770b5" class="numbered-list" start="165"><li>O que vem depois de “time”?</li></ol><ol type="1" id="28d37c9a-53b8-81a0-a66d-e9bb256717da" class="numbered-list" start="166"><li>“Teacher”.</li></ol><ol type="1" id="28d37c9a-53b8-814a-81ab-e322dd135784" class="numbered-list" start="167"><li>Agora, os sons em si não são totalmente estranhos, mas a forma como o “t” é produzido no início de uma palavra em inglês costuma ser diferente.</li></ol><ol type="1" id="28d37c9a-53b8-81a8-86a1-d25ba40c3540" class="numbered-list" start="168"><li>Para muitos falantes de português brasileiro, o “t” é frequentemente mais suave, talvez dentalizado, com a língua bem atrás dos dentes.</li></ol><ol type="1" id="28d37c9a-53b8-811d-a98b-d3790ade08a6" class="numbered-list" start="169"><li>Em inglês, especialmente esse “t” inicial, geralmente é alveolar, um pouco mais para trás.</li></ol><ol type="1" id="28d37c9a-53b8-8185-980d-d1f88f8748e6" class="numbered-list" start="170"><li>E muitas vezes tem uma pequena explosão de ar, aspiração.</li></ol><ol type="1" id="28d37c9a-53b8-8154-b4ca-d7c385c91e41" class="numbered-list" start="171"><li>Pense em dizer “t” quase sorrindo.</li></ol><ol type="1" id="28d37c9a-53b8-819f-99ba-c1b13f2ca69e" class="numbered-list" start="172"><li>É sutil, mas afeta a clareza.</li></ol><ol type="1" id="28d37c9a-53b8-8136-9389-d4736dfd0161" class="numbered-list" start="173"><li>Interessante.</li></ol><ol type="1" id="28d37c9a-53b8-8103-8377-eb261699a77f" class="numbered-list" start="174"><li>E tem uma questão cultural também.</li></ol><ol type="1" id="28d37c9a-53b8-8156-9176-f03aeed6cf24" class="numbered-list" start="175"><li>Sim.</li></ol><ol type="1" id="28d37c9a-53b8-8170-8d55-fee57cf393f5" class="numbered-list" start="176"><li>Vale a pena mencionar.</li></ol><ol type="1" id="28d37c9a-53b8-8155-9b51-fc7544c200dd" class="numbered-list" start="177"><li>No Brasil, é super comum chamar quase qualquer instrutor de “teacher”.</li></ol><ol type="1" id="28d37c9a-53b8-810f-b2a5-d19667fac50f" class="numbered-list" start="178"><li>Mas em países de língua inglesa, isso nem sempre é o caso.</li></ol><ol type="1" id="28d37c9a-53b8-8152-80ac-ca14af4130a1" class="numbered-list" start="179"><li>Você pode usar “professor” ou outros títulos, especialmente no ensino superior.</li></ol><ol type="1" id="28d37c9a-53b8-8145-8d36-dd6aea58d965" class="numbered-list" start="180"><li>Então “teacher” também abre espaço para essa pequena nuance cultural de uso.</li></ol><ol type="1" id="28d37c9a-53b8-81d9-8a32-e4760ef5ed58" class="numbered-list" start="181"><li>É fascinante quanta coisa pode estar embutida em uma única escolha de palavra.</li></ol><ol type="1" id="28d37c9a-53b8-8113-a6e1-cc1fca2a6966" class="numbered-list" start="182"><li>Ok, próximo, “knowledge”.</li></ol><ol type="1" id="28d37c9a-53b8-818e-ae5d-fc3d3c27306d" class="numbered-list" start="183"><li>Qual é o desafio escondido em “knowledge”?</li></ol><ol type="1" id="28d37c9a-53b8-8102-b0ea-f16c5bf05283" class="numbered-list" start="184"><li>É uma clássica letra silenciosa, aquele “K” no início.</li></ol><ol type="1" id="28d37c9a-53b8-816e-a571-cece2d3d54be" class="numbered-list" start="185"><li>Totalmente silencioso.</li></ol><ol type="1" id="28d37c9a-53b8-8149-929a-c873d88017d4" class="numbered-list" start="186"><li>Certo.</li></ol><ol type="1" id="28d37c9a-53b8-8114-af27-fded7392d1d4" class="numbered-list" start="187"><li>Como em “knife” ou “know”.</li></ol><ol type="1" id="28d37c9a-53b8-814d-8168-df3c4d4ae9c8" class="numbered-list" start="188"><li>Exatamente.</li></ol><ol type="1" id="28d37c9a-53b8-81d8-b351-dfe7622ef3b7" class="numbered-list" start="189"><li>É um padrão que os alunos simplesmente têm que aprender.</li></ol><ol type="1" id="28d37c9a-53b8-8132-bddf-d22b742b4fdc" class="numbered-list" start="190"><li>Você nem sempre pode pronunciar cada letra que vê em inglês.</li></ol><ol type="1" id="28d37c9a-53b8-81cc-86e7-d4e75305d54f" class="numbered-list" start="191"><li>Essa é uma lição fundamental.</li></ol><ol type="1" id="28d37c9a-53b8-8107-ac8e-f1c16834a6cf" class="numbered-list" start="192"><li>Definitivamente.</li></ol><ol type="1" id="28d37c9a-53b8-817f-98d3-c2753e170d5e" class="numbered-list" start="193"><li>E depois de “knowledge”?</li></ol><ol type="1" id="28d37c9a-53b8-81be-9694-cc26315ec710" class="numbered-list" start="194"><li>“Love”.</li></ol><ol type="1" id="28d37c9a-53b8-81b3-af67-c3e001de6416" class="numbered-list" start="195"><li>Outra que é pronunciada errado com muita frequência.</li></ol><ol type="1" id="28d37c9a-53b8-81a1-b604-e985e10eb3e6" class="numbered-list" start="196"><li>O som da vogal em “love” é aquele som “e” curto.</li></ol><ol type="1" id="28d37c9a-53b8-8131-baa0-cc5d4dd33e90" class="numbered-list" start="197"><li>E esse som é complicado.</li></ol><ol type="1" id="28d37c9a-53b8-812e-9ed5-cf1ad94f0f3e" class="numbered-list" start="198"><li>Esse som específico não existe de verdade no português.</li></ol><ol type="1" id="28d37c9a-53b8-8137-a81a-dcf02d9c07ca" class="numbered-list" start="199"><li>Então é um som completamente novo para o aluno ouvir e produzir.</li></ol><ol type="1" id="28d37c9a-53b8-8172-b521-e9e61b67b9bd" class="numbered-list" start="200"><li>Além disso, como em “time”, o “e” no final de “love” é silencioso.</li></ol><ol type="1" id="28d37c9a-53b8-81d6-a548-c63f63a089fe" class="numbered-list" start="201"><li>Ou seja, um “e” silencioso e um som vocálico completamente novo.</li></ol><ol type="1" id="28d37c9a-53b8-81b7-8ce4-d5b13698e453" class="numbered-list" start="202"><li>Uau.</li></ol><ol type="1" id="28d37c9a-53b8-81ff-bad8-d36d5db81aea" class="numbered-list" start="203"><li>“Love” está trabalhando duro.</li></ol><ol type="1" id="28d37c9a-53b8-817f-b87e-c2e01be17c8d" class="numbered-list" start="204"><li>Está mesmo.</li></ol><ol type="1" id="28d37c9a-53b8-8171-8de3-e2aa5d081c6f" class="numbered-list" start="205"><li>E para completar esta seção de pronúncia, a lista também inclui “culture” e “business”.</li></ol><ol type="1" id="28d37c9a-53b8-814c-803e-d849e5255143" class="numbered-list" start="206"><li>E eu suponho que eles têm seus próprios obstáculos fonéticos para os alunos brasileiros.</li></ol><ol type="1" id="28d37c9a-53b8-8138-9cd6-c0ee7f9ea902" class="numbered-list" start="207"><li>Certamente têm.</li></ol><ol type="1" id="28d37c9a-53b8-81a0-9674-c40e271a0013" class="numbered-list" start="208"><li>Armadilhas semelhantes, combinações diferentes.</li></ol><ol type="1" id="28d37c9a-53b8-8108-a30a-c29d736dd45d" class="numbered-list" start="209"><li>Cada um nesta seção de pronúncia é deliberadamente escolhido para atingir uma dificuldade comum específica desde o início.</li></ol><ol type="1" id="28d37c9a-53b8-8191-9517-e41951fddf1f" class="numbered-list" start="210"><li>É muito intencional, quase como uma cirurgia fonética.</li></ol><ol type="1" id="28d37c9a-53b8-8159-886c-daa2f081b76c" class="numbered-list" start="211"><li>Cirurgia fonética.</li></ol><ol type="1" id="28d37c9a-53b8-8165-a294-c9d1cf7fd325" class="numbered-list" start="212"><li>Gostei disso.</li></ol><ol type="1" id="28d37c9a-53b8-81e9-8c29-ee861dd02029" class="numbered-list" start="213"><li>Ok.</li></ol><ol type="1" id="28d37c9a-53b8-81a1-8a36-d1b279c04844" class="numbered-list" start="214"><li>Vamos para o grupo final.</li></ol><ol type="1" id="28d37c9a-53b8-81f5-ab4d-eb0fae01ff5f" class="numbered-list" start="215"><li>São palavras escolhidas pelo seu alto valor comunicativo.</li></ol><ol type="1" id="28d37c9a-53b8-8168-9158-d326846d411c" class="numbered-list" start="216"><li>Os essenciais, certo?</li></ol><ol type="1" id="28d37c9a-53b8-81df-9ee6-d8053b2e12f1" class="numbered-list" start="217"><li>Exatamente.</li></ol><ol type="1" id="28d37c9a-53b8-81b8-b85b-d71a17cbd2ab" class="numbered-list" start="218"><li>Estas são as palavras que você, nosso ouvinte, vai precisar e usar constantemente na vida real.</li></ol><ol type="1" id="28d37c9a-53b8-81b9-87cb-dab6caf8c75f" class="numbered-list" start="219"><li>Bem prático.</li></ol><ol type="1" id="28d37c9a-53b8-8132-9d13-cb7d8381d3f5" class="numbered-list" start="220"><li>Quais são as primeiras aqui?</li></ol><ol type="1" id="28d37c9a-53b8-81d6-93c5-e71b1106872b" class="numbered-list" start="221"><li>Começamos pelo básico absoluto, “food” e “water”.</li></ol><ol type="1" id="28d37c9a-53b8-8102-b17f-eb23423dcb10" class="numbered-list" start="222"><li>Mais essencial do que isso, impossível.</li></ol><ol type="1" id="28d37c9a-53b8-8183-93ae-d0d69f03999a" class="numbered-list" start="223"><li>Certo.</li></ol><ol type="1" id="28d37c9a-53b8-811b-a0ca-f6866a69b705" class="numbered-list" start="224"><li>Se conectarmos isso ao quadro maior, essas são necessidades fundamentais.</li></ol><ol type="1" id="28d37c9a-53b8-818b-9b22-d6ff76cb5f51" class="numbered-list" start="225"><li>Você vai usá-las em incontáveis situações do dia a dia.</li></ol><ol type="1" id="28d37c9a-53b8-817d-9e3b-ce49c983f76d" class="numbered-list" start="226"><li>Mas mesmo essas têm pontos fonéticos.</li></ol><ol type="1" id="28d37c9a-53b8-81ed-8cd2-f603a9396fb4" class="numbered-list" start="227"><li>Para “food”, observe o som “u”.</li></ol><ol type="1" id="28d37c9a-53b8-81c0-9fdd-ff548cef6470" class="numbered-list" start="228"><li>É o som “u” longo, como em “moon” ou “blue”.</li></ol><ol type="1" id="28d37c9a-53b8-8113-99e6-ddb5b2bb5995" class="numbered-list" start="229"><li>Não o curto, como em “good” ou “book”.</li></ol><ol type="1" id="28d37c9a-53b8-81d7-951c-e01ee5443172" class="numbered-list" start="230"><li>Correto.</li></ol><ol type="1" id="28d37c9a-53b8-817d-b036-fd92c819a75a" class="numbered-list" start="231"><li>Acertar aquele “u” longo em “food” é importante.</li></ol><ol type="1" id="28d37c9a-53b8-8186-9e3c-e8c0f1dd3d7a" class="numbered-list" start="232"><li>E “water”.</li></ol><ol type="1" id="28d37c9a-53b8-8168-95d6-f419d484aad0" class="numbered-list" start="233"><li>Outra aparentemente simples, mas a pronúncia pode variar.</li></ol><ol type="1" id="28d37c9a-53b8-8132-8a99-c973207445b9" class="numbered-list" start="234"><li>Definitivamente pode.</li></ol><ol type="1" id="28d37c9a-53b8-81d7-a0e0-f54008e8c1df" class="numbered-list" start="235"><li>E isso por si só já é uma lição.</li></ol><ol type="1" id="28d37c9a-53b8-815a-9b2c-c89082f4b35c" class="numbered-list" start="236"><li>No inglês americano, com bastante frequência, aquele “t” no meio de “water” não é um som de “t” bem marcado.</li></ol><ol type="1" id="28d37c9a-53b8-81cd-bc2b-c26c73d68f56" class="numbered-list" start="237"><li>Ele vira um “flap t”, que soa muito como um “d” rápido e suave.</li></ol><ol type="1" id="28d37c9a-53b8-810f-aaf0-f252196f236a" class="numbered-list" start="238"><li>Então menos “water” e mais como “water”.</li></ol><ol type="1" id="28d37c9a-53b8-8191-8cca-c3bac3dcf6c8" class="numbered-list" start="239"><li>Exatamente.</li></ol><ol type="1" id="28d37c9a-53b8-819e-b4ad-c2373fe192f9" class="numbered-list" start="240"><li>Water.</li></ol><ol type="1" id="28d37c9a-53b8-8183-a678-d8c3a3029a59" class="numbered-list" start="241"><li>Então, mesmo essas palavras incrivelmente básicas, “food” e “water”, não são apenas itens de vocabulário.</li></ol><ol type="1" id="28d37c9a-53b8-81ba-b38c-db9c47d2e96b" class="numbered-list" start="242"><li>Elas carregam detalhes fonéticos importantes.</li></ol><ol type="1" id="28d37c9a-53b8-8121-a134-f3de42973a33" class="numbered-list" start="243"><li>Acertar isso logo no começo gera muita confiança porque você já consegue falar corretamente sobre coisas essenciais.</li></ol><ol type="1" id="28d37c9a-53b8-81d1-bdb6-df2695cb5ee5" class="numbered-list" start="244"><li>Isso permite que você se conecte e se comunique de imediato.</li></ol><ol type="1" id="28d37c9a-53b8-818e-9f9f-d16d43bb3f24" class="numbered-list" start="245"><li>Precisamente.</li></ol><ol type="1" id="28d37c9a-53b8-81b1-84fd-c895a4cd6a51" class="numbered-list" start="246"><li>Essas palavras de alto valor são os blocos fundamentais imediatos para a interação no mundo real.</li></ol><ol type="1" id="28d37c9a-53b8-81f1-80e0-e49b6dd6309e" class="numbered-list" start="247"><li>Enfrentar estes sons cedo, entender sua utilidade, isso equipa o aluno para começar a falar de forma natural desde o início.</li></ol><ol type="1" id="28d37c9a-53b8-8136-a837-d532e89b2b77" class="numbered-list" start="248"><li>Que “mergulho profundo” incrível!</li></ol><ol type="1" id="28d37c9a-53b8-818a-8b5e-f5d041697504" class="numbered-list" start="249"><li>E isso realmente levanta uma questão importante para você, ouvinte.</li></ol><ol type="1" id="28d37c9a-53b8-81bb-9f41-e1abf6512f03" class="numbered-list" start="250"><li>Como essas palavras específicas, escolhidas pelos seus desafios e pela sua utilidade, começam a moldar suas primeiras impressões e sua compreensão básica de um novo idioma como o inglês?</li></ol><ol type="1" id="28d37c9a-53b8-8122-9da5-c4abae558be2" class="numbered-list" start="251"><li>Como elas dão poder a você, mesmo com apenas estas 20, para de fato começar a falar?</li></ol><ol type="1" id="28d37c9a-53b8-8135-995c-c701fff57de8" class="numbered-list" start="252"><li>Algo para se pensar.</li></ol><ol type="1" id="28d37c9a-53b8-81c9-9d94-fd24e5c44e32" class="numbered-list" start="253"><li>Definitivamente.</li></ol><ol type="1" id="28d37c9a-53b8-8115-8177-d61be468af28" class="numbered-list" start="254"><li>Eu realmente espero que você tenha achado esta exploração esclarecedora, talvez tenha tido alguns momentos de “aha” com a gente hoje.</li></ol><ol type="1" id="28d37c9a-53b8-81bd-bb41-f0c32148e551" class="numbered-list" start="255"><li>É incrível quantos pensamentos são necessários para preparar essa base inicial, garantindo que cada palavra valha mais do que apenas sua definição de dicionário.</li></ol><ol type="1" id="28d37c9a-53b8-8114-b1ac-caf1bbdd3ced" class="numbered-list" start="256"><li>Muito obrigado por se juntar a nós neste mergulho profundo.</li></ol><ol type="1" id="28d37c9a-53b8-8156-ab9d-c212a6725505" class="numbered-list" start="257"><li>Até a próxima, e continue explorando.</li></ol></details></li></ul></div></div></details></li></ul><hr id="28d37c9a-53b8-80f2-a804-e8943bc72777"/><p id="25637c9a-53b8-80b1-9c5b-c2c8e9ccad67" class="">
+</p><ul id="24a37c9a-53b8-8059-8287-c66a85d926fd" class="toggle"><li><details open=""><summary>🪅 <strong>Practice Time</strong></summary><p id="24b37c9a-53b8-80e2-8e6f-ff73d76efa14" class="">
+</p><p id="24b37c9a-53b8-80a2-931b-ef1305bd3049" class="">You’ve listened, repeated, and trained your voice — now it’s time to test what you’ve learned<strong>.</strong></p><p id="24b37c9a-53b8-8082-9b3f-d48ef2586ea3" class="">
+</p><ul id="24a37c9a-53b8-8013-a7be-eaa3374616f1" class="toggle"><li><details open=""><summary><strong>🃏 Flashcards</strong></summary><p id="24b37c9a-53b8-80c9-b6d7-dfafa1b3ad1e" class="">💡 Time to test your memory! The words from Vocabulary 1 will appear one by one. Say their pronunciation out loud, flip the card, and mark if you got it right. 😉</p><p id="24b37c9a-53b8-8047-ae82-f45df6637664" class="">
+</p><p id="24a37c9a-53b8-8099-8881-e7fdb7b735e0" class="">
+</p></details></li></ul><ul id="24a37c9a-53b8-80aa-88d6-d2c456695ac9" class="toggle"><li><details open=""><summary><strong>🎲 Quiz</strong></summary><p id="24b37c9a-53b8-80f4-a4a4-df19fe03bd66" class="">💡 In this game, you will see a picture. Your mission is to choose the correct word from Vocabulary 1 that describes what is in the photo. 😉 Have fun!</p><p id="24b37c9a-53b8-8043-abfe-dc48f788a5a8" class="">
+</p><p id="24b37c9a-53b8-80e5-9577-ca7447f86f48" class="">
+</p></details></li></ul><ul id="21c37c9a-53b8-801e-9fb6-ea629e89e56a" class="toggle"><li><details open=""><summary><strong>🎲 Quiz</strong></summary><p id="24b37c9a-53b8-8039-b228-c409465143db" class="">💡 Listen to the dictation, spell the word correctly, and see if you got it right. 😉 Have fun!</p><p id="25637c9a-53b8-808e-bc30-d6843cb7ae80" class="">
+</p><p id="25637c9a-53b8-809b-9648-ea215d62c40e" class="">
+</p><p id="25637c9a-53b8-8026-9e3c-ecff95c5252f" class="">
+</p><p id="24b37c9a-53b8-80bb-bbd5-f3db6040ee90" class="">
+</p><p id="24b37c9a-53b8-80d8-9b8d-c893ea18063e" class="">
+</p></details></li></ul><p id="25c37c9a-53b8-8037-addc-f4521ae5c032" class="">
+</p></details></li></ul><ul id="22537c9a-53b8-8066-89b1-ce4e30b9f8aa" class="toggle"><li><details open=""><summary><strong>🎧 The Alphabet: Why It Matters More Than You Think 😉</strong></summary><p id="25637c9a-53b8-8090-bfa7-ca95fc0f86e7" class="">
+</p><p id="25637c9a-53b8-8090-a3ff-cb0d64a6097e" class="">Most people think the <strong>alphabet</strong> is too basic. But in this conversation, we explore why it’s actually one of the most powerful tools in your <strong>English journey</strong> — no matter your level. If you’ve ever thought “<em>I already know this</em>”, this episode is for you.</p><p id="25637c9a-53b8-806d-ba28-cd9413161d91" class="">
+</p><p id="25637c9a-53b8-8057-8738-c48e368159d9" class=""><em>📝 </em><em><strong>Tip:</strong></em><em> Turn on the subtitles to help you follow the conversation. You can choose:</em></p><ul id="25637c9a-53b8-8000-bfb1-c9cba4a7a7df" class="bulleted-list"><li style="list-style-type:disc"><em><strong>English subtitles</strong></em><em> to train your listening and reading together.</em></li></ul><ul id="25637c9a-53b8-809d-ba56-d5cc36142e06" class="bulleted-list"><li style="list-style-type:disc"><em><strong>Portuguese subtitles</strong></em><em> if you need extra support to understand everything clearly.</em></li></ul><p id="25637c9a-53b8-80d8-962f-de6d60cb0bca" class=""><em>(Click the gear icon ⚙️ on the video → Subtitles → Choose your language)</em></p><p id="27b37c9a-53b8-8008-9dc9-d1f56ac6bc5a" class="">
+</p><figure id="27b37c9a-53b8-8045-b5b1-d8336ca75465"><div class="source"><a href="https://youtu.be/Xtu2DXDqj6I">https://youtu.be/Xtu2DXDqj6I</a></div></figure></details></li></ul><p id="25637c9a-53b8-80ae-be97-e306e13284a5" class="">
+</p><p id="25637c9a-53b8-80dd-84a3-e68c2de69650" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

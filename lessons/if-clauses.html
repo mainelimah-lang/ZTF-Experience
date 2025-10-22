@@ -1,0 +1,726 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>If-Clauses</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="26437c9a-53b8-806e-99da-febc35a36d7d" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">If-Clauses</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="If-Clauses%2026437c9a53b8806e99dafebc35a36d7d/Present_Simple_(3).png"><img style="width:20px;max-height:24px" src="If-Clauses%2026437c9a53b8806e99dafebc35a36d7d/Present_Simple_(3).png" alt="Present Simple (3).png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>24</td></tr></tbody></table></header><div class="page-body"><p id="27d37c9a-53b8-81f0-bd95-e2d7da23bd08" class="">💡 An<strong> if-clause or conditional sentence</strong> is a sentence structure that connects a cause and an effect — when one thing happens, another always happens as a result.</p><p id="27d37c9a-53b8-812c-9e89-fec64cd8c7ea" class="">
+</p><p id="27d37c9a-53b8-810d-8bdb-e7f12ecb0601" class="">In short</p><blockquote id="27d37c9a-53b8-814d-98fa-d1983c5c71c1" class="">“If this happens, then that happens.”</blockquote><p id="27d37c9a-53b8-81f9-871d-f29927aff500" class="">
+</p><ul id="27d37c9a-53b8-819c-8af9-d0e62050fcad" class="toggle"><li><details open=""><summary><strong>General Structure</strong></summary><div id="27d37c9a-53b8-81f3-9d08-ebdf77100565" class="column-list"><div id="27d37c9a-53b8-81f9-9c72-d7b32ecb49a4" style="width:50%" class="column"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="27d37c9a-53b8-813c-99a3-cb5951006b70"><div style="width:100%"><p id="27d37c9a-53b8-81b1-8c55-d81f8b7df4e7" class=""><mark class="highlight-default"><code><strong>If + condition, result</strong></code></mark></p></div></figure></div><div id="27d37c9a-53b8-810c-a1b0-f58a79de86fe" style="width:50%" class="column"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="27d37c9a-53b8-8113-af5d-f0d59518ca1e"><div style="width:100%"><p id="27d37c9a-53b8-8160-84a2-f566bda71fa5" class=""><mark class="highlight-default"><code><strong>Result + if + condition</strong></code></mark></p></div></figure></div></div></details></li></ul><hr id="27d37c9a-53b8-8100-b2f1-fc4796e43f9d"/><ul id="27d37c9a-53b8-8114-a21c-ed58d752b037" class="toggle"><li><details open=""><summary><strong>Types of Conditionals</strong></summary><p id="27d37c9a-53b8-8128-a49f-e2a0c532a813" class="">
+</p><ul id="27d37c9a-53b8-8192-b8f5-e5f7e024c443" class="toggle"><li><details open=""><summary>👉 <strong>Zero Conditional </strong>-  <mark class="highlight-default"><code>If + present simple, present simple</code></mark></summary><p id="27d37c9a-53b8-81eb-b45c-c686ad3842b5" class="">
+</p><p id="27d37c9a-53b8-815e-a359-f2f2e23cf373" class="">✅ General truths, scientific facts, and situations that always happen when the condition is met. </p><p id="27d37c9a-53b8-819e-9f78-dbfb666ec3f7" class="">Examples:</p><ul id="27d37c9a-53b8-817b-8702-d49ab1b430f8" class="bulleted-list"><li style="list-style-type:disc">If you heat water to 100°C, it boils. 🔥💧</li></ul><ul id="27d37c9a-53b8-81ce-a106-e64d1e59fc3a" class="bulleted-list"><li style="list-style-type:disc">If it rains, the ground gets wet. 🌧️💦</li></ul><ul id="27d37c9a-53b8-8108-b783-fd14e25ae9ed" class="bulleted-list"><li style="list-style-type:disc">If you don’t water the plants, they die. 💧🚫🪴</li></ul><ul id="27d37c9a-53b8-8136-9986-d47a727061f0" class="bulleted-list"><li style="list-style-type:disc">If you mix red and blue, you get purple. 🔴🔵🟣</li></ul><p id="27d37c9a-53b8-811f-97db-c3dd9298fff7" class="">
+</p></details></li></ul><ul id="27d37c9a-53b8-81a9-b8ea-c0ea3e7d277d" class="toggle"><li><details open=""><summary>👉 <strong>First Conditional</strong> - <mark class="highlight-default"><code>If + present simple, future simple </code></mark></summary><p id="27d37c9a-53b8-811a-9008-c1cd0f0c1f6e" class="">
+</p><p id="27d37c9a-53b8-8196-8b6d-ec2669f9bde5" class="">🔮 <strong>Real and possible situations in the future</strong> — things that are likely to happen if the condition is true. </p><p id="27d37c9a-53b8-8144-a6c1-c1709197aad7" class="">Examples:</p><ul id="27d37c9a-53b8-81df-ae73-d31eb7bf539c" class="bulleted-list"><li style="list-style-type:disc">If you touch that wire, you’ll get a shock. ⚡🧤</li></ul><ul id="27d37c9a-53b8-81e8-bf95-e34229767ac6" class="bulleted-list"><li style="list-style-type:disc">If we leave now, we’ll catch the bus. 🚌⏰</li></ul><ul id="27d37c9a-53b8-815d-afbd-d3c4356277c4" class="bulleted-list"><li style="list-style-type:disc">If the temperature drops, it will snow. 🌡️❄️</li></ul><ul id="27d37c9a-53b8-8198-83bf-f58e358012e9" class="bulleted-list"><li style="list-style-type:disc">If the traffic is bad, we’ll be late. 🚦⏳</li></ul><p id="27d37c9a-53b8-81aa-b8b5-da8a1f53dbf7" class="">
+</p></details></li></ul><ul id="27d37c9a-53b8-8103-b0ee-fd8a504b5c93" class="toggle"><li><details open=""><summary>👉 <strong>Second Conditional </strong>- <mark class="highlight-default"><code>If + past simple, would + base verb</code></mark></summary><p id="27d37c9a-53b8-8110-9be2-f79377f5ec32" class="">
+</p><p id="27d37c9a-53b8-81b8-96e3-f05ad0da2685" class="">💭 <strong>Unreal or imaginary situations in the present or future </strong>— things that probably won’t happen, but we imagine them.</p><p id="27d37c9a-53b8-81d3-9806-d0e11399017a" class="">Examples:</p><ul id="27d37c9a-53b8-812e-bfc2-d6484d620aa9" class="bulleted-list"><li style="list-style-type:disc">If everyone spoke the same language, communication would be easier. 🌐🗣️</li></ul><ul id="27d37c9a-53b8-81cc-86d9-cc57d070f38c" class="bulleted-list"><li style="list-style-type:disc">If I <span style="border-bottom:0.05em solid">were</span> a millionaire, I would travel the world. 💰✈️</li></ul><ul id="27d37c9a-53b8-81d5-ac33-ed0405eb498b" class="bulleted-list"><li style="list-style-type:disc">If we lived by the beach, we would go surfing every day. 🏄‍♂️</li></ul><ul id="27d37c9a-53b8-81e9-bc8d-d844791b9502" class="bulleted-list"><li style="list-style-type:disc">If people didn’t use plastic, the planet would be cleaner. 🌱</li></ul><p id="27d37c9a-53b8-81e6-b3aa-f24d8aeeaee7" class="">
+</p><ul id="27d37c9a-53b8-815e-8bbb-e875f523095a" class="toggle"><li><details open=""><summary>💡➕ <strong>The Subjunctive Mood</strong></summary><p id="27d37c9a-53b8-81c0-8cd7-f0b272ab6cf0" class="">
+</p><p id="27d37c9a-53b8-815c-8a78-c0fca9dda89b" class="">The <strong>subjunctive mood</strong> is used to talk about <strong>unreal</strong>, <strong>hypothetical</strong>, or <strong>imaginary</strong> situations — things that <strong>aren’t true</strong>, but we imagine them.</p><p id="27d37c9a-53b8-81c8-87b7-f92286fd995e" class="">That’s why, in the <strong>Second Conditional</strong>, we use <strong>“were”</strong> for <strong>all subjects</strong> (I, he, she, it, you, we, they), instead of &quot;was&quot; for (I, He, She, It).</p><p id="27d37c9a-53b8-81ce-ae09-e233a20b648d" class="">
+</p><table id="27d37c9a-53b8-8164-8dbb-f4aecd82701a" class="simple-table"><thead class="simple-table-header"><tr id="27d37c9a-53b8-8125-a4f0-c07094cec11a"><th id="dYrT" class="simple-table-header-color simple-table-header"><strong>Subject</strong></th><th id="]v=:" class="simple-table-header-color simple-table-header" style="width:478.99998474121094px"><strong>Example</strong></th></tr></thead><tbody><tr id="27d37c9a-53b8-81c9-9869-c04f185159ce"><td id="dYrT" class=""><strong>I</strong></td><td id="]v=:" class="" style="width:478.99998474121094px">If <strong>I were</strong> rich, I would buy a house by the ocean. 🌊🏡</td></tr><tr id="27d37c9a-53b8-811e-b19e-d58a9ac17ed7"><td id="dYrT" class=""><strong>You</strong></td><td id="]v=:" class="" style="width:478.99998474121094px">If <strong>you were</strong> more organized, life would be easier. 🗂️🙂</td></tr><tr id="27d37c9a-53b8-81e4-8901-e2e92ad15667"><td id="dYrT" class=""><strong>He</strong></td><td id="]v=:" class="" style="width:478.99998474121094px">If <strong>he were</strong> taller, he could play basketball professionally. 🏀⛹️‍♂️</td></tr><tr id="27d37c9a-53b8-814d-8398-e8775b934a49"><td id="dYrT" class=""><strong>She</strong></td><td id="]v=:" class="" style="width:478.99998474121094px">If <strong>she were</strong> the boss, she would change the rules. 💼📋</td></tr><tr id="27d37c9a-53b8-81b7-a99c-fdf1f8e47f5f"><td id="dYrT" class=""><strong>It</strong></td><td id="]v=:" class="" style="width:478.99998474121094px">If <strong>it were</strong> warmer today, we would go for a walk. 🌤️🚶‍♂️</td></tr><tr id="27d37c9a-53b8-814b-a793-c2e0a2e84c45"><td id="dYrT" class=""><strong>We</strong></td><td id="]v=:" class="" style="width:478.99998474121094px">If <strong>we were</strong> in New York now, we’d visit Times Square. 🗽🗺️</td></tr><tr id="27d37c9a-53b8-8145-b46a-d416d2a90ffa"><td id="dYrT" class=""><strong>They</strong></td><td id="]v=:" class="" style="width:478.99998474121094px">If <strong>they were</strong> more careful, they wouldn’t make so many mistakes. ⚠️📝</td></tr></tbody></table></details></li></ul><p id="27d37c9a-53b8-8151-ac6b-d8dca3d9fee5" class="">
+</p></details></li></ul><ul id="27d37c9a-53b8-81df-bb5c-fef4c49995a2" class="toggle"><li><details open=""><summary>👉 <strong>Third Conditional -</strong> <mark class="highlight-default"> </mark><mark class="highlight-default"><code>If + past perfect, would/could/might have + past participle</code></mark></summary><p id="27d37c9a-53b8-81ae-9370-fc31ef3ba878" class="">
+</p><p id="27d37c9a-53b8-819e-a940-e0367c723f62" class="">😔 <strong>Unreal situations in the past</strong> — regrets or things that could have happened differently but didn’t.</p><p id="27d37c9a-53b8-8166-8301-cdb20cb2c380" class="">
+</p><ul id="27d37c9a-53b8-8198-9b0b-cde442abaf3a" class="toggle"><li><details open=""><summary><strong>Would </strong>have → certain result              …💡 <em>I’m sure about the result (in imagination)</em></summary><p id="27d37c9a-53b8-8198-9f69-f39eefe75ad5" class="">
+</p><p id="27d37c9a-53b8-8158-b8a5-ddefe0f04999" class="">If he had joined us, he would have enjoyed the trip ✈️</p><p id="27d37c9a-53b8-810b-8c94-ce6b2c1710a3" class="">If I had studied harder, I would have passed the exam. 🎓</p><p id="27d37c9a-53b8-8143-a59c-db4064dcd43e" class="">If the weather had been better, we would have gone to the beach. 🌴</p><p id="27d37c9a-53b8-816e-828e-f8037072194b" class="">
+</p></details></li></ul><ul id="27d37c9a-53b8-8172-94e4-fcad19feb286" class="toggle"><li><details open=""><summary><strong>Could </strong>have → possibility / ability         …💡 <em>It was possible, but not certain.</em></summary><p id="27d37c9a-53b8-81aa-a447-f32e07b426b0" class="">
+</p><p id="27d37c9a-53b8-81d7-80ed-c0ce0e024e90" class="">If he had joined us, he could have enjoyed the trip ✈️</p><p id="27d37c9a-53b8-8100-b1d5-f023e78afe40" class="">If I had studied harder, I could have passed the exam. 🎓</p><p id="27d37c9a-53b8-8187-b1df-fbca230c7d4b" class="">If the weather had been better, we could have gone to the beach. 🌴</p><p id="27d37c9a-53b8-8105-8b7f-eacb36375272" class="">
+</p></details></li></ul><ul id="27d37c9a-53b8-8172-8e3a-e80917a105f6" class="toggle"><li><details open=""><summary><strong>Might </strong>have → maybe / uncertainty       <em>… 💡 Maybe yes, maybe no</em></summary><p id="27d37c9a-53b8-8153-a7bb-c2725081ba69" class="">
+</p><p id="27d37c9a-53b8-81ff-b7ff-d6f575738f2c" class="">If he had joined us, he might have enjoyed the trip ✈️</p><p id="27d37c9a-53b8-81c9-a1c8-ed5f6d50fdd5" class="">If I had studied harder, I might have passed the exam. 🎓</p><p id="27d37c9a-53b8-8109-b736-c4b3d468709e" class="">If the weather had been better, we might have gone to the beach. 🌴</p></details></li></ul></details></li></ul></details></li></ul><hr id="27e37c9a-53b8-806d-8001-c3f09ef4a1f4"/><p id="26437c9a-53b8-80c6-aa4c-e8a588019cea" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

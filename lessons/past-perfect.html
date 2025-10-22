@@ -1,0 +1,721 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Past Perfect</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="26237c9a-53b8-80ad-9ea6-e0473c89188a" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">Past Perfect</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="Past%20Perfect%2026237c9a53b880ad9ea6e0473c89188a/Present_Simple_(4).png"><img style="width:20px;max-height:24px" src="Past%20Perfect%2026237c9a53b880ad9ea6e0473c89188a/Present_Simple_(4).png" alt="Present Simple (4).png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>25</td></tr></tbody></table></header><div class="page-body"><p id="26237c9a-53b8-8012-9428-c6dc5461afbd" class="">
+</p><p id="24c37c9a-53b8-80b5-af4a-ccf33e23f590" class="">💡 The <strong>Past Perfect</strong> tense is used when you want to talk about something that happened before another thing in the past.</p><p id="24c37c9a-53b8-8029-ac0d-e2a09447b058" class="">
+</p><blockquote id="24c37c9a-53b8-800c-b970-e2118430f70e" class=""> It&#x27;s like saying <strong>&quot;this happened first, then that happened&quot;</strong> but both things are <strong>already finished</strong>.</blockquote><p id="24c37c9a-53b8-80e9-86ba-eb5f905caf0c" class="">
+</p><hr id="24c37c9a-53b8-8073-9805-e084589ee737"/><div id="24c37c9a-53b8-80d9-81e1-c4cff4043dd4" class="column-list"><div id="24c37c9a-53b8-8032-a56c-cd2bfde76406" style="width:56.25%" class="column"><ul id="24c37c9a-53b8-807b-a463-c0707bf0f35d" class="toggle"><li><details open=""><summary><strong>👉 Pattern</strong></summary><p id="24c37c9a-53b8-8079-a044-fd4e93c695d2" class="">
+</p><ul id="24c37c9a-53b8-80f8-a34e-c2240cb3ab74" class="toggle"><li><details open=""><summary><strong>✅ Affirmative Sentences</strong></summary><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="24c37c9a-53b8-8047-b764-fd8e8e0ff64d"><div style="width:100%"><p id="24c37c9a-53b8-80c8-9e08-eef017d0b6db" class=""><strong>Subject + </strong><mark class="highlight-blue"><strong><span style="border-bottom:0.05em solid">had</span></strong></mark><strong> + past participle + complement</strong></p></div></figure></details></li></ul><ul id="24c37c9a-53b8-8091-971e-eba4150b6a9e" class="toggle"><li><details open=""><summary><strong>❌ Negative Sentences</strong></summary><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="24c37c9a-53b8-808e-8a7f-f012b106981e"><div style="width:100%"><p id="24c37c9a-53b8-808e-8fea-ddbf090bc6ba" class=""><strong>Subject + </strong><mark class="highlight-blue"><strong><span style="border-bottom:0.05em solid">had + not</span></strong></mark><mark class="highlight-blue"><strong> </strong></mark><strong>+ past participle + complement</strong></p><p id="24c37c9a-53b8-8022-b0ae-fb0ae64e2012" class="">💡<mark class="highlight-purple"> </mark><em><mark class="highlight-blue">hadn’t = had + not</mark></em></p></div></figure><p id="24c37c9a-53b8-8019-9bc7-d76a92f010ab" class="">
+</p></details></li></ul><ul id="24c37c9a-53b8-804b-b081-fae1e2004de2" class="toggle"><li><details open=""><summary>❓ <strong>Yes/No Questions</strong></summary><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="24c37c9a-53b8-8030-bf87-e9aa53c23a16"><div style="width:100%"><p id="24c37c9a-53b8-804e-b0c4-fb855492a1bf" class=""><mark class="highlight-blue"><strong><span style="border-bottom:0.05em solid">Had</span></strong></mark><strong> + subject + past participle + complement + ?</strong></p></div></figure><div id="24c37c9a-53b8-8030-96b3-d4e119121aea" class="column-list"><div id="24c37c9a-53b8-808a-bad3-fc35fce3a1e5" style="width:100%" class="column"><p id="24c37c9a-53b8-8027-a3d2-db823e09f375" class=""><em>👍 Yes, Subject + </em><em><mark class="highlight-blue">had</mark></em><em><mark class="highlight-purple">.</mark></em></p></div><div id="24c37c9a-53b8-809b-9231-c008f322f038" style="width:100%" class="column"><p id="24c37c9a-53b8-8063-a283-fd413655e04b" class=""><em>👎 No, Subject + </em><em><mark class="highlight-blue">hadn’t</mark></em><em>.</em></p></div></div><p id="24c37c9a-53b8-801f-8b38-db0f0c88015b" class="">
+</p></details></li></ul><ul id="24c37c9a-53b8-80dc-9450-cad555f7334a" class="toggle"><li><details open=""><summary><strong>❓ Wh-Questions</strong></summary><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="24c37c9a-53b8-806e-ad57-d2a81f9e3fb5"><div style="width:100%"><p id="24c37c9a-53b8-80b3-9dc9-e1303d96dbb0" class=""><strong>Wh-word + </strong><mark class="highlight-blue"><strong><span style="border-bottom:0.05em solid">had</span></strong></mark><strong> + subject + past participle + complement + ?</strong></p></div></figure></details></li></ul><p id="24c37c9a-53b8-80d6-b712-f9745ad51355" class="">
+</p></details></li></ul></div><div id="24c37c9a-53b8-8082-93ee-f24f034ce867" style="width:43.75%" class="column"><ul id="24c37c9a-53b8-8094-acd8-d5a4309903ec" class="toggle"><li><details open=""><summary><strong>🧰🔧 Your Grammar Toolbox</strong></summary><p id="24c37c9a-53b8-8005-b1d6-f1f027c64bfa" class="">
+</p><p id="24c37c9a-53b8-80a1-bb79-c13037bfde0a" class=""><a href="https://www.notion.so/Verb-List-22a37c9a53b880f195a4e88646055591?pvs=21"><span class="icon">📃</span>Verb List</a> </p><p id="24c37c9a-53b8-801e-8d2d-cf73d2c659b9" class="">
+</p><ul id="24c37c9a-53b8-802c-b62d-cc7f01ce672b" class="bulleted-list"><li style="list-style-type:disc"><strong>Auxiliarly verbs Past Perfect tense:</strong></li></ul><div id="24c37c9a-53b8-80ab-bf8b-d9f9a47404c0" class="column-list"><div id="24c37c9a-53b8-8039-9a9e-d6b6a8bf0be5" style="width:50%" class="column"><ul id="24c37c9a-53b8-8015-b143-f746a30e2d05" class="bulleted-list"><li style="list-style-type:square"><em>👍 </em>Had<br/><br/><strong>🗣️ </strong>/hæd/<figure id="24c37c9a-53b8-8082-b964-fbdc149bba17"><div class="source"><a href="Past%20Perfect%2026237c9a53b880ad9ea6e0473c89188a/had.mp3">attachment:742dade9-149f-416d-a72a-5a21b7a20807:had.mp3</a></div></figure></li></ul></div><div id="24c37c9a-53b8-80cf-8e1f-f53c10b24c70" style="width:49.99999999999999%" class="column"><ul id="24c37c9a-53b8-8060-8253-c5992fa53fba" class="bulleted-list"><li style="list-style-type:disc">👎 Hadn’t = had + not<br/><br/><strong>🗣️ </strong>/ˈhæd.ənt/<figure id="24c37c9a-53b8-8041-b070-ef1e7e361dda"><div class="source"><a href="Past%20Perfect%2026237c9a53b880ad9ea6e0473c89188a/hadnt.mp3">attachment:3368b073-06a9-4f48-970b-ba9cc332d7a4:hadnt.mp3</a></div></figure><p id="24c37c9a-53b8-80d4-92c6-d8fefe4d2add" class="">
+</p></li></ul></div></div><p id="24c37c9a-53b8-8020-8537-eb5c523a156e" class="">
+</p></details></li></ul></div></div><hr id="24c37c9a-53b8-800f-b73e-c31930d5e160"/><ul id="24c37c9a-53b8-804b-8d1f-c12fca0dda6e" class="toggle"><li><details open=""><summary><strong>⌛ Time Expressions</strong></summary><p id="24c37c9a-53b8-807e-8b5c-eb6aa51695ea" class="">
+</p><p id="24c37c9a-53b8-802e-ac91-d80fbea6a89c" class=""><strong>The Past Perfect often uses time expressions</strong> to connect two events and show the timeline between them.</p><p id="24c37c9a-53b8-8058-8767-f4ca3a60f880" class="">
+</p><ul id="24c37c9a-53b8-801f-bad1-fbaee908a2a7" class="bulleted-list"><li style="list-style-type:disc"><strong>Before</strong> - <em>They had had many problems before they found a good solution. 🛠️</em></li></ul><ul id="24c37c9a-53b8-8060-a0f8-f076ef31e721" class="bulleted-list"><li style="list-style-type:disc"><strong>After</strong> - <em>After I had sent the message, I realized I had texted the wrong person.</em> 📱😅</li></ul><ul id="24c37c9a-53b8-8021-85f1-ee53783d3010" class="bulleted-list"><li style="list-style-type:disc"><strong>By the time</strong> -<em> </em> <em>By the time we reached the beach, the sun had already set.</em> 🌅</li></ul><ul id="24c37c9a-53b8-8016-bcf0-d61d2709fe84" class="bulleted-list"><li style="list-style-type:disc"><strong>When</strong> - <em>When I got to the station, the train had left. </em>🚆</li></ul><ul id="24c37c9a-53b8-802f-9838-edf19f38c61a" class="bulleted-list"><li style="list-style-type:disc"><strong>Already</strong> - We had already had lunch before the guests arrived. 🍽️</li></ul><ul id="24c37c9a-53b8-80f1-b6d0-e6ec809ee0e5" class="bulleted-list"><li style="list-style-type:disc"><strong>Just</strong> - <em>I had just sat down to relax when the doorbell rang.</em> 🔔</li></ul><ul id="24c37c9a-53b8-802f-884d-cd9267a3667d" class="bulleted-list"><li style="list-style-type:disc"><strong>Never</strong> - <em>I had never traveled abroad before 2015. ✈️</em></li></ul><ul id="24c37c9a-53b8-806f-8614-cbb15f8efaad" class="bulleted-list"><li style="list-style-type:disc"><strong>Ever</strong> - <em>It was the best movie I had ever seen. </em>📽️</li></ul><ul id="24c37c9a-53b8-80f1-8072-d4f5c67c0a77" class="bulleted-list"><li style="list-style-type:disc"><strong>Until</strong> - <em>I hadn’t realized how much I missed home until I had been away for a year.</em> 🏡</li></ul><ul id="24c37c9a-53b8-80eb-a8d7-e387d712a685" class="bulleted-list"><li style="list-style-type:disc"><strong>Once</strong> - <em>Once I had tasted the dessert, I couldn’t stop eating it.</em> 🍮</li></ul><p id="24c37c9a-53b8-80cd-8e66-d4ff6a1c805d" class="">
+</p></details></li></ul><hr id="24c37c9a-53b8-80d7-871c-df1418e4edb1"/><p id="27d37c9a-53b8-80ab-b3a7-fa5c15d85476" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

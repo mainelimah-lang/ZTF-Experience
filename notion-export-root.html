@@ -1,0 +1,706 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>ZTF Experience English Course</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="20737c9a-53b8-813e-9ebf-e9630eb201b8" class="page sans"><header><h1 class="page-title">ZTF Experience English Course</h1><p class="page-description"></p></header><div class="page-body"><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>Name</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th></tr></thead><tbody><tr id="20737c9a-53b8-812b-abc0-c8ed4f2ae079"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Alphabet%2020737c9a53b8812babc0c8ed4f2ae079.html"><span class="icon">▫️</span>The Alphabet</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Alphabet%2020737c9a53b8812babc0c8ed4f2ae079/ChatGPT_Image_Oct_18_2025_08_18_08_PM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Alphabet%2020737c9a53b8812babc0c8ed4f2ae079/ChatGPT_Image_Oct_18_2025_08_18_08_PM.png" alt="ChatGPT Image Oct 18, 2025, 08_18_08 PM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">1</td></tr><tr id="21c37c9a-53b8-80e1-86ae-ca355eb6805a"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a.html"><span class="icon">▫️</span>Your First Words</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/Your_First_20_Words_-_Thumbnails_(3).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Words%2021c37c9a53b880e186aeca355eb6805a/Your_First_20_Words_-_Thumbnails_(3).png" alt="Your First 20 Words - Thumbnails (3).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">2</td></tr><tr id="22537c9a-53b8-805f-a767-f67780a29c24"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24.html"><span class="icon">▫️</span>The Sounds of English</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/ChatGPT_Image_Oct_10_2025_12_03_30_AM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Sounds%20of%20English%2022537c9a53b8805fa767f67780a29c24/ChatGPT_Image_Oct_10_2025_12_03_30_AM.png" alt="ChatGPT Image Oct 10, 2025, 12_03_30 AM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">3</td></tr><tr id="22737c9a-53b8-80fe-8944-eb0199ad96a0"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Phrases%2022737c9a53b880fe8944eb0199ad96a0.html"><span class="icon">▫️</span>Your First Phrases</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Phrases%2022737c9a53b880fe8944eb0199ad96a0/ChatGPT_Image_Aug_12_2025_11_16_53_AM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Phrases%2022737c9a53b880fe8944eb0199ad96a0/ChatGPT_Image_Aug_12_2025_11_16_53_AM.png" alt="ChatGPT Image Aug 12, 2025, 11_16_53 AM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">4</td></tr><tr id="20737c9a-53b8-8192-aca4-cb4a491131ae"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Numbers%2020737c9a53b88192aca4cb4a491131ae.html"><span class="icon">▫️</span>The Numbers</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/ChatGPT_Image_Oct_12_2025_11_54_59_AM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/ChatGPT_Image_Oct_12_2025_11_54_59_AM.png" alt="ChatGPT Image Oct 12, 2025, 11_54_59 AM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">5</td></tr><tr id="20737c9a-53b8-8143-949f-da60ea717f3f"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Verbs%2020737c9a53b88143949fda60ea717f3f.html"><span class="icon">▫️</span>Your First Verbs</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Verbs%2020737c9a53b88143949fda60ea717f3f/ChatGPT_Image_Oct_11_2025_10_23_06_AM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Your%20First%20Verbs%2020737c9a53b88143949fda60ea717f3f/ChatGPT_Image_Oct_11_2025_10_23_06_AM.png" alt="ChatGPT Image Oct 11, 2025, 10_23_06 AM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">6</td></tr><tr id="27d37c9a-53b8-8014-ad06-eae972b70e65"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Imperative%20Sentences%2027d37c9a53b88014ad06eae972b70e65.html"><span class="icon">▫️</span>Imperative Sentences</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Imperative%20Sentences%2027d37c9a53b88014ad06eae972b70e65/ChatGPT_Image_Oct_10_2025_02_52_28_AM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Imperative%20Sentences%2027d37c9a53b88014ad06eae972b70e65/ChatGPT_Image_Oct_10_2025_02_52_28_AM.png" alt="ChatGPT Image Oct 10, 2025, 02_52_28 AM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">7</td></tr><tr id="20d37c9a-53b8-80c0-a9c5-f228d9d62c4b"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Nouns%2020d37c9a53b880c0a9c5f228d9d62c4b.html"><span class="icon">▫️</span>Nouns</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Nouns%2020d37c9a53b880c0a9c5f228d9d62c4b/Thumbnails_Hotmart_1930_x_1080_(6).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Nouns%2020d37c9a53b880c0a9c5f228d9d62c4b/Thumbnails_Hotmart_1930_x_1080_(6).png" alt="Thumbnails Hotmart 1930 x 1080 (6).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">9</td></tr><tr id="20d37c9a-53b8-8048-b3dc-f6a364ea3975"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Subject%20Pronouns%2020d37c9a53b88048b3dcf6a364ea3975.html"><span class="icon">▫️</span>Subject Pronouns</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Subject%20Pronouns%2020d37c9a53b88048b3dcf6a364ea3975/ChatGPT_Image_Oct_7_2025_10_21_54_PM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Subject%20Pronouns%2020d37c9a53b88048b3dcf6a364ea3975/ChatGPT_Image_Oct_7_2025_10_21_54_PM.png" alt="ChatGPT Image Oct 7, 2025, 10_21_54 PM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">10</td></tr><tr id="20737c9a-53b8-81c0-8ed1-dae973dbe37e"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e.html"><span class="icon">▫️</span>Present Simple</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/Present_Simple_(7).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/Present_Simple_(7).png" alt="Present Simple (7).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">11</td></tr><tr id="20d37c9a-53b8-802d-9e06-cae577cef558"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Definite%20Article%2020d37c9a53b8802d9e06cae577cef558.html"><span class="icon">▫️</span>Definite Article</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Definite%20Article%2020d37c9a53b8802d9e06cae577cef558/Definite_Pronoun.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Definite%20Article%2020d37c9a53b8802d9e06cae577cef558/Definite_Pronoun.png" alt="Definite Pronoun.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">12</td></tr><tr id="27d37c9a-53b8-80ba-94aa-e6a8984065f0"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Indefinite%20Articles%2027d37c9a53b880ba94aae6a8984065f0.html"><span class="icon">▫️</span>Indefinite Articles</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Indefinite%20Articles%2027d37c9a53b880ba94aae6a8984065f0/Indefinite_Pronoun_(1).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Indefinite%20Articles%2027d37c9a53b880ba94aae6a8984065f0/Indefinite_Pronoun_(1).png" alt="Indefinite Pronoun (1).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">13</td></tr><tr id="22537c9a-53b8-80a5-a9cf-da6ad6b10498"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Plural%20Nouns%2022537c9a53b880a5a9cfda6ad6b10498.html"><span class="icon">▫️</span>Plural Nouns</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Plural%20Nouns%2022537c9a53b880a5a9cfda6ad6b10498/ChatGPT_Image_Oct_10_2025_12_36_34_AM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Plural%20Nouns%2022537c9a53b880a5a9cfda6ad6b10498/ChatGPT_Image_Oct_10_2025_12_36_34_AM.png" alt="ChatGPT Image Oct 10, 2025, 12_36_34 AM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">14</td></tr><tr id="22537c9a-53b8-8014-a311-c74c33e1a24a"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Quantifiers%2022537c9a53b88014a311c74c33e1a24a.html"><span class="icon">▫️</span>Quantifiers</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Quantifiers%2022537c9a53b88014a311c74c33e1a24a/ChatGPT_Image_Oct_9_2025_01_44_10_PM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Quantifiers%2022537c9a53b88014a311c74c33e1a24a/ChatGPT_Image_Oct_9_2025_01_44_10_PM.png" alt="ChatGPT Image Oct 9, 2025, 01_44_10 PM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">15</td></tr><tr id="22537c9a-53b8-80aa-86e0-c8309e965d6e"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Demonstrative%20Pronouns%2022537c9a53b880aa86e0c8309e965d6e.html"><span class="icon">▫️</span>Demonstrative Pronouns</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Demonstrative%20Pronouns%2022537c9a53b880aa86e0c8309e965d6e/ChatGPT_Image_Oct_9_2025_03_12_41_PM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Demonstrative%20Pronouns%2022537c9a53b880aa86e0c8309e965d6e/ChatGPT_Image_Oct_9_2025_03_12_41_PM.png" alt="ChatGPT Image Oct 9, 2025, 03_12_41 PM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">16</td></tr><tr id="24c37c9a-53b8-8099-9c10-ead8fdd7905f"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Possessives%2024c37c9a53b880999c10ead8fdd7905f.html"><span class="icon">▫️</span>Possessives</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Possessives%2024c37c9a53b880999c10ead8fdd7905f/099f9953-de1e-4272-9f6d-15a305f70924.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Possessives%2024c37c9a53b880999c10ead8fdd7905f/099f9953-de1e-4272-9f6d-15a305f70924.png" alt="099f9953-de1e-4272-9f6d-15a305f70924.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">17</td></tr><tr id="27f37c9a-53b8-80e8-b22d-d48feaa5551d"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Distributives%2027f37c9a53b880e8b22dd48feaa5551d.html">Distributives</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Distributives%2027f37c9a53b880e8b22dd48feaa5551d/ChatGPT_Image_Oct_12_2025_12_11_13_PM.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Distributives%2027f37c9a53b880e8b22dd48feaa5551d/ChatGPT_Image_Oct_12_2025_12_11_13_PM.png" alt="ChatGPT Image Oct 12, 2025, 12_11_13 PM.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">18</td></tr><tr id="22737c9a-53b8-806f-b0bb-cadcc13d8277"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Tag%20questions%20%5BPresent%20Simple%5D%2022737c9a53b8806fb0bbcadcc13d8277.html"><span class="icon">▫️</span>Tag questions [Present Simple]</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Tag%20questions%20%5BPresent%20Simple%5D%2022737c9a53b8806fb0bbcadcc13d8277/Start.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Tag%20questions%20%5BPresent%20Simple%5D%2022737c9a53b8806fb0bbcadcc13d8277/Start.png" alt="Start.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">19</td></tr><tr id="1ee37c9a-53b8-8051-8596-da9d99cb9e0d"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Verb%20to%20be%20-%20Present%201ee37c9a53b880518596da9d99cb9e0d.html"><span class="icon">▫️</span>Verb to be - Present</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Verb%20to%20be%20-%20Present%201ee37c9a53b880518596da9d99cb9e0d/Present_Simple_(2).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Verb%20to%20be%20-%20Present%201ee37c9a53b880518596da9d99cb9e0d/Present_Simple_(2).png" alt="Present Simple (2).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">20</td></tr><tr id="28a37c9a-53b8-8090-a628-f25cb1efc9cd"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Verb%20to%20be%20-%20Past%2028a37c9a53b88090a628f25cb1efc9cd.html"><span class="icon">▫️</span>Verb to be - Past</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Verb%20to%20be%20-%20Past%2028a37c9a53b88090a628f25cb1efc9cd/Present_Simple_(8).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Verb%20to%20be%20-%20Past%2028a37c9a53b88090a628f25cb1efc9cd/Present_Simple_(8).png" alt="Present Simple (8).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">20</td></tr><tr id="28a37c9a-53b8-80a5-9ef9-da9068adcad6"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Wh-words%2028a37c9a53b880a59ef9da9068adcad6.html"><span class="icon">▫️</span>Wh-words</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Wh-words%2028a37c9a53b880a59ef9da9068adcad6/Present_Simple_(4).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Wh-words%2028a37c9a53b880a59ef9da9068adcad6/Present_Simple_(4).png" alt="Present Simple (4).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`"></td></tr><tr id="22537c9a-53b8-80b2-89ed-dcb3643376c2"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Past%20Simple%2022537c9a53b880b289eddcb3643376c2.html"><span class="icon">▫️</span>Past Simple</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Past%20Simple%2022537c9a53b880b289eddcb3643376c2/Present_Simple.png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Past%20Simple%2022537c9a53b880b289eddcb3643376c2/Present_Simple.png" alt="Present Simple.png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">22</td></tr><tr id="26a37c9a-53b8-80ff-b2dd-e36366ae23fe"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe.html"><span class="icon">▫️</span>Present Perfect</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe/Present_Simple_(5).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe/Present_Simple_(5).png" alt="Present Simple (5).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">23</td></tr><tr id="26437c9a-53b8-806e-99da-febc35a36d7d"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/If-Clauses%2026437c9a53b8806e99dafebc35a36d7d.html"><span class="icon">▫️</span>If-Clauses</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/If-Clauses%2026437c9a53b8806e99dafebc35a36d7d/Present_Simple_(3).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/If-Clauses%2026437c9a53b8806e99dafebc35a36d7d/Present_Simple_(3).png" alt="Present Simple (3).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">24</td></tr><tr id="26237c9a-53b8-80ad-9ea6-e0473c89188a"><td class="cell-title"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Past%20Perfect%2026237c9a53b880ad9ea6e0473c89188a.html"><span class="icon">▫️</span>Past Perfect</a></td><td class="cell-mmrm"><span style="margin-inline-end:6px"><a href="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Past%20Perfect%2026237c9a53b880ad9ea6e0473c89188a/Present_Simple_(4).png"><img style="width:20px;max-height:24px" src="ZTF%20Experience%20English%20Course%2020737c9a53b8813e9ebfe9630eb201b8/Past%20Perfect%2026237c9a53b880ad9ea6e0473c89188a/Present_Simple_(4).png" alt="Present Simple (4).png"/></a></span></td><td class="cell-xxkx"><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td><td class="cell-U}m`">25</td></tr></tbody></table><br/><br/></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

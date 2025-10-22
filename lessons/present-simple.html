@@ -1,0 +1,718 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Present Simple</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="20737c9a-53b8-81c0-8ed1-dae973dbe37e" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">Present Simple</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/Present_Simple_(7).png"><img style="width:20px;max-height:24px" src="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/Present_Simple_(7).png" alt="Present Simple (7).png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>11</td></tr></tbody></table></header><div class="page-body"><p id="22437c9a-53b8-81c1-81f1-eab606cb4eb4" class="">💡 Present Simple<div class="indented"><p id="22437c9a-53b8-8166-851e-cf81522c3cc4" class="">Have you ever noticed how some things in <strong>your life</strong> tend not to change? 🌍</p><p id="22437c9a-53b8-81d6-a8ac-e105e7b1da66" class="">Maybe <strong>you</strong> always <strong>wake up</strong> at the same time ⏰, <strong>eat</strong> the same breakfast 🍞, and <strong>think</strong> the same thoughts while brushing your teeth 🦷.</p><p id="22437c9a-53b8-8157-8d9c-f69de0370e3b" class="">Maybe <strong>you</strong> <strong>take</strong> the same way to work 🛣️, <strong>stop</strong> at the same traffic lights🚦, and <strong>complain</strong> about traffic — because it never changes 😤.</p><p id="22437c9a-53b8-81aa-bd98-ce992a5f4f11" class="">At work, it’s the same story — you <strong>check</strong> emails 📧, <strong>attend</strong> meetings 👥, <strong>solve</strong> problems 🧠, and then <strong>do</strong> it all over again the next day 🔁.</p><p id="22437c9a-53b8-81ff-8028-ee0e50009fdf" class="">And outside, ☀️ The sun <strong>shines</strong>. 🌬️ The wind <strong>blows</strong>. 🌧️ It <strong>rains</strong>. — just as <strong>it</strong> always <strong>does</strong>.</p><p id="22437c9a-53b8-819a-96b7-fd47d03e91a8" class="">These small patterns, habits, and facts are part of our daily lives — and that’s exactly what the <strong>Present Simple</strong> helps us describe:</p><p id="22437c9a-53b8-81e8-944c-d00526d35f8e" class="">
+</p><div id="22437c9a-53b8-8118-b5ad-ee81712eb2c1" class="column-list"><div id="22437c9a-53b8-81b3-a7f6-eaf46f98b938" style="width:21.875%" class="column"><blockquote id="22437c9a-53b8-810a-b9d1-d94402cc99bd" class=""><strong>✅ Facts<br/></strong>Always true (universal or scientific facts).<br/><p id="22437c9a-53b8-8133-8936-ef5abb88b2e5" class="">• <em>The sun rises in the east.</em></p><p id="22437c9a-53b8-81e2-a8ad-c2c6ad0ee3b9" class="">• <em>A year has 12 months.</em></p><p id="22437c9a-53b8-8130-baa4-eb5026d6ecfd" class=""><em>• Water boils at 100 °C.</em></p><p id="22437c9a-53b8-810c-a0d9-d313369a08cd" class=""><em>• Lightning comes before thunder.</em></p></blockquote><p id="22437c9a-53b8-81e9-9ce6-f0a8fb4fe78e" class="">
+</p></div><div id="22437c9a-53b8-8135-a2e7-c2a2ccc36183" style="width:25%" class="column"><blockquote id="22437c9a-53b8-81e8-b756-e39ec406df82" class="">👍 <strong>General Truths<br/></strong>Usually true (typical behaviors)<br/><p id="22437c9a-53b8-8146-af3f-e34dbc642739" class="">•<em> Parents worry about their children.</em></p><p id="22437c9a-53b8-81fa-9152-d6771013db9b" class=""><em>• Children love cartoons.</em></p><p id="22437c9a-53b8-8110-b796-ec0d8cfc29be" class=""><em>• Smartphones distract people easily.</em></p><p id="22437c9a-53b8-8103-9150-c235c50d29a3" class=""><em>• Exercise improves your mood.</em></p></blockquote></div><div id="22437c9a-53b8-8140-8cc1-eadb35a9c0f2" style="width:25%" class="column"><blockquote id="22437c9a-53b8-814e-a818-f86340bdca86" class="">🔁 <strong>Routines and Habits<br/></strong>Repeated actions<br/><p id="22437c9a-53b8-81cd-ae0c-f202215025a9" class="">•<em> I wake up at 7 a.m. every day.</em></p><p id="22437c9a-53b8-812a-9da4-e39599fbe7b0" class=""><em>• We have lunch at 12:30.</em></p><p id="22437c9a-53b8-819f-90f2-e77351a9a266" class=""><em>• He walks his dog after dinner.</em></p><p id="22437c9a-53b8-81a5-bc90-db43352ef9d1" class=""><em>• I take a shower before bed.</em></p></blockquote></div><div id="22437c9a-53b8-8133-a68a-fcd5eb9d2986" style="width:28.125000000000007%" class="column"><blockquote id="22437c9a-53b8-8199-9861-d4c8033c2557" class="">🪴 <strong>Long-Term Situations</strong> <strong><br/></strong>True now and for some time<br/><p id="22437c9a-53b8-81c8-a690-dd581908db0b" class="">•<em> I live in a small apartment downtown.</em></p><p id="22437c9a-53b8-818a-ad85-cc73a9bd1230" class=""><em>• She works for a tech company.</em></p><p id="22437c9a-53b8-817c-a657-e3683e631e05" class=""><em>• They have two kids.</em></p><p id="22437c9a-53b8-81c1-8a86-d33a979bf136" class=""><em>• We own a small bakery.</em></p></blockquote></div></div></div></p><hr id="22437c9a-53b8-812f-8b9d-ff37e23a7746"/><div id="22437c9a-53b8-8193-af63-e40ecaa98662" class="column-list"><div id="22437c9a-53b8-819b-83bc-cb3354404e27" style="width:81.25%" class="column"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">👉 Patterns</summary><div class="indented"><p id="22437c9a-53b8-81ab-9c7c-e717e5ae849d" class="">We<strong> have talked</strong> about <strong>when</strong> we use the Present Simple. Now let’s explore <strong>how</strong> we use it:</p><p id="22437c9a-53b8-8148-80af-c73e9362fbed" class="">
+</p><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">✅ <strong>Affirmative Sentences</strong></summary><div class="indented"><div id="22437c9a-53b8-8184-b2b5-d74d3502ae5b" class="column-list"><div id="22437c9a-53b8-81c0-95d8-fb507d9de6a6" style="width:50%" class="column"><p id="22437c9a-53b8-8171-aff9-e4c51ddf9c36" class="block-color-gray">▪️ <em>1st &amp; 2nd Person Singular &amp; Plural [I, You, We, They]</em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="22437c9a-53b8-81f4-bad4-e4aed073ceb0"><div style="width:100%"><p id="22437c9a-53b8-819c-b93c-ff09ab2c722d" class=""><strong>Subject + base verb + complement</strong></p></div></figure><p id="22437c9a-53b8-8121-a599-e75afe2b7e6c" class="">
+</p></div><div id="22437c9a-53b8-81f7-b7ab-e3e551665a24" style="width:50%" class="column"><p id="22437c9a-53b8-81b4-b3c0-f3fc2f6d58da" class="">▪️ <em><mark class="highlight-gray">3rd Person Singular [He, She ,It]</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="22437c9a-53b8-811c-a673-de93b86b0ac1"><div style="width:100%"><p id="22437c9a-53b8-818d-8426-d79ae4617e6c" class=""><mark class="highlight-default"><strong>Subject + </strong></mark><em><mark class="highlight-purple"><strong><span style="border-bottom:0.05em solid">base verb + ending</span></strong></mark></em><mark class="highlight-teal"><strong> </strong></mark><mark class="highlight-default"><strong>+ complement</strong></mark></p></div></figure><ul id="22437c9a-53b8-81de-a388-fd8fc05c1265" class="bulleted-list"><li style="list-style-type:disc"><strong>If the verb ends in:</strong><ul id="22437c9a-53b8-81a1-a7ca-f82010036af0" class="bulleted-list"><li style="list-style-type:square"><em><strong>s, -sh, -ch, -o, -x, -z</strong></em><em> → Add </em><em><strong>&quot;es&quot;</strong></em></li></ul><ul id="22437c9a-53b8-8137-946e-e15336f3bd66" class="bulleted-list"><li style="list-style-type:circle"><em><strong>Consonant + y</strong></em><em> → Remove </em><em><strong>&quot;y&quot;</strong></em><em> and add </em><em><strong>&quot;ies&quot;</strong></em></li></ul><ul id="22437c9a-53b8-81d7-bed3-ee33f1e9360c" class="bulleted-list"><li style="list-style-type:circle"><em><strong>Other verbs</strong></em><em> → Add </em><em><strong>&quot;s&quot;</strong></em></li></ul><ul id="22437c9a-53b8-81fc-aeb3-c520c970e126" class="bulleted-list"><li style="list-style-type:circle"><em><strong>Exception:</strong></em><em> have → has</em></li></ul></li></ul></div></div></div></details><hr id="22437c9a-53b8-8154-8324-c032d39b65fc"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">❌ <strong>Negative Sentences</strong></summary><div class="indented"><div id="22437c9a-53b8-8175-b5d0-cc1d976213ab" class="column-list"><div id="22437c9a-53b8-8122-915a-ffe846da4791" style="width:50%" class="column"><p id="22437c9a-53b8-8121-978f-d5ea64be7525" class="">▪️ <em><mark class="highlight-gray">1st &amp; 2nd Person Singular &amp; Plural [I, You, We, They]</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="22437c9a-53b8-8189-bd00-fc9832716fc9"><div style="width:100%"><p id="22437c9a-53b8-8144-9ad6-e49e06b13bc8" class=""><strong>Subject + </strong><mark class="highlight-blue"><strong>don’t</strong></mark><strong> + base verb + complement</strong></p></div></figure><p id="22437c9a-53b8-8137-8756-fed98c10c057" class="">💡<mark class="highlight-purple"> </mark><em><mark class="highlight-blue">don’t = do + not</mark></em></p></div><div id="22437c9a-53b8-81df-a3f9-e3171e3dd32f" style="width:50%" class="column"><p id="22437c9a-53b8-81a4-8403-e81a771694c5" class="">▪️<em><mark class="highlight-gray">3rd Person Singular [He, She ,It]</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="22437c9a-53b8-8160-884b-da0602212d8e"><div style="width:100%"><p id="22437c9a-53b8-8158-b997-f190367893f8" class=""><strong>Subject + </strong><mark class="highlight-blue"><strong>doesn’t </strong></mark><strong>+ base verb + complement</strong></p></div></figure><p id="22437c9a-53b8-81ed-94d3-df78248ef5e6" class="">💡 <em><mark class="highlight-blue"><mark class="highlight-default_background">doesn’t = does + not</mark></mark></em></p></div></div></div></details><hr id="22437c9a-53b8-81e4-9ebc-c657f91becc8"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">❓ <strong>Yes/No Questions</strong></summary><div class="indented"><div id="22437c9a-53b8-81cf-a6e7-d7b148a8fdc2" class="column-list"><div id="22437c9a-53b8-8126-a886-c9bcc7333823" style="width:50%" class="column"><p id="22437c9a-53b8-8129-b9e8-c851b103a18d" class="">▪️ <em><mark class="highlight-gray">1st &amp; 2nd Person Singular &amp; Plural [I, You, We, They]</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="22437c9a-53b8-8131-88a9-d1e3a7c79e64"><div style="width:100%"><p id="22437c9a-53b8-81e9-b17c-ec0977939776" class=""><mark class="highlight-blue"><strong>Do</strong></mark><strong> + subject + base verb + complement + ?</strong></p></div></figure><div id="22437c9a-53b8-81a0-b13a-e91886de70bc" class="column-list"><div id="22437c9a-53b8-8129-aa6b-df57a0e896fa" style="width:62.5%" class="column"><p id="22437c9a-53b8-8118-beed-ed384a4f6c78" class=""><em>👍 Yes, Subject + </em><em><mark class="highlight-blue">do</mark></em><em><mark class="highlight-purple">.</mark></em></p></div><div id="22437c9a-53b8-8101-8d4e-e373c4e91e16" style="width:106.25%" class="column"><p id="22437c9a-53b8-81b2-93b9-e36243a5cf20" class=""><em>👎 No, Subject + </em><em><mark class="highlight-blue">don’t</mark></em><em><mark class="highlight-purple">.</mark></em></p></div></div></div><div id="22437c9a-53b8-81cc-a56c-c66c671ad3b5" style="width:50%" class="column"><p id="22437c9a-53b8-8180-a73d-de321e17d630" class="">▪️ <em><mark class="highlight-gray">3rd Person Singular [He, She ,It]</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="22437c9a-53b8-81a9-b0c7-f8fda4712cde"><div style="width:100%"><p id="22437c9a-53b8-814f-b2e4-ea7a10ad368b" class=""><mark class="highlight-blue"><strong>Does</strong></mark><strong> + subject + base verb + complement + ?</strong></p></div></figure><div id="22437c9a-53b8-816a-a83b-eb9537c49220" class="column-list"><div id="22437c9a-53b8-8166-96d7-f8230f156c1b" style="width:75%" class="column"><p id="22437c9a-53b8-81e0-b87c-da537ee9c26b" class=""><em>👍 Yes, Subject + </em><em><mark class="highlight-blue">does</mark></em><em>. </em></p></div><div id="22437c9a-53b8-81b2-9f48-cca9a5377d00" style="width:106.25%" class="column"><p id="22437c9a-53b8-819b-907b-ebd02a4c742f" class=""><em>👎 No, Subject + </em><em><mark class="highlight-blue">doesn’t</mark></em><em><mark class="highlight-default">.</mark></em></p></div></div></div></div></div></details><hr id="22437c9a-53b8-8136-8a11-fcfeebc9e15c"/><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">❓ Wh-<strong>Questions</strong></summary><div class="indented"><div id="22437c9a-53b8-81d2-b49d-c0613adb4c27" class="column-list"><div id="22437c9a-53b8-816c-a762-f25d43eac198" style="width:50%" class="column"><p id="22437c9a-53b8-8150-81a7-f6d67c6c0dce" class="">▪️ <em><mark class="highlight-gray">1st &amp; 2nd Person Singular &amp; Plural [I, You, We, They]</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="22437c9a-53b8-8136-9288-e1d6e8304a3a"><div style="width:100%"><p id="22437c9a-53b8-815f-a22f-c14c21239dab" class=""><strong><a href="https://www.notion.so/Wh-words-17337c9a53b881b09bceedcf5f4a7eea?pvs=21">Wh-word</a></strong><mark class="highlight-default"><strong> +</strong></mark><mark class="highlight-blue"><strong> do</strong></mark><strong> + subject + base verb + complement + ?</strong></p></div></figure></div><div id="22437c9a-53b8-8197-965a-c3ed24147780" style="width:50%" class="column"><p id="22437c9a-53b8-8106-a344-f02dbbf6060e" class="">▪️ <em><mark class="highlight-gray">3rd Person Singular [He, She ,It]</mark></em></p><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="22437c9a-53b8-81cc-a9ff-c5562198465c"><div style="width:100%"><p id="22437c9a-53b8-81d1-ac4b-db80d8f7a5de" class=""><mark class="highlight-default"><strong><a href="https://www.notion.so/Wh-words-17337c9a53b881b09bceedcf5f4a7eea?pvs=21">Wh-word</a></strong></mark><mark class="highlight-default"><strong> +</strong></mark><mark class="highlight-blue"><strong> does</strong></mark><strong> + subject + base verb + complement + ?</strong></p></div></figure></div></div></div></details><hr id="22437c9a-53b8-81aa-b5b1-ff552e9e4ed4"/><p id="27f37c9a-53b8-801b-b2bb-c76fcd293467" class="">
+</p></div></details></div><div id="22437c9a-53b8-81c0-bdcf-d9ebcf4f4f4b" style="width:31.25%" class="column"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">🧰🔧 Your Grammar Toolbox</summary><div class="indented"><p id="22437c9a-53b8-81bc-ae41-ea897b07f7ae" class="">
+</p><blockquote id="22437c9a-53b8-818d-9610-c6296c459cae" class=""><strong>Base verb</strong> = verb without “to”</blockquote><p id="22537c9a-53b8-80ae-b150-c082c7cad62b" class="">
+</p><blockquote id="22437c9a-53b8-8122-a642-dee4d263fb1e" class=""><strong>Auxiliarly verbs Simple Present tense:<br/></strong><ul id="22437c9a-53b8-818f-a093-c34531e7c0c0" class="bulleted-list"><li style="list-style-type:square"><em>👍 </em>Do</li></ul><ul id="22437c9a-53b8-81a2-90e6-fd950c9400b6" class="bulleted-list"><li style="list-style-type:disc"><em>👎 </em>Don’t = do + not</li></ul><p id="22537c9a-53b8-807d-ac44-dfd53d9fc9e8" class="">
+</p><ul id="22437c9a-53b8-8153-9476-fe52c59b22f7" class="bulleted-list"><li style="list-style-type:disc"><em>👍 </em>Does</li></ul><ul id="22437c9a-53b8-81ed-ba75-c245a4d36c5d" class="bulleted-list"><li style="list-style-type:disc"><em>👎 </em>Doesn’t = does + not</li></ul></blockquote><p id="22537c9a-53b8-806b-a1af-dbfece139429" class="">
+</p><blockquote id="22437c9a-53b8-8138-bb57-f71392fbf561" class=""><strong>🗣️ Pronunciation</strong><div id="22437c9a-53b8-8176-ac64-f1e9816f0cad" class="column-list"><div id="22437c9a-53b8-810d-84df-f4be44c4b3c8" style="width:100%" class="column"><ul id="22437c9a-53b8-8195-be7a-f92be472db5e" class="bulleted-list"><li style="list-style-type:square">Do - /du:/<figure id="22437c9a-53b8-8177-a74f-fdf15eb73073"><div class="source"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/do.mp3">attachment:ba9347a7-8016-45f3-8998-9b0cd9867b3b:do.mp3</a></div></figure></li></ul><ul id="22437c9a-53b8-81fe-bbd6-c4a23f442a2e" class="bulleted-list"><li style="list-style-type:disc">Does - /dʌz/<figure id="22437c9a-53b8-8144-a091-d069ed23763b"><div class="source"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/does.mp3">attachment:bbe3f201-1cf4-49c6-9bfe-1dc4a9394d01:does.mp3</a></div></figure></li></ul></div><div id="22437c9a-53b8-815c-88c8-ccae0812eb92" style="width:100%" class="column"><ul id="22437c9a-53b8-817a-b435-c2414b2b1276" class="bulleted-list"><li style="list-style-type:disc">Don’t - /doʊnt/<figure id="22437c9a-53b8-81a4-9011-e6d9ff02d3d1"><div class="source"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/dont.mp3">attachment:17c4fe21-0dd6-4505-8630-05a483e5c3a8:dont.mp3</a></div></figure></li></ul><ul id="22437c9a-53b8-81a5-94c7-fc4b7ed11ae7" class="bulleted-list"><li style="list-style-type:disc">Doesn’t - /ˈdʌz.ənt/<figure id="22437c9a-53b8-8137-b8d8-d94d75a6a91b"><div class="source"><a href="Present%20Simple%2020737c9a53b881c08ed1dae973dbe37e/doesnt.mp3">attachment:ddc51518-571c-46a4-91ae-8f399114fa2a:doesnt.mp3</a></div></figure></li></ul></div></div><p id="22437c9a-53b8-818e-a40e-d700bee464a1" class="">
+</p></blockquote></div></details><p id="27f37c9a-53b8-8090-9343-cff02f66bcbf" class="">
+</p></div></div><hr id="22437c9a-53b8-81a7-9f75-de77f289fdb2"/><p id="22437c9a-53b8-8135-92c9-f449cbd1c8ea" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

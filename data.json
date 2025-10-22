@@ -1,0 +1,152 @@
+[
+  {
+    "title": "The Alphabet",
+    "cover": "lessons/the-alphabet/ChatGPT_Image_Oct_18_2025_08_18_08_PM.png",
+    "link": "lessons/the-alphabet.html",
+    "order": 1
+  },
+  {
+    "title": "Your First Words",
+    "cover": "lessons/your-first-words/Your_First_20_Words_-_Thumbnails_(3).png",
+    "link": "lessons/your-first-words.html",
+    "order": 2
+  },
+  {
+    "title": "The Sounds Of English",
+    "cover": "lessons/the-sounds-of-english/ChatGPT_Image_Oct_10_2025_12_03_30_AM.png",
+    "link": "lessons/the-sounds-of-english.html",
+    "order": 3
+  },
+  {
+    "title": "Your First Phrases",
+    "cover": "lessons/your-first-phrases/ChatGPT_Image_Aug_12_2025_11_16_53_AM.png",
+    "link": "lessons/your-first-phrases.html",
+    "order": 4
+  },
+  {
+    "title": "The Numbers",
+    "cover": "lessons/the-numbers/7a7614fb-fd21-40ce-863b-4cbe8a09f699.png",
+    "link": "lessons/the-numbers.html",
+    "order": 5
+  },
+  {
+    "title": "Your First Verbs",
+    "cover": "lessons/your-first-verbs/ChatGPT_Image_Oct_11_2025_10_23_06_AM.png",
+    "link": "lessons/your-first-verbs.html",
+    "order": 6
+  },
+  {
+    "title": "Imperative Sentences",
+    "cover": "lessons/imperative-sentences/ChatGPT_Image_Oct_10_2025_02_52_28_AM.png",
+    "link": "lessons/imperative-sentences.html",
+    "order": 7
+  },
+  {
+    "title": "Nouns",
+    "cover": "lessons/nouns/Thumbnails_Hotmart_1930_x_1080_(6).png",
+    "link": "lessons/nouns.html",
+    "order": 9
+  },
+  {
+    "title": "Subject Pronouns",
+    "cover": "lessons/subject-pronouns/ChatGPT_Image_Oct_7_2025_10_21_54_PM.png",
+    "link": "lessons/subject-pronouns.html",
+    "order": 10
+  },
+  {
+    "title": "Present Simple",
+    "cover": "lessons/present-simple/Present_Simple_(7).png",
+    "link": "lessons/present-simple.html",
+    "order": 11
+  },
+  {
+    "title": "Definite Article",
+    "cover": "lessons/definite-article/Definite_Pronoun.png",
+    "link": "lessons/definite-article.html",
+    "order": 12
+  },
+  {
+    "title": "Indefinite Articles",
+    "cover": "lessons/indefinite-articles/Indefinite_Pronoun_(1).png",
+    "link": "lessons/indefinite-articles.html",
+    "order": 13
+  },
+  {
+    "title": "Plural Nouns",
+    "cover": "lessons/plural-nouns/ChatGPT_Image_Oct_10_2025_12_36_34_AM.png",
+    "link": "lessons/plural-nouns.html",
+    "order": 14
+  },
+  {
+    "title": "Quantifiers",
+    "cover": "lessons/quantifiers/ChatGPT_Image_Oct_9_2025_01_44_10_PM.png",
+    "link": "lessons/quantifiers.html",
+    "order": 15
+  },
+  {
+    "title": "Demonstrative Pronouns",
+    "cover": "lessons/demonstrative-pronouns/_Livro_Impresso.png",
+    "link": "lessons/demonstrative-pronouns.html",
+    "order": 16
+  },
+  {
+    "title": "Possessives",
+    "cover": "lessons/possessives/099f9953-de1e-4272-9f6d-15a305f70924.png",
+    "link": "lessons/possessives.html",
+    "order": 17
+  },
+  {
+    "title": "Distributives",
+    "cover": "lessons/distributives/ChatGPT_Image_Oct_12_2025_12_11_13_PM.png",
+    "link": "lessons/distributives.html",
+    "order": 18
+  },
+  {
+    "title": "Tag Questions Present Simple",
+    "cover": "lessons/tag-questions-present-simple/Start.png",
+    "link": "lessons/tag-questions-present-simple.html",
+    "order": 19
+  },
+  {
+    "title": "Verb To Be   Present",
+    "cover": "lessons/verb-to-be---present/Present_Simple_(2).png",
+    "link": "lessons/verb-to-be---present.html",
+    "order": 20
+  },
+  {
+    "title": "Verb To Be   Past",
+    "cover": "lessons/verb-to-be---past/Present_Simple_(8).png",
+    "link": "lessons/verb-to-be---past.html",
+    "order": 21
+  },
+  {
+    "title": "Past Simple",
+    "cover": "lessons/past-simple/Present_Simple.png",
+    "link": "lessons/past-simple.html",
+    "order": 22
+  },
+  {
+    "title": "Present Perfect",
+    "cover": "lessons/present-perfect/Present_Simple_(5).png",
+    "link": "lessons/present-perfect.html",
+    "order": 23
+  },
+  {
+    "title": "If Clauses",
+    "cover": "lessons/if-clauses/Present_Simple_(3).png",
+    "link": "lessons/if-clauses.html",
+    "order": 24
+  },
+  {
+    "title": "Past Perfect",
+    "cover": "lessons/past-perfect/Present_Simple_(4).png",
+    "link": "lessons/past-perfect.html",
+    "order": 25
+  },
+  {
+    "title": "Wh Words",
+    "cover": "lessons/wh-words/Present_Simple_(4).png",
+    "link": "lessons/wh-words.html",
+    "order": 26
+  }
+]

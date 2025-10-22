@@ -1,0 +1,764 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>The Numbers</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="20737c9a-53b8-8192-aca4-cb4a491131ae" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">The Numbers</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/ChatGPT_Image_Oct_12_2025_11_54_59_AM.png"><img style="width:20px;max-height:24px" src="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/ChatGPT_Image_Oct_12_2025_11_54_59_AM.png" alt="ChatGPT Image Oct 12, 2025, 11_54_59 AM.png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>5</td></tr></tbody></table></header><div class="page-body"><p id="27b37c9a-53b8-81d2-bfbf-f69c11fc9507" class="">💡 We use numbers every day when talking about time, amounts, dates, prices, and more. Knowing how to use and pronounce them correctly boosts your confidence and helps you avoid confusion and misunderstandings.</p><p id="27b37c9a-53b8-81cd-a688-ea56a70c15fa" class="">
+</p><blockquote id="27b37c9a-53b8-81cd-a545-c8f7d8ce97ea" class="">Cardinal numbers are the basic numbers we use for counting and indicating quantity. Here are some key points about these numbers.</blockquote><p id="27b37c9a-53b8-8122-9ada-e3ecd69f8d14" class="">
+</p><ul id="27b37c9a-53b8-818f-98ae-edcb9db656ea" class="toggle"><li><details open=""><summary><strong>Zero → 0</strong></summary><p id="27b37c9a-53b8-8106-a317-f89edd046e82" class="">
+</p><p id="27b37c9a-53b8-819e-a9a9-c03d90c43b4e" class="">🗣️ /ˈzɪə.roʊ/</p><p id="27b37c9a-53b8-81dc-843b-eca63b10bf61" class="">
+</p><p id="27b37c9a-53b8-81a2-8f03-c60ddb0c1da0" class="">➡️ “Zero” can also be pronounced as <strong>&quot;oh&quot;</strong> in informal situations, particularly when referring to numbers in a sequence rather than their quantities. Here are some examples:</p><div id="27b37c9a-53b8-8191-a33f-fb1585602857" class="column-list"><div id="27b37c9a-53b8-8178-8f57-daabc8b9851b" style="width:43.75%" class="column"><ul id="27b37c9a-53b8-81ff-a280-ef785e526784" class="bulleted-list"><li style="list-style-type:disc">My phone number is &quot;six-<strong>oh</strong>-four, five-five-five, one-two-three-four&quot;.<br/>My phone number is 6<strong>0</strong>4-555-1234.</li></ul><p id="27b37c9a-53b8-8164-b518-f77dcd3f0a1a" class="">
+</p><ul id="27b37c9a-53b8-8132-bfc9-e25267a995a9" class="bulleted-list"><li style="list-style-type:disc">Julie&#x27;s phone number is &quot;six-<strong>oh</strong>-four, five-five-five, one-two-<strong>double-oh</strong>”.<br/>Julie&#x27;s phone number is 6<strong>0</strong>4-555-12<strong>00</strong>.</li></ul><p id="27b37c9a-53b8-81e5-bb79-c83b03cd1281" class="">
+</p><ul id="27b37c9a-53b8-8171-83ae-f58cecedcdaa" class="bulleted-list"><li style="list-style-type:disc">You are staying in room &quot;four-one-<strong>oh</strong>”.<br/>You are staying in room 41<strong>0</strong>.</li></ul><p id="27b37c9a-53b8-8151-b20f-ca4c18903979" class="">
+</p><ul id="27b37c9a-53b8-8137-a3e6-d33e8e5b1851" class="bulleted-list"><li style="list-style-type:disc">The meeting is set for &quot;ten-<strong>oh</strong>-five in the morning&quot;.<br/>The meeting is set for 10:<strong>0</strong>5 a.m.</li></ul><p id="27b37c9a-53b8-81d3-8278-c4a93df11970" class="">
+</p><ul id="27b37c9a-53b8-8122-99c5-da71df895151" class="bulleted-list"><li style="list-style-type:disc">The product code is &quot;<strong>oh</strong>-A-three-B-two-oh-seven&quot;.<br/>The product code is <strong>0</strong>A3B207.</li></ul><p id="27b37c9a-53b8-8121-b4b3-d90eff5ec4ba" class="">
+</p></div><div id="27b37c9a-53b8-8134-8ccd-ccf91a268b44" style="width:56.25%" class="column"><ul id="27b37c9a-53b8-8190-8fc0-e948b871718d" class="bulleted-list"><li style="list-style-type:disc">The zip code for Beverly Hills, California is &quot;nine-<strong>oh</strong>-two-one-<strong>oh</strong>&quot;. <br/>The zip code for Beverly Hills, California is 9<strong>0</strong>21<strong>0</strong>.</li></ul><p id="27b37c9a-53b8-814f-96a1-c4c12337436e" class="">
+</p><ul id="27b37c9a-53b8-817a-acb6-e05fc50b48a5" class="bulleted-list"><li style="list-style-type:disc">The card expires on &quot;<strong>oh</strong>-seven, twenty&quot;.<br/>The card expires on <strong>0</strong>7/20.</li></ul><p id="27b37c9a-53b8-81fa-bdc1-f98b01e88aff" class="">
+</p><ul id="27b37c9a-53b8-8150-afd9-da10775d0134" class="bulleted-list"><li style="list-style-type:disc">The combination for the locker is &quot;eight-<strong>oh</strong>-three-two&quot;.<br/>The combination for the locker is 8<strong>0</strong>32.</li></ul><p id="27b37c9a-53b8-81e2-b56a-cf5b4338031d" class="">
+</p><ul id="27b37c9a-53b8-813f-a3fa-ede8eb2f2a85" class="bulleted-list"><li style="list-style-type:disc">The address is &quot;nine-<strong>oh</strong>-four”, Elm Street.<br/>The address is 9<strong>0</strong>4, Elm Street.</li></ul><p id="27b37c9a-53b8-8110-8b3a-c0da2bd8268a" class="">
+</p><ul id="27b37c9a-53b8-81f1-8079-df94ef0e4c7d" class="bulleted-list"><li style="list-style-type:disc">You’re catching route &quot;five-<strong>oh</strong>-six.”<br/>You’re catching route 5<strong>0</strong>6.</li></ul><p id="27b37c9a-53b8-8128-9573-c6a1d206879d" class="">
+</p></div></div></details></li></ul><hr id="27b37c9a-53b8-81e7-a0f7-c7f4a5993fcd"/><ul id="27b37c9a-53b8-81d5-a9d5-d373e0f33d80" class="toggle"><li><details open=""><summary><strong>Basic Numbers → 1 - 19</strong></summary><div id="27b37c9a-53b8-81b6-9a11-cac472898ea0" class="column-list"><div id="27b37c9a-53b8-81d9-bed8-d0ec482a29f4" style="width:22.222222222222225%" class="column"><ul id="27b37c9a-53b8-81dc-b1d6-d3f407ab7a73" class="bulleted-list"><li style="list-style-type:disc"><strong>1</strong> → <strong>one</strong> - /wʌn/</li></ul><ul id="27b37c9a-53b8-81e0-b21f-cb3ed50310d8" class="bulleted-list"><li style="list-style-type:disc"><strong>2</strong> → <strong>two</strong> - /tuː/</li></ul><ul id="27b37c9a-53b8-8156-99c4-fa196ba7e8d8" class="bulleted-list"><li style="list-style-type:disc"><strong>3</strong> → <strong>three </strong>- /θriː/</li></ul><ul id="27b37c9a-53b8-818e-b2ea-ea83edaf7bbc" class="bulleted-list"><li style="list-style-type:disc"><strong>4</strong> → <strong>four</strong> - /fɔːr/</li></ul><ul id="27b37c9a-53b8-81ba-bab5-c81f260d1c8d" class="bulleted-list"><li style="list-style-type:disc"><strong>5</strong> →<strong> five </strong>- /faɪv/</li></ul><p id="27b37c9a-53b8-81de-8e87-c1b7cff8f22e" class="">
+</p></div><div id="27b37c9a-53b8-8131-a378-fd026a3ab28f" style="width:22.222222222222225%" class="column"><ul id="27b37c9a-53b8-8144-94a3-d37d4cab3da6" class="bulleted-list"><li style="list-style-type:disc"><strong>6 → six</strong> - /sɪks/</li></ul><ul id="27b37c9a-53b8-81cd-8a8c-d4031736c426" class="bulleted-list"><li style="list-style-type:disc"><strong>7</strong> → <strong>seven</strong> - /ˈsɛ.vən/</li></ul><ul id="27b37c9a-53b8-8169-a48f-c40482ab4a72" class="bulleted-list"><li style="list-style-type:disc"><strong>8</strong> → <strong>eight</strong> - /eɪt/</li></ul><ul id="27b37c9a-53b8-8101-be79-f8b5e99bd49b" class="bulleted-list"><li style="list-style-type:disc"><strong>9</strong> → <strong>nine</strong> - /naɪn/</li></ul><ul id="27b37c9a-53b8-813a-8c14-f7570fc55366" class="bulleted-list"><li style="list-style-type:disc"><strong>10</strong> → <strong>ten</strong> - /tɛn/</li></ul></div><div id="27b37c9a-53b8-81ac-8a00-e6983bf99fdb" style="width:28.125%" class="column"><ul id="27b37c9a-53b8-81ab-999c-f6ee65b36d14" class="bulleted-list"><li style="list-style-type:disc"><strong>11</strong> → <strong>eleven</strong> - /əˈlɛ.vən/</li></ul><ul id="27b37c9a-53b8-816d-bd7d-d6f524c8c574" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>12</strong></mark> → <mark class="highlight-default"><strong>twelve</strong></mark><mark class="highlight-default"> - /twɛlv/</mark></li></ul><ul id="27b37c9a-53b8-810c-9dd5-e91752854f23" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>13</strong></mark><strong> </strong>→ <mark class="highlight-default"><strong>thir</strong></mark><mark class="highlight-default"><mark class="highlight-default_background"><strong><span style="border-bottom:0.05em solid">teen</span></strong></mark></mark><mark class="highlight-default"> - /ˌθɜːrˈtiːn/ </mark></li></ul><ul id="27b37c9a-53b8-810f-b8e9-deca7607f9c4" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>14</strong></mark> → <mark class="highlight-default"><strong>four</strong></mark><mark class="highlight-default"><strong><span style="border-bottom:0.05em solid">teen</span></strong></mark><mark class="highlight-default"> - /ˌfɔːrˈtiːn/</mark></li></ul><ul id="27b37c9a-53b8-81ed-8b84-dc7bdf24ce21" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>15</strong></mark> → <mark class="highlight-default"><strong>fif</strong></mark><mark class="highlight-default"><strong><span style="border-bottom:0.05em solid">teen</span></strong></mark><mark class="highlight-default"> - /ˌfɪfˈtiːn/</mark></li></ul></div><div id="27b37c9a-53b8-81cd-9c53-ccb40910cd3b" style="width:27.430555555555557%" class="column"><ul id="27b37c9a-53b8-8140-b52a-ca5d8b8072f6" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>16</strong></mark> → <mark class="highlight-default"><strong>six</strong></mark><mark class="highlight-default"><strong><span style="border-bottom:0.05em solid">teen</span></strong></mark><mark class="highlight-default"> - /ˌsɪksˈtiːn/</mark></li></ul><ul id="27b37c9a-53b8-8193-bf9c-f83630b26e85" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>17</strong></mark> → <mark class="highlight-default"><strong>seven</strong></mark><mark class="highlight-default"><strong><span style="border-bottom:0.05em solid">teen</span></strong></mark><mark class="highlight-default"> - /ˌsɛ.vənˈtiːn/</mark></li></ul><ul id="27b37c9a-53b8-81b6-88b0-daf9bddbff40" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>18</strong></mark> → <mark class="highlight-default"><strong>eigh</strong></mark><mark class="highlight-default"><strong><span style="border-bottom:0.05em solid">teen</span></strong></mark><mark class="highlight-default"> - /ˌeɪˈtiːn/</mark></li></ul><ul id="27b37c9a-53b8-81df-bd64-eb27a987a2ac" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>19</strong></mark> → <mark class="highlight-default"><strong>nine</strong></mark><mark class="highlight-default"><strong><span style="border-bottom:0.05em solid">teen</span></strong></mark><mark class="highlight-default"> - /ˌnaɪnˈtiːn/</mark></li></ul><p id="27b37c9a-53b8-8172-ab4b-d46afc3d2846" class="">
+</p><p id="27b37c9a-53b8-81f0-ad13-f31f57d6da38" class="">
+</p></div></div></details></li></ul><hr id="27b37c9a-53b8-8189-b5ce-c079b53dc32e"/><ul id="27b37c9a-53b8-8115-88ce-e74357923f8d" class="toggle"><li><details open=""><summary><strong>20, 30, 40, 50 …</strong></summary><div id="27b37c9a-53b8-81eb-8bd4-d394790a793b" class="column-list"><div id="27b37c9a-53b8-8144-8b29-c78a6b2547d6" style="width:21.875%" class="column"><ul id="27b37c9a-53b8-814e-9364-d3b0e84b7879" class="bulleted-list"><li style="list-style-type:disc"><strong>20 → twenty</strong> - /ˈtwɛn.ti/</li></ul><ul id="27b37c9a-53b8-81ea-9c7d-f4facb4651fe" class="bulleted-list"><li style="list-style-type:disc"><strong>30 → thirty</strong> - /ˈθɜːr.ti/</li></ul><p id="27b37c9a-53b8-8197-842b-f1c543d6f2c5" class="">
+</p></div><div id="27b37c9a-53b8-81b4-9d85-d2505d290078" style="width:18.75%" class="column"><ul id="27b37c9a-53b8-8181-aedc-f5c83697bde0" class="bulleted-list"><li style="list-style-type:disc"><strong>40 → forty</strong> - /ˈfɔːr.ti/</li></ul><ul id="27b37c9a-53b8-8148-a2e4-e7aabdb190c5" class="bulleted-list"><li style="list-style-type:disc"><strong>50 → fifty</strong> - /ˈfɪf.ti/</li></ul></div><div id="27b37c9a-53b8-8113-8a36-f85b1673bcbc" style="width:21.875%" class="column"><ul id="27b37c9a-53b8-81ef-8609-e00008d05344" class="bulleted-list"><li style="list-style-type:disc"><strong>60 → sixty</strong> - /ˈsɪks.ti/</li></ul><ul id="27b37c9a-53b8-811c-b3be-dee15add088c" class="bulleted-list"><li style="list-style-type:disc"><strong>70 → seventy</strong> - /ˈsɛ.vən.ti/</li></ul></div><div id="27b37c9a-53b8-8151-929f-e0f5937b9fa2" style="width:37.5%" class="column"><ul id="27b37c9a-53b8-81f6-b3f7-d0363e8f3e6a" class="bulleted-list"><li style="list-style-type:disc"><strong>80 → eighty</strong> - /ˈeɪ.ti/</li></ul><ul id="27b37c9a-53b8-81e0-ac62-f9d80c94796c" class="bulleted-list"><li style="list-style-type:disc"><strong>90 → ninety</strong> - /ˈnaɪn.ti/</li></ul><p id="27b37c9a-53b8-8167-a1ad-f1c12deaa95c" class="">
+</p></div></div></details></li></ul><hr id="27b37c9a-53b8-8101-b301-e4c8d75929d1"/><ul id="27b37c9a-53b8-816d-ae2f-e441066abd0a" class="toggle"><li><details open=""><summary><strong>Combining tens with units</strong></summary><p id="27b37c9a-53b8-810d-ba1b-f813e041a2a4" class="">
+</p><p id="27b37c9a-53b8-81f7-8a1c-ff5c365bcfb6" class="">➡️ Use a hyphen when combining tens with units. Example:</p><div id="27b37c9a-53b8-812d-b642-fd8ac2bbcc20" class="column-list"><div id="27b37c9a-53b8-8178-80e0-fc897a057261" style="width:20%" class="column"><ul id="27b37c9a-53b8-81c6-be34-efc7367c9d0d" class="bulleted-list"><li style="list-style-type:disc"><strong>21</strong> → twenty<strong>-</strong>one</li></ul><ul id="27b37c9a-53b8-815b-b2a2-d9a78cd4ed5d" class="bulleted-list"><li style="list-style-type:disc"><strong>34</strong> → thirty<strong>-</strong>four</li></ul></div><div id="27b37c9a-53b8-8142-96c7-d066c001660c" style="width:20%" class="column"><ul id="27b37c9a-53b8-8154-a600-c9663f6d585c" class="bulleted-list"><li style="list-style-type:disc"><strong>47</strong> → forty<strong>-</strong>seven</li></ul><ul id="27b37c9a-53b8-8197-97c5-d496c6d77ac8" class="bulleted-list"><li style="list-style-type:disc"><strong>59</strong> → fifty<strong>-</strong>nine</li></ul></div><div id="27b37c9a-53b8-810e-80c7-ecadb0e16c4b" style="width:20%" class="column"><ul id="27b37c9a-53b8-814d-bf86-d457db1cf57c" class="bulleted-list"><li style="list-style-type:disc"><strong>62</strong> → sixty<strong>-</strong>two</li></ul><ul id="27b37c9a-53b8-816e-a78d-dd741fe33889" class="bulleted-list"><li style="list-style-type:disc"><strong>76</strong> → seventy<strong>-</strong>six</li></ul></div><div id="27b37c9a-53b8-817c-bbbe-dc4ca6ab424b" style="width:20%" class="column"><ul id="27b37c9a-53b8-8180-bd8d-dd9e597a33d9" class="bulleted-list"><li style="list-style-type:disc"><strong>88</strong> → eighty<strong>-</strong>eight</li></ul><ul id="27b37c9a-53b8-81b0-8903-dcee47cbf5fe" class="bulleted-list"><li style="list-style-type:disc"><strong>93</strong> → ninety<strong>-</strong>three</li></ul><p id="27b37c9a-53b8-81b4-951c-d9caacaf0eb0" class="">
+</p></div><div id="27b37c9a-53b8-81bb-abc3-eb28cf2d07b3" style="width:20%" class="column"><p id="27b37c9a-53b8-8118-888b-f68498011b3b" class="">
+</p></div></div></details></li></ul><hr id="27b37c9a-53b8-810b-bb77-c9558cffd4da"/><ul id="27b37c9a-53b8-8135-bcbd-c5f083dc52b7" class="toggle"><li><details open=""><summary><strong>🔎 General View: 0 → 99 </strong></summary><div id="27b37c9a-53b8-8181-bbc9-d05f2a6dec4d" class="column-list"><div id="27b37c9a-53b8-8165-9073-d69158391cf7" style="width:20%" class="column"><p id="27b37c9a-53b8-81e4-a976-e478a2f88202" class=""><strong>0</strong> → zero</p><p id="27b37c9a-53b8-8150-a78b-f038dff376da" class=""><strong>1</strong> → one</p><p id="27b37c9a-53b8-81bb-ab15-c6e7105a9859" class=""><strong>2</strong> → two</p><p id="27b37c9a-53b8-81fb-ae30-d823ac9a5fdc" class=""><strong>3</strong> → three</p><p id="27b37c9a-53b8-813d-a766-ff355cf13983" class=""><strong>4</strong> → four</p><p id="27b37c9a-53b8-8101-82c4-da0e0b249868" class=""><strong>5</strong> → five</p><p id="27b37c9a-53b8-8154-a04c-ecea1e8b3aa9" class=""><strong>6</strong> → six</p><p id="27b37c9a-53b8-8111-b735-f84766d8794d" class=""><strong>7</strong> → seven</p><p id="27b37c9a-53b8-8148-8d0f-c4db628c3a56" class=""><strong>8</strong> → eight</p><p id="27b37c9a-53b8-8171-bda3-e43e7d3dc115" class=""><strong>9</strong> → nine</p><p id="27b37c9a-53b8-8162-a335-d2410932d723" class="">
+</p><hr id="27b37c9a-53b8-81b1-8415-ee84c9b9e6f1"/><p id="27b37c9a-53b8-81ff-9f11-fa7e5fcb5039" class="">
+</p><p id="27b37c9a-53b8-8143-9cd3-c4ca3b21b1aa" class=""><strong>50</strong> → fifty</p><p id="27b37c9a-53b8-81b4-b4e0-d8e311ff708d" class=""><strong>51</strong> → fifty-one</p><p id="27b37c9a-53b8-81e4-9967-ec049b7c635f" class=""><strong>52</strong> → fifty-two</p><p id="27b37c9a-53b8-8100-92a0-e83dbb1ab323" class=""><strong>53</strong> → fifty-three</p><p id="27b37c9a-53b8-817b-9f8c-d3cb1cf243d2" class=""><strong>54</strong> → fifty-four</p><p id="27b37c9a-53b8-8104-9262-f8f2ef605ffe" class=""><strong>55</strong> → fifty-five</p><p id="27b37c9a-53b8-8185-a476-c5d0fead5b55" class=""><strong>56</strong> → fifty-six</p><p id="27b37c9a-53b8-81d4-b1cd-c1a783a394d9" class=""><strong>57</strong> → fifty-seven</p><p id="27b37c9a-53b8-8143-8e5a-c1c119f0ffca" class=""><strong>58</strong> → fifty-eight</p><p id="27b37c9a-53b8-8125-8685-d109461ba961" class=""><strong>59</strong> → fifty-nine</p></div><div id="27b37c9a-53b8-81a9-9326-fabe62d726bc" style="width:20%" class="column"><p id="27b37c9a-53b8-81cb-92b0-d071476f6adb" class=""><strong>10</strong> → ten</p><p id="27b37c9a-53b8-8195-98de-c118bf1b12ed" class=""><strong>11</strong> → eleven</p><p id="27b37c9a-53b8-8120-bd77-ea89870e510f" class=""><strong>12</strong> → twelve</p><p id="27b37c9a-53b8-81a7-bc08-cc3557fe59eb" class=""><strong>13</strong> → thirteen</p><p id="27b37c9a-53b8-8139-ae5e-de7def2de617" class=""><strong>14</strong> → fourteen</p><p id="27b37c9a-53b8-81b9-a339-e6b3f97ea27e" class=""><strong>15</strong> → <mark class="highlight-pink">fif</mark>teen</p><p id="27b37c9a-53b8-81ac-bc8f-ca88411e978a" class=""><strong>16</strong> → sixteen</p><p id="27b37c9a-53b8-813e-a076-f83d713538ae" class=""><strong>17</strong> → seventeen</p><p id="27b37c9a-53b8-813d-8c26-d69695390f35" class=""><strong>18</strong> → eighteen</p><p id="27b37c9a-53b8-81c3-8457-ced4f2a5a1cb" class=""><strong>19</strong> → nineteen</p><p id="27b37c9a-53b8-815f-acce-f9cc32dc9833" class="">
+</p><hr id="27b37c9a-53b8-817c-bc7f-ffa422c455bc"/><p id="27b37c9a-53b8-8183-b325-c7d3bc69812f" class="">
+</p><p id="27b37c9a-53b8-818a-a0c7-e4452a0f5a20" class=""><strong>60</strong> → sixty</p><p id="27b37c9a-53b8-8190-b694-c9ef20a66327" class=""><strong>61</strong> → sixty-one</p><p id="27b37c9a-53b8-81b4-b757-e432bdd4efd4" class=""><strong>62</strong> → sixty-two</p><p id="27b37c9a-53b8-811a-b41d-eaba2f513e10" class=""><strong>63</strong> → sixty-three</p><p id="27b37c9a-53b8-815c-91f5-ec7d8d49e904" class=""><strong>64</strong> → sixty-four</p><p id="27b37c9a-53b8-814e-877c-cce361d235cf" class=""><strong>65</strong> → sixty-five</p><p id="27b37c9a-53b8-8123-b1b3-d21eb835bd41" class=""><strong>66</strong> → sixty-six</p><p id="27b37c9a-53b8-814b-b8f9-e9b3d6adde48" class=""><strong>67</strong> → sixty-seven</p><p id="27b37c9a-53b8-81ee-aa6f-d4cffda5ed36" class=""><strong>68</strong> → sixty-eight</p><p id="27b37c9a-53b8-81e4-bcf9-c06c9698c471" class=""><strong>69</strong> → sixty-nine</p></div><div id="27b37c9a-53b8-81b8-83f6-dce3db769338" style="width:20%" class="column"><p id="27b37c9a-53b8-8141-adfd-e109513b1ff4" class=""><strong>20</strong> → twenty</p><p id="27b37c9a-53b8-8196-9067-ed923a624c41" class=""><strong>21</strong> → twenty-one</p><p id="27b37c9a-53b8-8189-94b7-d92bd0d3c141" class=""><strong>22</strong> → twenty-two</p><p id="27b37c9a-53b8-811a-870c-f279b20ae190" class=""><strong>23</strong> → twenty-three</p><p id="27b37c9a-53b8-817a-bdd2-f96b5d587fd5" class=""><strong>24</strong> → twenty-four</p><p id="27b37c9a-53b8-8164-b277-ceb6e62ef5bd" class=""><strong>25</strong> → twenty-five</p><p id="27b37c9a-53b8-8198-8d16-f32234b6e110" class=""><strong>26</strong> → twenty-six</p><p id="27b37c9a-53b8-81ce-835c-d80f11cbe376" class=""><strong>27</strong> → twenty-seven</p><p id="27b37c9a-53b8-81fa-98a1-cd31064e7dcf" class=""><strong>28</strong> → twenty-eight</p><p id="27b37c9a-53b8-81e7-b3a3-df627f69255a" class=""><strong>29</strong> → twenty-nine</p><p id="27b37c9a-53b8-8150-9cbd-eba74dd64ce4" class="">
+</p><hr id="27b37c9a-53b8-8138-b06f-d5c5f7ff721a"/><p id="27b37c9a-53b8-8120-8eea-f83a3d2fbb90" class="">
+</p><p id="27b37c9a-53b8-8123-87d7-cdd75c68def3" class=""><strong>70</strong> → seventy</p><p id="27b37c9a-53b8-812b-ad60-fb458523d435" class=""><strong>71</strong> → seventy-one</p><p id="27b37c9a-53b8-8106-ad83-f950a83ed5c9" class=""><strong>72</strong> → seventy-two</p><p id="27b37c9a-53b8-811e-8a9e-d04ce85d01a6" class=""><strong>73</strong> → seventy-three</p><p id="27b37c9a-53b8-8199-83be-e46434deaf70" class=""><strong>74</strong> → seventy-four</p><p id="27b37c9a-53b8-8124-a48f-ca17db4847e6" class=""><strong>75</strong> → seventy-five</p><p id="27b37c9a-53b8-81b5-8ad7-dbce9eb7762c" class=""><strong>76</strong> → seventy-six</p><p id="27b37c9a-53b8-815e-a85f-fc305eeacb72" class=""><strong>77</strong> → seventy-seven</p><p id="27b37c9a-53b8-8120-b39f-e77d0095b668" class=""><strong>78</strong> → seventy-eight</p><p id="27b37c9a-53b8-81d6-9625-dd4822e027d5" class=""><strong>79</strong> → seventy-nine</p></div><div id="27b37c9a-53b8-8191-ac87-e9f2da0136be" style="width:17.5%" class="column"><p id="27b37c9a-53b8-81cd-9b59-f7a672d378a4" class=""><strong>30</strong> → thirty</p><p id="27b37c9a-53b8-8142-bab3-c0fd311a054c" class=""><strong>31</strong> → thirty-one</p><p id="27b37c9a-53b8-81c6-900a-fa8dc80c7c31" class=""><strong>32</strong> → thirty-two</p><p id="27b37c9a-53b8-81d6-a408-c5465a7f8ca3" class=""><strong>33</strong> → thirty-three</p><p id="27b37c9a-53b8-81cb-b1fa-fbbb71bf92dc" class=""><strong>34</strong> → thirty-four</p><p id="27b37c9a-53b8-8136-b4d2-e2d7c6d27a78" class=""><strong>35</strong> → thirty-five</p><p id="27b37c9a-53b8-817e-b78b-d05578b469cb" class=""><strong>36</strong> → thirty-six</p><p id="27b37c9a-53b8-8195-b651-d3ae776b54f5" class=""><strong>37</strong> → thirty-seven</p><p id="27b37c9a-53b8-8158-b0a6-ea2230a3da10" class=""><strong>38</strong> → thirty-eight</p><p id="27b37c9a-53b8-81f8-8d44-f9050f07c2c2" class=""><strong>39</strong> → thirty-nine</p><p id="27b37c9a-53b8-81b0-a0a2-e9fe9b3b1df0" class="">
+</p><hr id="27b37c9a-53b8-8105-a1f2-c1d4c1356b6e"/><p id="27b37c9a-53b8-817d-b997-d9f80288bbb5" class="">
+</p><p id="27b37c9a-53b8-8194-96c2-c4e747b6bdde" class=""><strong>80</strong> → eighty</p><p id="27b37c9a-53b8-8137-b1cb-d78f4c689610" class=""><strong>81</strong> → eighty-one</p><p id="27b37c9a-53b8-81c2-8c23-e5bba9e26a41" class=""><strong>82</strong> → eighty-two</p><p id="27b37c9a-53b8-81c6-98ea-f79b55a0a8f8" class=""><strong>83</strong> → eighty-three</p><p id="27b37c9a-53b8-81ad-a3aa-e8327f68fc10" class=""><strong>84</strong> → eighty-four</p><p id="27b37c9a-53b8-8124-88d7-c0985c1364cf" class=""><strong>85</strong> → eighty-five</p><p id="27b37c9a-53b8-81eb-bb50-f0e334aabf81" class=""><strong>86</strong> → eighty-six</p><p id="27b37c9a-53b8-816d-8020-eb30fe5fedc2" class=""><strong>87</strong> → eighty-seven</p><p id="27b37c9a-53b8-81c2-891e-ce67347501be" class=""><strong>88</strong> → eighty-eight</p><p id="27b37c9a-53b8-811c-b4e4-e93ef4ce3814" class=""><strong>89</strong> → eighty-nine</p></div><div id="27b37c9a-53b8-81ed-9d92-de34a84363ba" style="width:22.500000000000004%" class="column"><p id="27b37c9a-53b8-8191-95d8-e43e4acb8aa1" class=""><strong>40</strong> → forty</p><p id="27b37c9a-53b8-8158-99fd-cab519eb993a" class=""><strong>41</strong> → forty-one</p><p id="27b37c9a-53b8-8121-901a-dd2efc2b75a6" class=""><strong>42</strong> → forty-two</p><p id="27b37c9a-53b8-814d-8cb3-fa1a0bb6d6a7" class=""><strong>43</strong> → forty-three</p><p id="27b37c9a-53b8-814b-8e3e-dd5a59bd40a4" class=""><strong>44</strong> → forty-four</p><p id="27b37c9a-53b8-81fc-86e5-c5630833df44" class=""><strong>45</strong> → forty-five</p><p id="27b37c9a-53b8-81b7-beff-ebcae81591bd" class=""><strong>46</strong> → forty-six</p><p id="27b37c9a-53b8-8138-a3de-f89d6eee42a3" class=""><strong>47</strong> → forty-seven</p><p id="27b37c9a-53b8-8154-a0af-de797309b0b2" class=""><strong>48</strong> → forty-eight</p><p id="27b37c9a-53b8-81fe-a01d-c5198fb9391d" class=""><strong>49</strong> → forty-nine</p><p id="27b37c9a-53b8-81ef-8340-e8ad7a3c0313" class="">
+</p><hr id="27b37c9a-53b8-8153-a142-e8ab7286dd6c"/><p id="27b37c9a-53b8-812e-99a0-ebf83782039a" class="">
+</p><p id="27b37c9a-53b8-81e2-a275-d5a3901f1b85" class=""><strong>90</strong> → ninety</p><p id="27b37c9a-53b8-8167-8f86-d0374662d2cf" class=""><strong>91</strong> → ninety-one</p><p id="27b37c9a-53b8-8151-8bf7-d2713d46bf64" class=""><strong>92</strong> → ninety-two</p><p id="27b37c9a-53b8-817e-ad64-dab18c02f61a" class=""><strong>93</strong> → ninety-three</p><p id="27b37c9a-53b8-81c4-9844-df55b89fa333" class=""><strong>94</strong> → ninety-four</p><p id="27b37c9a-53b8-81ab-9290-ccbb5cf91f08" class=""><strong>95</strong> → ninety-five</p><p id="27b37c9a-53b8-81a9-b70b-ff34bb77f265" class=""><strong>96</strong> → ninety-six</p><p id="27b37c9a-53b8-81a2-8a09-d49b4934c3bd" class=""><strong>97</strong> → ninety-seven</p><p id="27b37c9a-53b8-81b1-8f6a-eb21a3dfdc98" class=""><strong>98</strong> → ninety-eight</p><p id="27b37c9a-53b8-8185-b745-df65537644a1" class=""><strong>99</strong> → ninety-nine</p></div></div></details></li></ul><hr id="27b37c9a-53b8-8117-9a32-ea8f01d60a7f"/><ul id="27b37c9a-53b8-81c5-a307-e5c04e64dba5" class="toggle"><li><details open=""><summary><strong>Listen and repeat 👂🗣️🔁</strong></summary><div id="27b37c9a-53b8-81b1-8de1-d11e480fa00e" class="column-list"><div id="27b37c9a-53b8-818b-97f1-e207aca2ace8" style="width:50%" class="column"><ul id="27b37c9a-53b8-815f-81d2-f9bf5072d2ba" class="toggle"><li><details open=""><summary>0 → 9</summary><figure id="27b37c9a-53b8-819e-88e4-e42ad76a14d6"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/0_-_9.mp3">attachment:26c96473-686b-46f9-8da2-ceaa0f0cc1fe:0_-_9.mp3</a></div></figure></details></li></ul><ul id="27b37c9a-53b8-819e-b4ab-faadf587e570" class="toggle"><li><details open=""><summary>10 → 19</summary><figure id="27b37c9a-53b8-81f7-af52-e8b69cf84867"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/10.mp3">attachment:fad804e7-bc14-48f2-8e4c-dcae782e48d3:10.mp3</a></div></figure></details></li></ul><ul id="27b37c9a-53b8-813e-b02d-c470ac73ba80" class="toggle"><li><details open=""><summary>20 → 29</summary><figure id="27b37c9a-53b8-814d-8445-e68ee59e6c90"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/20.mp3">attachment:fd72b550-7f80-4ec1-9e73-7b197573be9d:20.mp3</a></div></figure></details></li></ul><ul id="27b37c9a-53b8-8164-aac3-f450c48f8072" class="toggle"><li><details open=""><summary>30 → 39</summary><figure id="27b37c9a-53b8-8174-91eb-cfbd0e5090b9"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/30.mp3">attachment:41189925-fe4e-4b66-a4c7-aaf374e4ceeb:30.mp3</a></div></figure></details></li></ul><ul id="27b37c9a-53b8-8111-9286-f30c281f1246" class="toggle"><li><details open=""><summary>40 → 49</summary><figure id="27b37c9a-53b8-8130-a5e6-d0dbd087a2ea"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/40.mp3">attachment:53231198-dbae-4116-bc6a-d4bee6dbfd5e:40.mp3</a></div></figure></details></li></ul><p id="27b37c9a-53b8-81ff-a123-e7d3c56468a6" class="">
+</p></div><div id="27b37c9a-53b8-81b3-89ca-ea721ac47249" style="width:49.99999999999997%" class="column"><ul id="27b37c9a-53b8-815f-ae12-d675a3170e4a" class="toggle"><li><details open=""><summary>50 → 59</summary><figure id="27b37c9a-53b8-81ea-a54b-fddd0888e6e7"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/50.mp3">attachment:0fd44911-26ab-4555-a413-384361142b10:50.mp3</a></div></figure></details></li></ul><ul id="27b37c9a-53b8-8154-9429-e7dc8263ef18" class="toggle"><li><details open=""><summary>60 → 69</summary><figure id="27b37c9a-53b8-8139-9536-f2a5cffddacb"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/60.mp3">attachment:3ae65532-ffe8-4245-9317-32df986c6a87:60.mp3</a></div></figure></details></li></ul><ul id="27b37c9a-53b8-81aa-aea7-ffa87c7f14c0" class="toggle"><li><details open=""><summary>70 → 79</summary><figure id="27b37c9a-53b8-81f8-9e0a-e19fb410d785"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/70.mp3">attachment:0c6890c7-dac0-4254-8edd-aaa890e5e9e6:70.mp3</a></div></figure></details></li></ul><ul id="27b37c9a-53b8-81d1-a2bb-eb41736bb261" class="toggle"><li><details open=""><summary>80 → 89</summary><figure id="27b37c9a-53b8-819a-b380-ccf278f84712"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/80.mp3">attachment:91aedc3d-deae-4f79-8b18-e4a7adf30dd1:80.mp3</a></div></figure></details></li></ul><ul id="27b37c9a-53b8-8122-8938-d7ba4b3cf801" class="toggle"><li><details open=""><summary>90 → 99</summary><figure id="27b37c9a-53b8-8180-ae20-fb33c487be3c"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/90.mp3">attachment:4fc747c9-daa4-4aed-9aaf-eb9e22fd9474:90.mp3</a></div></figure></details></li></ul><p id="27b37c9a-53b8-813e-a99d-c7583a8cbcaa" class="">
+</p></div></div></details></li></ul><hr id="27b37c9a-53b8-817b-be75-cfb0d7b2f29f"/><ul id="27b37c9a-53b8-81e3-9122-cfa6ba9c2fc3" class="toggle"><li><details open=""><summary><mark class="highlight-default"><strong>Large Numbers</strong></mark></summary><div id="27b37c9a-53b8-8168-a42c-dc681feb4d48" class="column-list"><div id="27b37c9a-53b8-8190-a3f6-c3198cfc5030" style="width:45.83333333333333%" class="column"><ul id="27b37c9a-53b8-81ea-a5e1-d2f2202c92a7" class="toggle"><li><details open=""><summary><strong>Hundreds</strong></summary><p id="27b37c9a-53b8-81ef-9544-d666d28c4cf7" class="">👂🗣️ hundred  →  /ˈhʌn.drəd/</p><figure id="27b37c9a-53b8-816c-90da-f85b8735c6ea"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/hundred.mp3">attachment:f1abafc3-38f8-42fc-9768-4d0ab09a37ac:hundred.mp3</a></div></figure><hr id="27b37c9a-53b8-812d-acb7-ec4d1057a01d"/><p id="27b37c9a-53b8-8103-9611-fe08d04f5fe3" class="">100 → one hundred / a hundred</p><p id="27b37c9a-53b8-816c-8480-e9fc26a3a797" class="">200 → two hundred</p><p id="27b37c9a-53b8-8152-bb1b-ecdb587d7235" class="">300 → three hundred</p><p id="27b37c9a-53b8-8165-8874-e5296c9aa647" class="">400 → four hundred</p><p id="27b37c9a-53b8-81a0-8c2f-d620f6594e3a" class="">500 → five hundred</p><p id="27b37c9a-53b8-816d-af75-ded5fc8e794f" class="">600 → six hundred</p><p id="27b37c9a-53b8-81ac-8824-c375ef65960f" class="">700 → seven hundred</p><p id="27b37c9a-53b8-8134-8379-f7288b3d1b7f" class="">800 → eight hundred</p><p id="27b37c9a-53b8-81b4-9dc2-ff713f231743" class="">900 → nine hundred</p><p id="27b37c9a-53b8-8173-a824-f4f3694324f4" class="">
+</p></details></li></ul><ul id="27b37c9a-53b8-8113-b6ef-ef5be8406233" class="toggle"><li><details open=""><summary><strong>Millions </strong></summary><p id="27b37c9a-53b8-8118-9b1c-d3de8b5598f2" class="">   👂🗣️ million  →  /ˈmɪl.jən/<div class="indented"><figure id="27b37c9a-53b8-813c-b817-f4742146c81d"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/17302098714978yc2sty-voicemaker.in-speech.mp3">attachment:17f4f815-85e0-4fa5-a5ea-c8b1def9a2a4:17302098714978yc2sty-voicemaker.in-speech.mp3</a></div></figure><hr id="27b37c9a-53b8-811f-923b-d48382c7eb5b"/><p id="27b37c9a-53b8-812a-ad79-fdf9319d0090" class="">1,000,000 → one million / a million</p><p id="27b37c9a-53b8-816a-9cbc-ff7f56d67407" class="">2,000,000 → two million</p><p id="27b37c9a-53b8-81bd-8bb5-ed7c3a89b82c" class="">5,000,000 → five million</p><p id="27b37c9a-53b8-813a-99b2-cc226f1158ad" class="">10,000,000 → ten million</p><p id="27b37c9a-53b8-8139-aee0-dbc53149987b" class="">20,000,000 → twenty million</p><p id="27b37c9a-53b8-8113-9fde-df1fa4ed0a16" class="">50,000,000 → fifty million</p><p id="27b37c9a-53b8-8180-9cb9-ca8f0bae8142" class="">100,000,000 → one hundred million</p><p id="27b37c9a-53b8-818b-b103-d65b1901c75c" class="">200,000,000 → two hundred million</p><p id="27b37c9a-53b8-81e1-a3c4-e02ae5ea8f6f" class="">500,000,000 → five hundred million</p><p id="27b37c9a-53b8-81c6-b61f-d58bc3cd56ce" class="">
+</p></div></p></details></li></ul></div><div id="27b37c9a-53b8-8159-aeb3-ef2f0dd388d7" style="width:41.666666666666664%" class="column"><ul id="27b37c9a-53b8-81de-abbe-c331a4ab96cb" class="toggle"><li><details open=""><summary><strong>Thousands</strong></summary><p id="27b37c9a-53b8-810d-924d-f196a27b980f" class="">👂🗣️ thousand  →  /ˈθaʊ.zənd/</p><figure id="27b37c9a-53b8-819a-be1b-f8690105c7f4"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/thousand.mp3">attachment:e07c3833-e33f-40a2-a207-9490ccc65ea7:thousand.mp3</a></div></figure><hr id="27b37c9a-53b8-81bd-816d-ce07fb974f6d"/><p id="27b37c9a-53b8-8116-aa6b-f1e66dc32cec" class="">1,000 → one thousand / a thousand</p><p id="27b37c9a-53b8-815f-97a6-dbdc5405504e" class="">2,000 → two thousand</p><p id="27b37c9a-53b8-8140-b9a0-e335f46281bc" class="">5,000 → five thousand</p><p id="27b37c9a-53b8-81dd-9f1e-e8e8be9a607c" class="">10,000 → ten thousand</p><p id="27b37c9a-53b8-8117-b5e2-db4063212647" class="">20,000 → twenty thousand</p><p id="27b37c9a-53b8-81c8-9b01-d25204d231c8" class="">50,000 → fifty thousand</p><p id="27b37c9a-53b8-813d-8836-d84296fa90fb" class="">100,000 → one hundred thousand</p><p id="27b37c9a-53b8-817c-90ff-c0c6cb0e3923" class="">200,000 → two hundred thousand</p><p id="27b37c9a-53b8-81d6-8b13-f044999b76d5" class="">500,000 → five hundred thousand</p><p id="27b37c9a-53b8-8110-8f5e-cbd29e68cc45" class="">
+</p></details></li></ul><ul id="27b37c9a-53b8-81f0-984b-f746ada1d403" class="toggle"><li><details open=""><summary><strong>Billions</strong></summary><p id="27b37c9a-53b8-81f3-9b60-fc28ed183125" class="">👂🗣️ billion  →  /ˈbɪl.jən/</p><figure id="27b37c9a-53b8-815e-87e4-ee167a174597"><div class="source"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/billion.mp3">attachment:8493d499-2e6a-4730-aae7-19894a07215a:billion.mp3</a></div></figure><hr id="27b37c9a-53b8-812c-a3c7-f5d15acdab8e"/><p id="27b37c9a-53b8-81e2-8d8a-c3cbb21654b8" class="">1,000,000,000 → one billion / a billion</p><p id="27b37c9a-53b8-8132-b2a7-ec125c20b105" class="">2,000,000,000 → two billion</p><p id="27b37c9a-53b8-815f-9639-e1972b529082" class="">5,000,000,000 → five billion</p><p id="27b37c9a-53b8-81e3-80ad-fabc2ab0d818" class="">10,000,000,000 → ten billion</p><p id="27b37c9a-53b8-81f3-b027-c5081ab6d9a8" class="">20,000,000,000 → twenty billion</p><p id="27b37c9a-53b8-818f-ad18-e7373989f496" class="">50,000,000,000 → fifty billion</p><p id="27b37c9a-53b8-819f-aca0-ed9d21a0b7d8" class="">100,000,000,000 → one hundred billion</p><p id="27b37c9a-53b8-8132-b713-fb2fa47cd223" class="">200,000,000,000 → two hundred billion</p><p id="27b37c9a-53b8-81a4-9318-ea7c501c2bce" class="">500,000,000,000 → five hundred billion</p><p id="27b37c9a-53b8-81ae-af50-f0b7e37c6889" class="">
+</p></details></li></ul><p id="27b37c9a-53b8-81e8-a80d-d67add0b626c" class="">
+</p></div><div id="27b37c9a-53b8-81e6-948f-c3a90ae6ada4" style="width:12.5%" class="column"><p id="27b37c9a-53b8-8168-962c-ef8dcbe69ee5" class="">
+</p></div></div></details></li></ul><hr id="27b37c9a-53b8-8106-8ffd-ed04a520f4da"/><ul id="27b37c9a-53b8-8121-bde5-d0d44b24b1c2" class="toggle"><li><details open=""><summary><strong>Combining Large Numbers</strong></summary><p id="27b37c9a-53b8-81ee-a070-c525e9e50b0c" class="">
+</p><figure id="27b37c9a-53b8-81a7-a9ec-d9f2a7b06556" class="image"><a href="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/7a7614fb-fd21-40ce-863b-4cbe8a09f699.png"><img style="width:912px" src="The%20Numbers%2020737c9a53b88192aca4cb4a491131ae/7a7614fb-fd21-40ce-863b-4cbe8a09f699.png"/></a></figure><p id="27b37c9a-53b8-81d2-9cfc-d10dcb818ef5" class="">💡 Use &quot;and&quot; in British English 🇬🇧 before tens and units; It&#x27;s usually omitted in American English 🇺🇸.</p><p id="27b37c9a-53b8-81fb-9504-f49da8d6c749" class="">
+</p><ul id="27b37c9a-53b8-8120-803f-d3a93245906c" class="toggle"><li><details open=""><summary><strong>Hundreds and Tens/Units</strong></summary><p id="27b37c9a-53b8-815c-9049-fc717e921048" class="">101 → One hundred (and) one</p><p id="27b37c9a-53b8-8103-b7d2-ee40713f94e9" class="">215 → Two hundred (and) fifteen</p><p id="27b37c9a-53b8-8175-a221-c8c0d4982ea0" class="">340 → Three hundred (and) forty</p><p id="27b37c9a-53b8-8106-9483-e7b9d22f0235" class="">492 → Four hundred (and) ninety-two</p><p id="27b37c9a-53b8-81a2-98b0-fae18702e9ca" class="">576 → Five hundred (and) seventy-six</p><p id="27b37c9a-53b8-81f6-aa8d-cca15f731907" class="">689 → Six hundred (and) eighty-nine</p><p id="27b37c9a-53b8-815e-b3ce-f8229e09b2bf" class="">743 → Seven hundred (and) forty-three</p><p id="27b37c9a-53b8-815e-9499-d7ecc755e4dd" class="">854 → Eight hundred (and) fifty-four</p><p id="27b37c9a-53b8-8181-9495-ca3f4c4da953" class="">999 → Nine hundred (and) ninety-nine</p><p id="27b37c9a-53b8-8106-a6c5-e484975498d0" class="">
+</p></details></li></ul><ul id="27b37c9a-53b8-8105-942d-e0c5ee68ca0c" class="toggle"><li><details open=""><summary><strong>Thousands and Hundreds/Tens/Units</strong></summary><p id="27b37c9a-53b8-81ad-a2b5-d185769b5219" class="">1,200 → One thousand (and) two hundred</p><p id="27b37c9a-53b8-8101-9952-eb6afe0e2efd" class="">2,500 → Two thousand (and) five hundred</p><p id="27b37c9a-53b8-81ac-a6e8-d62df0ba9623" class="">3,890 → Three thousand eight hundred (and) ninety</p><p id="27b37c9a-53b8-81ad-a6bf-d5e5de465475" class="">4,321 → Four thousand three hundred (and) twenty-one</p><p id="27b37c9a-53b8-8180-9af1-f6f707802f00" class="">5,678 → Five thousand six hundred (and) seventy-eight</p><p id="27b37c9a-53b8-8172-9f9a-f61ac092e948" class="">6,543 → Six thousand five hundred (and) forty-three</p><p id="27b37c9a-53b8-8189-9aeb-e83d8af20a55" class="">7,890 → Seven thousand eight hundred (and) ninety</p><p id="27b37c9a-53b8-812c-ae25-fb79da8965f8" class="">8,765 → Eight thousand seven hundred (and) sixty-five</p><p id="27b37c9a-53b8-8135-8c1a-d259662b4cd5" class="">9,876 → Nine thousand eight hundred (and) seventy-six</p><p id="27b37c9a-53b8-81ca-a90c-e11160c06216" class="">
+</p></details></li></ul><ul id="27b37c9a-53b8-81bf-bded-d135881f5161" class="toggle"><li><details open=""><summary><strong>Millions and Thousands/Hundreds/Tens/Units</strong></summary><p id="27b37c9a-53b8-814e-93bd-dbfffc071f84" class="">1,234,567 → One <span style="border-bottom:0.05em solid">million</span> two hundred thirty-four <span style="border-bottom:0.05em solid">thousand</span> five hundred (and) sixty-seven</p><p id="27b37c9a-53b8-81c1-a5f0-f922011b7add" class="">2,345,678 → Two million three hundred forty-five thousand six hundred (and) seventy-eight</p><p id="27b37c9a-53b8-816b-8edd-fc872326f131" class="">3,456,789 → Three million four hundred fifty-six thousand seven hundred (and) eighty-nine</p><p id="27b37c9a-53b8-81dd-9e2f-d2643953f2c2" class="">4,567,890 → Four million five hundred sixty-seven thousand eight hundred (and) ninety</p><p id="27b37c9a-53b8-814c-963d-c80d2f609976" class="">5,678,901 → Five million six hundred seventy-eight thousand nine hundred (and) one</p><p id="27b37c9a-53b8-81e0-bd1a-d64d26311104" class="">6,789,012 → Six million seven hundred eighty-nine thousand (and) twelve</p><p id="27b37c9a-53b8-81ef-afb0-d797f178ac4f" class="">7,890,123 → Seven million eight hundred ninety thousand one hundred (and) twenty-three</p><p id="27b37c9a-53b8-8169-bd2b-c5585cacff54" class="">8,901,234 → Eight million nine hundred one thousand two hundred (and) thirty-four</p><p id="27b37c9a-53b8-810d-8b7c-f2f27ef993f1" class="">9,012,345 → Nine million twelve thousand three hundred (and) forty-five</p><p id="27b37c9a-53b8-8114-9789-c6b7b2d3e5d5" class="">
+</p></details></li></ul><ul id="27b37c9a-53b8-8168-8c8f-da2936480e2f" class="toggle"><li><details open=""><summary><strong>Billions and Millions/Thousands/Hundreds/Tens/Units</strong></summary><p id="27b37c9a-53b8-818f-9074-f83e80c22f2c" class="">1,234,567,890 → One <span style="border-bottom:0.05em solid">billion</span> two hundred thirty-four <span style="border-bottom:0.05em solid">million</span> five hundred sixty-seven <span style="border-bottom:0.05em solid">thousand</span> eight hundred (and) ninety</p><p id="27b37c9a-53b8-81e1-8825-d2e5fc9c9923" class="">2,345,678,901 → Two <span style="border-bottom:0.05em solid">billion</span> three hundred forty-five million six hundred seventy-eight thousand nine hundred (and) one</p><p id="27b37c9a-53b8-812d-849c-ec7b4c68187e" class="">3,456,789,012 → Three <span style="border-bottom:0.05em solid">billion</span> four hundred fifty-six million seven hundred eighty-nine thousand (and) twelve</p><p id="27b37c9a-53b8-81a4-be36-fac6fccbe68d" class="">4,567,890,123 → Four <span style="border-bottom:0.05em solid">billion</span> five hundred sixty-seven million eight hundred ninety thousand one hundred (and) twenty-three</p><p id="27b37c9a-53b8-8130-be56-eb7d20c60ea5" class="">5,678,901,234 → Five <span style="border-bottom:0.05em solid">billion</span> six hundred seventy-eight million nine hundred one thousand two hundred (and) thirty-four</p><p id="27b37c9a-53b8-8165-9355-cb8d56d835b1" class="">6,789,012,345 → Six <span style="border-bottom:0.05em solid">billion</span> seven hundred eighty-nine million twelve thousand three hundred (and) forty-five</p><p id="27b37c9a-53b8-81f6-ac51-c9ea3d6e2c18" class="">7,890,123,456 → Seven <span style="border-bottom:0.05em solid">billion</span> eight hundred ninety million one hundred twenty-three thousand four hundred (and) fifty-six</p><p id="27b37c9a-53b8-8167-811f-df0529f0d612" class="">8,901,234,567 → Eight <span style="border-bottom:0.05em solid">billion</span> nine hundred one million two hundred thirty-four thousand five hundred (and) sixty-seven</p><p id="27b37c9a-53b8-8162-9333-ca981b155567" class="">9,012,345,678 → Nine <span style="border-bottom:0.05em solid">billion</span> twelve <span style="border-bottom:0.05em solid">million</span> three hundred forty-five thousand six hundred (and) seventy-eight</p></details></li></ul></details></li></ul><hr id="27b37c9a-53b8-8101-a62e-d9a870a44772"/><p id="20737c9a-53b8-81b0-94f4-f4b75ed8f9cc" class="">
+</p><p id="20737c9a-53b8-8193-8550-e3e464174526" class="">
+</p><p id="20737c9a-53b8-8150-9e58-fee6ab52f208" class="">
+</p><p id="20737c9a-53b8-815b-98c3-fe93bb66294e" class="">
+</p><p id="20737c9a-53b8-8186-9166-f44cab52dbe4" class="">
+</p><p id="20737c9a-53b8-816a-aad4-c27f2083242f" class="">
+</p><p id="20737c9a-53b8-812d-954f-d417473ccc9b" class="">
+</p><p id="20737c9a-53b8-8123-91b2-fd9e47671c96" class="">
+</p><p id="20737c9a-53b8-811a-9f0d-c3f13cb68491" class="">
+</p><p id="20737c9a-53b8-81f0-a62c-f860c0796558" class="">
+</p><p id="20737c9a-53b8-817e-9332-c99ddb754ef6" class="">
+</p><p id="20737c9a-53b8-8116-8ad1-eb8cc4be8312" class="">
+</p><p id="20737c9a-53b8-8108-ac46-c76b46fe27af" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
