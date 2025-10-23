@@ -30,11 +30,16 @@ async function boot(){
     card.style.textDecoration = "none";
     card.style.color = "inherit";
 
+    const thumbContainer = document.createElement("div");
+    thumbContainer.className = "thumb-container";
+    
     const img = document.createElement("img");
     img.className = "thumb";
     img.alt = it.title || `Lesson ${idx+1}`;
     if (it.cover) img.src = it.cover;
-    card.appendChild(img);
+    
+    thumbContainer.appendChild(img);
+    card.appendChild(thumbContainer);
 
     const body = document.createElement("div");
     body.className = "card-body";
