@@ -32,14 +32,6 @@ async function boot(){
     const thumbContainer = document.createElement("div");
     thumbContainer.className = "thumb-container";
     
-    // Add badge for unavailable lessons
-    if (it.available === false) {
-      const badge = document.createElement("div");
-      badge.className = "badge";
-      badge.textContent = "Coming soon";
-      thumbContainer.appendChild(badge);
-    }
-    
     const img = document.createElement("img");
     img.className = "thumb";
     img.alt = it.title || `Lesson ${idx+1}`;
