@@ -1,0 +1,1049 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <title>Your First Verbs — ZTF Dictionary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* ZTF Studio Look (Dark Theme) */
+      --color-bg: #0F1112;
+      --color-text: #E8DDC9;
+      --color-text-secondary: #B9B3A7;
+      --color-accent-purple: #6B4EFF;
+      --color-accent-yellow: #FFD54A;
+      --color-border: #1B1D1F;
+      --color-hover: #181A1C;
+      --color-card: #141618;
+      --color-shadow: rgba(107, 78, 255, 0.3);
+    }
+
+    [data-theme='light'] {
+      /* ZTF Paper Universe (Light Theme) */
+      --color-bg: #E8DDC9;
+      --color-text: #0F1112;
+      --color-text-secondary: #3C3B3A;
+      --color-accent-purple: #6B4EFF;
+      --color-accent-yellow: #FFD54A;
+      --color-border: #D9CBB4;
+      --color-hover: #F0E7D9;
+      --color-card: #F5F0E8;
+      --color-shadow: rgba(107, 78, 255, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      position: relative;
+      z-index: 100;
+      padding: 2rem 1.5rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      background: var(--color-bg);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    [data-theme='light'] header {
+      background: var(--color-bg);
+    }
+
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--color-text), var(--color-accent-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .sub {
+      color: var(--color-text-secondary);
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    .header-controls {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .search-container {
+      position: relative;
+      flex: 1;
+      max-width: 1200px;
+    }
+
+    input[type="search"] {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border: 2px solid var(--color-border);
+      border-radius: 12px;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      background: var(--color-card);
+      color: var(--color-text);
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    input[type="search"]:focus {
+      border-color: var(--color-accent-purple);
+      box-shadow: 0 0 10px var(--color-shadow);
+    }
+
+    .badge {
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+      background: var(--color-card);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 500;
+      border: 1px solid var(--color-border);
+    }
+
+    .table-header {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+    }
+
+    .theme-toggle {
+      background: var(--color-bg);
+      border: 2px solid var(--color-border);
+      border-radius: 8px;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .theme-toggle:hover {
+      background: var(--color-accent-yellow);
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 213, 74, 0.4);
+    }
+
+    .theme-toggle:active {
+      transform: scale(0.95);
+    }
+
+    .alphabet-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      justify-content: center;
+      margin: 0.5rem auto;
+      padding: 0.5rem;
+      max-width: 1200px;
+    }
+
+    .alphabet-btn {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      padding: 0.25rem 0.5rem;
+      cursor: pointer;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: all 0.3s ease;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    .alphabet-btn:hover {
+      background: var(--color-accent-purple);
+      color: white;
+      border-color: var(--color-accent-purple);
+    }
+
+    .alphabet-btn.active {
+      background: var(--color-accent-purple);
+      color: white;
+      border-color: var(--color-accent-purple);
+    }
+
+    .alphabet-btn.all-btn {
+      background: var(--color-accent-yellow);
+      color: var(--color-text);
+      border-color: var(--color-accent-yellow);
+      order: 1;
+    }
+
+    .alphabet-btn.all-btn:hover {
+      background: var(--color-accent-purple);
+      color: white;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1200px;
+      margin: 2rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .table-separator {
+      height: 1px;
+      background: var(--color-border);
+      margin: 1rem auto;
+      max-width: 1200px;
+    }
+
+    /* Table Layout */
+    table {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    thead th {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--color-text-secondary);
+      text-align: left;
+      padding: 1rem;
+      font-weight: 600;
+      border-bottom: 2px solid var(--color-border);
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--color-border);
+      transition: all 0.3s ease;
+      height: 60px;
+    }
+
+    tbody tr:hover {
+      background: var(--color-hover);
+    }
+
+    tbody td {
+      padding: 1rem;
+      vertical-align: middle;
+    }
+
+    .emoji-col {
+      width: 40px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .verb-col {
+      width: 120px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .audio-col {
+      width: 100px;
+      text-align: center;
+    }
+
+    .transcription-col {
+      width: 120px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9em;
+      color: var(--color-text-secondary);
+      white-space: nowrap;
+    }
+
+    .translation-col {
+      width: 80px;
+      font-size: 0.875rem;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: var(--color-card);
+      border: 2px solid var(--color-border);
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .modal-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--color-text-secondary);
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .modal-close:hover {
+      background: var(--color-hover);
+      color: var(--color-text);
+    }
+
+    .modal-body {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .modal-title {
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-pronunciation {
+      padding: 0.25rem 0 1rem 0;
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .modal-pronunciation .pron-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .modal-pronunciation .flag {
+      font-size: 1rem;
+      width: 16px;
+      height: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-pronunciation .speaker-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0.25rem;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .modal-pronunciation .speaker-btn:hover {
+      background: var(--color-hover);
+    }
+
+    .modal-pronunciation .speaker-icon {
+      width: 16px;
+      height: 16px;
+      fill: var(--color-text);
+    }
+
+    .modal-pronunciation .transcription-col {
+      font-family: 'Fira Code', monospace;
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+    }
+
+    .translation-item {
+      padding: 1rem;
+      background: var(--color-bg);
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+    }
+
+    .translation-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--color-text-secondary);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .translation-text {
+      font-size: 1rem;
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+
+    .translation-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      color: var(--color-text-secondary);
+      padding: 4px;
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .translation-toggle:hover {
+      color: var(--color-accent-purple);
+      transform: scale(1.1);
+    }
+
+    .translation-content {
+      display: none;
+    }
+
+    .translation-content.visible {
+      display: inline;
+    }
+
+    .eye-icon {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .audio-group {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    .flag {
+      font-size: 0.875rem;
+    }
+
+    .speaker-icon {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .speaker-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.875rem;
+      transition: all 0.3s ease;
+      color: var(--color-text-secondary);
+      padding: 4px;
+    }
+
+    .speaker-btn:hover {
+      color: var(--color-accent-purple);
+      transform: scale(1.1);
+    }
+
+    .speaker-btn:active {
+      transform: scale(0.9);
+    }
+
+    .speaker-btn.playing {
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 213, 74, 0.4); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 213, 74, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 213, 74, 0); }
+    }
+
+    /* Cards Layout for Mobile */
+    .cards-container {
+      display: none;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .verb-card {
+      background: var(--color-card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 1px solid var(--color-border);
+      transition: all 0.3s ease;
+    }
+
+    .verb-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px var(--color-shadow);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0;
+    }
+
+    .card-emoji {
+      font-size: 1.5rem;
+    }
+
+    .card-verb {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .card-pronunciation {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .pron-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pron-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .card-translations {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .trans-row {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+    }
+
+    .trans-label {
+      color: var(--color-text-secondary);
+      font-weight: 500;
+      min-width: 60px;
+    }
+
+    /* Footer */
+    footer {
+      max-width: 1200px;
+      margin: 3rem auto 2rem;
+      padding: 0 1.5rem;
+      text-align: center;
+      color: var(--color-text-secondary);
+      font-size: 0.875rem;
+      border-top: 1px solid rgba(107, 78, 255, 0.3);
+      padding-top: 2rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      table {
+        display: none;
+      }
+      
+      .cards-container {
+        display: grid;
+      }
+      
+      header {
+        padding: 1.5rem 1rem 1rem;
+      }
+      
+      .header-controls {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .search-container {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 0 1rem;
+      }
+      
+      .verb-card {
+        padding: 1rem;
+      }
+      
+      .card-pronunciation {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .trans-row {
+        font-size: 0.75rem;
+      }
+    }
+
+    /* Screen Reader Only */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Your First Verbs</h1>
+    <div class="header-controls">
+      <div class="search-container">
+      <input id="search" type="search" placeholder="Search verbs or translations…" />
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="alphabet-filters">
+      <button class="alphabet-btn" onclick="filterByLetter('a')">A</button>
+      <button class="alphabet-btn" onclick="filterByLetter('b')">B</button>
+      <button class="alphabet-btn" onclick="filterByLetter('c')">C</button>
+      <button class="alphabet-btn" onclick="filterByLetter('d')">D</button>
+      <button class="alphabet-btn" onclick="filterByLetter('e')">E</button>
+      <button class="alphabet-btn" onclick="filterByLetter('f')">F</button>
+      <button class="alphabet-btn" onclick="filterByLetter('g')">G</button>
+      <button class="alphabet-btn" onclick="filterByLetter('h')">H</button>
+      <button class="alphabet-btn" onclick="filterByLetter('i')">I</button>
+      <button class="alphabet-btn" onclick="filterByLetter('j')">J</button>
+      <button class="alphabet-btn" onclick="filterByLetter('k')">K</button>
+      <button class="alphabet-btn" onclick="filterByLetter('l')">L</button>
+      <button class="alphabet-btn" onclick="filterByLetter('m')">M</button>
+      <button class="alphabet-btn" onclick="filterByLetter('n')">N</button>
+      <button class="alphabet-btn" onclick="filterByLetter('o')">O</button>
+      <button class="alphabet-btn" onclick="filterByLetter('p')">P</button>
+      <button class="alphabet-btn" onclick="filterByLetter('q')">Q</button>
+      <button class="alphabet-btn" onclick="filterByLetter('r')">R</button>
+      <button class="alphabet-btn" onclick="filterByLetter('s')">S</button>
+      <button class="alphabet-btn" onclick="filterByLetter('t')">T</button>
+      <button class="alphabet-btn" onclick="filterByLetter('u')">U</button>
+      <button class="alphabet-btn" onclick="filterByLetter('v')">V</button>
+      <button class="alphabet-btn" onclick="filterByLetter('w')">W</button>
+      <button class="alphabet-btn" onclick="filterByLetter('x')">X</button>
+      <button class="alphabet-btn" onclick="filterByLetter('y')">Y</button>
+      <button class="alphabet-btn" onclick="filterByLetter('z')">Z</button>
+      <button class="alphabet-btn all-btn active" onclick="filterByLetter('all')">All</button>
+    </div>
+    
+    <div class="table-separator"></div>
+    
+    <!-- Desktop Table Layout -->
+    <table>
+      <tbody id="rows"></tbody>
+    </table>
+
+    <!-- Mobile Cards Layout -->
+    <div class="cards-container" id="cards"></div>
+  </main>
+
+  <footer>
+    Part of the ZTF Universe ✦
+  </footer>
+
+  <audio id="player" class="sr-only"></audio>
+
+  <!-- Translation Modal -->
+  <div id="translation-modal" class="modal-overlay" onclick="closeTranslationModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div class="modal-title" id="modal-verb-title"></div>
+        <button class="modal-close" onclick="closeTranslationModal()">&times;</button>
+      </div>
+      <div class="modal-pronunciation">
+        <div class="pron-group">
+          <span class="flag">🇺🇸</span>
+          <button class="speaker-btn" id="modal-speaker-us" title="Play US pronunciation">
+            <svg class="speaker-icon" viewBox="0 0 24 24">
+              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+            </svg>
+          </button>
+          <span class="transcription-col" id="modal-phonetic-us"></span>
+        </div>
+        <div class="pron-group">
+          <span class="flag">🇬🇧</span>
+          <button class="speaker-btn" id="modal-speaker-uk" title="Play UK pronunciation">
+            <svg class="speaker-icon" viewBox="0 0 24 24">
+              <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+            </svg>
+          </button>
+          <span class="transcription-col" id="modal-phonetic-uk"></span>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="translation-item">
+          <div class="translation-text" id="modal-literal"></div>
+        </div>
+        <div class="translation-item">
+          <div class="translation-text" id="modal-contextual"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const CSV_URL = 'your_first_verbs.csv';
+    const AUDIO_BASE = './audios/';
+
+    // Theme Management
+    function initTheme() {
+      const savedTheme = localStorage.getItem('ztf-theme');
+      const isMobile = window.innerWidth <= 768;
+      const theme = savedTheme || (isMobile ? 'light' : 'light');
+      
+      document.documentElement.setAttribute('data-theme', theme);
+      updateThemeIcon(theme);
+    }
+
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('ztf-theme', newTheme);
+      updateThemeIcon(newTheme);
+    }
+
+    function updateThemeIcon(theme) {
+      const icon = document.getElementById('theme-icon');
+      icon.textContent = theme === 'dark' ? '🌙' : '☀️';
+    }
+
+    // Translation Modal Functions
+    function openTranslationModal(verbId, verb, literal, contextual, phoneticUs, phoneticUk, emoji, event) {
+      if (event) event.preventDefault();
+      
+      document.getElementById('modal-verb-title').innerHTML = `${emoji} ${verb}`;
+      document.getElementById('modal-literal').textContent = literal;
+      document.getElementById('modal-contextual').textContent = contextual;
+      document.getElementById('modal-phonetic-us').textContent = phoneticUs;
+      document.getElementById('modal-phonetic-uk').textContent = phoneticUk;
+      
+      // Set up audio buttons
+      document.getElementById('modal-speaker-us').onclick = () => play(verb, 'us');
+      document.getElementById('modal-speaker-uk').onclick = () => play(verb, 'uk');
+      
+      document.getElementById('translation-modal').classList.add('active');
+    }
+
+    function closeTranslationModal(event) {
+      if (event) event.preventDefault();
+      document.getElementById('translation-modal').classList.remove('active');
+    }
+
+    // Audio Management
+    function slugifyVerb(infinitive) {
+      return infinitive
+        .toLowerCase()
+        .trim()
+        .replace(/^to\s+/, 'to-')
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function audioUrl(infinitive, accent) {
+      return `${AUDIO_BASE}${slugifyVerb(infinitive)}.${accent}.mp3`;
+    }
+
+    function play(infinitive, accent) {
+      const src = audioUrl(infinitive, accent);
+      const player = document.getElementById('player');
+      
+      // Stop any currently playing audio
+      player.pause();
+      player.currentTime = 0;
+      
+      // Remove playing class from all buttons
+      document.querySelectorAll('.speaker-btn').forEach(btn => {
+        btn.classList.remove('playing');
+      });
+      
+      // Add playing class to clicked button
+      const clickedBtn = event.target;
+      clickedBtn.classList.add('playing');
+      
+      player.src = src;
+      player.play().catch(() => {
+        clickedBtn.classList.remove('playing');
+      });
+      
+      // Remove playing class when audio ends
+      player.onended = () => {
+        clickedBtn.classList.remove('playing');
+      };
+    }
+
+    // Template Functions
+    function rowTemplate(item) {
+      const emoji = item['Emoji'] || '🔹';
+      const verb = item['infinitive_verb'] || '';
+      const ipaUs = item['infinitive_phonetic_us'] || '';
+      const ipaUk = item['infinitive_phonetic_uk'] || '';
+      const literal = item['literal_translation'] || '';
+      const contextual = item['contextual_translation'] || '';
+      const verbId = verb.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+
+      return `
+        <tr>
+          <td class="emoji-col">${emoji}</td>
+          <td class="verb-col">${verb}</td>
+          <td class="audio-col">
+            <div class="audio-group">
+              <span class="flag">🇺🇸</span>
+              <button class="speaker-btn" onclick="play('${verb.replace(/'/g, "\\'")}', 'us')" title="Play US pronunciation">
+                <svg class="speaker-icon" viewBox="0 0 24 24">
+                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                </svg>
+              </button>
+              <span class="transcription-col">${ipaUs}</span>
+            </div>
+          </td>
+          <td class="audio-col">
+            <div class="audio-group">
+              <span class="flag">🇬🇧</span>
+              <button class="speaker-btn" onclick="play('${verb.replace(/'/g, "\\'")}', 'uk')" title="Play UK pronunciation">
+                <svg class="speaker-icon" viewBox="0 0 24 24">
+                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                </svg>
+              </button>
+              <span class="transcription-col">${ipaUk}</span>
+            </div>
+          </td>
+          <td class="translation-col">
+            <button class="translation-toggle" onclick="openTranslationModal('${verbId}', '${verb.replace(/'/g, "\\'")}', '${literal.replace(/'/g, "\\'")}', '${contextual.replace(/'/g, "\\'")}', '${ipaUs}', '${ipaUk}', '${emoji}', event)" title="Show translations">
+              <svg class="eye-icon" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </button>
+          </td>
+        </tr>
+      `;
+    }
+
+    function cardTemplate(item) {
+      const emoji = item['Emoji'] || '🔹';
+      const verb = item['infinitive_verb'] || '';
+      const ipaUs = item['infinitive_phonetic_us'] || '';
+      const ipaUk = item['infinitive_phonetic_uk'] || '';
+      const literal = item['literal_translation'] || '';
+      const contextual = item['contextual_translation'] || '';
+      const verbId = verb.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+      return `
+        <div class="verb-card">
+          <div class="card-header">
+            <div class="card-emoji">${emoji}</div>
+            <div class="card-verb">${verb}</div>
+          </div>
+          <div class="card-pronunciation">
+            <div class="pron-group">
+              <span class="flag">🇺🇸</span>
+              <button class="speaker-btn" onclick="play('${verb.replace(/'/g, "\\'")}', 'us')" title="Play US pronunciation">
+                <svg class="speaker-icon" viewBox="0 0 24 24">
+                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                </svg>
+              </button>
+              <span class="transcription-col">${ipaUs}</span>
+              </div>
+            <div class="pron-group">
+              <span class="flag">🇬🇧</span>
+              <button class="speaker-btn" onclick="play('${verb.replace(/'/g, "\\'")}', 'uk')" title="Play UK pronunciation">
+                <svg class="speaker-icon" viewBox="0 0 24 24">
+                  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                </svg>
+              </button>
+              <span class="transcription-col">${ipaUk}</span>
+              </div>
+              </div>
+          <div class="card-translations">
+            <button class="translation-toggle" onclick="openTranslationModal('${verbId}', '${verb.replace(/'/g, "\\'")}', '${literal.replace(/'/g, "\\'")}', '${contextual.replace(/'/g, "\\'")}', '${ipaUs}', '${ipaUk}', '${emoji}', event)" title="Show translations">
+              <svg class="eye-icon" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function render(data) {
+      const q = (document.getElementById('search').value || '').toLowerCase().trim();
+      const filtered = !q ? data : data.filter(it => {
+        const fields = [
+          it['Emoji'],
+          it['infinitive_verb'],
+          it['infinitive_phonetic_us'],
+          it['literal_translation'],
+          it['contextual_translation']
+        ].join(' ').toLowerCase();
+        return fields.includes(q);
+      });
+
+      // Render table (desktop)
+      const rows = filtered.map(rowTemplate).join('');
+      document.getElementById('rows').innerHTML = rows;
+
+      // Render cards (mobile)
+      const cards = filtered.map(cardTemplate).join('');
+      document.getElementById('cards').innerHTML = cards;
+    }
+
+    let allVerbs = [];
+    let currentFilter = 'all';
+
+    // Alphabet filtering
+    function filterByLetter(letter) {
+      currentFilter = letter;
+      
+      // Clear search input to avoid conflicts
+      document.getElementById('search').value = '';
+      
+      // Update active button
+      document.querySelectorAll('.alphabet-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Find and activate the clicked button
+      document.querySelectorAll('.alphabet-btn').forEach(btn => {
+        if (btn.textContent.toLowerCase() === letter.toLowerCase() || 
+            (letter === 'all' && btn.classList.contains('all-btn'))) {
+          btn.classList.add('active');
+        }
+      });
+      
+      // Filter verbs by base form (without "To ")
+      let filteredVerbs;
+      if (letter === 'all') {
+        filteredVerbs = allVerbs; // Show all verbs when "All" is selected
+      } else {
+        filteredVerbs = allVerbs.filter(item => {
+          const verb = item.infinitive_verb || item.verb || item;
+          if (typeof verb !== 'string') {
+            return false;
+          }
+          const baseForm = verb.replace(/^To\s+/i, ''); // Remove "To " from beginning
+          return baseForm.toLowerCase().startsWith(letter.toLowerCase());
+        });
+      }
+      
+      render(filteredVerbs);
+    }
+
+    function init() {
+      // Initialize theme
+      initTheme();
+      
+      // Theme toggle event
+      document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+      
+      // Load CSV data
+      Papa.parse(CSV_URL, {
+        header: true,
+        download: true,
+        skipEmptyLines: true,
+        transformHeader: function(header) {
+          return header.trim();
+        },
+        complete: (results) => {
+          const data = results.data.filter(Boolean);
+          allVerbs = data; // Store all verbs globally
+          const search = document.getElementById('search');
+          search.addEventListener('input', () => {
+            // Reset alphabet filter when searching
+            if (search.value.trim()) {
+              document.querySelectorAll('.alphabet-btn').forEach(btn => {
+                btn.classList.remove('active');
+              });
+              currentFilter = '';
+            }
+            render(allVerbs);
+          });
+          render(allVerbs);
+        },
+        error: (err) => {
+          console.error('CSV error', err);
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>
