@@ -1,3 +1,20 @@
+// Theme toggle
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.querySelector('.theme-icon');
+const savedTheme = localStorage.getItem('theme') || 'dark';
+
+document.documentElement.setAttribute('data-theme', savedTheme);
+themeIcon.textContent = savedTheme === 'light' ? '🌙' : '☀️';
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  themeIcon.textContent = newTheme === 'light' ? '🌙' : '☀️';
+});
+
+// Load lessons
 async function boot(){
   const grid = document.getElementById("grid");
   const res = await fetch("data.json");
