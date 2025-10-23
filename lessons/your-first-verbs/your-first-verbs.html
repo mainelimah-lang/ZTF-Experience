@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <style>
     :root {
       /* ZTF Studio Look (Dark Theme) */
@@ -1015,15 +1014,25 @@
       document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
       
       // Load CSV data
-      Papa.parse(CSV_URL, {
-        header: true,
-        download: true,
-        skipEmptyLines: true,
-        transformHeader: function(header) {
-          return header.trim();
-        },
-        complete: (results) => {
-          const data = results.data.filter(Boolean);
+      fetch(CSV_URL)
+        .then(response => response.text())
+        .then(csvText => {
+          const lines = csvText.split('\n').filter(line => line.trim());
+          if (lines.length === 0) {
+            console.error('CSV is empty');
+            return;
+          }
+          
+          const headers = lines[0].split(',').map(h => h.trim().replace(/"/g, ''));
+          const data = lines.slice(1).map(line => {
+            const values = line.split(',').map(v => v.trim().replace(/"/g, ''));
+            const obj = {};
+            headers.forEach((header, index) => {
+              obj[header] = values[index] || '';
+            });
+            return obj;
+          }).filter(Boolean);
+          
           allVerbs = data; // Store all verbs globally
           const search = document.getElementById('search');
           search.addEventListener('input', () => {
@@ -1037,11 +1046,10 @@
             render(allVerbs);
           });
           render(allVerbs);
-        },
-        error: (err) => {
+        })
+        .catch(err => {
           console.error('CSV error', err);
-        }
-      });
+        });
     }
 
     document.addEventListener('DOMContentLoaded', init);
