@@ -17,7 +17,7 @@ themeToggle.addEventListener('click', () => {
 // Load lessons
 async function boot(){
   const grid = document.getElementById("grid");
-  const res = await fetch("data.json");
+  const res = await fetch("data.json?v=" + Date.now());
   const items = await res.json();
 
   const frag = document.createDocumentFragment();
