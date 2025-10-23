@@ -36,7 +36,7 @@ async function boot(){
     if (it.available === false) {
       const badge = document.createElement("div");
       badge.className = "badge";
-      badge.textContent = "Soon";
+      badge.textContent = "Coming soon";
       thumbContainer.appendChild(badge);
     }
     
