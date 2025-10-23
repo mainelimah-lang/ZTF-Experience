@@ -719,7 +719,31 @@ blockquote.quote-large {
       padding-top: 2rem;
       margin-top: 2rem;
     }
-</style></head><body><article id="26a37c9a-53b8-80ff-b2dd-e36366ae23fe" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">Present Perfect</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe/Present_Simple_(5).png"><img style="width:20px;max-height:24px" src="Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe/Present_Simple_(5).png" alt="Present Simple (5).png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>23</td></tr></tbody></table></header><div class="page-body"><p id="27037c9a-53b8-801f-a01f-fd812bd48700" class="">
+
+    :root {
+      --color-bg: #0F1112;
+      --color-text: #E8DDC9;
+      --color-border: #1B1D1F;
+    }
+    [data-theme='light'] {
+      --color-bg: #E8DDC9;
+      --color-text: #0F1112;
+      --color-border: #D9CBB4;
+    }
+    html { transition: background-color 0.5s ease, color 0.5s ease; }
+    body { background: var(--color-bg); color: var(--color-text); }
+    .theme-btn { background: var(--color-bg); border: 2px solid var(--color-border); border-radius: 8px; width: 44px; height: 44px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; transition: all 0.3s ease; }
+    .theme-btn:hover { background: #FFD54A; transform: scale(1.05); }
+</style></head><body>
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+      <div>
+        <h1 id="page-title"></h1>
+      </div>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+<article id="26a37c9a-53b8-80ff-b2dd-e36366ae23fe" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">▫️</span></div><h1 class="page-title">Present Perfect</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Cover</th><td><span style="margin-inline-end:6px"><a href="Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe/Present_Simple_(5).png"><img style="width:20px;max-height:24px" src="Present%20Perfect%2026a37c9a53b880ffb2dde36366ae23fe/Present_Simple_(5).png" alt="Present Simple (5).png"/></a></span></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;display:block"/></span>Multi-select</th><td><span class="selected-value select-value-color-green">ZTF Experience English Course</span></td></tr><tr class="property-row property-row-number"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/hashtag_gray.svg" style="width:14px;height:14px;display:block"/></span>Number</th><td>23</td></tr></tbody></table></header><div class="page-body"><p id="27037c9a-53b8-801f-a01f-fd812bd48700" class="">
 </p><p id="27037c9a-53b8-80a0-b1e0-cd627f1b0e19" class="">
 </p><p id="27037c9a-53b8-80ae-840d-f81383e9acf1" class="">💡 The Present Perfect Tense is used to describe <strong>an event that occurred at an unspecified time in the past whose consequences are still active, visible, or important now</strong>. It is not just about what was done — it is about <strong>what is true now because of it</strong>.</p><p id="27037c9a-53b8-80d2-b76e-f2b6514699a2" class="">
 </p><p id="27037c9a-53b8-80dd-bba0-c9edcbe90736" class="">The <strong>present perfect</strong> creates an <strong>explicit link between past and present</strong>. It shows a <strong>direct cause-and-effect relationship</strong> between a past event and the current situation.</p><p id="27037c9a-53b8-80bf-a652-c2382be544b1" class="">
@@ -804,4 +828,22 @@ blockquote.quote-large {
   <footer>
     Part of the ZTF Universe ✦
   </footer>
-</body></html>
+<script>
+    function initTheme() {
+      const savedTheme = localStorage.getItem('ztf-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+    }
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('ztf-theme', newTheme);
+      document.getElementById('theme-icon').textContent = newTheme === 'dark' ? '🌙' : '☀️';
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      initTheme();
+      document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+      document.getElementById('page-title').textContent = document.title.replace(' — ZTF Dictionary', '').replace(' — ZTF', '');
+    });
+</script></body></html>
