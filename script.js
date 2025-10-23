@@ -26,7 +26,6 @@ async function boot(){
     const card = document.createElement("a");
     card.className = "card";
     card.href = it.link || "#";
-    card.target = "_blank";
     card.style.textDecoration = "none";
     card.style.color = "inherit";
 
