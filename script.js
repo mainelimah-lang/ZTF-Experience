@@ -24,13 +24,21 @@ async function boot(){
 
   items.forEach((it, idx) => {
     const card = document.createElement("a");
-    card.className = "card";
-    card.href = it.link || "#";
+    card.className = it.available === false ? "card unavailable" : "card";
+    card.href = it.available === false ? "#" : (it.link || "#");
     card.style.textDecoration = "none";
     card.style.color = "inherit";
 
     const thumbContainer = document.createElement("div");
     thumbContainer.className = "thumb-container";
+    
+    // Add badge for unavailable lessons
+    if (it.available === false) {
+      const badge = document.createElement("div");
+      badge.className = "badge";
+      badge.textContent = "Em breve";
+      thumbContainer.appendChild(badge);
+    }
     
     const img = document.createElement("img");
     img.className = "thumb";

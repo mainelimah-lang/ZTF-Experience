@@ -3,150 +3,175 @@
     "title": "The Alphabet",
     "cover": "lessons/the-alphabet/cover.png",
     "link": "lessons/the-alphabet/the-alphabet.html",
-    "order": 1
+    "order": 1,
+    "available": true
   },
   {
     "title": "Your First Words",
     "cover": "lessons/your-first-words/cover.png",
     "link": "lessons/your-first-words/your-first-words.html",
-    "order": 2
+    "order": 2,
+    "available": true
   },
   {
     "title": "The Sounds Of English",
     "cover": "lessons/the-sounds-of-english/cover.png",
     "link": "lessons/the-sounds-of-english/the-sounds-of-english.html",
-    "order": 3
+    "order": 3,
+    "available": true
   },
   {
     "title": "Your First Phrases",
     "cover": "lessons/your-first-phrases/cover.png",
     "link": "lessons/your-first-phrases/your-first-phrases.html",
-    "order": 4
+    "order": 4,
+    "available": false
   },
   {
     "title": "The Numbers",
     "cover": "lessons/the-numbers/cover.png",
     "link": "lessons/the-numbers/the-numbers.html",
-    "order": 5
+    "order": 5,
+    "available": false
   },
   {
     "title": "Your First Verbs",
     "cover": "lessons/your-first-verbs/cover.png",
     "link": "lessons/your-first-verbs/your-first-verbs.html",
-    "order": 6
+    "order": 6,
+    "available": true
   },
   {
     "title": "Imperative Sentences",
     "cover": "lessons/imperative-sentences/cover.png",
     "link": "lessons/imperative-sentences/imperative-sentences.html",
-    "order": 7
+    "order": 7,
+    "available": false
   },
   {
     "title": "Nouns",
     "cover": "lessons/nouns/cover.png",
     "link": "lessons/nouns/nouns.html",
-    "order": 9
+    "order": 9,
+    "available": false
   },
   {
     "title": "Subject Pronouns",
     "cover": "lessons/subject-pronouns/cover.png",
     "link": "lessons/subject-pronouns/subject-pronouns.html",
-    "order": 10
+    "order": 10,
+    "available": false
   },
   {
     "title": "Present Simple",
     "cover": "lessons/present-simple/cover.png",
     "link": "lessons/present-simple/present-simple.html",
-    "order": 11
+    "order": 11,
+    "available": false
   },
   {
     "title": "Definite Article",
     "cover": "lessons/definite-article/cover.png",
     "link": "lessons/definite-article/definite-article.html",
-    "order": 12
+    "order": 12,
+    "available": false
   },
   {
     "title": "Indefinite Articles",
     "cover": "lessons/indefinite-articles/cover.png",
     "link": "lessons/indefinite-articles/indefinite-articles.html",
-    "order": 13
+    "order": 13,
+    "available": false
   },
   {
     "title": "Plural Nouns",
     "cover": "lessons/plural-nouns/cover.png",
     "link": "lessons/plural-nouns/plural-nouns.html",
-    "order": 14
+    "order": 14,
+    "available": false
   },
   {
     "title": "Quantifiers",
     "cover": "lessons/quantifiers/cover.png",
     "link": "lessons/quantifiers/quantifiers.html",
-    "order": 15
+    "order": 15,
+    "available": false
   },
   {
     "title": "Demonstrative Pronouns",
     "cover": "lessons/demonstrative-pronouns/cover.png",
     "link": "lessons/demonstrative-pronouns/demonstrative-pronouns.html",
-    "order": 16
+    "order": 16,
+    "available": false
   },
   {
     "title": "Possessives",
     "cover": "lessons/possessives/cover.png",
     "link": "lessons/possessives/possessives.html",
-    "order": 17
+    "order": 17,
+    "available": false
   },
   {
     "title": "Distributives",
     "cover": "lessons/distributives/cover.png",
     "link": "lessons/distributives/distributives.html",
-    "order": 18
+    "order": 18,
+    "available": false
   },
   {
     "title": "Tag Questions Present Simple",
     "cover": "lessons/tag-questions-present-simple/cover.png",
     "link": "lessons/tag-questions-present-simple/tag-questions-present-simple.html",
-    "order": 19
+    "order": 19,
+    "available": false
   },
   {
     "title": "Verb To Be   Present",
     "cover": "lessons/verb-to-be---present/cover.png",
     "link": "lessons/verb-to-be---present/verb-to-be---present.html",
-    "order": 20
+    "order": 20,
+    "available": false
   },
   {
     "title": "Verb To Be   Past",
     "cover": "lessons/verb-to-be---past/cover.png",
     "link": "lessons/verb-to-be---past/verb-to-be---past.html",
-    "order": 21
+    "order": 21,
+    "available": false
   },
   {
     "title": "Past Simple",
     "cover": "lessons/past-simple/cover.png",
     "link": "lessons/past-simple/past-simple.html",
-    "order": 22
+    "order": 22,
+    "available": false
   },
   {
     "title": "Present Perfect",
     "cover": "lessons/present-perfect/cover.png",
     "link": "lessons/present-perfect/present-perfect.html",
-    "order": 23
+    "order": 23,
+    "available": false
   },
   {
     "title": "If Clauses",
     "cover": "lessons/if-clauses/cover.png",
     "link": "lessons/if-clauses/if-clauses.html",
-    "order": 24
+    "order": 24,
+    "available": false
   },
   {
     "title": "Past Perfect",
     "cover": "lessons/past-perfect/cover.png",
     "link": "lessons/past-perfect/past-perfect.html",
-    "order": 25
+    "order": 25,
+    "available": false
   },
   {
     "title": "Wh Words",
     "cover": "lessons/wh-words/cover.png",
     "link": "lessons/wh-words/wh-words.html",
-    "order": 26
+    "order": 26,
+    "available": false
   }
 ]
