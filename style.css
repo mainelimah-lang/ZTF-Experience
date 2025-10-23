@@ -24,7 +24,7 @@ h1{margin:0 0 8px; font-size:clamp(24px,3vw,36px)}
 .card:hover{ transform: translateY(-4px); border-color:#444; }
 .card.unavailable{ opacity:0.5; filter:grayscale(100%); cursor:not-allowed; pointer-events:none; position:relative; }
 .card.unavailable .thumb-container{ position:relative; }
-.card.unavailable .badge{ position:absolute; top:12px; right:12px; background:#FFD54A; color:#0F1112; padding:6px 12px; border-radius:8px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; z-index:10; }
+.card.unavailable .badge{ position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:#FFD54A; color:#0F1112; padding:12px 24px; border-radius:12px; font-size:18px; font-weight:700; text-transform:uppercase; letter-spacing:1px; z-index:10; box-shadow:0 4px 12px rgba(0,0,0,0.3); }
 .thumb{ width:100%; aspect-ratio:16/9; object-fit:cover; object-position:center; background:#1b1f22; display:block; }
 .thumb-container{ display:flex; align-items:center; justify-content:center; width:100%; aspect-ratio:16/9; background:#1b1f22; }
 .card-body{ padding:16px; display:flex; flex-direction:column; gap:8px; }
