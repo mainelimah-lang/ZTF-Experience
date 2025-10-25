@@ -120,7 +120,7 @@
 
     .sort-buttons {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 0.5rem;
     }
 
@@ -298,17 +298,6 @@
     table {
       width: 100%;
       border-collapse: collapse;
-    }
-
-    thead th {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      color: var(--color-text-secondary);
-      text-align: left;
-      padding: 1rem;
-      font-weight: 600;
-      border-bottom: 2px solid var(--color-border);
     }
 
     tbody tr {
@@ -750,8 +739,7 @@
           <span class="sort-label">Sort by</span>
         </div>
         <div class="sort-buttons">
-          <button class="sort-btn active" onclick="setSortMode('sound')">Sound Order</button>
-          <button class="sort-btn" onclick="setSortMode('alphabet')">A-Z</button>
+          <button class="sort-btn active" onclick="setSortMode('alphabet')">A-Z</button>
         </div>
       </div>
       
@@ -871,15 +859,6 @@
 
     <div class="content-area">
       <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Word</th>
-            <th>US</th>
-            <th>UK</th>
-            <th></th>
-          </tr>
-        </thead>
         <tbody id="rows"></tbody>
       </table>
 
@@ -1125,7 +1104,7 @@
       `;
     }
 
-    let currentSortMode = 'sound'; // 'sound' or 'alphabet'
+    let currentSortMode = 'alphabet'; // Default alphabetical sorting
     let allSounds = [];
     let currentFilteredData = [];
 
