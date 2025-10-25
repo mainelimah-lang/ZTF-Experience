@@ -89,12 +89,6 @@
       width: 100%;
     }
 
-    .sort-container {
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--color-border);
-    }
-
     .section-header {
       display: flex;
       align-items: center;
@@ -109,45 +103,12 @@
       color: var(--color-accent-purple);
     }
 
-    .sort-label,
     .filters-label {
       font-size: 0.75rem;
       font-weight: 600;
       color: var(--color-text);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-    }
-
-    .sort-buttons {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0.5rem;
-    }
-
-    .sort-btn {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      border-radius: 8px;
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--color-text-secondary);
-      transition: all 0.3s ease;
-      text-align: center;
-    }
-
-    .sort-btn:hover {
-      background: var(--color-accent-purple);
-      color: white;
-      border-color: var(--color-accent-purple);
-    }
-
-    .sort-btn.active {
-      background: var(--color-accent-yellow);
-      color: var(--color-text);
-      border-color: var(--color-accent-yellow);
-      font-weight: 600;
     }
 
     input[type="search"] {
@@ -730,18 +691,6 @@
       <div class="search-container">
         <input id="search" type="search" placeholder="Search…" />
       </div>
-
-      <div class="sort-container">
-        <div class="section-header">
-          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 6h18M7 12h10m-7 6h4"/>
-          </svg>
-          <span class="sort-label">Sort by</span>
-        </div>
-        <div class="sort-buttons">
-          <button class="sort-btn active" onclick="setSortMode('alphabet')">A-Z</button>
-        </div>
-      </div>
       
       <div class="filters-container">
         <div class="section-header">
@@ -1104,7 +1053,6 @@
       `;
     }
 
-    let currentSortMode = 'alphabet'; // Default alphabetical sorting
     let allSounds = [];
     let currentFilteredData = [];
 
@@ -1124,18 +1072,11 @@
         return fields.includes(q);
       });
 
-      // Sort based on current mode
+      // Always sort alphabetically
       const sorted = [...filtered].sort((a, b) => {
-        if (currentSortMode === 'alphabet') {
-          const wordA = (a['Word'] || '').toLowerCase();
-          const wordB = (b['Word'] || '').toLowerCase();
-          return wordA.localeCompare(wordB);
-        } else {
-          // Sort by Order (ascending) - maintain word bank order
-          const orderA = parseInt(a['Order']) || 99999;
-          const orderB = parseInt(b['Order']) || 99999;
-          return orderA - orderB;
-        }
+        const wordA = (a['Word'] || '').toLowerCase();
+        const wordB = (b['Word'] || '').toLowerCase();
+        return wordA.localeCompare(wordB);
       });
 
       const rows = sorted.map(rowTemplate).join('');
@@ -1143,21 +1084,6 @@
 
       const cards = sorted.map(cardTemplate).join('');
       document.getElementById('cards').innerHTML = cards;
-    }
-
-    function setSortMode(mode) {
-      currentSortMode = mode;
-      
-      // Update button states
-      document.querySelectorAll('.sort-btn').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      
-      event.target.classList.add('active');
-      
-      // Re-render with new sort, maintaining current filter
-      const dataToRender = currentFilteredData.length > 0 ? currentFilteredData : allSounds;
-      render(dataToRender);
     }
 
     function resetFilters() {
