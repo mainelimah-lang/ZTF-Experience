@@ -38,9 +38,7 @@ h1{margin:0 0 8px; font-size:clamp(24px,3vw,36px); font-weight:700; letter-spaci
 .theme-btn:hover{ transform:scale(1.05); background:#FFD54A; box-shadow:0 6px 20px rgba(255,213,74,0.4); }
 .theme-btn:active{ transform:scale(0.95); }
 @media (max-width:768px){
-  .main-header{ padding:1.5rem 0 1rem; position:relative; }
-  .header-content{ flex-direction:column; align-items:flex-start; gap:1rem; }
-  .theme-btn{ position:absolute; top:2rem; right:1.5rem; }
+  .main-header{ padding:1.5rem 0 1rem; }
 }
 .theme-icon{ display:block; }
 .table-separator{ height:1px; background:var(--muted); margin:1rem auto; max-width:1200px; }
