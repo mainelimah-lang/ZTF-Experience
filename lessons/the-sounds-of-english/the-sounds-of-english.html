@@ -98,28 +98,6 @@
       pointer-events: none;
     }
 
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.75rem;
-      justify-content: flex-start;
-    }
-
-    .section-icon {
-      width: 18px;
-      height: 18px;
-      color: var(--color-accent-purple);
-    }
-
-    .filters-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--color-text);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
     input[type="search"] {
       width: 100%;
       padding: 0.75rem 0.875rem 0.75rem 2.75rem;
@@ -176,7 +154,6 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      padding-top: 1rem;
     }
 
     .filter-group {
@@ -688,13 +665,6 @@
       </div>
       
       <div class="filters-container">
-        <div class="section-header">
-          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>
-          </svg>
-          <span class="filters-label">Filter by</span>
-        </div>
-
         <div class="filter-group">
           <span class="category-label">Short Vowels</span>
           <div class="symbols-row">
