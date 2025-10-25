@@ -105,9 +105,20 @@
       max-width: 1200px;
     }
 
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      color: var(--color-accent-purple);
+      pointer-events: none;
+    }
+
     input[type="search"] {
       width: 100%;
-      padding: 0.875rem 1rem;
+      padding: 0.875rem 1rem 0.875rem 3rem;
       border: 2px solid var(--color-border);
       border-radius: 12px;
       font-size: clamp(0.9rem, 2vw, 1rem);
@@ -667,7 +678,11 @@
     <h1>Your First Verbs</h1>
     <div class="header-controls">
       <div class="search-container">
-      <input id="search" type="search" placeholder="Search verbs or translations…" />
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input id="search" type="search" placeholder="Search verbs or translations…" />
       </div>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
         <span id="theme-icon">🌙</span>
