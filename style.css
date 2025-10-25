@@ -6,10 +6,10 @@
   --radius:16px;
 }
 [data-theme="light"]{
-  --bg:#E8DDC9;
+  --bg:#FFFFFF;
   --paper:#0F1112;
-  --muted:#3C3B3A;
-  --card:#F5F0E8;
+  --muted:#6B7280;
+  --card:#F9FAFB;
 }
 *{box-sizing:border-box}
 body{ margin:0; background:var(--bg); color:var(--paper);
