@@ -89,6 +89,54 @@
       width: 100%;
     }
 
+    .sort-container {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .sort-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .sort-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    .sort-btn {
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .sort-btn:hover {
+      background: var(--color-accent-purple);
+      color: white;
+      border-color: var(--color-accent-purple);
+    }
+
+    .sort-btn.active {
+      background: var(--color-accent-yellow);
+      color: var(--color-text);
+      border-color: var(--color-accent-yellow);
+      font-weight: 600;
+    }
+
     input[type="search"] {
       width: 100%;
       padding: 0.75rem 0.875rem;
@@ -731,6 +779,14 @@
       <div class="search-container">
         <input id="search" type="search" placeholder="Search…" />
       </div>
+
+      <div class="sort-container">
+        <div class="sort-label">Sort by</div>
+        <div class="sort-buttons">
+          <button class="sort-btn active" onclick="setSortMode('sound')">Sound Order</button>
+          <button class="sort-btn" onclick="setSortMode('alphabet')">A-Z</button>
+        </div>
+      </div>
       
       <div class="filters-container">
         <div class="filter-group">
@@ -1099,6 +1155,8 @@
       `;
     }
 
+    let currentSortMode = 'sound'; // 'sound' or 'alphabet'
+
     function render(data) {
       const q = (document.getElementById('search').value || '').toLowerCase().trim();
       const filtered = !q ? data : data.filter(it => {
@@ -1115,11 +1173,18 @@
         return fields.includes(q);
       });
 
-      // Sort by Order (ascending) - maintain word bank order
+      // Sort based on current mode
       const sorted = [...filtered].sort((a, b) => {
-        const orderA = parseInt(a['Order']) || 99999;
-        const orderB = parseInt(b['Order']) || 99999;
-        return orderA - orderB;
+        if (currentSortMode === 'alphabet') {
+          const wordA = (a['Word'] || '').toLowerCase();
+          const wordB = (b['Word'] || '').toLowerCase();
+          return wordA.localeCompare(wordB);
+        } else {
+          // Sort by Order (ascending) - maintain word bank order
+          const orderA = parseInt(a['Order']) || 99999;
+          const orderB = parseInt(b['Order']) || 99999;
+          return orderA - orderB;
+        }
       });
 
       const rows = sorted.map(rowTemplate).join('');
@@ -1130,6 +1195,21 @@
     }
 
     let allSounds = [];
+
+    function setSortMode(mode) {
+      currentSortMode = mode;
+      
+      // Update button states
+      document.querySelectorAll('.sort-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      event.target.classList.add('active');
+      
+      // Re-render with new sort, maintaining current filter
+      const dataToRender = currentFilteredData.length > 0 ? currentFilteredData : allSounds;
+      render(dataToRender);
+    }
 
     function resetFilters() {
       document.getElementById('search').value = '';
@@ -1145,8 +1225,11 @@
         btn.classList.remove('active');
       });
       
+      currentFilteredData = [];
       render(allSounds);
     }
+
+    let currentFilteredData = [];
 
     function filterBySymbol(symbol) {
       document.getElementById('search').value = '';
@@ -1166,8 +1249,8 @@
         }
       });
       
-      const filtered = allSounds.filter(item => item.Symbol === symbol);
-      render(filtered);
+      currentFilteredData = allSounds.filter(item => item.Symbol === symbol);
+      render(currentFilteredData);
     }
 
     function init() {
@@ -1194,6 +1277,7 @@
               document.querySelectorAll('.symbol-btn').forEach(btn => {
                 btn.classList.remove('active');
               });
+              currentFilteredData = [];
             } else {
               // If search is cleared, show all and activate All button
               document.querySelectorAll('.category-btn').forEach(btn => {
@@ -1201,6 +1285,7 @@
                   btn.classList.add('active');
                 }
               });
+              currentFilteredData = [];
             }
             render(allSounds);
           });
