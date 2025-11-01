@@ -82,26 +82,18 @@
     .dict-emoji {
       font-size: 28px;
     }
-    .dict-type {
-      background: rgba(107, 78, 255, 0.15);
-      color: #9F8FFF;
-      padding: 4px 12px;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 600;
-      font-style: italic;
-    }
-    .dict-phonetic-line {
+    .dict-phonetics-container {
       display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 8px;
-      padding: 8px 0;
-    }
-    .dict-phonetic-line:last-of-type {
+      gap: 24px;
       margin-bottom: 20px;
       padding-bottom: 16px;
       border-bottom: 1px solid #222;
+      flex-wrap: wrap;
+    }
+    .dict-phonetic-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     .dict-phonetic {
       color: #9F8FFF;
@@ -112,12 +104,8 @@
       margin: 20px 0;
     }
     .dict-section-title {
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--muted);
+      font-size: 20px;
       margin-bottom: 8px;
-      letter-spacing: 0.5px;
     }
     .dict-definition {
       color: var(--paper);

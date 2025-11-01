@@ -113,15 +113,15 @@ function createDictionaryCard(entry) {
   const card = document.createElement('div');
   card.className = 'dict-entry';
   
-  // Build pronunciation lines
-  let pronunciationHTML = '';
+  // Build pronunciations side by side
+  let pronunciationHTML = '<div class="dict-phonetics-container">';
   
   // US pronunciation
   if (entry.transcription_us) {
     pronunciationHTML += `
-      <div class="dict-phonetic-line">
-        <span style="font-size: 20px;">🇺🇸</span>
-        ${entry.audio_us ? `<button class="audio-btn" onclick="playAudio('${entry.audio_us}')" title="Play US pronunciation">🔊</button>` : ''}
+      <div class="dict-phonetic-item">
+        <span style="font-size: 18px;">🇺🇸</span>
+        ${entry.audio_us ? `<button class="audio-btn" onclick="playAudio('${entry.audio_us}')" title="Play US pronunciation">🔈</button>` : ''}
         <span class="dict-phonetic">${entry.transcription_us}</span>
       </div>
     `;
@@ -130,25 +130,26 @@ function createDictionaryCard(entry) {
   // UK pronunciation
   if (entry.transcription_uk) {
     pronunciationHTML += `
-      <div class="dict-phonetic-line">
-        <span style="font-size: 20px;">🇬🇧</span>
-        ${entry.audio_uk ? `<button class="audio-btn" onclick="playAudio('${entry.audio_uk}')" title="Play UK pronunciation">🔊</button>` : ''}
+      <div class="dict-phonetic-item">
+        <span style="font-size: 18px;">🇬🇧</span>
+        ${entry.audio_uk ? `<button class="audio-btn" onclick="playAudio('${entry.audio_uk}')" title="Play UK pronunciation">🔈</button>` : ''}
         <span class="dict-phonetic">${entry.transcription_uk}</span>
       </div>
     `;
   }
   
+  pronunciationHTML += '</div>';
+  
   card.innerHTML = `
     <div class="dict-word-line">
       <div class="dict-emoji">${entry.emoji}</div>
       <h2 class="dict-word">${entry.word}</h2>
-      <span class="dict-type">${entry.type}</span>
     </div>
     
     ${pronunciationHTML}
     
     <div class="dict-section">
-      <div class="dict-section-title">Portuguese Translation</div>
+      <div class="dict-section-title">🇧🇷</div>
       <div class="dict-translation">${entry.literal_translation}</div>
     </div>
     
