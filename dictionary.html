@@ -30,28 +30,22 @@
     }
     .audio-controls {
       display: flex;
-      gap: 8px;
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px solid #222;
+      gap: 12px;
     }
     .audio-btn {
-      background: rgba(107, 78, 255, 0.1);
-      border: 1px solid rgba(107, 78, 255, 0.3);
-      border-radius: 8px;
-      padding: 8px 12px;
-      color: #9F8FFF;
+      background: transparent;
+      border: none;
+      color: #6B4EFF;
       cursor: pointer;
-      font-size: 12px;
-      font-weight: 600;
+      font-size: 24px;
+      padding: 0;
+      transition: all 0.2s ease;
       display: flex;
       align-items: center;
-      gap: 6px;
-      transition: all 0.2s ease;
     }
     .audio-btn:hover {
-      background: rgba(107, 78, 255, 0.2);
-      border-color: #6B4EFF;
+      transform: scale(1.1);
+      filter: brightness(1.2);
     }
     .audio-btn:active {
       transform: scale(0.95);
@@ -63,67 +57,81 @@
       font-size: 14px;
     }
     .dictionary-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
     }
-    .dict-card {
+    .dict-entry {
       background: var(--card);
       border: 1px solid #222;
       border-radius: var(--radius);
-      padding: 20px;
-      transition: all 0.2s ease;
+      padding: 32px 40px;
+      margin-bottom: 24px;
     }
-    .dict-card:hover {
-      transform: translateY(-2px);
-      border-color: #444;
+    .dict-word-line {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 12px;
     }
-    .dict-header {
+    .dict-word {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--paper);
+      margin: 0;
+    }
+    .dict-emoji {
+      font-size: 28px;
+    }
+    .dict-type {
+      background: rgba(107, 78, 255, 0.15);
+      color: #9F8FFF;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      font-style: italic;
+    }
+    .dict-phonetic-line {
       display: flex;
       align-items: center;
       gap: 12px;
-      margin-bottom: 12px;
-    }
-    .dict-emoji {
-      font-size: 32px;
-    }
-    .dict-word {
-      flex: 1;
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--paper);
-    }
-    .dict-type {
-      background: rgba(107, 78, 255, 0.2);
-      color: #9F8FFF;
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #222;
     }
     .dict-phonetic {
       color: #9F8FFF;
-      font-size: 14px;
-      margin-bottom: 8px;
+      font-size: 16px;
       font-family: 'Courier New', monospace;
+    }
+    .dict-section {
+      margin: 20px 0;
+    }
+    .dict-section-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    .dict-definition {
+      color: var(--paper);
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 12px;
     }
     .dict-translation {
       color: var(--muted);
-      font-size: 14px;
-      line-height: 1.6;
-      margin-bottom: 8px;
-    }
-    .dict-context {
-      color: var(--paper);
-      font-size: 14px;
-      line-height: 1.6;
+      font-size: 15px;
+      line-height: 1.7;
+      font-style: italic;
     }
     .dict-category {
       color: var(--muted);
-      font-size: 12px;
-      margin-top: 12px;
-      padding-top: 12px;
+      font-size: 13px;
+      margin-top: 20px;
+      padding-top: 16px;
       border-top: 1px solid #222;
     }
     .no-results {

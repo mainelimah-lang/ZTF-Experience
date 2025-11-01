@@ -111,7 +111,7 @@ function renderDictionary() {
 
 function createDictionaryCard(entry) {
   const card = document.createElement('div');
-  card.className = 'dict-card';
+  card.className = 'dict-entry';
   
   // Phonetic display - prefer UK, fallback to US
   const phonetic = entry.transcription_uk || entry.transcription_us || '';
@@ -123,34 +123,38 @@ function createDictionaryCard(entry) {
   if (hasAudio) {
     audioHTML = `
       <div class="audio-controls">
-        ${entry.audio_us ? `<button class="audio-btn" onclick="playAudio('${entry.audio_us}')">🇺🇸 US</button>` : ''}
-        ${entry.audio_uk ? `<button class="audio-btn" onclick="playAudio('${entry.audio_uk}')">🇬🇧 UK</button>` : ''}
+        ${entry.audio_us ? `<button class="audio-btn" onclick="playAudio('${entry.audio_us}')" title="Play US pronunciation">🔊</button>` : ''}
       </div>
     `;
   }
   
   card.innerHTML = `
-    <div class="dict-header">
+    <div class="dict-word-line">
       <div class="dict-emoji">${entry.emoji}</div>
-      <div class="dict-word">${entry.word}</div>
+      <h2 class="dict-word">${entry.word}</h2>
       <span class="dict-type">${entry.type}</span>
     </div>
     
-    ${phonetic ? `<div class="dict-phonetic">${phonetic}</div>` : ''}
+    ${phonetic || hasAudio ? `
+      <div class="dict-phonetic-line">
+        ${phonetic ? `<span class="dict-phonetic">${phonetic}</span>` : ''}
+        ${audioHTML}
+      </div>
+    ` : ''}
     
-    <div class="dict-translation">
-      <strong>PT:</strong> ${entry.literal_translation}
+    <div class="dict-section">
+      <div class="dict-section-title">Portuguese Translation</div>
+      <div class="dict-translation">${entry.literal_translation}</div>
     </div>
     
-    <div class="dict-context">
-      ${entry.contextual_translation}
+    <div class="dict-section">
+      <div class="dict-section-title">Definition</div>
+      <div class="dict-definition">${entry.contextual_translation}</div>
     </div>
-    
-    ${audioHTML}
     
     ${entry.category ? `
       <div class="dict-category">
-        📚 ${entry.category}
+        Category: ${entry.category}
       </div>
     ` : ''}
   `;
