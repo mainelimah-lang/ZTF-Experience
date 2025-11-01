@@ -10,7 +10,13 @@ async function initDictionary() {
   try {
     // Load dictionary data
     const response = await fetch('dictionary-data.json');
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
     dictionaryData = await response.json();
+    console.log('Dictionary loaded:', dictionaryData.total_entries, 'entries');
     
     // Setup search
     setupSearch();
