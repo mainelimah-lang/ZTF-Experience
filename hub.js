@@ -15,10 +15,10 @@ const hubSections = [
   {
     id: 'dictionary',
     title: 'ZTF Dictionary',
-    description: '📖 Comprehensive English dictionary with pronunciations, examples, and translations',
+    description: '📚 Comprehensive English dictionary with pronunciations, examples, and translations',
     link: 'dictionary.html',
     available: true,
-    emoji: '📖',
+    emoji: '📚',
     order: 2
   },
   {

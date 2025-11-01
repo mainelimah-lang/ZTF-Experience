@@ -43,7 +43,7 @@ function showInitialState() {
   const grid = document.getElementById('dictionary-grid');
   const statsEl = document.getElementById('stats');
   
-  statsEl.textContent = `${dictionaryData.total_entries} entries available`;
+  statsEl.textContent = ''; // Remove the stats message
   
   grid.innerHTML = `
     <div class="no-results">
