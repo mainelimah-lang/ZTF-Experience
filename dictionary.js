@@ -113,17 +113,27 @@ function createDictionaryCard(entry) {
   const card = document.createElement('div');
   card.className = 'dict-entry';
   
-  // Phonetic display - prefer UK, fallback to US
-  const phonetic = entry.transcription_uk || entry.transcription_us || '';
+  // Build pronunciation lines
+  let pronunciationHTML = '';
   
-  // Audio controls
-  const hasAudio = entry.audio_us || entry.audio_uk;
-  let audioHTML = '';
-  
-  if (hasAudio) {
-    audioHTML = `
-      <div class="audio-controls">
+  // US pronunciation
+  if (entry.transcription_us) {
+    pronunciationHTML += `
+      <div class="dict-phonetic-line">
+        <span style="font-size: 20px;">🇺🇸</span>
         ${entry.audio_us ? `<button class="audio-btn" onclick="playAudio('${entry.audio_us}')" title="Play US pronunciation">🔊</button>` : ''}
+        <span class="dict-phonetic">${entry.transcription_us}</span>
+      </div>
+    `;
+  }
+  
+  // UK pronunciation
+  if (entry.transcription_uk) {
+    pronunciationHTML += `
+      <div class="dict-phonetic-line">
+        <span style="font-size: 20px;">🇬🇧</span>
+        ${entry.audio_uk ? `<button class="audio-btn" onclick="playAudio('${entry.audio_uk}')" title="Play UK pronunciation">🔊</button>` : ''}
+        <span class="dict-phonetic">${entry.transcription_uk}</span>
       </div>
     `;
   }
@@ -135,12 +145,7 @@ function createDictionaryCard(entry) {
       <span class="dict-type">${entry.type}</span>
     </div>
     
-    ${phonetic || hasAudio ? `
-      <div class="dict-phonetic-line">
-        ${phonetic ? `<span class="dict-phonetic">${phonetic}</span>` : ''}
-        ${audioHTML}
-      </div>
-    ` : ''}
+    ${pronunciationHTML}
     
     <div class="dict-section">
       <div class="dict-section-title">Portuguese Translation</div>
