@@ -73,14 +73,9 @@ function filterEntries() {
   
   return dictionaryData.entries.filter(entry => {
     const word = entry.word.toLowerCase();
-    const literal = entry.literal_translation.toLowerCase();
-    const contextual = entry.contextual_translation.toLowerCase();
-    const category = (entry.category || '').toLowerCase();
     
-    return word.includes(searchQuery) ||
-           literal.includes(searchQuery) ||
-           contextual.includes(searchQuery) ||
-           category.includes(searchQuery);
+    // Exact match only on the word itself
+    return word === searchQuery;
   });
 }
 
