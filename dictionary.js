@@ -116,12 +116,14 @@ function createDictionaryCard(entry) {
   // Build pronunciations side by side
   let pronunciationHTML = '<div class="dict-phonetics-container">';
   
+  const audioIcon = `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>`;
+  
   // US pronunciation
   if (entry.transcription_us) {
     pronunciationHTML += `
       <div class="dict-phonetic-item">
         <span style="font-size: 18px;">🇺🇸</span>
-        ${entry.audio_us ? `<button class="audio-btn" onclick="playAudio('${entry.audio_us}')" title="Play US pronunciation">🔈</button>` : ''}
+        ${entry.audio_us ? `<button class="audio-btn" onclick="playAudio('${entry.audio_us}')" title="Play US pronunciation">${audioIcon}</button>` : ''}
         <span class="dict-phonetic">${entry.transcription_us}</span>
       </div>
     `;
@@ -132,7 +134,7 @@ function createDictionaryCard(entry) {
     pronunciationHTML += `
       <div class="dict-phonetic-item">
         <span style="font-size: 18px;">🇬🇧</span>
-        ${entry.audio_uk ? `<button class="audio-btn" onclick="playAudio('${entry.audio_uk}')" title="Play UK pronunciation">🔈</button>` : ''}
+        ${entry.audio_uk ? `<button class="audio-btn" onclick="playAudio('${entry.audio_uk}')" title="Play UK pronunciation">${audioIcon}</button>` : ''}
         <span class="dict-phonetic">${entry.transcription_uk}</span>
       </div>
     `;

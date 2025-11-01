@@ -35,17 +35,23 @@
     .audio-btn {
       background: transparent;
       border: none;
-      color: #6B4EFF;
       cursor: pointer;
-      font-size: 24px;
       padding: 0;
       transition: all 0.2s ease;
       display: flex;
       align-items: center;
+      width: 20px;
+      height: 20px;
     }
-    .audio-btn:hover {
+    .audio-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: #6B4EFF;
+      transition: all 0.2s ease;
+    }
+    .audio-btn:hover svg {
+      fill: #9F8FFF;
       transform: scale(1.1);
-      filter: brightness(1.2);
     }
     .audio-btn:active {
       transform: scale(0.95);
