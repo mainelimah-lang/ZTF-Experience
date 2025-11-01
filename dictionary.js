@@ -3,7 +3,6 @@
  */
 
 let dictionaryData = null;
-let currentFilter = 'all';
 let searchQuery = '';
 
 // Initialize
@@ -13,14 +12,11 @@ async function initDictionary() {
     const response = await fetch('dictionary-data.json');
     dictionaryData = await response.json();
     
-    // Setup filters
-    setupFilters();
-    
     // Setup search
     setupSearch();
     
-    // Initial render
-    renderDictionary();
+    // Show initial state
+    showInitialState();
     
     // Initialize theme toggle
     initThemeToggle();
@@ -37,47 +33,19 @@ async function initDictionary() {
   }
 }
 
-function setupFilters() {
-  const filtersContainer = document.getElementById('filters');
+function showInitialState() {
+  const grid = document.getElementById('dictionary-grid');
+  const statsEl = document.getElementById('stats');
   
-  // Get unique categories
-  const categories = new Set();
-  categories.add('all');
-  categories.add('verbs');
-  categories.add('words');
+  statsEl.textContent = `${dictionaryData.total_entries} entries available`;
   
-  dictionaryData.entries.forEach(entry => {
-    if (entry.category) {
-      categories.add(entry.category);
-    }
-  });
-  
-  // Create filter buttons
-  const filterButtons = [
-    { id: 'all', label: '🌐 All', count: dictionaryData.total_entries },
-    { id: 'verbs', label: '🎯 Verbs', count: dictionaryData.entries.filter(e => e.type === 'verb').length },
-    { id: 'words', label: '📝 Words', count: dictionaryData.entries.filter(e => e.type === 'word').length }
-  ];
-  
-  // Add category filters
-  const categoryMap = {
-    'First Verbs': '🎓',
-    'Affricates': '🗣️',
-    'Diphthongs': '🎵',
-    'Fricatives': '💨',
-    'Plosives': '💥',
-    'Nasals': '👃',
-    'Approximants': '🌊',
-    'Vowels': '🅰️'
-  };
-  
-  filterButtons.forEach(filter => {
-    const button = document.createElement('button');
-    button.className = `filter-btn ${filter.id === 'all' ? 'active' : ''}`;
-    button.textContent = `${filter.label} (${filter.count})`;
-    button.onclick = () => setFilter(filter.id);
-    filtersContainer.appendChild(button);
-  });
+  grid.innerHTML = `
+    <div class="no-results">
+      <div class="no-results-emoji">🔍</div>
+      <h3>Start typing to search</h3>
+      <p>Search across ${dictionaryData.total_entries} words, verbs and translations</p>
+    </div>
+  `;
 }
 
 function setupSearch() {
@@ -85,53 +53,29 @@ function setupSearch() {
   
   searchInput.addEventListener('input', (e) => {
     searchQuery = e.target.value.toLowerCase().trim();
-    renderDictionary();
+    
+    if (searchQuery.length === 0) {
+      showInitialState();
+    } else {
+      renderDictionary();
+    }
   });
-}
-
-function setFilter(filterId) {
-  currentFilter = filterId;
-  
-  // Update button states
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.classList.remove('active');
-  });
-  event.target.classList.add('active');
-  
-  // Re-render
-  renderDictionary();
 }
 
 function filterEntries() {
-  let filtered = dictionaryData.entries;
+  if (!searchQuery) return [];
   
-  // Apply type/category filter
-  if (currentFilter !== 'all') {
-    if (currentFilter === 'verbs') {
-      filtered = filtered.filter(e => e.type === 'verb');
-    } else if (currentFilter === 'words') {
-      filtered = filtered.filter(e => e.type === 'word');
-    } else {
-      filtered = filtered.filter(e => e.category === currentFilter);
-    }
-  }
-  
-  // Apply search query
-  if (searchQuery) {
-    filtered = filtered.filter(entry => {
-      const word = entry.word.toLowerCase();
-      const literal = entry.literal_translation.toLowerCase();
-      const contextual = entry.contextual_translation.toLowerCase();
-      const category = (entry.category || '').toLowerCase();
-      
-      return word.includes(searchQuery) ||
-             literal.includes(searchQuery) ||
-             contextual.includes(searchQuery) ||
-             category.includes(searchQuery);
-    });
-  }
-  
-  return filtered;
+  return dictionaryData.entries.filter(entry => {
+    const word = entry.word.toLowerCase();
+    const literal = entry.literal_translation.toLowerCase();
+    const contextual = entry.contextual_translation.toLowerCase();
+    const category = (entry.category || '').toLowerCase();
+    
+    return word.includes(searchQuery) ||
+           literal.includes(searchQuery) ||
+           contextual.includes(searchQuery) ||
+           category.includes(searchQuery);
+  });
 }
 
 function renderDictionary() {
@@ -141,7 +85,7 @@ function renderDictionary() {
   const filtered = filterEntries();
   
   // Update stats
-  statsEl.textContent = `Showing ${filtered.length} of ${dictionaryData.total_entries} entries`;
+  statsEl.textContent = `${filtered.length} result${filtered.length !== 1 ? 's' : ''} found`;
   
   // Clear grid
   grid.innerHTML = '';
@@ -149,9 +93,9 @@ function renderDictionary() {
   if (filtered.length === 0) {
     grid.innerHTML = `
       <div class="no-results">
-        <div class="no-results-emoji">🔍</div>
+        <div class="no-results-emoji">😕</div>
         <h3>No results found</h3>
-        <p>Try a different search term or filter.</p>
+        <p>Try a different search term</p>
       </div>
     `;
     return;
@@ -171,6 +115,19 @@ function createDictionaryCard(entry) {
   // Phonetic display - prefer UK, fallback to US
   const phonetic = entry.transcription_uk || entry.transcription_us || '';
   
+  // Audio controls
+  const hasAudio = entry.audio_us || entry.audio_uk;
+  let audioHTML = '';
+  
+  if (hasAudio) {
+    audioHTML = `
+      <div class="audio-controls">
+        ${entry.audio_us ? `<button class="audio-btn" onclick="playAudio('${entry.audio_us}')">🇺🇸 US</button>` : ''}
+        ${entry.audio_uk ? `<button class="audio-btn" onclick="playAudio('${entry.audio_uk}')">🇬🇧 UK</button>` : ''}
+      </div>
+    `;
+  }
+  
   card.innerHTML = `
     <div class="dict-header">
       <div class="dict-emoji">${entry.emoji}</div>
@@ -188,6 +145,8 @@ function createDictionaryCard(entry) {
       ${entry.contextual_translation}
     </div>
     
+    ${audioHTML}
+    
     ${entry.category ? `
       <div class="dict-category">
         📚 ${entry.category}
@@ -197,6 +156,27 @@ function createDictionaryCard(entry) {
   
   return card;
 }
+
+// Audio player
+let currentAudio = null;
+
+function playAudio(audioPath) {
+  // Stop current audio if playing
+  if (currentAudio) {
+    currentAudio.pause();
+    currentAudio.currentTime = 0;
+  }
+  
+  // Create and play new audio
+  currentAudio = new Audio(audioPath);
+  currentAudio.play().catch(error => {
+    console.warn('Audio playback failed:', error);
+    // Silently fail if audio doesn't exist
+  });
+}
+
+// Make playAudio globally accessible
+window.playAudio = playAudio;
 
 function initThemeToggle() {
   const toggle = document.getElementById('theme-toggle');
@@ -220,4 +200,3 @@ function initThemeToggle() {
 
 // Initialize on load
 document.addEventListener('DOMContentLoaded', initDictionary);
-

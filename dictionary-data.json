@@ -21,6 +21,8 @@
       "symbol": "/ə/",
       "literal_translation": "habilidade, capacidade, talento, competência, aptidão",
       "contextual_translation": "Potencial para realizar algo bem.",
+      "audio_us": "lessons/the-sounds-of-english/audios/ability.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/ability.uk.mp3",
       "order": 67,
       "source": "the_sounds_of_english"
     },
@@ -34,6 +36,8 @@
       "symbol": "/aʊ/",
       "literal_translation": "conta, perfil, relatório, explicação, registro",
       "contextual_translation": "Registro financeiro ou perfil digital; também versão dos fatos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/account.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/account.uk.mp3",
       "order": 99,
       "source": "the_sounds_of_english"
     },
@@ -47,6 +51,8 @@
       "symbol": "/æ/",
       "literal_translation": "",
       "contextual_translation": "",
+      "audio_us": "lessons/the-sounds-of-english/audios/address.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/address.uk.mp3",
       "order": 14,
       "source": "the_sounds_of_english"
     },
@@ -60,6 +66,8 @@
       "symbol": "/eɪ/",
       "literal_translation": "idade, época, era, período, geração",
       "contextual_translation": "Quantidade de anos de vida ou tempo histórico.",
+      "audio_us": "lessons/the-sounds-of-english/audios/age.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/age.uk.mp3",
       "order": 76,
       "source": "the_sounds_of_english"
     },
@@ -73,6 +81,8 @@
       "symbol": "/eə/",
       "literal_translation": "ar, atmosfera, vento, brisa, aparência",
       "contextual_translation": "Substância que respiramos; pode indicar atitude (an air of...).",
+      "audio_us": "lessons/the-sounds-of-english/audios/air.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/air.uk.mp3",
       "order": 115,
       "source": "the_sounds_of_english"
     },
@@ -86,6 +96,8 @@
       "symbol": "/æ/",
       "literal_translation": "animal, bicho, criatura, ser vivo, espécie",
       "contextual_translation": "Ser vivo não humano; usado para falar de animais em geral.",
+      "audio_us": "lessons/the-sounds-of-english/audios/animal.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/animal.uk.mp3",
       "order": 13,
       "source": "the_sounds_of_english"
     },
@@ -99,6 +111,8 @@
       "symbol": "/z/",
       "literal_translation": "ansiedade, preocupação, nervosismo, apreensão, tensão",
       "contextual_translation": "Estado emocional de inquietação ou medo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/anxiety.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/anxiety.uk.mp3",
       "order": 194,
       "source": "the_sounds_of_english"
     },
@@ -112,6 +126,8 @@
       "symbol": "/ə/",
       "literal_translation": "compromisso, consulta, reunião, encontro, agendamento",
       "contextual_translation": "Hora marcada para se encontrar com alguém ou fazer algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/appointment.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/appointment.uk.mp3",
       "order": 66,
       "source": "the_sounds_of_english"
     },
@@ -125,6 +141,8 @@
       "symbol": "/ɑː/",
       "literal_translation": "arte, habilidade, técnica, talento, estética",
       "contextual_translation": "Produção criativa ou expressão de ideias/beleza.",
+      "audio_us": "lessons/the-sounds-of-english/audios/art.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/art.uk.mp3",
       "order": 42,
       "source": "the_sounds_of_english"
     },
@@ -138,6 +156,8 @@
       "symbol": "/ɑː/",
       "literal_translation": "artista, pintor, cantor, músico, criador",
       "contextual_translation": "Pessoa que cria obras ou atua em atividades artísticas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/artist.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/artist.uk.mp3",
       "order": 43,
       "source": "the_sounds_of_english"
     },
@@ -151,6 +171,8 @@
       "symbol": "/ʃ/",
       "literal_translation": "atenção, foco, cuidado, interesse, observação",
       "contextual_translation": "Ato de concentrar-se em algo ou alguém.",
+      "audio_us": "lessons/the-sounds-of-english/audios/attention.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/attention.uk.mp3",
       "order": 200,
       "source": "the_sounds_of_english"
     },
@@ -164,6 +186,8 @@
       "symbol": "/ɔː/",
       "literal_translation": "autor, escritor, criador, redator, responsável",
       "contextual_translation": "Pessoa que cria um texto, obra ou ideia.",
+      "audio_us": "lessons/the-sounds-of-english/audios/author.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/author.uk.mp3",
       "order": 49,
       "source": "the_sounds_of_english"
     },
@@ -177,6 +201,8 @@
       "symbol": "/æ/",
       "literal_translation": "banco, instituição financeira, margem, depósito, reservatório",
       "contextual_translation": "Principalmente instituição financeira onde se guarda dinheiro.",
+      "audio_us": "lessons/the-sounds-of-english/audios/bank.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/bank.uk.mp3",
       "order": 17,
       "source": "the_sounds_of_english"
     },
@@ -190,6 +216,8 @@
       "symbol": "/b/",
       "literal_translation": "praia, costa, litoral, areia, orla",
       "contextual_translation": "Área de areia junto ao mar ou lago.",
+      "audio_us": "lessons/the-sounds-of-english/audios/beach.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/beach.uk.mp3",
       "order": 132,
       "source": "the_sounds_of_english"
     },
@@ -203,6 +231,8 @@
       "symbol": "/ɪ/",
       "literal_translation": "conta, fatura, nota, cédula, projeto de lei",
       "contextual_translation": "Documento de cobrança, dinheiro em papel ou proposta de lei.",
+      "audio_us": "lessons/the-sounds-of-english/audios/bill.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/bill.uk.mp3",
       "order": 2,
       "source": "the_sounds_of_english"
     },
@@ -216,6 +246,8 @@
       "symbol": "/ɜː/",
       "literal_translation": "pássaro, ave, passarinho, criatura, animal",
       "contextual_translation": "Animal com asas e penas, capaz de voar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/bird.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/bird.uk.mp3",
       "order": 58,
       "source": "the_sounds_of_english"
     },
@@ -229,6 +261,8 @@
       "symbol": "/b/",
       "literal_translation": "aniversário, data, comemoração, celebração, nascimento",
       "contextual_translation": "Dia em que alguém nasceu ou a festa desse dia.",
+      "audio_us": "lessons/the-sounds-of-english/audios/birthday.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/birthday.uk.mp3",
       "order": 133,
       "source": "the_sounds_of_english"
     },
@@ -242,6 +276,8 @@
       "symbol": "/ɒ/",
       "literal_translation": "corpo, organismo, estrutura, grupo, entidade",
       "contextual_translation": "Pode se referir ao corpo físico ou a um grupo organizado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/body.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/body.uk.mp3",
       "order": 32,
       "source": "the_sounds_of_english"
     },
@@ -255,6 +291,8 @@
       "symbol": "/ʊ/",
       "literal_translation": "livro, caderno, obra, registro, volume",
       "contextual_translation": "Obra escrita; como verbo, to book = reservar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/book.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/book.uk.mp3",
       "order": 25,
       "source": "the_sounds_of_english"
     },
@@ -268,6 +306,8 @@
       "symbol": "/ɔɪ/",
       "literal_translation": "menino, garoto, rapaz, jovem, filho",
       "contextual_translation": "Pessoa do sexo masculino, geralmente criança/adolescente.",
+      "audio_us": "lessons/the-sounds-of-english/audios/boy.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/boy.uk.mp3",
       "order": 88,
       "source": "the_sounds_of_english"
     },
@@ -281,6 +321,8 @@
       "symbol": "/b/",
       "literal_translation": "pão, alimento, massa, fatia, sustento",
       "contextual_translation": "Produto de farinha assado; figurado para sustento.",
+      "audio_us": "lessons/the-sounds-of-english/audios/bread.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/bread.uk.mp3",
       "order": 135,
       "source": "the_sounds_of_english"
     },
@@ -294,6 +336,8 @@
       "symbol": "/b/",
       "literal_translation": "café da manhã, refeição, desjejum, lanche, alimentação",
       "contextual_translation": "Primeira refeição do dia.",
+      "audio_us": "lessons/the-sounds-of-english/audios/breakfast.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/breakfast.uk.mp3",
       "order": 134,
       "source": "the_sounds_of_english"
     },
@@ -307,6 +351,8 @@
       "symbol": "/dʒ/",
       "literal_translation": "ponte, ligação, conexão, passarela, travessia",
       "contextual_translation": "Estrutura que permite cruzar rios ou ligar dois pontos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/bridge.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/bridge.uk.mp3",
       "order": 265,
       "source": "the_sounds_of_english"
     },
@@ -320,6 +366,8 @@
       "symbol": "/b/",
       "literal_translation": "irmão, companheiro, colega, camarada, frade",
       "contextual_translation": "Parente masculino ou pessoa próxima em vínculo fraterno.",
+      "audio_us": "lessons/the-sounds-of-english/audios/brother.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/brother.uk.mp3",
       "order": 130,
       "source": "the_sounds_of_english"
     },
@@ -333,6 +381,8 @@
       "symbol": "/b/",
       "literal_translation": "orçamento, verba, plano, limite, despesa",
       "contextual_translation": "Planejamento de gastos ou quantia disponível.",
+      "audio_us": "lessons/the-sounds-of-english/audios/budget.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/budget.uk.mp3",
       "order": 131,
       "source": "the_sounds_of_english"
     },
@@ -346,6 +396,8 @@
       "symbol": "/ɪ/",
       "literal_translation": "negócio, empresa, comércio, setor, atividade",
       "contextual_translation": "Área profissional, empresa ou qualquer tipo de trabalho que gera lucro.",
+      "audio_us": "lessons/the-sounds-of-english/audios/business.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/business.uk.mp3",
       "order": 6,
       "source": "the_sounds_of_english"
     },
@@ -359,6 +411,8 @@
       "symbol": "/ɑː/",
       "literal_translation": "cartão, carta, bilhete, ficha, documento",
       "contextual_translation": "Peça retangular usada para pagamento, identificação ou mensagem.",
+      "audio_us": "lessons/the-sounds-of-english/audios/card.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/card.uk.mp3",
       "order": 47,
       "source": "the_sounds_of_english"
     },
@@ -372,6 +426,8 @@
       "symbol": "/eə/",
       "literal_translation": "cuidado, atenção, preocupação, zelo, tratamento",
       "contextual_translation": "Ato de cuidar ou demonstrar atenção.",
+      "audio_us": "lessons/the-sounds-of-english/audios/care.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/care.uk.mp3",
       "order": 114,
       "source": "the_sounds_of_english"
     },
@@ -385,6 +441,8 @@
       "symbol": "/ɪə/",
       "literal_translation": "carreira, profissão, trajetória, vida profissional, caminho",
       "contextual_translation": "Conjunto de experiências de trabalho ao longo da vida.",
+      "audio_us": "lessons/the-sounds-of-english/audios/career.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/career.uk.mp3",
       "order": 150,
       "source": "the_sounds_of_english"
     },
@@ -398,6 +456,8 @@
       "symbol": "/k/",
       "literal_translation": "carreira, profissão, trajetória, vida profissional, caminho",
       "contextual_translation": "Conjunto de experiências de trabalho ao longo da vida.",
+      "audio_us": "lessons/the-sounds-of-english/audios/career.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/career.uk.mp3",
       "order": 150,
       "source": "the_sounds_of_english"
     },
@@ -411,6 +471,8 @@
       "symbol": "/eə/",
       "literal_translation": "cadeira, assento, poltrona, posto, cargo",
       "contextual_translation": "Objeto para sentar ou posição de liderança (chairperson).",
+      "audio_us": "lessons/the-sounds-of-english/audios/chair.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/chair.uk.mp3",
       "order": 117,
       "source": "the_sounds_of_english"
     },
@@ -424,6 +486,8 @@
       "symbol": "/tʃ/",
       "literal_translation": "desafio, obstáculo, prova, teste, provocação",
       "contextual_translation": "Algo difícil que exige esforço para ser superado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/challenge.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/challenge.uk.mp3",
       "order": 256,
       "source": "the_sounds_of_english"
     },
@@ -437,6 +501,8 @@
       "symbol": "/tʃ/",
       "literal_translation": "canal, meio, via, emissora, trajeto",
       "contextual_translation": "Meio de comunicação ou passagem física.",
+      "audio_us": "lessons/the-sounds-of-english/audios/channel.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/channel.uk.mp3",
       "order": 258,
       "source": "the_sounds_of_english"
     },
@@ -450,6 +516,8 @@
       "symbol": "/tʃ/",
       "literal_translation": "capítulo, parte, seção, etapa, episódio",
       "contextual_translation": "Divisão de um livro ou fase de um processo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/chapter.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/chapter.uk.mp3",
       "order": 257,
       "source": "the_sounds_of_english"
     },
@@ -463,6 +531,8 @@
       "symbol": "/tʃ/",
       "literal_translation": "infância, fase, juventude, período, começo",
       "contextual_translation": "Período inicial da vida de uma pessoa.",
+      "audio_us": "lessons/the-sounds-of-english/audios/childhood.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/childhood.uk.mp3",
       "order": 259,
       "source": "the_sounds_of_english"
     },
@@ -476,6 +546,8 @@
       "symbol": "/tʃ/",
       "literal_translation": "chocolate, doce, bombom, barra, cacau",
       "contextual_translation": "Alimento feito de cacau; sobremesa popular.",
+      "audio_us": "lessons/the-sounds-of-english/audios/chocolate.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/chocolate.uk.mp3",
       "order": 261,
       "source": "the_sounds_of_english"
     },
@@ -489,6 +561,8 @@
       "symbol": "/tʃ/",
       "literal_translation": "igreja, templo, congregação, culto, instituição",
       "contextual_translation": "Local ou organização religiosa cristã.",
+      "audio_us": "lessons/the-sounds-of-english/audios/church.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/church.uk.mp3",
       "order": 260,
       "source": "the_sounds_of_english"
     },
@@ -502,6 +576,8 @@
       "symbol": "/ɪ/",
       "literal_translation": "cidade, metrópole, capital, centro urbano, área urbana",
       "contextual_translation": "Grande local com população, serviços e comércio concentrados.",
+      "audio_us": "lessons/the-sounds-of-english/audios/city.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/city.uk.mp3",
       "order": 4,
       "source": "the_sounds_of_english"
     },
@@ -515,6 +591,8 @@
       "symbol": "/æ/",
       "literal_translation": "aula, turma, categoria, tipo, grupo",
       "contextual_translation": "Usado para falar de aulas ou divisões por nível ou tipo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/class.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/class.uk.mp3",
       "order": 18,
       "source": "the_sounds_of_english"
     },
@@ -528,6 +606,8 @@
       "symbol": "/k/",
       "literal_translation": "relógio, tempo, horário, cronômetro, marcação",
       "contextual_translation": "Aparelho que mede e mostra o tempo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/clock.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/clock.uk.mp3",
       "order": 149,
       "source": "the_sounds_of_english"
     },
@@ -541,6 +621,8 @@
       "symbol": "/oʊ/",
       "literal_translation": "roupas, vestes, trajes, peças, vestimenta",
       "contextual_translation": "Conjunto de peças usadas para se vestir.",
+      "audio_us": "lessons/the-sounds-of-english/audios/clothes.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/clothes.uk.mp3",
       "order": 103,
       "source": "the_sounds_of_english"
     },
@@ -554,6 +636,8 @@
       "symbol": "/ʊ/",
       "literal_translation": "roupas, vestes, trajes, peças, vestimenta",
       "contextual_translation": "Conjunto de peças usadas para se vestir.",
+      "audio_us": "lessons/the-sounds-of-english/audios/clothes.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/clothes.uk.mp3",
       "order": 103,
       "source": "the_sounds_of_english"
     },
@@ -567,6 +651,8 @@
       "symbol": "/ð/",
       "literal_translation": "roupa, vestimenta, traje, peça, uniforme",
       "contextual_translation": "Termo geral para roupas ou itens de vestir.",
+      "audio_us": "lessons/the-sounds-of-english/audios/clothing.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/clothing.uk.mp3",
       "order": 179,
       "source": "the_sounds_of_english"
     },
@@ -580,6 +666,8 @@
       "symbol": "/aʊ/",
       "literal_translation": "nuvem, névoa, sombra, massa, acúmulo",
       "contextual_translation": "Conjunto de gotículas no céu; também computação em nuvem.",
+      "audio_us": "lessons/the-sounds-of-english/audios/cloud.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/cloud.uk.mp3",
       "order": 95,
       "source": "the_sounds_of_english"
     },
@@ -593,6 +681,8 @@
       "symbol": "/k/",
       "literal_translation": "frio, resfriado, gelado, doença, indiferença",
       "contextual_translation": "Baixa temperatura ou estado gripal.",
+      "audio_us": "lessons/the-sounds-of-english/audios/cold.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/cold.uk.mp3",
       "order": 148,
       "source": "the_sounds_of_english"
     },
@@ -606,6 +696,8 @@
       "symbol": "/k/",
       "literal_translation": "faculdade, universidade, instituição, escola, campus",
       "contextual_translation": "Local de ensino superior; não é colégio (false friend).",
+      "audio_us": "lessons/the-sounds-of-english/audios/college.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/college.uk.mp3",
       "order": 151,
       "source": "the_sounds_of_english"
     },
@@ -619,6 +711,8 @@
       "symbol": "/ə/",
       "literal_translation": "cor, tonalidade, pigmento, matiz, aparência",
       "contextual_translation": "Característica visual determinada pela luz refletida.",
+      "audio_us": "lessons/the-sounds-of-english/audios/color.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/color.uk.mp3",
       "order": 69,
       "source": "the_sounds_of_english"
     },
@@ -632,6 +726,8 @@
       "symbol": "/ə/",
       "literal_translation": "comunidade, grupo, sociedade, coletividade, bairro",
       "contextual_translation": "Conjunto de pessoas que compartilham espaço, interesse ou identidade.",
+      "audio_us": "lessons/the-sounds-of-english/audios/community.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/community.uk.mp3",
       "order": 72,
       "source": "the_sounds_of_english"
     },
@@ -645,6 +741,8 @@
       "symbol": "/ʌ/",
       "literal_translation": "empresa, companhia, firma, sociedade, grupo",
       "contextual_translation": "Organização comercial; também companhia no sentido de presença.",
+      "audio_us": "lessons/the-sounds-of-english/audios/company.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/company.uk.mp3",
       "order": 24,
       "source": "the_sounds_of_english"
     },
@@ -658,6 +756,8 @@
       "symbol": "/ʒ/",
       "literal_translation": "conclusão, fim, encerramento, resultado, dedução",
       "contextual_translation": "Parte final de algo ou ideia formada após análise.",
+      "audio_us": "lessons/the-sounds-of-english/audios/conclusion.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/conclusion.uk.mp3",
       "order": 204,
       "source": "the_sounds_of_english"
     },
@@ -671,6 +771,8 @@
       "symbol": "/ʒ/",
       "literal_translation": "confusão, desordem, engano, equívoco, dúvida",
       "contextual_translation": "Estado mental de incerteza ou mistura de ideias.",
+      "audio_us": "lessons/the-sounds-of-english/audios/confusion.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/confusion.uk.mp3",
       "order": 206,
       "source": "the_sounds_of_english"
     },
@@ -684,6 +786,8 @@
       "symbol": "/k/",
       "literal_translation": "conexão, ligação, vínculo, relação, contato",
       "contextual_translation": "Associação entre pessoas ou coisas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/connection.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/connection.uk.mp3",
       "order": 152,
       "source": "the_sounds_of_english"
     },
@@ -697,6 +801,8 @@
       "symbol": "/k/",
       "literal_translation": "conversa, diálogo, bate-papo, discussão, comunicação",
       "contextual_translation": "Troca oral de ideias entre pessoas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/conversation.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/conversation.uk.mp3",
       "order": 153,
       "source": "the_sounds_of_english"
     },
@@ -710,6 +816,8 @@
       "symbol": "/ʌ/",
       "literal_translation": "país, nação, interior, território, estado",
       "contextual_translation": "Área ou nação com governo próprio; também “zona rural” (the country).",
+      "audio_us": "lessons/the-sounds-of-english/audios/country.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/country.uk.mp3",
       "order": 22,
       "source": "the_sounds_of_english"
     },
@@ -723,6 +831,8 @@
       "symbol": "/ɔː/",
       "literal_translation": "curso, trajetória, caminho, disciplina, direção",
       "contextual_translation": "Conjunto de aulas ou caminho a seguir (literal/figurado).",
+      "audio_us": "lessons/the-sounds-of-english/audios/course.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/course.uk.mp3",
       "order": 50,
       "source": "the_sounds_of_english"
     },
@@ -736,6 +846,8 @@
       "symbol": "/ʌ/",
       "literal_translation": "cultura, civilização, educação, costume, tradição",
       "contextual_translation": "Conjunto de hábitos, valores e práticas de um povo ou grupo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/culture.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/culture.uk.mp3",
       "order": 23,
       "source": "the_sounds_of_english"
     },
@@ -749,6 +861,8 @@
       "symbol": "/d/",
       "literal_translation": "perigo, risco, ameaça, vulnerabilidade, dano",
       "contextual_translation": "Situação que pode causar prejuízo ou ferimento.",
+      "audio_us": "lessons/the-sounds-of-english/audios/danger.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/danger.uk.mp3",
       "order": 146,
       "source": "the_sounds_of_english"
     },
@@ -762,6 +876,8 @@
       "symbol": "/ɔː/",
       "literal_translation": "filha, menina, mulher, descendente, herdeira",
       "contextual_translation": "Filha do ponto de vista dos pais.",
+      "audio_us": "lessons/the-sounds-of-english/audios/daughter.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/daughter.uk.mp3",
       "order": 53,
       "source": "the_sounds_of_english"
     },
@@ -775,6 +891,8 @@
       "symbol": "/eɪ/",
       "literal_translation": "dia, jornada, período, data, tempo",
       "contextual_translation": "Unidade de tempo de 24 h; também usado para rotina.",
+      "audio_us": "lessons/the-sounds-of-english/audios/day.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/day.uk.mp3",
       "order": 77,
       "source": "the_sounds_of_english"
     },
@@ -788,6 +906,8 @@
       "symbol": "/ʒ/",
       "literal_translation": "decisão, escolha, resolução, determinação, julgamento",
       "contextual_translation": "Ato de optar por algo após análise.",
+      "audio_us": "lessons/the-sounds-of-english/audios/decision.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/decision.uk.mp3",
       "order": 202,
       "source": "the_sounds_of_english"
     },
@@ -801,6 +921,8 @@
       "symbol": "/z/",
       "literal_translation": "design, projeto, desenho, criação, planejamento",
       "contextual_translation": "Concepção visual ou funcional de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/design.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/design.uk.mp3",
       "order": 192,
       "source": "the_sounds_of_english"
     },
@@ -814,6 +936,8 @@
       "symbol": "/d/",
       "literal_translation": "jantar, refeição, banquete, ceia, comida",
       "contextual_translation": "Principal refeição do dia, geralmente à noite.",
+      "audio_us": "lessons/the-sounds-of-english/audios/dinner.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/dinner.uk.mp3",
       "order": 144,
       "source": "the_sounds_of_english"
     },
@@ -827,6 +951,8 @@
       "symbol": "/ʊə/",
       "literal_translation": "divulgação, revelação, exposição, anúncio, comunicação",
       "contextual_translation": "Ato de tornar algo conhecido publicamente.",
+      "audio_us": "lessons/the-sounds-of-english/audios/disclosure.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/disclosure.uk.mp3",
       "order": 123,
       "source": "the_sounds_of_english"
     },
@@ -840,6 +966,8 @@
       "symbol": "/d/",
       "literal_translation": "médico, doutor, especialista, clínico, profissional de saúde",
       "contextual_translation": "Pessoa habilitada a exercer medicina ou doutorado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/doctor.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/doctor.uk.mp3",
       "order": 142,
       "source": "the_sounds_of_english"
     },
@@ -853,6 +981,8 @@
       "symbol": "/d/",
       "literal_translation": "documento, registro, arquivo, prova, papel",
       "contextual_translation": "Arquivo físico ou digital que contém informações.",
+      "audio_us": "lessons/the-sounds-of-english/audios/document.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/document.uk.mp3",
       "order": 143,
       "source": "the_sounds_of_english"
     },
@@ -866,6 +996,8 @@
       "symbol": "/ɒ/",
       "literal_translation": "dólar, moeda, dinheiro, grana, valor",
       "contextual_translation": "Unidade monetária usada nos EUA e em outros países.",
+      "audio_us": "lessons/the-sounds-of-english/audios/dollar.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/dollar.uk.mp3",
       "order": 33,
       "source": "the_sounds_of_english"
     },
@@ -879,6 +1011,8 @@
       "symbol": "/ɔː/",
       "literal_translation": "porta, entrada, passagem, portão, acesso",
       "contextual_translation": "Estrutura que permite entrar ou sair de um espaço.",
+      "audio_us": "lessons/the-sounds-of-english/audios/door.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/door.uk.mp3",
       "order": 52,
       "source": "the_sounds_of_english"
     },
@@ -892,6 +1026,8 @@
       "symbol": "/d/",
       "literal_translation": "sonho, ideal, desejo, ilusão, meta",
       "contextual_translation": "Imagens durante o sono ou aspiração pessoal.",
+      "audio_us": "lessons/the-sounds-of-english/audios/dream.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/dream.uk.mp3",
       "order": 145,
       "source": "the_sounds_of_english"
     },
@@ -905,6 +1041,8 @@
       "symbol": "/d/",
       "literal_translation": "motorista, condutor, operador, chofer, guia",
       "contextual_translation": "Pessoa que dirige um veículo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/driver.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/driver.uk.mp3",
       "order": 147,
       "source": "the_sounds_of_english"
     },
@@ -918,6 +1056,8 @@
       "symbol": "/ɪə/",
       "literal_translation": "ouvido, orelha, escuta, audição, percepção",
       "contextual_translation": "Órgão responsável pela audição.",
+      "audio_us": "lessons/the-sounds-of-english/audios/ear.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/ear.uk.mp3",
       "order": 107,
       "source": "the_sounds_of_english"
     },
@@ -931,6 +1071,8 @@
       "symbol": "/θ/",
       "literal_translation": "terra, solo, planeta, mundo, chão",
       "contextual_translation": "O planeta em que vivemos ou o chão físico.",
+      "audio_us": "lessons/the-sounds-of-english/audios/earth.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/earth.uk.mp3",
       "order": 175,
       "source": "the_sounds_of_english"
     },
@@ -944,6 +1086,8 @@
       "symbol": "/e/",
       "literal_translation": "educação, ensino, instrução, formação, aprendizado",
       "contextual_translation": "Processo de adquirir conhecimento e desenvolver habilidades.",
+      "audio_us": "lessons/the-sounds-of-english/audios/education.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/education.uk.mp3",
       "order": 11,
       "source": "the_sounds_of_english"
     },
@@ -957,6 +1101,8 @@
       "symbol": "/ɔɪ/",
       "literal_translation": "empregado, funcionário, colaborador, trabalhador, assistente",
       "contextual_translation": "Pessoa que trabalha em uma empresa sob contrato.",
+      "audio_us": "lessons/the-sounds-of-english/audios/employee.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/employee.uk.mp3",
       "order": 93,
       "source": "the_sounds_of_english"
     },
@@ -970,6 +1116,8 @@
       "symbol": "/e/",
       "literal_translation": "fim, término, final, objetivo, conclusão",
       "contextual_translation": "Ponto em que algo se encerra ou atinge seu propósito.",
+      "audio_us": "lessons/the-sounds-of-english/audios/end.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/end.uk.mp3",
       "order": 7,
       "source": "the_sounds_of_english"
     },
@@ -983,6 +1131,8 @@
       "symbol": "/ɪə/",
       "literal_translation": "engenheiro, técnico, projetista, especialista, inventor",
       "contextual_translation": "Profissional que aplica ciência e técnica para criar soluções.",
+      "audio_us": "lessons/the-sounds-of-english/audios/engineer.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/engineer.uk.mp3",
       "order": 111,
       "source": "the_sounds_of_english"
     },
@@ -996,6 +1146,8 @@
       "symbol": "/iː/",
       "literal_translation": "igual, equivalente, justo, equilibrado, idêntico",
       "contextual_translation": "Indica igualdade em valor, quantidade ou condição.",
+      "audio_us": "lessons/the-sounds-of-english/audios/equal.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/equal.uk.mp3",
       "order": 36,
       "source": "the_sounds_of_english"
     },
@@ -1009,6 +1161,8 @@
       "symbol": "/ʒ/",
       "literal_translation": "equação, igualdade, relação, expressão, fórmula",
       "contextual_translation": "Igualdade matemática ou relação lógica.",
+      "audio_us": "lessons/the-sounds-of-english/audios/equation.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/equation.uk.mp3",
       "order": 207,
       "source": "the_sounds_of_english"
     },
@@ -1022,6 +1176,8 @@
       "symbol": "/ŋ/",
       "literal_translation": "noite, entardecer, fim de tarde, crepúsculo, período",
       "contextual_translation": "Parte do dia após o pôr do sol.",
+      "audio_us": "lessons/the-sounds-of-english/audios/evening.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/evening.uk.mp3",
       "order": 227,
       "source": "the_sounds_of_english"
     },
@@ -1035,6 +1191,8 @@
       "symbol": "/z/",
       "literal_translation": "exemplo, modelo, caso, ilustração, amostra",
       "contextual_translation": "Algo que serve para demonstrar ou explicar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/example.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/example.uk.mp3",
       "order": 191,
       "source": "the_sounds_of_english"
     },
@@ -1048,6 +1206,8 @@
       "symbol": "/aɪ/",
       "literal_translation": "olho, visão, olhar, perspectiva, atenção",
       "contextual_translation": "Órgão da visão ou ponto de vista de alguém.",
+      "audio_us": "lessons/the-sounds-of-english/audios/eye.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/eye.uk.mp3",
       "order": 83,
       "source": "the_sounds_of_english"
     },
@@ -1061,6 +1221,8 @@
       "symbol": "/f/",
       "literal_translation": "rosto, expressão, aparência, fachada, superfície",
       "contextual_translation": "Parte frontal da cabeça; também aparência de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/face.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/face.uk.mp3",
       "order": 161,
       "source": "the_sounds_of_english"
     },
@@ -1074,6 +1236,8 @@
       "symbol": "/eə/",
       "literal_translation": "justo, claro, honesto, razoável, feira",
       "contextual_translation": "Pode significar justo ou um evento público (a fair).",
+      "audio_us": "lessons/the-sounds-of-english/audios/fair.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/fair.uk.mp3",
       "order": 116,
       "source": "the_sounds_of_english"
     },
@@ -1087,6 +1251,8 @@
       "symbol": "/æ/",
       "literal_translation": "família, lar, parentes, núcleo, clã",
       "contextual_translation": "Grupo de pessoas ligadas por parentesco ou convivência.",
+      "audio_us": "lessons/the-sounds-of-english/audios/family.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/family.uk.mp3",
       "order": 15,
       "source": "the_sounds_of_english"
     },
@@ -1100,6 +1266,8 @@
       "symbol": "/f/",
       "literal_translation": "moda, estilo, tendência, costume, elegância",
       "contextual_translation": "Modo popular de se vestir ou se comportar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/fashion.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/fashion.uk.mp3",
       "order": 164,
       "source": "the_sounds_of_english"
     },
@@ -1113,6 +1281,8 @@
       "symbol": "/ð/",
       "literal_translation": "pai, genitor, progenitor, patriarca, cuidador",
       "contextual_translation": "Homem que gera ou cria filhos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/father.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/father.uk.mp3",
       "order": 183,
       "source": "the_sounds_of_english"
     },
@@ -1126,6 +1296,8 @@
       "symbol": "/f/",
       "literal_translation": "favorito, preferido, querido, amado, principal",
       "contextual_translation": "O que se prefere em relação aos demais.",
+      "audio_us": "lessons/the-sounds-of-english/audios/favorite.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/favorite.uk.mp3",
       "order": 162,
       "source": "the_sounds_of_english"
     },
@@ -1139,6 +1311,8 @@
       "symbol": "/ɪə/",
       "literal_translation": "fogo, incêndio, tiro, disparo, demissão",
       "contextual_translation": "Fenômeno de combustão; também demitir (verbo).",
+      "audio_us": "lessons/the-sounds-of-english/audios/fire.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/fire.uk.mp3",
       "order": 108,
       "source": "the_sounds_of_english"
     },
@@ -1152,6 +1326,8 @@
       "symbol": "/oʊ/",
       "literal_translation": "fluxo, corrente, movimento, andamento, fluidez",
       "contextual_translation": "Movimento contínuo de algo, como água ou ideias.",
+      "audio_us": "lessons/the-sounds-of-english/audios/flow.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/flow.uk.mp3",
       "order": 105,
       "source": "the_sounds_of_english"
     },
@@ -1165,6 +1341,8 @@
       "symbol": "/aʊ/",
       "literal_translation": "flor, planta, botão, espécie, enfeite",
       "contextual_translation": "Parte colorida das plantas; símbolo de beleza e afeto.",
+      "audio_us": "lessons/the-sounds-of-english/audios/flower.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/flower.uk.mp3",
       "order": 97,
       "source": "the_sounds_of_english"
     },
@@ -1178,6 +1356,8 @@
       "symbol": "/f/",
       "literal_translation": "estrangeiro, externo, internacional, de fora, alheio",
       "contextual_translation": "Relacionado a outro país ou cultura.",
+      "audio_us": "lessons/the-sounds-of-english/audios/foreign.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/foreign.uk.mp3",
       "order": 160,
       "source": "the_sounds_of_english"
     },
@@ -1191,6 +1371,8 @@
       "symbol": "/f/",
       "literal_translation": "liberdade, independência, autonomia, direito, soltura",
       "contextual_translation": "Estado de estar livre de restrições.",
+      "audio_us": "lessons/the-sounds-of-english/audios/freedom.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/freedom.uk.mp3",
       "order": 163,
       "source": "the_sounds_of_english"
     },
@@ -1204,6 +1386,8 @@
       "symbol": "/e/",
       "literal_translation": "amigo, amiga, colega, parceiro, aliado",
       "contextual_translation": "Pessoa próxima com quem se tem vínculo de confiança.",
+      "audio_us": "lessons/the-sounds-of-english/audios/friend.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/friend.uk.mp3",
       "order": 10,
       "source": "the_sounds_of_english"
     },
@@ -1217,6 +1401,8 @@
       "symbol": "/ə/",
       "literal_translation": "futuro, porvir, destino, perspectiva, tempo adiante",
       "contextual_translation": "Tempo que ainda não aconteceu; o que virá.",
+      "audio_us": "lessons/the-sounds-of-english/audios/future.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/future.uk.mp3",
       "order": 71,
       "source": "the_sounds_of_english"
     },
@@ -1230,6 +1416,8 @@
       "symbol": "/eɪ/",
       "literal_translation": "jogo, partida, competição, brincadeira, estratégia",
       "contextual_translation": "Atividade recreativa ou esportiva com regras.",
+      "audio_us": "lessons/the-sounds-of-english/audios/game.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/game.uk.mp3",
       "order": 81,
       "source": "the_sounds_of_english"
     },
@@ -1243,6 +1431,8 @@
       "symbol": "/g/",
       "literal_translation": "jardim, horta, quintal, parque, terreno",
       "contextual_translation": "Área cultivada com plantas ou flores.",
+      "audio_us": "lessons/the-sounds-of-english/audios/garden.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/garden.uk.mp3",
       "order": 155,
       "source": "the_sounds_of_english"
     },
@@ -1256,6 +1446,8 @@
       "symbol": "/g/",
       "literal_translation": "portão, entrada, saída, passagem, barreira",
       "contextual_translation": "Estrutura que controla o acesso a um local.",
+      "audio_us": "lessons/the-sounds-of-english/audios/gate.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/gate.uk.mp3",
       "order": 159,
       "source": "the_sounds_of_english"
     },
@@ -1269,6 +1461,8 @@
       "symbol": "/ɜː/",
       "literal_translation": "menina, garota, moça, jovem, filha",
       "contextual_translation": "Pessoa do sexo feminino, especialmente jovem.",
+      "audio_us": "lessons/the-sounds-of-english/audios/girl.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/girl.uk.mp3",
       "order": 57,
       "source": "the_sounds_of_english"
     },
@@ -1282,6 +1476,8 @@
       "symbol": "/ʊ/",
       "literal_translation": "objetivo, meta, alvo, propósito, gol",
       "contextual_translation": "Resultado desejado ou ponto marcado em esportes.",
+      "audio_us": "lessons/the-sounds-of-english/audios/goal.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/goal.uk.mp3",
       "order": 28,
       "source": "the_sounds_of_english"
     },
@@ -1295,6 +1491,8 @@
       "symbol": "/g/",
       "literal_translation": "ouro, riqueza, metal, prêmio, cor dourada",
       "contextual_translation": "Metal precioso; símbolo de valor e excelência.",
+      "audio_us": "lessons/the-sounds-of-english/audios/gold.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/gold.uk.mp3",
       "order": 157,
       "source": "the_sounds_of_english"
     },
@@ -1308,6 +1506,8 @@
       "symbol": "/g/",
       "literal_translation": "governo, administração, autoridade, gestão, poder",
       "contextual_translation": "Sistema que dirige um país ou instituição.",
+      "audio_us": "lessons/the-sounds-of-english/audios/government.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/government.uk.mp3",
       "order": 158,
       "source": "the_sounds_of_english"
     },
@@ -1321,6 +1521,8 @@
       "symbol": "/ð/",
       "literal_translation": "avó, vó, matriarca, ancestral, senhora",
       "contextual_translation": "Mãe do pai ou da mãe; figura afetiva feminina.",
+      "audio_us": "lessons/the-sounds-of-english/audios/grandmother.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/grandmother.uk.mp3",
       "order": 180,
       "source": "the_sounds_of_english"
     },
@@ -1334,6 +1536,8 @@
       "symbol": "/g/",
       "literal_translation": "grupo, equipe, turma, conjunto, categoria",
       "contextual_translation": "Conjunto de pessoas ou elementos com algo em comum.",
+      "audio_us": "lessons/the-sounds-of-english/audios/group.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/group.uk.mp3",
       "order": 154,
       "source": "the_sounds_of_english"
     },
@@ -1347,6 +1551,8 @@
       "symbol": "/g/",
       "literal_translation": "convidado, hóspede, visitante, participante, cliente",
       "contextual_translation": "Pessoa recebida em evento ou hospedagem.",
+      "audio_us": "lessons/the-sounds-of-english/audios/guest.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/guest.uk.mp3",
       "order": 156,
       "source": "the_sounds_of_english"
     },
@@ -1360,6 +1566,8 @@
       "symbol": "/h/",
       "literal_translation": "hábito, costume, prática, rotina, vício",
       "contextual_translation": "Comportamento repetido frequentemente.",
+      "audio_us": "lessons/the-sounds-of-english/audios/habit.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/habit.uk.mp3",
       "order": 212,
       "source": "the_sounds_of_english"
     },
@@ -1373,6 +1581,8 @@
       "symbol": "/eə/",
       "literal_translation": "cabelo, fio, pelos, penteado, madeixa",
       "contextual_translation": "Conjunto de fios que crescem na cabeça ou corpo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/hair.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/hair.uk.mp3",
       "order": 112,
       "source": "the_sounds_of_english"
     },
@@ -1386,6 +1596,8 @@
       "symbol": "/h/",
       "literal_translation": "felicidade, alegria, contentamento, prazer, satisfação",
       "contextual_translation": "Estado de bem-estar e emoção positiva.",
+      "audio_us": "lessons/the-sounds-of-english/audios/happiness.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/happiness.uk.mp3",
       "order": 213,
       "source": "the_sounds_of_english"
     },
@@ -1399,6 +1611,8 @@
       "symbol": "/e/",
       "literal_translation": "cabeça, chefe, líder, topo, direção",
       "contextual_translation": "Parte superior ou pessoa que lidera algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/head.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/head.uk.mp3",
       "order": 8,
       "source": "the_sounds_of_english"
     },
@@ -1412,6 +1626,8 @@
       "symbol": "/θ/",
       "literal_translation": "saúde, bem-estar, vitalidade, vigor, sanidade",
       "contextual_translation": "Estado físico e mental equilibrado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/health.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/health.uk.mp3",
       "order": 172,
       "source": "the_sounds_of_english"
     },
@@ -1425,6 +1641,8 @@
       "symbol": "/ɑː/",
       "literal_translation": "coração, centro, essência, sentimento, coragem",
       "contextual_translation": "Órgão vital ou símbolo de emoção e afeto.",
+      "audio_us": "lessons/the-sounds-of-english/audios/heart.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/heart.uk.mp3",
       "order": 44,
       "source": "the_sounds_of_english"
     },
@@ -1438,6 +1656,8 @@
       "symbol": "/e/",
       "literal_translation": "ajuda, apoio, auxílio, socorro, assistência",
       "contextual_translation": "Ato de oferecer suporte a alguém em uma situação.",
+      "audio_us": "lessons/the-sounds-of-english/audios/help.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/help.uk.mp3",
       "order": 9,
       "source": "the_sounds_of_english"
     },
@@ -1451,6 +1671,8 @@
       "symbol": "/h/",
       "literal_translation": "história, passado, registro, narrativa, trajetória",
       "contextual_translation": "Estudo ou relato de eventos passados.",
+      "audio_us": "lessons/the-sounds-of-english/audios/history.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/history.uk.mp3",
       "order": 208,
       "source": "the_sounds_of_english"
     },
@@ -1464,6 +1686,8 @@
       "symbol": "/h/",
       "literal_translation": "feriado, férias, descanso, celebração, viagem",
       "contextual_translation": "Período de pausa ou comemoração.",
+      "audio_us": "lessons/the-sounds-of-english/audios/holiday.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/holiday.uk.mp3",
       "order": 209,
       "source": "the_sounds_of_english"
     },
@@ -1477,6 +1701,8 @@
       "symbol": "/oʊ/",
       "literal_translation": "lar, casa, residência, moradia, origem",
       "contextual_translation": "Lugar onde alguém vive ou sente pertencimento.",
+      "audio_us": "lessons/the-sounds-of-english/audios/home.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/home.uk.mp3",
       "order": 102,
       "source": "the_sounds_of_english"
     },
@@ -1490,6 +1716,8 @@
       "symbol": "/h/",
       "literal_translation": "hospital, clínica, centro médico, instituição, enfermaria",
       "contextual_translation": "Local onde se tratam pessoas doentes.",
+      "audio_us": "lessons/the-sounds-of-english/audios/hospital.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/hospital.uk.mp3",
       "order": 210,
       "source": "the_sounds_of_english"
     },
@@ -1503,6 +1731,8 @@
       "symbol": "/oʊ/",
       "literal_translation": "hotel, hospedagem, albergue, pousada, acomodação",
       "contextual_translation": "Local comercial onde pessoas dormem temporariamente.",
+      "audio_us": "lessons/the-sounds-of-english/audios/hotel.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/hotel.uk.mp3",
       "order": 101,
       "source": "the_sounds_of_english"
     },
@@ -1516,6 +1746,8 @@
       "symbol": "/aʊ/",
       "literal_translation": "hora, período, tempo, duração, momento",
       "contextual_translation": "Unidade de tempo; pode indicar o momento certo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/hour.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/hour.uk.mp3",
       "order": 94,
       "source": "the_sounds_of_english"
     },
@@ -1529,6 +1761,8 @@
       "symbol": "/j/",
       "literal_translation": "humano, pessoa, ser, indivíduo, gente",
       "contextual_translation": "Relacionado a seres humanos; também qualidade de empatia.",
+      "audio_us": "lessons/the-sounds-of-english/audios/human.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/human.uk.mp3",
       "order": 255,
       "source": "the_sounds_of_english"
     },
@@ -1542,6 +1776,8 @@
       "symbol": "/h/",
       "literal_translation": "marido, esposo, companheiro, cônjuge, parceiro",
       "contextual_translation": "Homem casado ou em união estável.",
+      "audio_us": "lessons/the-sounds-of-english/audios/husband.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/husband.uk.mp3",
       "order": 211,
       "source": "the_sounds_of_english"
     },
@@ -1555,6 +1791,8 @@
       "symbol": "/aɪ/",
       "literal_translation": "ideia, pensamento, noção, conceito, opinião",
       "contextual_translation": "Representação mental de algo; plano.",
+      "audio_us": "lessons/the-sounds-of-english/audios/idea.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/idea.uk.mp3",
       "order": 109,
       "source": "the_sounds_of_english"
     },
@@ -1568,6 +1806,8 @@
       "symbol": "/ɪə/",
       "literal_translation": "ideia, pensamento, noção, conceito, opinião",
       "contextual_translation": "Representação mental de algo; plano.",
+      "audio_us": "lessons/the-sounds-of-english/audios/idea.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/idea.uk.mp3",
       "order": 109,
       "source": "the_sounds_of_english"
     },
@@ -1581,6 +1821,8 @@
       "symbol": "/ʃ/",
       "literal_translation": "internacional, mundial, global, estrangeiro, exterior",
       "contextual_translation": "Relativo a mais de um país ou escala global.",
+      "audio_us": "lessons/the-sounds-of-english/audios/international.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/international.uk.mp3",
       "order": 201,
       "source": "the_sounds_of_english"
     },
@@ -1594,6 +1836,8 @@
       "symbol": "/aɪ/",
       "literal_translation": "ilha, ilhota, território, refúgio, região",
       "contextual_translation": "Território cercado por água; também uso figurado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/island.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/island.uk.mp3",
       "order": 84,
       "source": "the_sounds_of_english"
     },
@@ -1607,6 +1851,8 @@
       "symbol": "/ʃ/",
       "literal_translation": "questão, problema, tema, assunto, edição",
       "contextual_translation": "Tópico em debate ou situação a resolver.",
+      "audio_us": "lessons/the-sounds-of-english/audios/issue.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/issue.uk.mp3",
       "order": 199,
       "source": "the_sounds_of_english"
     },
@@ -1620,6 +1866,8 @@
       "symbol": "/aɪ/",
       "literal_translation": "item, artigo, produto, objeto, elemento",
       "contextual_translation": "Unidade individual dentro de uma lista ou conjunto.",
+      "audio_us": "lessons/the-sounds-of-english/audios/item.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/item.uk.mp3",
       "order": 86,
       "source": "the_sounds_of_english"
     },
@@ -1633,6 +1881,8 @@
       "symbol": "/dʒ/",
       "literal_translation": "jaqueta, casaco, blazer, paletó, capa",
       "contextual_translation": "Peça de roupa usada sobre o tronco para frio/proteção.",
+      "audio_us": "lessons/the-sounds-of-english/audios/jacket.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/jacket.uk.mp3",
       "order": 264,
       "source": "the_sounds_of_english"
     },
@@ -1646,6 +1896,8 @@
       "symbol": "/dʒ/",
       "literal_translation": "trabalho, emprego, função, cargo, tarefa",
       "contextual_translation": "Atividade profissional exercida por alguém.",
+      "audio_us": "lessons/the-sounds-of-english/audios/job.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/job.uk.mp3",
       "order": 262,
       "source": "the_sounds_of_english"
     },
@@ -1659,6 +1911,8 @@
       "symbol": "/dʒ/",
       "literal_translation": "piada, brincadeira, gracejo, trote, ironia",
       "contextual_translation": "Algo dito ou feito para provocar riso.",
+      "audio_us": "lessons/the-sounds-of-english/audios/joke.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/joke.uk.mp3",
       "order": 263,
       "source": "the_sounds_of_english"
     },
@@ -1672,6 +1926,8 @@
       "symbol": "/ɪ/",
       "literal_translation": "criança, menino, menina, jovem, garoto",
       "contextual_translation": "Termo informal para se referir a uma criança ou pessoa jovem.",
+      "audio_us": "lessons/the-sounds-of-english/audios/kid.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/kid.uk.mp3",
       "order": 1,
       "source": "the_sounds_of_english"
     },
@@ -1685,6 +1941,8 @@
       "symbol": "/ŋ/",
       "literal_translation": "rei, soberano, monarca, governante, líder",
       "contextual_translation": "Homem que governa um reino; figura de autoridade.",
+      "audio_us": "lessons/the-sounds-of-english/audios/king.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/king.uk.mp3",
       "order": 229,
       "source": "the_sounds_of_english"
     },
@@ -1698,6 +1956,8 @@
       "symbol": "/n/",
       "literal_translation": "joelho, articulação, dobra, perna, parte",
       "contextual_translation": "Articulação que liga a coxa à perna.",
+      "audio_us": "lessons/the-sounds-of-english/audios/knee.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/knee.uk.mp3",
       "order": 224,
       "source": "the_sounds_of_english"
     },
@@ -1711,6 +1971,8 @@
       "symbol": "/n/",
       "literal_translation": "conhecimento, saber, informação, compreensão, domínio",
       "contextual_translation": "Aquilo que se aprende ou entende.",
+      "audio_us": "lessons/the-sounds-of-english/audios/knowledge.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/knowledge.uk.mp3",
       "order": 225,
       "source": "the_sounds_of_english"
     },
@@ -1724,6 +1986,8 @@
       "symbol": "/l/",
       "literal_translation": "laboratório, centro, sala, espaço, ambiente científico",
       "contextual_translation": "Local para experimentos e pesquisas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/laboratory.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/laboratory.uk.mp3",
       "order": 234,
       "source": "the_sounds_of_english"
     },
@@ -1737,6 +2001,8 @@
       "symbol": "/l/",
       "literal_translation": "senhora, dama, mulher, moça, nobre",
       "contextual_translation": "Mulher de modo educado ou respeitoso.",
+      "audio_us": "lessons/the-sounds-of-english/audios/lady.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/lady.uk.mp3",
       "order": 233,
       "source": "the_sounds_of_english"
     },
@@ -1750,6 +2016,8 @@
       "symbol": "/dʒ/",
       "literal_translation": "língua, idioma, linguagem, fala, expressão",
       "contextual_translation": "Sistema usado para comunicação entre pessoas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/language.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/language.uk.mp3",
       "order": 266,
       "source": "the_sounds_of_english"
     },
@@ -1763,6 +2031,8 @@
       "symbol": "/l/",
       "literal_translation": "riso, gargalhada, alegria, humor, som",
       "contextual_translation": "Ato ou som de rir; sinal de diversão.",
+      "audio_us": "lessons/the-sounds-of-english/audios/laughter.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/laughter.uk.mp3",
       "order": 237,
       "source": "the_sounds_of_english"
     },
@@ -1776,6 +2046,8 @@
       "symbol": "/ɔː/",
       "literal_translation": "lei, direito, norma, regra, legislação",
       "contextual_translation": "Sistema de regras que regula uma sociedade.",
+      "audio_us": "lessons/the-sounds-of-english/audios/law.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/law.uk.mp3",
       "order": 51,
       "source": "the_sounds_of_english"
     },
@@ -1789,6 +2061,8 @@
       "symbol": "/ɔɪ/",
       "literal_translation": "advogado, jurista, defensor, procurador, assessor jurídico",
       "contextual_translation": "Profissional que atua com leis, direitos e defesas legais.",
+      "audio_us": "lessons/the-sounds-of-english/audios/lawyer.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/lawyer.uk.mp3",
       "order": 92,
       "source": "the_sounds_of_english"
     },
@@ -1802,6 +2076,8 @@
       "symbol": "/ð/",
       "literal_translation": "couro, material, pele, revestimento, tecido",
       "contextual_translation": "Material feito de pele animal.",
+      "audio_us": "lessons/the-sounds-of-english/audios/leather.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/leather.uk.mp3",
       "order": 181,
       "source": "the_sounds_of_english"
     },
@@ -1815,6 +2091,8 @@
       "symbol": "/l/",
       "literal_translation": "palestra, aula, conferência, lição, exposição",
       "contextual_translation": "Apresentação oral sobre um tema acadêmico/profissional.",
+      "audio_us": "lessons/the-sounds-of-english/audios/lecture.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/lecture.uk.mp3",
       "order": 235,
       "source": "the_sounds_of_english"
     },
@@ -1828,6 +2106,8 @@
       "symbol": "/ə/",
       "literal_translation": "limão, fruta, cítrico, amarelo, agridoce",
       "contextual_translation": "Fruta azeda usada em bebidas e culinária.",
+      "audio_us": "lessons/the-sounds-of-english/audios/lemon.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/lemon.uk.mp3",
       "order": 68,
       "source": "the_sounds_of_english"
     },
@@ -1841,6 +2121,8 @@
       "symbol": "/l/",
       "literal_translation": "biblioteca, acervo, coleção, centro, instituição",
       "contextual_translation": "Local onde se guardam e emprestam livros.",
+      "audio_us": "lessons/the-sounds-of-english/audios/library.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/library.uk.mp3",
       "order": 232,
       "source": "the_sounds_of_english"
     },
@@ -1854,6 +2136,8 @@
       "symbol": "/aɪ/",
       "literal_translation": "vida, existência, vitalidade, cotidiano, biografia",
       "contextual_translation": "Estado de estar vivo; também modo de viver.",
+      "audio_us": "lessons/the-sounds-of-english/audios/life.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/life.uk.mp3",
       "order": 85,
       "source": "the_sounds_of_english"
     },
@@ -1867,6 +2151,8 @@
       "symbol": "/l/",
       "literal_translation": "lógica, raciocínio, coerência, sentido, sistema",
       "contextual_translation": "Forma estruturada de pensar ou analisar algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/logic.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/logic.uk.mp3",
       "order": 236,
       "source": "the_sounds_of_english"
     },
@@ -1880,6 +2166,8 @@
       "symbol": "/æ/",
       "literal_translation": "mapa, carta, planta, diagrama, representação",
       "contextual_translation": "Desenho que mostra locais ou regiões geográficas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/map.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/map.uk.mp3",
       "order": 16,
       "source": "the_sounds_of_english"
     },
@@ -1893,6 +2181,8 @@
       "symbol": "/m/",
       "literal_translation": "memória, lembrança, recordação, registro, lembrança mental",
       "contextual_translation": "Capacidade de guardar e recuperar informações.",
+      "audio_us": "lessons/the-sounds-of-english/audios/memory.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/memory.uk.mp3",
       "order": 219,
       "source": "the_sounds_of_english"
     },
@@ -1906,6 +2196,8 @@
       "symbol": "/uː/",
       "literal_translation": "cardápio, lista, opções, seleção, menu",
       "contextual_translation": "Lista de pratos em restaurante ou opções em um sistema.",
+      "audio_us": "lessons/the-sounds-of-english/audios/menu.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/menu.uk.mp3",
       "order": 65,
       "source": "the_sounds_of_english"
     },
@@ -1919,6 +2211,8 @@
       "symbol": "/m/",
       "literal_translation": "mensagem, recado, comunicado, aviso, informação",
       "contextual_translation": "Informação transmitida a alguém.",
+      "audio_us": "lessons/the-sounds-of-english/audios/message.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/message.uk.mp3",
       "order": 216,
       "source": "the_sounds_of_english"
     },
@@ -1932,6 +2226,8 @@
       "symbol": "/ɪ/",
       "literal_translation": "minuto, instante, momento, registro, detalhe",
       "contextual_translation": "Unidade de tempo; também usado para anotações de reunião (minutes).",
+      "audio_us": "lessons/the-sounds-of-english/audios/minute.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/minute.uk.mp3",
       "order": 5,
       "source": "the_sounds_of_english"
     },
@@ -1945,6 +2241,8 @@
       "symbol": "/m/",
       "literal_translation": "espelho, reflexo, imagem, superfície, vidro",
       "contextual_translation": "Objeto que reflete luz e imagens.",
+      "audio_us": "lessons/the-sounds-of-english/audios/mirror.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/mirror.uk.mp3",
       "order": 218,
       "source": "the_sounds_of_english"
     },
@@ -1958,6 +2256,8 @@
       "symbol": "/ʌ/",
       "literal_translation": "dinheiro, quantia, verba, capital, recurso",
       "contextual_translation": "Qualquer forma de valor usada para pagar ou comprar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/money.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/money.uk.mp3",
       "order": 21,
       "source": "the_sounds_of_english"
     },
@@ -1971,6 +2271,8 @@
       "symbol": "/θ/",
       "literal_translation": "mês, período, ciclo, etapa, tempo",
       "contextual_translation": "Unidade de tempo com cerca de 30 dias.",
+      "audio_us": "lessons/the-sounds-of-english/audios/month.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/month.uk.mp3",
       "order": 173,
       "source": "the_sounds_of_english"
     },
@@ -1984,6 +2286,8 @@
       "symbol": "/uː/",
       "literal_translation": "humor, ânimo, estado, sentimento, disposição",
       "contextual_translation": "Clima emocional de uma pessoa ou situação.",
+      "audio_us": "lessons/the-sounds-of-english/audios/mood.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/mood.uk.mp3",
       "order": 63,
       "source": "the_sounds_of_english"
     },
@@ -1997,6 +2301,8 @@
       "symbol": "/uː/",
       "literal_translation": "lua, satélite, astro, luar, corpo celeste",
       "contextual_translation": "Satélite natural da Terra; símbolo de romance/inspiração.",
+      "audio_us": "lessons/the-sounds-of-english/audios/moon.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/moon.uk.mp3",
       "order": 64,
       "source": "the_sounds_of_english"
     },
@@ -2010,6 +2316,8 @@
       "symbol": "/m/",
       "literal_translation": "manhã, início, aurora, começo, dia",
       "contextual_translation": "Parte inicial do dia; oposto de noite.",
+      "audio_us": "lessons/the-sounds-of-english/audios/morning.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/morning.uk.mp3",
       "order": 215,
       "source": "the_sounds_of_english"
     },
@@ -2023,6 +2331,8 @@
       "symbol": "/ð/",
       "literal_translation": "mãe, matriarca, progenitora, senhora, cuidadora",
       "contextual_translation": "Mulher que gera ou cria filhos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/mother.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/mother.uk.mp3",
       "order": 182,
       "source": "the_sounds_of_english"
     },
@@ -2036,6 +2346,8 @@
       "symbol": "/uː/",
       "literal_translation": "filme, longa, cinema, produção, gravação",
       "contextual_translation": "Obra cinematográfica; entretenimento audiovisual.",
+      "audio_us": "lessons/the-sounds-of-english/audios/movie.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/movie.uk.mp3",
       "order": 60,
       "source": "the_sounds_of_english"
     },
@@ -2049,6 +2361,8 @@
       "symbol": "/m/",
       "literal_translation": "músculo, força, fibra, vigor, estrutura",
       "contextual_translation": "Tecido corporal que permite movimento; símbolo de força.",
+      "audio_us": "lessons/the-sounds-of-english/audios/muscle.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/muscle.uk.mp3",
       "order": 217,
       "source": "the_sounds_of_english"
     },
@@ -2062,6 +2376,8 @@
       "symbol": "/z/",
       "literal_translation": "museu, galeria, exposição, acervo, instituição",
       "contextual_translation": "Local onde se guardam e exibem obras/objetos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/museum.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/museum.uk.mp3",
       "order": 193,
       "source": "the_sounds_of_english"
     },
@@ -2075,6 +2391,8 @@
       "symbol": "/m/",
       "literal_translation": "música, som, canção, melodia, composição",
       "contextual_translation": "Arte de combinar sons de forma harmoniosa.",
+      "audio_us": "lessons/the-sounds-of-english/audios/music.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/music.uk.mp3",
       "order": 214,
       "source": "the_sounds_of_english"
     },
@@ -2088,6 +2406,8 @@
       "symbol": "/z/",
       "literal_translation": "músico, artista, instrumentista, compositor, cantor",
       "contextual_translation": "Pessoa que toca ou cria música.",
+      "audio_us": "lessons/the-sounds-of-english/audios/musician.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/musician.uk.mp3",
       "order": 195,
       "source": "the_sounds_of_english"
     },
@@ -2101,6 +2421,8 @@
       "symbol": "/eɪ/",
       "literal_translation": "nome, denominação, título, apelido, marca",
       "contextual_translation": "Palavra que identifica uma pessoa, coisa ou marca.",
+      "audio_us": "lessons/the-sounds-of-english/audios/name.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/name.uk.mp3",
       "order": 79,
       "source": "the_sounds_of_english"
     },
@@ -2114,6 +2436,8 @@
       "symbol": "/n/",
       "literal_translation": "natureza, ambiente, essência, caráter, temperamento",
       "contextual_translation": "Mundo natural ou características fundamentais de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/nature.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/nature.uk.mp3",
       "order": 220,
       "source": "the_sounds_of_english"
     },
@@ -2127,6 +2451,8 @@
       "symbol": "/n/",
       "literal_translation": "rede, sistema, malha, conexão, cadeia",
       "contextual_translation": "Conjunto de ligações entre pessoas, objetos ou sistemas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/network.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/network.uk.mp3",
       "order": 222,
       "source": "the_sounds_of_english"
     },
@@ -2140,6 +2466,8 @@
       "symbol": "/uː/",
       "literal_translation": "notícia, informação, reportagem, novidade, comunicação",
       "contextual_translation": "Informação recente transmitida por meios de comunicação.",
+      "audio_us": "lessons/the-sounds-of-english/audios/news.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/news.uk.mp3",
       "order": 62,
       "source": "the_sounds_of_english"
     },
@@ -2153,6 +2481,8 @@
       "symbol": "/n/",
       "literal_translation": "noite, escuridão, período, madrugada, turno",
       "contextual_translation": "Parte do dia entre o pôr e o nascer do sol.",
+      "audio_us": "lessons/the-sounds-of-english/audios/night.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/night.uk.mp3",
       "order": 223,
       "source": "the_sounds_of_english"
     },
@@ -2166,6 +2496,8 @@
       "symbol": "/oʊ/",
       "literal_translation": "não, negação, recusa, rejeição, oposição",
       "contextual_translation": "Palavra usada para negar ou recusar algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/no.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/no.uk.mp3",
       "order": 100,
       "source": "the_sounds_of_english"
     },
@@ -2179,6 +2511,8 @@
       "symbol": "/ɔɪ/",
       "literal_translation": "barulho, som, ruído, confusão, tumulto",
       "contextual_translation": "Som incômodo ou ambiente ruidoso.",
+      "audio_us": "lessons/the-sounds-of-english/audios/noise.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/noise.uk.mp3",
       "order": 89,
       "source": "the_sounds_of_english"
     },
@@ -2192,6 +2526,8 @@
       "symbol": "/n/",
       "literal_translation": "número, algarismo, quantidade, cifra, total",
       "contextual_translation": "Representação de quantidades ou ordem.",
+      "audio_us": "lessons/the-sounds-of-english/audios/number.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/number.uk.mp3",
       "order": 221,
       "source": "the_sounds_of_english"
     },
@@ -2205,6 +2541,8 @@
       "symbol": "/ɜː/",
       "literal_translation": "enfermeira, cuidadora, atendente, profissional, assistente",
       "contextual_translation": "Pessoa que cuida de pacientes em hospitais ou clínicas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/nurse.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/nurse.uk.mp3",
       "order": 59,
       "source": "the_sounds_of_english"
     },
@@ -2218,6 +2556,8 @@
       "symbol": "/ɒ/",
       "literal_translation": "objeto, coisa, meta, propósito, artigo",
       "contextual_translation": "Algo físico ou o alvo de uma ação; verbo to object = discordar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/object.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/object.uk.mp3",
       "order": 35,
       "source": "the_sounds_of_english"
     },
@@ -2231,6 +2571,8 @@
       "symbol": "/ɒ/",
       "literal_translation": "escritório, repartição, cargo, função, agência",
       "contextual_translation": "Local de trabalho administrativo; também o cargo ocupado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/office.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/office.uk.mp3",
       "order": 31,
       "source": "the_sounds_of_english"
     },
@@ -2244,6 +2586,8 @@
       "symbol": "/ɔː/",
       "literal_translation": "pedido, ordem, comando, sequência, arranjo",
       "contextual_translation": "Pode indicar solicitação (order food) ou organização.",
+      "audio_us": "lessons/the-sounds-of-english/audios/order.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/order.uk.mp3",
       "order": 48,
       "source": "the_sounds_of_english"
     },
@@ -2257,6 +2601,8 @@
       "symbol": "/ə/",
       "literal_translation": "oxigênio, gás, elemento, ar, componente",
       "contextual_translation": "Gás essencial à respiração e à vida.",
+      "audio_us": "lessons/the-sounds-of-english/audios/oxygen.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/oxygen.uk.mp3",
       "order": 75,
       "source": "the_sounds_of_english"
     },
@@ -2270,6 +2616,8 @@
       "symbol": "/p/",
       "literal_translation": "pacote, embalagem, conjunto, programa, oferta",
       "contextual_translation": "Objeto ou grupo de itens; pacote de serviços.",
+      "audio_us": "lessons/the-sounds-of-english/audios/package.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/package.uk.mp3",
       "order": 125,
       "source": "the_sounds_of_english"
     },
@@ -2283,6 +2631,8 @@
       "symbol": "/eə/",
       "literal_translation": "par, dupla, casal, conjunto, combinação",
       "contextual_translation": "Duas coisas ou pessoas que formam um conjunto.",
+      "audio_us": "lessons/the-sounds-of-english/audios/pair.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/pair.uk.mp3",
       "order": 113,
       "source": "the_sounds_of_english"
     },
@@ -2296,6 +2646,8 @@
       "symbol": "/e/",
       "literal_translation": "pais, pai e mãe, responsáveis, genitores, família",
       "contextual_translation": "Em inglês, parents significa pai e mãe, não “parentes”.",
+      "audio_us": "lessons/the-sounds-of-english/audios/parents.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/parents.uk.mp3",
       "order": 12,
       "source": "the_sounds_of_english"
     },
@@ -2309,6 +2661,8 @@
       "symbol": "/ɑː/",
       "literal_translation": "parque, jardim, área, estacionamento, reserva",
       "contextual_translation": "Local público para lazer; também estacionar (como verbo).",
+      "audio_us": "lessons/the-sounds-of-english/audios/park.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/park.uk.mp3",
       "order": 45,
       "source": "the_sounds_of_english"
     },
@@ -2322,6 +2676,8 @@
       "symbol": "/p/",
       "literal_translation": "específico, especial, determinado, individual, distinto",
       "contextual_translation": "Algo detalhado ou único dentro de um grupo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/particular.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/particular.uk.mp3",
       "order": 127,
       "source": "the_sounds_of_english"
     },
@@ -2335,6 +2691,8 @@
       "symbol": "/p/",
       "literal_translation": "parceiro, sócio, companheiro, cônjuge, colaborador",
       "contextual_translation": "Pessoa com quem se compartilha algo, pessoal ou profissional.",
+      "audio_us": "lessons/the-sounds-of-english/audios/partner.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/partner.uk.mp3",
       "order": 124,
       "source": "the_sounds_of_english"
     },
@@ -2348,6 +2706,8 @@
       "symbol": "/p/",
       "literal_translation": "pagamento, quitação, remuneração, compensação, parcela",
       "contextual_translation": "Ato de pagar por algo; pode ocorrer em partes.",
+      "audio_us": "lessons/the-sounds-of-english/audios/payment.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/payment.uk.mp3",
       "order": 126,
       "source": "the_sounds_of_english"
     },
@@ -2361,6 +2721,8 @@
       "symbol": "/iː/",
       "literal_translation": "paz, calma, harmonia, sossego, tranquilidade",
       "contextual_translation": "Estado de ausência de conflito ou de equilíbrio interior.",
+      "audio_us": "lessons/the-sounds-of-english/audios/peace.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/peace.uk.mp3",
       "order": 40,
       "source": "the_sounds_of_english"
     },
@@ -2374,6 +2736,8 @@
       "symbol": "/f/",
       "literal_translation": "físico, corporal, material, concreto, tangível",
       "contextual_translation": "Relacionado ao corpo ou a coisas palpáveis.",
+      "audio_us": "lessons/the-sounds-of-english/audios/physical.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/physical.uk.mp3",
       "order": 165,
       "source": "the_sounds_of_english"
     },
@@ -2387,6 +2751,8 @@
       "symbol": "/p/",
       "literal_translation": "imagem, foto, retrato, quadro, ilustração",
       "contextual_translation": "Representação visual de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/picture.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/picture.uk.mp3",
       "order": 129,
       "source": "the_sounds_of_english"
     },
@@ -2400,6 +2766,8 @@
       "symbol": "/iː/",
       "literal_translation": "pedaço, parte, fragmento, obra, item",
       "contextual_translation": "Parte de algo inteiro ou item individual.",
+      "audio_us": "lessons/the-sounds-of-english/audios/piece.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/piece.uk.mp3",
       "order": 39,
       "source": "the_sounds_of_english"
     },
@@ -2413,6 +2781,8 @@
       "symbol": "/eɪ/",
       "literal_translation": "lugar, local, posição, espaço, ponto",
       "contextual_translation": "Área ou localização física; também “papel” ou “posição”.",
+      "audio_us": "lessons/the-sounds-of-english/audios/place.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/place.uk.mp3",
       "order": 80,
       "source": "the_sounds_of_english"
     },
@@ -2426,6 +2796,8 @@
       "symbol": "/iː/",
       "literal_translation": "por favor, agradar, satisfazer, contentar, desejar",
       "contextual_translation": "Usado para fazer pedidos educados; também pode significar agradar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/please.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/please.uk.mp3",
       "order": 41,
       "source": "the_sounds_of_english"
     },
@@ -2439,6 +2811,8 @@
       "symbol": "/ɔɪ/",
       "literal_translation": "ponto, questão, argumento, objetivo, local",
       "contextual_translation": "Indica posição, ideia ou objetivo principal.",
+      "audio_us": "lessons/the-sounds-of-english/audios/point.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/point.uk.mp3",
       "order": 91,
       "source": "the_sounds_of_english"
     },
@@ -2452,6 +2826,8 @@
       "symbol": "/ə/",
       "literal_translation": "polícia, autoridade, patrulha, guarda, corporação",
       "contextual_translation": "Instituição responsável por manter a ordem e segurança.",
+      "audio_us": "lessons/the-sounds-of-english/audios/police.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/police.uk.mp3",
       "order": 70,
       "source": "the_sounds_of_english"
     },
@@ -2465,6 +2841,8 @@
       "symbol": "/uː/",
       "literal_translation": "piscina, poço, conjunto, grupo, acúmulo",
       "contextual_translation": "Local com água para nadar ou acúmulo de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/pool.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/pool.uk.mp3",
       "order": 61,
       "source": "the_sounds_of_english"
     },
@@ -2478,6 +2856,8 @@
       "symbol": "/ʊ/",
       "literal_translation": "pobre, carente, fraco, ruim, limitado",
       "contextual_translation": "Pode se referir à falta de dinheiro ou à baixa qualidade.",
+      "audio_us": "lessons/the-sounds-of-english/audios/poor.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/poor.uk.mp3",
       "order": 27,
       "source": "the_sounds_of_english"
     },
@@ -2491,6 +2871,8 @@
       "symbol": "/ʊə/",
       "literal_translation": "poder, energia, força, autoridade, influência",
       "contextual_translation": "Capacidade de agir, controlar ou causar efeito.",
+      "audio_us": "lessons/the-sounds-of-english/audios/power.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/power.uk.mp3",
       "order": 119,
       "source": "the_sounds_of_english"
     },
@@ -2504,6 +2886,8 @@
       "symbol": "/aɪ/",
       "literal_translation": "preço, valor, custo, taxa, quantia",
       "contextual_translation": "Valor cobrado por um produto ou serviço.",
+      "audio_us": "lessons/the-sounds-of-english/audios/price.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/price.uk.mp3",
       "order": 87,
       "source": "the_sounds_of_english"
     },
@@ -2517,6 +2901,8 @@
       "symbol": "/ɒ/",
       "literal_translation": "problema, questão, dificuldade, obstáculo, desafio",
       "contextual_translation": "Situação que requer solução; pessoal ou profissional.",
+      "audio_us": "lessons/the-sounds-of-english/audios/problem.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/problem.uk.mp3",
       "order": 34,
       "source": "the_sounds_of_english"
     },
@@ -2530,6 +2916,8 @@
       "symbol": "/p/",
       "literal_translation": "profissional, especialista, experiente, qualificado, técnico",
       "contextual_translation": "Pessoa ou atitude ligada ao trabalho qualificado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/professional.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/professional.uk.mp3",
       "order": 128,
       "source": "the_sounds_of_english"
     },
@@ -2543,6 +2931,8 @@
       "symbol": "/ʊə/",
       "literal_translation": "puro, limpo, genuíno, sincero, simples",
       "contextual_translation": "Algo sem mistura ou de essência verdadeira.",
+      "audio_us": "lessons/the-sounds-of-english/audios/pure.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/pure.uk.mp3",
       "order": 118,
       "source": "the_sounds_of_english"
     },
@@ -2556,6 +2946,8 @@
       "symbol": "/r/",
       "literal_translation": "rádio, emissora, transmissão, estação, aparelho",
       "contextual_translation": "Meio de comunicação por ondas sonoras.",
+      "audio_us": "lessons/the-sounds-of-english/audios/radio.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/radio.uk.mp3",
       "order": 242,
       "source": "the_sounds_of_english"
     },
@@ -2569,6 +2961,8 @@
       "symbol": "/r/",
       "literal_translation": "leitor, pessoa, usuário, intérprete, estudante",
       "contextual_translation": "Quem lê ou interpreta textos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/reader.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/reader.uk.mp3",
       "order": 241,
       "source": "the_sounds_of_english"
     },
@@ -2582,6 +2976,8 @@
       "symbol": "/r/",
       "literal_translation": "região, área, zona, território, distrito",
       "contextual_translation": "Parte geográfica de um país ou planeta.",
+      "audio_us": "lessons/the-sounds-of-english/audios/region.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/region.uk.mp3",
       "order": 239,
       "source": "the_sounds_of_english"
     },
@@ -2595,6 +2991,8 @@
       "symbol": "/ʃ/",
       "literal_translation": "relacionamento, relação, vínculo, conexão, laço",
       "contextual_translation": "Ligação entre pessoas ou entidades.",
+      "audio_us": "lessons/the-sounds-of-english/audios/relationship.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/relationship.uk.mp3",
       "order": 198,
       "source": "the_sounds_of_english"
     },
@@ -2608,6 +3006,8 @@
       "symbol": "/r/",
       "literal_translation": "pesquisa, estudo, investigação, análise, levantamento",
       "contextual_translation": "Atividade sistemática de busca por conhecimento.",
+      "audio_us": "lessons/the-sounds-of-english/audios/research.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/research.uk.mp3",
       "order": 243,
       "source": "the_sounds_of_english"
     },
@@ -2621,6 +3021,8 @@
       "symbol": "/r/",
       "literal_translation": "restaurante, lanchonete, cantina, bistrô, estabelecimento",
       "contextual_translation": "Local onde se servem refeições.",
+      "audio_us": "lessons/the-sounds-of-english/audios/restaurant.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/restaurant.uk.mp3",
       "order": 238,
       "source": "the_sounds_of_english"
     },
@@ -2634,6 +3036,8 @@
       "symbol": "/z/",
       "literal_translation": "resultado, consequência, efeito, desfecho, produto",
       "contextual_translation": "Consequência de uma ação ou situação.",
+      "audio_us": "lessons/the-sounds-of-english/audios/result.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/result.uk.mp3",
       "order": 190,
       "source": "the_sounds_of_english"
     },
@@ -2647,6 +3051,8 @@
       "symbol": "/ŋ/",
       "literal_translation": "anel, argola, círculo, som, grupo",
       "contextual_translation": "Objeto circular; também som de campainha/telefone.",
+      "audio_us": "lessons/the-sounds-of-english/audios/ring.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/ring.uk.mp3",
       "order": 231,
       "source": "the_sounds_of_english"
     },
@@ -2660,6 +3066,8 @@
       "symbol": "/oʊ/",
       "literal_translation": "estrada, via, caminho, rodovia, percurso",
       "contextual_translation": "Faixa usada para trânsito de veículos e pessoas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/road.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/road.uk.mp3",
       "order": 104,
       "source": "the_sounds_of_english"
     },
@@ -2673,6 +3081,8 @@
       "symbol": "/ʊ/",
       "literal_translation": "quarto, sala, espaço, cômodo, ambiente",
       "contextual_translation": "Espaço físico dentro de um local; também “espaço disponível”.",
+      "audio_us": "lessons/the-sounds-of-english/audios/room.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/room.uk.mp3",
       "order": 26,
       "source": "the_sounds_of_english"
     },
@@ -2686,6 +3096,8 @@
       "symbol": "/s/",
       "literal_translation": "venda, liquidação, comércio, transação, desconto",
       "contextual_translation": "Ato de vender ou evento com preços reduzidos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/sale.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/sale.uk.mp3",
       "order": 187,
       "source": "the_sounds_of_english"
     },
@@ -2699,6 +3111,8 @@
       "symbol": "/dʒ/",
       "literal_translation": "horário, cronograma, agenda, programação, plano",
       "contextual_translation": "Lista organizada de compromissos ou atividades.",
+      "audio_us": "lessons/the-sounds-of-english/audios/schedule.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/schedule.uk.mp3",
       "order": 267,
       "source": "the_sounds_of_english"
     },
@@ -2712,6 +3126,8 @@
       "symbol": "/s/",
       "literal_translation": "estação, época, período, temporada, fase",
       "contextual_translation": "Divisão do ano ou fase de um ciclo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/season.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/season.uk.mp3",
       "order": 184,
       "source": "the_sounds_of_english"
     },
@@ -2725,6 +3141,8 @@
       "symbol": "/ʊə/",
       "literal_translation": "segurança, proteção, estabilidade, vigilância, confiança",
       "contextual_translation": "Estado de estar protegido contra perigos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/security.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/security.uk.mp3",
       "order": 122,
       "source": "the_sounds_of_english"
     },
@@ -2738,6 +3156,8 @@
       "symbol": "/aʊ/",
       "literal_translation": "chuveiro, banho, chuva, garoa, temporal",
       "contextual_translation": "Banho rápido ou chuva leve.",
+      "audio_us": "lessons/the-sounds-of-english/audios/shower.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/shower.uk.mp3",
       "order": 96,
       "source": "the_sounds_of_english"
     },
@@ -2751,6 +3171,8 @@
       "symbol": "/s/",
       "literal_translation": "lado, margem, aspecto, posição, face",
       "contextual_translation": "Parte ou perspectiva de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/side.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/side.uk.mp3",
       "order": 186,
       "source": "the_sounds_of_english"
     },
@@ -2764,6 +3186,8 @@
       "symbol": "/s/",
       "literal_translation": "tamanho, porte, medida, proporção, dimensão",
       "contextual_translation": "Indica as dimensões ou a escala de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/size.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/size.uk.mp3",
       "order": 185,
       "source": "the_sounds_of_english"
     },
@@ -2777,6 +3201,8 @@
       "symbol": "/s/",
       "literal_translation": "habilidade, capacidade, destreza, competência, talento",
       "contextual_translation": "Aptidão para executar algo bem.",
+      "audio_us": "lessons/the-sounds-of-english/audios/skill.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/skill.uk.mp3",
       "order": 188,
       "source": "the_sounds_of_english"
     },
@@ -2790,6 +3216,8 @@
       "symbol": "/s/",
       "literal_translation": "céu, firmamento, atmosfera, horizonte, altura",
       "contextual_translation": "Espaço acima da Terra; também figurado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/sky.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/sky.uk.mp3",
       "order": 189,
       "source": "the_sounds_of_english"
     },
@@ -2803,6 +3231,8 @@
       "symbol": "/ʃ/",
       "literal_translation": "social, coletivo, comunitário, público, interativo",
       "contextual_translation": "Relativo à vida em sociedade ou relações.",
+      "audio_us": "lessons/the-sounds-of-english/audios/social.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/social.uk.mp3",
       "order": 196,
       "source": "the_sounds_of_english"
     },
@@ -2816,6 +3246,8 @@
       "symbol": "/ʌ/",
       "literal_translation": "filho, rapaz, descendente, menino, garoto",
       "contextual_translation": "Filho homem em relação aos pais.",
+      "audio_us": "lessons/the-sounds-of-english/audios/son.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/son.uk.mp3",
       "order": 20,
       "source": "the_sounds_of_english"
     },
@@ -2829,6 +3261,8 @@
       "symbol": "/ŋ/",
       "literal_translation": "canção, música, melodia, composição, faixa",
       "contextual_translation": "Obra musical com letra e melodia.",
+      "audio_us": "lessons/the-sounds-of-english/audios/song.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/song.uk.mp3",
       "order": 228,
       "source": "the_sounds_of_english"
     },
@@ -2842,6 +3276,8 @@
       "symbol": "/aʊ/",
       "literal_translation": "som, ruído, barulho, vibração, tom",
       "contextual_translation": "O que é ouvido; também “parecer” (sound good).",
+      "audio_us": "lessons/the-sounds-of-english/audios/sound.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/sound.uk.mp3",
       "order": 98,
       "source": "the_sounds_of_english"
     },
@@ -2855,6 +3291,8 @@
       "symbol": "/ʃ/",
       "literal_translation": "estação, ponto, posto, base, terminal",
       "contextual_translation": "Local de embarque, transmissão ou serviço.",
+      "audio_us": "lessons/the-sounds-of-english/audios/station.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/station.uk.mp3",
       "order": 197,
       "source": "the_sounds_of_english"
     },
@@ -2868,6 +3306,8 @@
       "symbol": "/iː/",
       "literal_translation": "rua, avenida, via, caminho, estrada",
       "contextual_translation": "Espaço público por onde circulam pessoas e veículos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/street.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/street.uk.mp3",
       "order": 38,
       "source": "the_sounds_of_english"
     },
@@ -2881,6 +3321,8 @@
       "symbol": "/θ/",
       "literal_translation": "força, resistência, poder, energia, capacidade",
       "contextual_translation": "Habilidade de suportar ou realizar algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/strength.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/strength.uk.mp3",
       "order": 174,
       "source": "the_sounds_of_english"
     },
@@ -2894,6 +3336,8 @@
       "symbol": "/ʌ/",
       "literal_translation": "coisa, material, conteúdo, objeto, substância",
       "contextual_translation": "Termo informal para “coisas em geral”; não tem plural em inglês.",
+      "audio_us": "lessons/the-sounds-of-english/audios/stuff.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/stuff.uk.mp3",
       "order": 19,
       "source": "the_sounds_of_english"
     },
@@ -2907,6 +3351,8 @@
       "symbol": "/ə/",
       "literal_translation": "suprimento, fornecimento, estoque, provisão, oferta",
       "contextual_translation": "Ato ou quantidade de algo disponibilizado para uso.",
+      "audio_us": "lessons/the-sounds-of-english/audios/supply.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/supply.uk.mp3",
       "order": 73,
       "source": "the_sounds_of_english"
     },
@@ -2920,6 +3366,8 @@
       "symbol": "/ə/",
       "literal_translation": "seringa, injetor, aplicador, instrumento, dispositivo",
       "contextual_translation": "Utensílio usado para aplicar ou retirar líquidos, geralmente medicamentos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/syringe.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/syringe.uk.mp3",
       "order": 74,
       "source": "the_sounds_of_english"
     },
@@ -2933,6 +3381,8 @@
       "symbol": "/t/",
       "literal_translation": "tecnologia, técnica, inovação, ciência, sistema",
       "contextual_translation": "Aplicação prática do conhecimento científico.",
+      "audio_us": "lessons/the-sounds-of-english/audios/technology.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/technology.uk.mp3",
       "order": 140,
       "source": "the_sounds_of_english"
     },
@@ -2946,6 +3396,8 @@
       "symbol": "/ʒ/",
       "literal_translation": "televisão, TV, programa, canal, mídia",
       "contextual_translation": "Sistema de transmissão de imagens e sons.",
+      "audio_us": "lessons/the-sounds-of-english/audios/television.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/television.uk.mp3",
       "order": 203,
       "source": "the_sounds_of_english"
     },
@@ -2959,6 +3411,8 @@
       "symbol": "/t/",
       "literal_translation": "temperatura, calor, febre, clima, medição",
       "contextual_translation": "Grau de calor medido em um corpo ou ambiente.",
+      "audio_us": "lessons/the-sounds-of-english/audios/temperature.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/temperature.uk.mp3",
       "order": 137,
       "source": "the_sounds_of_english"
     },
@@ -2972,6 +3426,8 @@
       "symbol": "/θ/",
       "literal_translation": "terapia, tratamento, cura, atendimento, sessão",
       "contextual_translation": "Processo usado para melhorar saúde ou bem-estar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/therapy.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/therapy.uk.mp3",
       "order": 177,
       "source": "the_sounds_of_english"
     },
@@ -2985,6 +3441,8 @@
       "symbol": "/ŋ/",
       "literal_translation": "coisa, objeto, assunto, fato, situação",
       "contextual_translation": "Termo geral para algo indeterminado.",
+      "audio_us": "lessons/the-sounds-of-english/audios/thing.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/thing.uk.mp3",
       "order": 226,
       "source": "the_sounds_of_english"
     },
@@ -2998,6 +3456,8 @@
       "symbol": "/θ/",
       "literal_translation": "sede, desejo, anseio, carência, vontade",
       "contextual_translation": "Necessidade de líquido ou forte desejo por algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/thirst.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/thirst.uk.mp3",
       "order": 176,
       "source": "the_sounds_of_english"
     },
@@ -3010,6 +3470,8 @@
       "transcription_uk": "/tə ˈæk.ses/",
       "literal_translation": "acessar, entrar, obter, alcançar, usar",
       "contextual_translation": "Chegar ou usar algo que estava restrito ou fora de alcance.",
+      "audio_us": "lessons/your-first-verbs/audios/to-access.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-access.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3021,6 +3483,8 @@
       "transcription_uk": "/tə æd/",
       "literal_translation": "adicionar, somar, incluir, acrescentar, juntar",
       "contextual_translation": "Incluir algo a outra coisa para aumentar ou completar.",
+      "audio_us": "lessons/your-first-verbs/audios/to-add.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-add.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3032,6 +3496,8 @@
       "transcription_uk": "/tə əˈfɔːd/",
       "literal_translation": "poder pagar, ter condições, permitir-se, bancar, arcar",
       "contextual_translation": "Ter recursos, tempo ou capacidade suficientes para conseguir algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-afford.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-afford.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3043,6 +3509,8 @@
       "transcription_uk": "/tə əˈɡriː/",
       "literal_translation": "concordar, aceitar, combinar, aprovar, consentir",
       "contextual_translation": "Compartilhar a mesma opinião ou aceitar uma proposta ou ideia.",
+      "audio_us": "lessons/your-first-verbs/audios/to-agree.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-agree.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3054,6 +3522,8 @@
       "transcription_uk": "/tə əˈlaʊ/",
       "literal_translation": "permitir, autorizar, deixar, conceder, liberar",
       "contextual_translation": "Dar liberdade para que algo aconteça ou alguém aja.",
+      "audio_us": "lessons/your-first-verbs/audios/to-allow.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-allow.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3065,6 +3535,8 @@
       "transcription_uk": "/tə ˈæn.ə.laɪz/",
       "literal_translation": "analisar, examinar, avaliar, estudar, investigar",
       "contextual_translation": "Observar com atenção para entender causas, efeitos e significados.",
+      "audio_us": "lessons/your-first-verbs/audios/to-analyze.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-analyze.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3076,6 +3548,8 @@
       "transcription_uk": "/tə əˈpruːv/",
       "literal_translation": "aprovar, aceitar, validar, confirmar, autorizar",
       "contextual_translation": "Dar aval formal ou pessoal a uma decisão, documento ou ação.",
+      "audio_us": "lessons/your-first-verbs/audios/to-approve.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-approve.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3087,6 +3561,8 @@
       "transcription_uk": "/tə əˈraɪv/",
       "literal_translation": "chegar, alcançar, atingir, vir, aparecer",
       "contextual_translation": "Vim de outro lugar e alcançar o destino planejado.",
+      "audio_us": "lessons/your-first-verbs/audios/to-arrive.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-arrive.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3098,6 +3574,8 @@
       "transcription_uk": "/tə ɑːsk/",
       "literal_translation": "perguntar, solicitar, pedir, requisitar, questionar",
       "contextual_translation": "Buscar informação, ajuda ou permissão por meio de palavras.",
+      "audio_us": "lessons/your-first-verbs/audios/to-ask.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-ask.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3109,6 +3587,8 @@
       "transcription_uk": "/tə əˈtend/",
       "literal_translation": "frequentar, comparecer, assistir, participar, ir",
       "contextual_translation": "Estar presente em um evento, aula ou compromisso.",
+      "audio_us": "lessons/your-first-verbs/audios/to-attend.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-attend.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3120,6 +3600,8 @@
       "transcription_uk": "/tə əˈvɔɪd/",
       "literal_translation": "evitar, prevenir, fugir de, contornar, esquivar-se",
       "contextual_translation": "Tomar cuidado para que algo não aconteça ou para não se expor a algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-avoid.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-avoid.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3131,6 +3613,8 @@
       "transcription_uk": "/tə biː/",
       "literal_translation": "ser, estar, existir, ficar, permanecer",
       "contextual_translation": "Expressa identidade, estado ou condição — define o que algo é ou como está.",
+      "audio_us": "lessons/your-first-verbs/audios/to-be.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-be.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3142,6 +3626,8 @@
       "transcription_uk": "/tə bɪˈkʌm/",
       "literal_translation": "tornar-se, virar, passar a ser, transformar-se, converter-se",
       "contextual_translation": "Indica mudança de estado ou identidade ao longo do tempo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-become.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-become.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3153,6 +3639,8 @@
       "transcription_uk": "/tə bɪˈliːv/",
       "literal_translation": "acreditar, crer, confiar, supor, considerar",
       "contextual_translation": "Aceitar como verdadeiro com base em fé, evidência ou convicção.",
+      "audio_us": "lessons/your-first-verbs/audios/to-believe.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-believe.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3164,6 +3652,8 @@
       "transcription_uk": "/tə bɪˈlɒŋ/",
       "literal_translation": "pertencer, ser de, integrar, encaixar-se, dizer respeito",
       "contextual_translation": "Indicar posse, relação ou encaixe em um grupo ou lugar.",
+      "audio_us": "lessons/your-first-verbs/audios/to-belong.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-belong.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3175,6 +3665,8 @@
       "transcription_uk": "/tə ˈbɒr.əʊ/",
       "literal_translation": "pegar emprestado, tomar emprestado",
       "contextual_translation": "Receber algo por tempo limitado, com a ideia de devolver depois.",
+      "audio_us": "lessons/your-first-verbs/audios/to-borrow.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-borrow.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3186,6 +3678,8 @@
       "transcription_uk": "/tə brɪŋ/",
       "literal_translation": "trazer, levar, conduzir, transportar, entregar",
       "contextual_translation": "Mover algo até onde a pessoa que fala está ou precisa.",
+      "audio_us": "lessons/your-first-verbs/audios/to-bring.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-bring.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3197,6 +3691,8 @@
       "transcription_uk": "/tə bɪld/",
       "literal_translation": "construir, erguer, montar, desenvolver, estruturar",
       "contextual_translation": "Criar algo sólido a partir de partes, materiais ou ideias.",
+      "audio_us": "lessons/your-first-verbs/audios/to-build.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-build.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3208,6 +3704,8 @@
       "transcription_uk": "/tə baɪ/",
       "literal_translation": "comprar, adquirir, obter, adquirir por dinheiro, adquirir por troca",
       "contextual_translation": "Obter algo em troca de pagamento.",
+      "audio_us": "lessons/your-first-verbs/audios/to-buy.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-buy.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3219,6 +3717,8 @@
       "transcription_uk": "/tə kɔːl/",
       "literal_translation": "ligar, chamar, telefonar, convocar, denominar",
       "contextual_translation": "Estabelecer contato por voz ou dar um nome/convite a alguém.",
+      "audio_us": "lessons/your-first-verbs/audios/to-call.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-call.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3230,6 +3730,8 @@
       "transcription_uk": "/tə tʃeɪndʒ/",
       "literal_translation": "mudar, trocar, alterar, modificar, transformar",
       "contextual_translation": "Fazer algo ficar diferente do que era antes.",
+      "audio_us": "lessons/your-first-verbs/audios/to-change.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-change.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3241,6 +3743,8 @@
       "transcription_uk": "/tə tʃek/",
       "literal_translation": "verificar, checar, examinar, revisar, inspecionar",
       "contextual_translation": "Observar ou confirmar se algo está correto ou em ordem.",
+      "audio_us": "lessons/your-first-verbs/audios/to-check.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-check.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3252,6 +3756,8 @@
       "transcription_uk": "/tə tʃuːz/",
       "literal_translation": "escolher, optar, selecionar, decidir, preferir",
       "contextual_translation": "Selecionar uma opção entre várias possibilidades.",
+      "audio_us": "lessons/your-first-verbs/audios/to-choose.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-choose.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3263,6 +3769,8 @@
       "transcription_uk": "/tə kliːn/",
       "literal_translation": "limpar, higienizar, lavar, tirar, desinfetar",
       "contextual_translation": "Remover sujeira ou desordem para deixar algo em bom estado.",
+      "audio_us": "lessons/your-first-verbs/audios/to-clean.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-clean.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3274,6 +3782,8 @@
       "transcription_uk": "/tə kləʊz/",
       "literal_translation": "fechar, encerrar, encostar, concluir, trancar",
       "contextual_translation": "Encerrar acesso, funcionamento ou um processo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-close.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-close.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3285,6 +3795,8 @@
       "transcription_uk": "/tə kʌm/",
       "literal_translation": "vir, chegar, aparecer, aproximar-se, advir",
       "contextual_translation": "Mover-se na direção do interlocutor ou do ponto de destino.",
+      "audio_us": "lessons/your-first-verbs/audios/to-come.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-come.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3296,6 +3808,8 @@
       "transcription_uk": "/tə kəˈmjuː.nɪ.keɪt/",
       "literal_translation": "comunicar, transmitir, dialogar, compartilhar, informar",
       "contextual_translation": "Trocar informações ou ideias de forma clara e intencional.",
+      "audio_us": "lessons/your-first-verbs/audios/to-communicate.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-communicate.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3307,6 +3821,8 @@
       "transcription_uk": "/tə kəmˈpleɪn/",
       "literal_translation": "reclamar, queixar-se, protestar, lamentar, criticar",
       "contextual_translation": "Expressar insatisfação ou desconforto com algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-complain.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-complain.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3318,6 +3834,8 @@
       "transcription_uk": "/tə kəmˈpliːt/",
       "literal_translation": "completar, concluir, finalizar, terminar, cumprir",
       "contextual_translation": "Levar uma tarefa até o fim, atingindo o objetivo proposto.",
+      "audio_us": "lessons/your-first-verbs/audios/to-complete.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-complete.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3329,6 +3847,8 @@
       "transcription_uk": "/tə kənˈfɪɡ.jər/",
       "literal_translation": "configurar, ajustar, definir, personalizar, montar",
       "contextual_translation": "Estabelecer as definições ou parâmetros de funcionamento de algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-configure.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-configure.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3340,6 +3860,8 @@
       "transcription_uk": "/tə kənˈfɜːm/",
       "literal_translation": "confirmar, validar, ratificar, corroborar, assegurar",
       "contextual_translation": "Garantir que algo está correto, decidido ou verdadeiro.",
+      "audio_us": "lessons/your-first-verbs/audios/to-confirm.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-confirm.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3351,6 +3873,8 @@
       "transcription_uk": "/tə kəˈnek/",
       "literal_translation": "conectar, ligar, unir, associar, relacionar",
       "contextual_translation": "Estabelecer ligação física, lógica ou emocional entre coisas.",
+      "audio_us": "lessons/your-first-verbs/audios/to-connect.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-connect.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3362,6 +3886,8 @@
       "transcription_uk": "/tə kənˈsɪd.ə/",
       "literal_translation": "considerar, ponderar, avaliar, refletir, levar em conta",
       "contextual_translation": "Pensar com calma antes de decidir ou julgar algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-consider.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-consider.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3373,6 +3899,8 @@
       "transcription_uk": "/tə kənˈtɪn.juː/",
       "literal_translation": "continuar, prosseguir, manter, seguir, persistir",
       "contextual_translation": "Dar sequência a uma ação sem interromper.",
+      "audio_us": "lessons/your-first-verbs/audios/to-continue.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-continue.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3384,6 +3912,8 @@
       "transcription_uk": "/tə kriˈeɪt/",
       "literal_translation": "criar, produzir, gerar, conceber, elaborar",
       "contextual_translation": "Trazer algo novo à existência a partir de ideias ou recursos.",
+      "audio_us": "lessons/your-first-verbs/audios/to-create.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-create.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3395,6 +3925,8 @@
       "transcription_uk": "/tə kraɪ/",
       "literal_translation": "chorar, lamentar, berrar, gritar, soluçar",
       "contextual_translation": "Derramar lágrimas ou expressar emoção intensa.",
+      "audio_us": "lessons/your-first-verbs/audios/to-cry.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-cry.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3406,6 +3938,8 @@
       "transcription_uk": "/tə dɪˈliːt/",
       "literal_translation": "excluir, apagar, remover, deletar, eliminar",
       "contextual_translation": "Retirar algo de um sistema, lista ou arquivo de forma permanente.",
+      "audio_us": "lessons/your-first-verbs/audios/to-delete.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-delete.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3417,6 +3951,8 @@
       "transcription_uk": "/tə dɪˈlɪv.ə/",
       "literal_translation": "entregar, levar, fornecer, distribuir, despachar",
       "contextual_translation": "Levar algo ao destino certo ou cumprir o que foi prometido.",
+      "audio_us": "lessons/your-first-verbs/audios/to-deliver.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-deliver.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3428,6 +3964,8 @@
       "transcription_uk": "/tə dɪˈvel.əp/",
       "literal_translation": "desenvolver, evoluir, aprimorar, crescer, elaborar",
       "contextual_translation": "Fazer algo progredir em qualidade, função ou complexidade.",
+      "audio_us": "lessons/your-first-verbs/audios/to-develop.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-develop.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3439,6 +3977,8 @@
       "transcription_uk": "/tə dɪˈskʌs/",
       "literal_translation": "discutir, debater, conversar, dialogar, analisar",
       "contextual_translation": "Conversar sobre um tema para trocar argumentos e ideias.",
+      "audio_us": "lessons/your-first-verbs/audios/to-discuss.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-discuss.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3450,6 +3990,8 @@
       "transcription_uk": "/tə dɪˈvaɪd/",
       "literal_translation": "dividir, separar, repartir, fracionar, segmentar",
       "contextual_translation": "Partir um todo em partes menores ou grupos.",
+      "audio_us": "lessons/your-first-verbs/audios/to-divide.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-divide.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3461,6 +4003,8 @@
       "transcription_uk": "/tə duː/",
       "literal_translation": "fazer, executar, realizar, cumprir, desempenhar",
       "contextual_translation": "Executar uma ação, tarefa ou atividade prática.",
+      "audio_us": "lessons/your-first-verbs/audios/to-do.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-do.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3472,6 +4016,8 @@
       "transcription_uk": "/tə drɪŋk/",
       "literal_translation": "beber, ingerir, tomar (líquido), sorver, degustar",
       "contextual_translation": "Levar líquidos ao corpo por necessidade ou prazer.",
+      "audio_us": "lessons/your-first-verbs/audios/to-drink.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-drink.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3483,6 +4029,8 @@
       "transcription_uk": "/tə draɪv/",
       "literal_translation": "dirigir, conduzir, pilotar, guiar, levar",
       "contextual_translation": "Operar um veículo para ir de um lugar a outro.",
+      "audio_us": "lessons/your-first-verbs/audios/to-drive.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-drive.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3494,6 +4042,8 @@
       "transcription_uk": "/tə iːt/",
       "literal_translation": "comer, alimentar-se, consumir, ingerir, degustar",
       "contextual_translation": "Colocar alimento no corpo para nutrição ou prazer.",
+      "audio_us": "lessons/your-first-verbs/audios/to-eat.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-eat.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3505,6 +4055,8 @@
       "transcription_uk": "/tə ˈed.ɪt/",
       "literal_translation": "editar, revisar, ajustar, corrigir, montar",
       "contextual_translation": "Alterar conteúdo para melhorar clareza, forma ou qualidade.",
+      "audio_us": "lessons/your-first-verbs/audios/to-edit.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-edit.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3516,6 +4068,8 @@
       "transcription_uk": "/tə ɪɡˈzɪst/",
       "literal_translation": "existir, haver, ser, subsistir, perdurar",
       "contextual_translation": "Estar presente no mundo real; ter presença ou realidade.",
+      "audio_us": "lessons/your-first-verbs/audios/to-exist.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-exist.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3527,6 +4081,8 @@
       "transcription_uk": "/tə ɪkˈspleɪn/",
       "literal_translation": "explicar, esclarecer, detalhar, elucidar, justificar",
       "contextual_translation": "Tornar algo compreensível por meio de palavras e exemplos.",
+      "audio_us": "lessons/your-first-verbs/audios/to-explain.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-explain.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3538,6 +4094,8 @@
       "transcription_uk": "/tə feɪl/",
       "literal_translation": "falhar, fracassar, não conseguir, errar, perder",
       "contextual_translation": "Não alcançar o resultado esperado ou desejado.",
+      "audio_us": "lessons/your-first-verbs/audios/to-fail.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-fail.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3549,6 +4107,8 @@
       "transcription_uk": "/tə fiːl/",
       "literal_translation": "sentir, perceber, experimentar, pressentir, notar",
       "contextual_translation": "Perceber emoções ou sensações físicas de forma subjetiva.",
+      "audio_us": "lessons/your-first-verbs/audios/to-feel.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-feel.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3560,6 +4120,8 @@
       "transcription_uk": "/tə faɪnd/",
       "literal_translation": "encontrar, achar, descobrir, localizar, identificar",
       "contextual_translation": "Chegar a algo buscado ou perceber algo que estava oculto.",
+      "audio_us": "lessons/your-first-verbs/audios/to-find.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-find.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3571,6 +4133,8 @@
       "transcription_uk": "/tə ˈfɪn.ɪʃ/",
       "literal_translation": "terminar, finalizar, concluir, encerrar, completar",
       "contextual_translation": "Levar uma atividade ao fim, atingindo o objetivo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-finish.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-finish.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3582,6 +4146,8 @@
       "transcription_uk": "/tə fɪks/",
       "literal_translation": "consertar, reparar, ajustar, corrigir, resolver",
       "contextual_translation": "Restaurar o funcionamento adequado de algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-fix.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-fix.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3593,6 +4159,8 @@
       "transcription_uk": "/tə ˈfɒl.əʊ/",
       "literal_translation": "seguir, acompanhar, perseguir, atender, observar",
       "contextual_translation": "Ir atrás de algo/alguém ou obedecer instruções e tendências.",
+      "audio_us": "lessons/your-first-verbs/audios/to-follow.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-follow.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3604,6 +4172,8 @@
       "transcription_uk": "/tə fəˈɡet/",
       "literal_translation": "esquecer, desaprender, deixar de lembrar, omitir, negligenciar",
       "contextual_translation": "Perder a lembrança de algo que se sabia ou precisava lembrar.",
+      "audio_us": "lessons/your-first-verbs/audios/to-forget.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-forget.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3615,6 +4185,8 @@
       "transcription_uk": "/tə ˈdʒen.ə.reɪt/",
       "literal_translation": "gerar, produzir, criar, originar, causar",
       "contextual_translation": "Dar origem a algo novo, material ou imaterial.",
+      "audio_us": "lessons/your-first-verbs/audios/to-generate.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-generate.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3626,6 +4198,8 @@
       "transcription_uk": "/tə ɡɪv/",
       "literal_translation": "dar, fornecer, oferecer, entregar, conceder",
       "contextual_translation": "Transferir algo seu para outra pessoa voluntariamente.",
+      "audio_us": "lessons/your-first-verbs/audios/to-give.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-give.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3637,6 +4211,8 @@
       "transcription_uk": "/tə ɡəʊ/",
       "literal_translation": "ir, seguir, partir, deslocar-se, viajar",
       "contextual_translation": "Mover-se de um lugar a outro; iniciar deslocamento.",
+      "audio_us": "lessons/your-first-verbs/audios/to-go.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-go.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3648,6 +4224,8 @@
       "transcription_uk": "/tə ˈhæn.dəl/",
       "literal_translation": "lidar, manusear, controlar, tratar, resolver",
       "contextual_translation": "Gerir uma situação, objeto ou problema com habilidade.",
+      "audio_us": "lessons/your-first-verbs/audios/to-handle.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-handle.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3659,6 +4237,8 @@
       "transcription_uk": "/tə ˈhæp.ən/",
       "literal_translation": "acontecer, ocorrer, suceder, dar-se, ocorrer-se",
       "contextual_translation": "Indicar que um evento teve lugar, esperado ou não.",
+      "audio_us": "lessons/your-first-verbs/audios/to-happen.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-happen.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3670,6 +4250,8 @@
       "transcription_uk": "/tə hɪə/",
       "literal_translation": "ouvir, escutar",
       "contextual_translation": "Perceber sons sem intenção — algo simplesmente chega aos ouvidos.",
+      "audio_us": "lessons/your-first-verbs/audios/to-hear.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-hear.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3681,6 +4263,8 @@
       "transcription_uk": "/tə help/",
       "literal_translation": "ajudar, auxiliar, apoiar, socorrer, colaborar",
       "contextual_translation": "Contribuir para facilitar a ação ou resolver um problema.",
+      "audio_us": "lessons/your-first-verbs/audios/to-help.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-help.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3692,6 +4276,8 @@
       "transcription_uk": "/tə haɪd/",
       "literal_translation": "esconder, ocultar, disfarçar, encobrir, esconder-se",
       "contextual_translation": "Manter algo fora da vista ou do conhecimento dos outros.",
+      "audio_us": "lessons/your-first-verbs/audios/to-hide.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-hide.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3703,6 +4289,8 @@
       "transcription_uk": "/tə həʊld/",
       "literal_translation": "segurar, manter, sustentar, reter, guardar",
       "contextual_translation": "Manter algo firme na mão ou em determinada posição/estado.",
+      "audio_us": "lessons/your-first-verbs/audios/to-hold.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-hold.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3714,6 +4302,8 @@
       "transcription_uk": "/tə ɪɡˈnɔː/",
       "literal_translation": "ignorar, desprezar, desconsiderar, evitar, passar por alto",
       "contextual_translation": "Optar por não dar atenção ou importância a algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-ignore.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-ignore.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3725,6 +4315,8 @@
       "transcription_uk": "/tə ɪˈmædʒ.ɪn/",
       "literal_translation": "imaginar, visualizar, supor, idealizar, conceber",
       "contextual_translation": "Criar imagens ou ideias na mente sem necessidade de prova.",
+      "audio_us": "lessons/your-first-verbs/audios/to-imagine.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-imagine.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3736,6 +4328,8 @@
       "transcription_uk": "/tə ɪmˈpruːv/",
       "literal_translation": "melhorar, aprimorar, aperfeiçoar, evoluir, otimizar",
       "contextual_translation": "Elevar qualidade, desempenho ou resultado de algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-improve.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-improve.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3747,6 +4341,8 @@
       "transcription_uk": "/tə ɪnˈkluːd/",
       "literal_translation": "incluir, abarcar, conter, englobar, abranger",
       "contextual_translation": "Fazer algo fazer parte de um conjunto maior.",
+      "audio_us": "lessons/your-first-verbs/audios/to-include.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-include.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3758,6 +4354,8 @@
       "transcription_uk": "/tə ɪnˈtend/",
       "literal_translation": "pretender, planejar, almejar, desejar, visar",
       "contextual_translation": "Ter um propósito ou plano definido ao agir.",
+      "audio_us": "lessons/your-first-verbs/audios/to-intend.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-intend.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3769,6 +4367,8 @@
       "transcription_uk": "/tə ɪnˈvaɪt/",
       "literal_translation": "convidar, chamar, atrair, solicitar presença, propor",
       "contextual_translation": "Pedir que alguém participe de algo de forma amigável ou formal.",
+      "audio_us": "lessons/your-first-verbs/audios/to-invite.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-invite.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3780,6 +4380,8 @@
       "transcription_uk": "/tə dʒɔɪn/",
       "literal_translation": "juntar-se, unir-se, associar-se, participar, integrar",
       "contextual_translation": "Entrar em grupo, causa ou atividade com outros.",
+      "audio_us": "lessons/your-first-verbs/audios/to-join.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-join.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3791,6 +4393,8 @@
       "transcription_uk": "/tə kiːp/",
       "literal_translation": "manter, guardar, conservar, reter, continuar",
       "contextual_translation": "Preservar um estado ou seguir com uma ação.",
+      "audio_us": "lessons/your-first-verbs/audios/to-keep.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-keep.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3802,6 +4406,8 @@
       "transcription_uk": "/tə nəʊ/",
       "literal_translation": "saber, conhecer, ter ciência, dominar, notar",
       "contextual_translation": "Possuir informação, familiaridade ou competência sobre algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-know.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-know.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3813,6 +4419,8 @@
       "transcription_uk": "/tə lɑːf/",
       "literal_translation": "rir, gargalhar, sorrir, brincar, debochar",
       "contextual_translation": "Expressar alegria ou humor de forma espontânea.",
+      "audio_us": "lessons/your-first-verbs/audios/to-laugh.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-laugh.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3824,6 +4432,8 @@
       "transcription_uk": "/tə lɜːn/",
       "literal_translation": "aprender, assimilar, estudar, absorver, adquirir",
       "contextual_translation": "Passar a saber algo por estudo, prática ou experiência.",
+      "audio_us": "lessons/your-first-verbs/audios/to-learn.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-learn.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3835,6 +4445,8 @@
       "transcription_uk": "/tə liːv/",
       "literal_translation": "sair, partir, deixar, ir embora, abandonar",
       "contextual_translation": "Ir de um lugar ou encerrar uma permanência ali.",
+      "audio_us": "lessons/your-first-verbs/audios/to-leave.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-leave.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3846,6 +4458,8 @@
       "transcription_uk": "/tə lend/",
       "literal_translation": "emprestar, ceder, fornecer, disponibilizar, conceder",
       "contextual_translation": "Dar algo a alguém temporariamente, esperando devolução.",
+      "audio_us": "lessons/your-first-verbs/audios/to-lend.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-lend.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3857,6 +4471,8 @@
       "transcription_uk": "/tə let/",
       "literal_translation": "deixar, permitir, autorizar, ceder, liberar",
       "contextual_translation": "Dar consentimento ou espaço para algo acontecer.",
+      "audio_us": "lessons/your-first-verbs/audios/to-let.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-let.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3868,6 +4484,8 @@
       "transcription_uk": "/tə laɪk/",
       "literal_translation": "gostar, curtir, apreciar, preferir, achar bom",
       "contextual_translation": "Sentir apreço ou afinidade por algo/alguém.",
+      "audio_us": "lessons/your-first-verbs/audios/to-like.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-like.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3879,6 +4497,8 @@
       "transcription_uk": "/tə ˈlɪs.ən/",
       "literal_translation": "escutar, prestar atenção, ouvir com atenção",
       "contextual_translation": "Ouvir ativamente, com foco no que alguém diz ou no que toca.",
+      "audio_us": "lessons/your-first-verbs/audios/to-listen.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-listen.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3890,6 +4510,8 @@
       "transcription_uk": "/tə lɪv/",
       "literal_translation": "viver, morar, residir, habitar, sobreviver",
       "contextual_translation": "Ter vida ou residir em um lugar ao longo do tempo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-live.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-live.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3901,6 +4523,8 @@
       "transcription_uk": "/tə lɒk/",
       "literal_translation": "trancar, fechar, prender, selar, assegurar",
       "contextual_translation": "Impedir acesso movendo um mecanismo de segurança.",
+      "audio_us": "lessons/your-first-verbs/audios/to-lock.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-lock.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3912,6 +4536,8 @@
       "transcription_uk": "/tə luːz/",
       "literal_translation": "perder, extraviar, desperdiçar, deixar escapar, ser derrotado",
       "contextual_translation": "Deixar de possuir algo ou ser superado em disputa.",
+      "audio_us": "lessons/your-first-verbs/audios/to-lose.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-lose.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3923,6 +4549,8 @@
       "transcription_uk": "/tə meɪk/",
       "literal_translation": "fazer, criar, produzir, gerar, confeccionar",
       "contextual_translation": "Criar algo novo a partir de ideias, materiais ou energia.",
+      "audio_us": "lessons/your-first-verbs/audios/to-make.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-make.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3934,6 +4562,8 @@
       "transcription_uk": "/tə ˈmæn.ɪdʒ/",
       "literal_translation": "gerenciar, administrar, conduzir, supervisionar, coordenar",
       "contextual_translation": "Lidar com responsabilidades ou recursos para alcançar objetivos.",
+      "audio_us": "lessons/your-first-verbs/audios/to-manage.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-manage.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3945,6 +4575,8 @@
       "transcription_uk": "/tə miːn/",
       "literal_translation": "significar, querer dizer, representar, implicar, expressar",
       "contextual_translation": "Indicar o sentido ou intenção de algo dito ou feito.",
+      "audio_us": "lessons/your-first-verbs/audios/to-mean.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-mean.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3956,6 +4588,8 @@
       "transcription_uk": "/tə miːt/",
       "literal_translation": "encontrar, conhecer, reunir-se, ver, confraternizar",
       "contextual_translation": "Estar com alguém por acaso ou com horário marcado.",
+      "audio_us": "lessons/your-first-verbs/audios/to-meet.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-meet.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3967,6 +4601,8 @@
       "transcription_uk": "/tə muːv/",
       "literal_translation": "mover, deslocar, mudar, transferir, mexer",
       "contextual_translation": "Alterar posição, lugar ou estado de algo ou alguém.",
+      "audio_us": "lessons/your-first-verbs/audios/to-move.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-move.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3978,6 +4614,8 @@
       "transcription_uk": "/tə niːd/",
       "literal_translation": "precisar, necessitar, carecer, demandar, requerer",
       "contextual_translation": "Indicar falta de algo essencial para agir ou seguir.",
+      "audio_us": "lessons/your-first-verbs/audios/to-need.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-need.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -3989,6 +4627,8 @@
       "transcription_uk": "/tə ˈnəʊ.tɪs/",
       "literal_translation": "notar, perceber, observar, reparar, detectar",
       "contextual_translation": "Perceber algo com os sentidos ou atenção.",
+      "audio_us": "lessons/your-first-verbs/audios/to-notice.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-notice.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4000,6 +4640,8 @@
       "transcription_uk": "/tə ˈɒ.fə/",
       "literal_translation": "oferecer, propor, disponibilizar, apresentar, fornecer",
       "contextual_translation": "Apresentar algo voluntariamente para aceitação.",
+      "audio_us": "lessons/your-first-verbs/audios/to-offer.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-offer.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4011,6 +4653,8 @@
       "transcription_uk": "/tə ˈəʊ.pən/",
       "literal_translation": "abrir, deslacrar, destrancar, inaugurar, iniciar",
       "contextual_translation": "Tornar acessível, disponível ou dar início a algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-open.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-open.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4022,6 +4666,8 @@
       "transcription_uk": "/tə ˈɔː.də/",
       "literal_translation": "pedir, encomendar, ordenar, solicitar, comandar",
       "contextual_translation": "Solicitar algo formalmente, como comida, produtos ou ações a serem realizadas.",
+      "audio_us": "lessons/your-first-verbs/audios/to-order.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-order.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4033,6 +4679,8 @@
       "transcription_uk": "/tə ˈɔː.ɡə.naɪz/",
       "literal_translation": "organizar, arrumar, planejar, ordenar, estruturar",
       "contextual_translation": "Colocar coisas ou ideias em ordem lógica ou funcional.",
+      "audio_us": "lessons/your-first-verbs/audios/to-organize.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-organize.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4044,6 +4692,8 @@
       "transcription_uk": "/tə pɔːz/",
       "literal_translation": "pausar, interromper, parar, suspender, dar um tempo",
       "contextual_translation": "Interromper uma ação momentaneamente antes de continuar.",
+      "audio_us": "lessons/your-first-verbs/audios/to-pause.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-pause.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4055,6 +4705,8 @@
       "transcription_uk": "/tə peɪ/",
       "literal_translation": "pagar, quitar, remunerar, desembolsar, arcar",
       "contextual_translation": "Entregar dinheiro ou valor em troca de algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-pay.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-pay.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4066,6 +4718,8 @@
       "transcription_uk": "/tə plæn/",
       "literal_translation": "planejar, programar, organizar, estruturar, esboçar",
       "contextual_translation": "Definir passos e recursos para atingir um objetivo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-plan.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-plan.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4077,6 +4731,8 @@
       "transcription_uk": "/tə pleɪ/",
       "literal_translation": "jogar, brincar, tocar, atuar, participar",
       "contextual_translation": "Praticar jogo, instrumento ou atividade recreativa.",
+      "audio_us": "lessons/your-first-verbs/audios/to-play.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-play.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4088,6 +4744,8 @@
       "transcription_uk": "/tə prɪˈfɜː/",
       "literal_translation": "preferir, priorizar, escolher, gostar mais, optar por",
       "contextual_translation": "Escolher uma opção em detrimento de outra por gosto ou conveniência.",
+      "audio_us": "lessons/your-first-verbs/audios/to-prefer.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-prefer.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4099,6 +4757,8 @@
       "transcription_uk": "/tə prɪˈtend/",
       "literal_translation": "fingir, simular, fazer de conta, disfarçar, encenar",
       "contextual_translation": "Agir como se algo fosse verdade, mesmo sabendo que não é, geralmente por brincadeira ou disfarce.",
+      "audio_us": "lessons/your-first-verbs/audios/to-pretend.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-pretend.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4110,6 +4770,8 @@
       "transcription_uk": "/tə prɪnt/",
       "literal_translation": "imprimir, publicar, reproduzir, registrar, editar",
       "contextual_translation": "Produzir cópias físicas de texto ou imagem por meio de impressão.",
+      "audio_us": "lessons/your-first-verbs/audios/to-print.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-print.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4121,6 +4783,8 @@
       "transcription_uk": "/tə riːd/",
       "literal_translation": "ler, consultar, interpretar, examinar, revisar",
       "contextual_translation": "Decodificar e compreender texto, símbolos ou sinais.",
+      "audio_us": "lessons/your-first-verbs/audios/to-read.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-read.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4132,6 +4796,8 @@
       "transcription_uk": "/tə ˈrɪə.laɪz/",
       "literal_translation": "perceber, compreender, notar, entender, concretizar",
       "contextual_translation": "Tomar consciência de algo ou tornar uma ideia em realidade.",
+      "audio_us": "lessons/your-first-verbs/audios/to-realize.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-realize.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4143,6 +4809,8 @@
       "transcription_uk": "/tə rɪˈsiːv/",
       "literal_translation": "receber, obter, acolher, ganhar, aceitar",
       "contextual_translation": "Passar a ter algo que lhe é enviado ou entregue.",
+      "audio_us": "lessons/your-first-verbs/audios/to-receive.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-receive.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4154,6 +4822,8 @@
       "transcription_uk": "/tə ˌrek.əˈmend/",
       "literal_translation": "recomendar, sugerir, indicar, aconselhar, propor",
       "contextual_translation": "Apontar algo como boa opção ou conselho baseado em experiência.",
+      "audio_us": "lessons/your-first-verbs/audios/to-recommend.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-recommend.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4165,6 +4835,8 @@
       "transcription_uk": "/tə rɪˈkʌv.ə/",
       "literal_translation": "recuperar, restabelecer, reaver, reabilitar, restaurar",
       "contextual_translation": "Voltar ao estado anterior de saúde, condição ou posse.",
+      "audio_us": "lessons/your-first-verbs/audios/to-recover.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-recover.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4176,6 +4848,8 @@
       "transcription_uk": "/tə rɪˈfjuːz/",
       "literal_translation": "recusar, negar, rejeitar, declinar, opor-se",
       "contextual_translation": "Não aceitar algo oferecido, pedido ou proposto.",
+      "audio_us": "lessons/your-first-verbs/audios/to-refuse.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-refuse.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4187,6 +4861,8 @@
       "transcription_uk": "/tə rɪˈleɪt/",
       "literal_translation": "relacionar, conectar, vincular, referir, narrar",
       "contextual_translation": "Estabelecer conexão ou contar algo sobre um tema.",
+      "audio_us": "lessons/your-first-verbs/audios/to-relate.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-relate.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4198,6 +4874,8 @@
       "transcription_uk": "/tə rɪˈmem.bə/",
       "literal_translation": "lembrar, recordar, rememorar, não esquecer, trazer à memória",
       "contextual_translation": "Acessar uma informação guardada na memória.",
+      "audio_us": "lessons/your-first-verbs/audios/to-remember.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-remember.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4209,6 +4887,8 @@
       "transcription_uk": "/tə rɪˈmuːv/",
       "literal_translation": "remover, tirar, eliminar, excluir, retirar",
       "contextual_translation": "Fazer algo sair de um lugar, sistema ou situação.",
+      "audio_us": "lessons/your-first-verbs/audios/to-remove.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-remove.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4220,6 +4900,8 @@
       "transcription_uk": "/tə rɪˈpiːt/",
       "literal_translation": "repetir, refazer, reiterar, reproduzir, insistir",
       "contextual_translation": "Fazer novamente uma ação ou dizer algo mais de uma vez.",
+      "audio_us": "lessons/your-first-verbs/audios/to-repeat.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-repeat.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4231,6 +4913,8 @@
       "transcription_uk": "/tə rɪˈpleɪs/",
       "literal_translation": "substituir, trocar, repor, recolocar, renovar",
       "contextual_translation": "Colocar algo novo no lugar do que saiu ou se perdeu.",
+      "audio_us": "lessons/your-first-verbs/audios/to-replace.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-replace.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4242,6 +4926,8 @@
       "transcription_uk": "/tə rɪˈplaɪ/",
       "literal_translation": "responder, replicar, retornar, reagir, comunicar-se",
       "contextual_translation": "Dar resposta a uma pergunta, mensagem ou ação.",
+      "audio_us": "lessons/your-first-verbs/audios/to-reply.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-reply.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4253,6 +4939,8 @@
       "transcription_uk": "/tə seɪv/",
       "literal_translation": "salvar, economizar, poupar, guardar, resgatar",
       "contextual_translation": "Proteger recursos, dinheiro ou dados; impedir perda.",
+      "audio_us": "lessons/your-first-verbs/audios/to-save.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-save.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4264,6 +4952,8 @@
       "transcription_uk": "/tə ˈʃed.juːl/",
       "literal_translation": "agendar, programar, marcar, planejar, organizar",
       "contextual_translation": "Definir data e hora para uma atividade futura.",
+      "audio_us": "lessons/your-first-verbs/audios/to-schedule.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-schedule.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4275,6 +4965,8 @@
       "transcription_uk": "/tə siː/",
       "literal_translation": "ver, enxergar, perceber, visualizar, notar",
       "contextual_translation": "Perceber com os olhos; captar visualmente algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-see.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-see.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4286,6 +4978,8 @@
       "transcription_uk": "/tə sel/",
       "literal_translation": "vender, comercializar, negociar, repassar, ofertar",
       "contextual_translation": "Trocar algo por dinheiro, produtos ou serviços.",
+      "audio_us": "lessons/your-first-verbs/audios/to-sell.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-sell.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4297,6 +4991,8 @@
       "transcription_uk": "/tə send/",
       "literal_translation": "enviar, mandar, remeter, expedir, encaminhar",
       "contextual_translation": "Fazer algo ir de você a outra pessoa ou lugar.",
+      "audio_us": "lessons/your-first-verbs/audios/to-send.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-send.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4308,6 +5004,8 @@
       "transcription_uk": "/tə ʃeə/",
       "literal_translation": "compartilhar, dividir, repartir, distribuir, divulgar",
       "contextual_translation": "Dar parte de algo a outros de forma voluntária.",
+      "audio_us": "lessons/your-first-verbs/audios/to-share.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-share.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4319,6 +5017,8 @@
       "transcription_uk": "/tə ʃəʊ/",
       "literal_translation": "mostrar, exibir, apresentar, demonstrar, revelar",
       "contextual_translation": "Tornar visível ou claro para outra pessoa.",
+      "audio_us": "lessons/your-first-verbs/audios/to-show.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-show.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4330,6 +5030,8 @@
       "transcription_uk": "/tə sliːp/",
       "literal_translation": "dormir, repousar, cochilar, adormecer, descansar",
       "contextual_translation": "Entrar em estado de repouso para recuperar energia.",
+      "audio_us": "lessons/your-first-verbs/audios/to-sleep.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-sleep.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4341,6 +5043,8 @@
       "transcription_uk": "/tə smaɪl/",
       "literal_translation": "sorrir, expressar alegria, simpatizar, alegrar-se, demonstrar afeto",
       "contextual_translation": "Mover os lábios e rosto em gesto de contentamento.",
+      "audio_us": "lessons/your-first-verbs/audios/to-smile.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-smile.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4352,6 +5056,8 @@
       "transcription_uk": "/tə sɒlv/",
       "literal_translation": "resolver, solucionar, decifrar, esclarecer, superar",
       "contextual_translation": "Encontrar uma resposta ou saída prática para um problema.",
+      "audio_us": "lessons/your-first-verbs/audios/to-solve.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-solve.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4363,6 +5069,8 @@
       "transcription_uk": "/tə spiːk/",
       "literal_translation": "falar, discursar, expressar-se, conversar, pronunciar",
       "contextual_translation": "Comunicar-se oralmente com clareza e intenção.",
+      "audio_us": "lessons/your-first-verbs/audios/to-speak.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-speak.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4374,6 +5082,8 @@
       "transcription_uk": "/tə spend/",
       "literal_translation": "gastar, despender, investir, consumir, empregar",
       "contextual_translation": "Usar tempo ou dinheiro em algo específico.",
+      "audio_us": "lessons/your-first-verbs/audios/to-spend.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-spend.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4385,6 +5095,8 @@
       "transcription_uk": "/tə stɑːt/",
       "literal_translation": "começar, iniciar, dar início, arrancar, estrear",
       "contextual_translation": "Dar o primeiro passo de uma ação ou projeto.",
+      "audio_us": "lessons/your-first-verbs/audios/to-start.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-start.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4396,6 +5108,8 @@
       "transcription_uk": "/tə steɪ/",
       "literal_translation": "ficar, permanecer, hospedar-se, manter-se, continuar",
       "contextual_translation": "Não sair; manter-se em um lugar ou estado.",
+      "audio_us": "lessons/your-first-verbs/audios/to-stay.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-stay.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4407,6 +5121,8 @@
       "transcription_uk": "/tə stɒp/",
       "literal_translation": "parar, interromper, cessar, travar, barrar",
       "contextual_translation": "Fazer cessar um movimento, ação ou processo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-stop.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-stop.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4418,6 +5134,8 @@
       "transcription_uk": "/tə ˈstrʌɡ.əl/",
       "literal_translation": "lutar, esforçar-se, batalhar, enfrentar, persistir",
       "contextual_translation": "Tentar superar uma dificuldade com empenho e resistência.",
+      "audio_us": "lessons/your-first-verbs/audios/to-struggle.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-struggle.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4429,6 +5147,8 @@
       "transcription_uk": "/tə ˈstʌd.i/",
       "literal_translation": "estudar, pesquisar, revisar, analisar, dedicar-se",
       "contextual_translation": "Aprender por meio de leitura, prática e reflexão.",
+      "audio_us": "lessons/your-first-verbs/audios/to-study.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-study.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4440,6 +5160,8 @@
       "transcription_uk": "/tə səˈdʒest/",
       "literal_translation": "sugerir, propor, indicar, recomendar, levantar",
       "contextual_translation": "Apresentar uma ideia ou alternativa para consideração.",
+      "audio_us": "lessons/your-first-verbs/audios/to-suggest.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-suggest.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4451,6 +5173,8 @@
       "transcription_uk": "/tə tɔːk/",
       "literal_translation": "falar, conversar, dialogar, discutir, comunicar",
       "contextual_translation": "Trocar ideias ou palavras com alguém de forma natural e espontânea.",
+      "audio_us": "lessons/your-first-verbs/audios/to-talk.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-talk.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4462,6 +5186,8 @@
       "transcription_uk": "/tə tiːtʃ/",
       "literal_translation": "ensinar, instruir, orientar, lecionar, treinar",
       "contextual_translation": "Transmitir conhecimento de forma estruturada e prática.",
+      "audio_us": "lessons/your-first-verbs/audios/to-teach.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-teach.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4473,6 +5199,8 @@
       "transcription_uk": "/tə θæŋk/",
       "literal_translation": "agradecer, reconhecer, louvar, retribuir, expressar gratidão",
       "contextual_translation": "Demonstrar reconhecimento por algo recebido ou feito.",
+      "audio_us": "lessons/your-first-verbs/audios/to-thank.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-thank.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4484,6 +5212,8 @@
       "transcription_uk": "/tə θɪŋk/",
       "literal_translation": "pensar, refletir, achar, considerar, supor",
       "contextual_translation": "Processar ideias para formar opinião ou tomar decisão.",
+      "audio_us": "lessons/your-first-verbs/audios/to-think.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-think.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4495,6 +5225,8 @@
       "transcription_uk": "/tə ˈtræv.əl/",
       "literal_translation": "viajar, deslocar-se, peregrinar, transitar, excursionar",
       "contextual_translation": "Mover-se para outro lugar por lazer, trabalho ou necessidade.",
+      "audio_us": "lessons/your-first-verbs/audios/to-travel.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-travel.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4506,6 +5238,8 @@
       "transcription_uk": "/tə traɪ/",
       "literal_translation": "tentar, experimentar, esforçar-se, provar, ensaiar",
       "contextual_translation": "Fazer um esforço inicial para alcançar um resultado.",
+      "audio_us": "lessons/your-first-verbs/audios/to-try.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-try.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4517,6 +5251,8 @@
       "transcription_uk": "/tə ˌʌn.dəˈstænd/",
       "literal_translation": "entender, compreender, perceber, captar, assimilar",
       "contextual_translation": "Apreender o sentido de algo; captar intenção e detalhes.",
+      "audio_us": "lessons/your-first-verbs/audios/to-understand.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-understand.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4528,6 +5264,8 @@
       "transcription_uk": "/tə ˈʌp.deɪt/",
       "literal_translation": "atualizar, modernizar, revisar, renovar, corrigir",
       "contextual_translation": "Tornar algo mais recente, adequado ou correto conforme o momento.",
+      "audio_us": "lessons/your-first-verbs/audios/to-update.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-update.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4539,6 +5277,8 @@
       "transcription_uk": "/tə juːz/",
       "literal_translation": "usar, utilizar, empregar, aplicar, aproveitar",
       "contextual_translation": "Aplicar algo para cumprir uma função ou obter resultado.",
+      "audio_us": "lessons/your-first-verbs/audios/to-use.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-use.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4550,6 +5290,8 @@
       "transcription_uk": "/tə ˈvɪz.ɪt/",
       "literal_translation": "visitar, ir a, comparecer, passar por, conhecer",
       "contextual_translation": "Ir a um lugar/pessoa por interesse, cuidado ou compromisso.",
+      "audio_us": "lessons/your-first-verbs/audios/to-visit.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-visit.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4561,6 +5303,8 @@
       "transcription_uk": "/tə weɪt/",
       "literal_translation": "esperar, aguardar, segurar, dar um tempo, ficar",
       "contextual_translation": "Aguardar o momento certo antes de agir.",
+      "audio_us": "lessons/your-first-verbs/audios/to-wait.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-wait.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4572,6 +5316,8 @@
       "transcription_uk": "/tə wɔːk/",
       "literal_translation": "andar, caminhar, passear, deslocar-se, ir a pé",
       "contextual_translation": "Mover-se a pé de forma natural ou como exercício.",
+      "audio_us": "lessons/your-first-verbs/audios/to-walk.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-walk.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4583,6 +5329,8 @@
       "transcription_uk": "/tə wɒnt/",
       "literal_translation": "querer, desejar, almejar, pretender, ambicionar",
       "contextual_translation": "Expressar vontade ou intenção de obter algo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-want.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-want.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4594,6 +5342,8 @@
       "transcription_uk": "/tə wɒʃ/",
       "literal_translation": "lavar, higienizar, limpar, enxaguar, esfregar",
       "contextual_translation": "Remover sujeira com água e/ou produto de limpeza.",
+      "audio_us": "lessons/your-first-verbs/audios/to-wash.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-wash.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4605,6 +5355,8 @@
       "transcription_uk": "/tə wɒtʃ/",
       "literal_translation": "assistir, observar, vigiar, ver, acompanhar",
       "contextual_translation": "Olhar com atenção por interesse, segurança ou entretenimento.",
+      "audio_us": "lessons/your-first-verbs/audios/to-watch.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-watch.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4616,6 +5368,8 @@
       "transcription_uk": "/tə weə/",
       "literal_translation": "vestir, usar, trajar, portar, calçar",
       "contextual_translation": "Ter roupa/acessório no corpo como uso ou estilo.",
+      "audio_us": "lessons/your-first-verbs/audios/to-wear.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-wear.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4627,6 +5381,8 @@
       "transcription_uk": "/tə wɪn/",
       "literal_translation": "vencer, ganhar, conquistar, triunfar, superar",
       "contextual_translation": "Alcançar vitória ou resultado superior em disputa.",
+      "audio_us": "lessons/your-first-verbs/audios/to-win.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-win.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4638,6 +5394,8 @@
       "transcription_uk": "/tə wɜːk/",
       "literal_translation": "trabalhar, atuar, funcionar, laborar, operar",
       "contextual_translation": "Executar atividades produtivas ou fazer algo funcionar.",
+      "audio_us": "lessons/your-first-verbs/audios/to-work.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-work.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4649,6 +5407,8 @@
       "transcription_uk": "/tə raɪt/",
       "literal_translation": "escrever, redigir, anotar, registrar, compor",
       "contextual_translation": "Expressar ideias em palavras por meio de texto.",
+      "audio_us": "lessons/your-first-verbs/audios/to-write.us.mp3",
+      "audio_uk": "lessons/your-first-verbs/audios/to-write.uk.mp3",
       "source": "your_first_verbs"
     },
     {
@@ -4661,6 +5421,8 @@
       "symbol": "/eɪ/",
       "literal_translation": "hoje, atualmente, presente, momento, dia atual",
       "contextual_translation": "O dia em que estamos; também o mundo atual.",
+      "audio_us": "lessons/the-sounds-of-english/audios/today.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/today.uk.mp3",
       "order": 78,
       "source": "the_sounds_of_english"
     },
@@ -4674,6 +5436,8 @@
       "symbol": "/t/",
       "literal_translation": "amanhã, futuro, dia seguinte, porvir, próximo dia",
       "contextual_translation": "O dia depois de hoje; também o futuro.",
+      "audio_us": "lessons/the-sounds-of-english/audios/tomorrow.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/tomorrow.uk.mp3",
       "order": 136,
       "source": "the_sounds_of_english"
     },
@@ -4687,6 +5451,8 @@
       "symbol": "/ʊə/",
       "literal_translation": "passeio, excursão, viagem, rota, turnê",
       "contextual_translation": "Viagem organizada ou série de apresentações.",
+      "audio_us": "lessons/the-sounds-of-english/audios/tour.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/tour.uk.mp3",
       "order": 120,
       "source": "the_sounds_of_english"
     },
@@ -4700,6 +5466,8 @@
       "symbol": "/ʊə/",
       "literal_translation": "torre, prédio, estrutura, fortaleza, arranha-céu",
       "contextual_translation": "Construção alta e estreita, geralmente vertical.",
+      "audio_us": "lessons/the-sounds-of-english/audios/tower.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/tower.uk.mp3",
       "order": 121,
       "source": "the_sounds_of_english"
     },
@@ -4713,6 +5481,8 @@
       "symbol": "/ʊ/",
       "literal_translation": "cidade, município, vila, centro, localidade",
       "contextual_translation": "Local menor que uma city, mas com estrutura urbana.",
+      "audio_us": "lessons/the-sounds-of-english/audios/town.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/town.uk.mp3",
       "order": 30,
       "source": "the_sounds_of_english"
     },
@@ -4726,6 +5496,8 @@
       "symbol": "/t/",
       "literal_translation": "trânsito, circulação, movimento, transporte, fluxo",
       "contextual_translation": "Deslocamento de veículos/pessoas; também comércio ilegal.",
+      "audio_us": "lessons/the-sounds-of-english/audios/traffic.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/traffic.uk.mp3",
       "order": 138,
       "source": "the_sounds_of_english"
     },
@@ -4739,6 +5511,8 @@
       "symbol": "/t/",
       "literal_translation": "transporte, locomoção, deslocamento, condução, translado",
       "contextual_translation": "Movimento de pessoas ou bens de um lugar a outro.",
+      "audio_us": "lessons/the-sounds-of-english/audios/transportation.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/transportation.uk.mp3",
       "order": 139,
       "source": "the_sounds_of_english"
     },
@@ -4752,6 +5526,8 @@
       "symbol": "/t/",
       "literal_translation": "árvore, planta, tronco, vegetal, madeira",
       "contextual_translation": "Planta de grande porte com caule lenhoso.",
+      "audio_us": "lessons/the-sounds-of-english/audios/tree.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/tree.uk.mp3",
       "order": 141,
       "source": "the_sounds_of_english"
     },
@@ -4765,6 +5541,8 @@
       "symbol": "/ɪ/",
       "literal_translation": "viagem, passeio, excursão, jornada, deslocamento",
       "contextual_translation": "Viagem curta, normalmente de lazer ou trabalho.",
+      "audio_us": "lessons/the-sounds-of-english/audios/trip.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/trip.uk.mp3",
       "order": 3,
       "source": "the_sounds_of_english"
     },
@@ -4778,6 +5556,8 @@
       "symbol": "/j/",
       "literal_translation": "uniforme, vestimenta, padrão, roupa, traje",
       "contextual_translation": "Roupa padronizada usada por grupos.",
+      "audio_us": "lessons/the-sounds-of-english/audios/uniform.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/uniform.uk.mp3",
       "order": 254,
       "source": "the_sounds_of_english"
     },
@@ -4791,6 +5571,8 @@
       "symbol": "/j/",
       "literal_translation": "universo, cosmos, realidade, totalidade, criação",
       "contextual_translation": "Conjunto de tudo que existe.",
+      "audio_us": "lessons/the-sounds-of-english/audios/universe.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/universe.uk.mp3",
       "order": 253,
       "source": "the_sounds_of_english"
     },
@@ -4804,6 +5586,8 @@
       "symbol": "/j/",
       "literal_translation": "universidade, faculdade, instituição, campus, ensino superior",
       "contextual_translation": "Local que oferece cursos e pesquisas avançadas.",
+      "audio_us": "lessons/the-sounds-of-english/audios/university.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/university.uk.mp3",
       "order": 252,
       "source": "the_sounds_of_english"
     },
@@ -4817,6 +5601,8 @@
       "symbol": "/v/",
       "literal_translation": "valor, importância, preço, mérito, princípio",
       "contextual_translation": "Aquilo que algo ou alguém representa em importância.",
+      "audio_us": "lessons/the-sounds-of-english/audios/value.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/value.uk.mp3",
       "order": 166,
       "source": "the_sounds_of_english"
     },
@@ -4830,6 +5616,8 @@
       "symbol": "/v/",
       "literal_translation": "veículo, automóvel, meio, transporte, carro",
       "contextual_translation": "Meio usado para locomoção de pessoas ou bens.",
+      "audio_us": "lessons/the-sounds-of-english/audios/vehicle.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/vehicle.uk.mp3",
       "order": 169,
       "source": "the_sounds_of_english"
     },
@@ -4843,6 +5631,8 @@
       "symbol": "/ʒ/",
       "literal_translation": "versão, edição, variação, modelo, interpretação",
       "contextual_translation": "Forma específica ou adaptada de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/version.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/version.uk.mp3",
       "order": 205,
       "source": "the_sounds_of_english"
     },
@@ -4856,6 +5646,8 @@
       "symbol": "/v/",
       "literal_translation": "vídeo, gravação, clipe, filme, conteúdo",
       "contextual_translation": "Registro visual em movimento.",
+      "audio_us": "lessons/the-sounds-of-english/audios/video.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/video.uk.mp3",
       "order": 167,
       "source": "the_sounds_of_english"
     },
@@ -4869,6 +5661,8 @@
       "symbol": "/v/",
       "literal_translation": "violência, agressão, brutalidade, abuso, força",
       "contextual_translation": "Ato ou comportamento que causa dano ou sofrimento.",
+      "audio_us": "lessons/the-sounds-of-english/audios/violence.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/violence.uk.mp3",
       "order": 171,
       "source": "the_sounds_of_english"
     },
@@ -4882,6 +5676,8 @@
       "symbol": "/v/",
       "literal_translation": "vírus, agente, infecção, praga, programa malicioso",
       "contextual_translation": "Organismo ou código que se replica causando dano.",
+      "audio_us": "lessons/the-sounds-of-english/audios/virus.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/virus.uk.mp3",
       "order": 170,
       "source": "the_sounds_of_english"
     },
@@ -4895,6 +5691,8 @@
       "symbol": "/ɔɪ/",
       "literal_translation": "voz, fala, som, opinião, expressão",
       "contextual_translation": "Som produzido ao falar; também direito de se expressar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/voice.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/voice.uk.mp3",
       "order": 90,
       "source": "the_sounds_of_english"
     },
@@ -4908,6 +5706,8 @@
       "symbol": "/v/",
       "literal_translation": "volume, som, tomo, quantidade, capacidade",
       "contextual_translation": "Pode significar nível de som ou quantidade de algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/volume.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/volume.uk.mp3",
       "order": 168,
       "source": "the_sounds_of_english"
     },
@@ -4921,6 +5721,8 @@
       "symbol": "/ɑː/",
       "literal_translation": "parede, muro, divisória, barreira, estrutura",
       "contextual_translation": "Superfície que separa espaços ou forma uma construção.",
+      "audio_us": "lessons/the-sounds-of-english/audios/wall.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/wall.uk.mp3",
       "order": 46,
       "source": "the_sounds_of_english"
     },
@@ -4934,6 +5736,8 @@
       "symbol": "/w/",
       "literal_translation": "onda, gesto, movimento, sinal, saudação",
       "contextual_translation": "Movimento do mar ou aceno com a mão.",
+      "audio_us": "lessons/the-sounds-of-english/audios/wave.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/wave.uk.mp3",
       "order": 249,
       "source": "the_sounds_of_english"
     },
@@ -4947,6 +5751,8 @@
       "symbol": "/ð/",
       "literal_translation": "clima, tempo, condição, estação, previsão",
       "contextual_translation": "Condições atmosféricas de um lugar.",
+      "audio_us": "lessons/the-sounds-of-english/audios/weather.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/weather.uk.mp3",
       "order": 178,
       "source": "the_sounds_of_english"
     },
@@ -4960,6 +5766,8 @@
       "symbol": "/iː/",
       "literal_translation": "semana, período, intervalo, ciclo, jornada",
       "contextual_translation": "Unidade de tempo composta por sete dias.",
+      "audio_us": "lessons/the-sounds-of-english/audios/week.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/week.uk.mp3",
       "order": 37,
       "source": "the_sounds_of_english"
     },
@@ -4973,6 +5781,8 @@
       "symbol": "/w/",
       "literal_translation": "fim de semana, sábado e domingo, descanso, pausa, folga",
       "contextual_translation": "Período de lazer entre sexta e domingo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/weekend.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/weekend.uk.mp3",
       "order": 246,
       "source": "the_sounds_of_english"
     },
@@ -4986,6 +5796,8 @@
       "symbol": "/w/",
       "literal_translation": "esposa, mulher, cônjuge, companheira, parceira",
       "contextual_translation": "Mulher casada ou em relação estável.",
+      "audio_us": "lessons/the-sounds-of-english/audios/wife.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/wife.uk.mp3",
       "order": 248,
       "source": "the_sounds_of_english"
     },
@@ -4999,6 +5811,8 @@
       "symbol": "/w/",
       "literal_translation": "janela, vitrine, abertura, visor, tela",
       "contextual_translation": "Abertura para luz/ventilação ou interface de computador.",
+      "audio_us": "lessons/the-sounds-of-english/audios/window.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/window.uk.mp3",
       "order": 245,
       "source": "the_sounds_of_english"
     },
@@ -5012,6 +5826,8 @@
       "symbol": "/w/",
       "literal_translation": "inverno, estação fria, temporada, época, fase",
       "contextual_translation": "Estação mais fria do ano.",
+      "audio_us": "lessons/the-sounds-of-english/audios/winter.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/winter.uk.mp3",
       "order": 247,
       "source": "the_sounds_of_english"
     },
@@ -5025,6 +5841,8 @@
       "symbol": "/ɜː/",
       "literal_translation": "palavra, termo, vocábulo, fala, promessa",
       "contextual_translation": "Unidade básica de linguagem ou expressão verbal.",
+      "audio_us": "lessons/the-sounds-of-english/audios/word.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/word.uk.mp3",
       "order": 55,
       "source": "the_sounds_of_english"
     },
@@ -5038,6 +5856,8 @@
       "symbol": "/ɜː/",
       "literal_translation": "trabalho, serviço, emprego, obra, esforço",
       "contextual_translation": "Atividade profissional ou ação que exige dedicação.",
+      "audio_us": "lessons/the-sounds-of-english/audios/work.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/work.uk.mp3",
       "order": 54,
       "source": "the_sounds_of_english"
     },
@@ -5051,6 +5871,8 @@
       "symbol": "/w/",
       "literal_translation": "trabalhador, operário, empregado, colaborador, profissional",
       "contextual_translation": "Pessoa que exerce uma função laboral.",
+      "audio_us": "lessons/the-sounds-of-english/audios/worker.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/worker.uk.mp3",
       "order": 244,
       "source": "the_sounds_of_english"
     },
@@ -5064,6 +5886,8 @@
       "symbol": "/ɜː/",
       "literal_translation": "mundo, planeta, sociedade, humanidade, ambiente",
       "contextual_translation": "O planeta Terra ou o conjunto das pessoas e lugares.",
+      "audio_us": "lessons/the-sounds-of-english/audios/world.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/world.uk.mp3",
       "order": 56,
       "source": "the_sounds_of_english"
     },
@@ -5077,6 +5901,8 @@
       "symbol": "/r/",
       "literal_translation": "escritor, autor, redator, criador, jornalista",
       "contextual_translation": "Pessoa que escreve textos ou obras.",
+      "audio_us": "lessons/the-sounds-of-english/audios/writer.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/writer.uk.mp3",
       "order": 240,
       "source": "the_sounds_of_english"
     },
@@ -5090,6 +5916,8 @@
       "symbol": "/ɪə/",
       "literal_translation": "ano, período, ciclo, etapa, tempo",
       "contextual_translation": "Unidade de 12 meses; também fase da vida.",
+      "audio_us": "lessons/the-sounds-of-english/audios/year.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/year.uk.mp3",
       "order": 106,
       "source": "the_sounds_of_english"
     },
@@ -5103,6 +5931,8 @@
       "symbol": "/j/",
       "literal_translation": "sim, afirmação, concordância, aprovação, resposta",
       "contextual_translation": "Palavra usada para concordar ou aceitar algo.",
+      "audio_us": "lessons/the-sounds-of-english/audios/yes.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/yes.uk.mp3",
       "order": 250,
       "source": "the_sounds_of_english"
     },
@@ -5116,6 +5946,8 @@
       "symbol": "/j/",
       "literal_translation": "você, tu, vocês, senhor(a), interlocutor",
       "contextual_translation": "Pronome usado para se dirigir a alguém.",
+      "audio_us": "lessons/the-sounds-of-english/audios/you.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/you.uk.mp3",
       "order": 251,
       "source": "the_sounds_of_english"
     },
@@ -5129,6 +5961,8 @@
       "symbol": "/ŋ/",
       "literal_translation": "jovem, novo, imaturo, recente, iniciante",
       "contextual_translation": "Pessoa ou coisa em fase inicial de vida/experiência.",
+      "audio_us": "lessons/the-sounds-of-english/audios/young.us.mp3",
+      "audio_uk": "lessons/the-sounds-of-english/audios/young.uk.mp3",
       "order": 230,
       "source": "the_sounds_of_english"
     }

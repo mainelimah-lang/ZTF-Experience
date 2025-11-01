@@ -28,31 +28,33 @@
     .search-box::placeholder {
       color: var(--muted);
     }
-    .filters {
+    .audio-controls {
       display: flex;
-      gap: 12px;
-      margin-top: 16px;
-      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #222;
     }
-    .filter-btn {
-      padding: 8px 16px;
-      border: 2px solid var(--card);
-      border-radius: 20px;
-      background: var(--card);
-      color: var(--muted);
+    .audio-btn {
+      background: rgba(107, 78, 255, 0.1);
+      border: 1px solid rgba(107, 78, 255, 0.3);
+      border-radius: 8px;
+      padding: 8px 12px;
+      color: #9F8FFF;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
       transition: all 0.2s ease;
     }
-    .filter-btn:hover {
+    .audio-btn:hover {
+      background: rgba(107, 78, 255, 0.2);
       border-color: #6B4EFF;
-      color: var(--paper);
     }
-    .filter-btn.active {
-      background: #6B4EFF;
-      border-color: #6B4EFF;
-      color: white;
+    .audio-btn:active {
+      transform: scale(0.95);
     }
     .stats {
       text-align: center;
@@ -162,10 +164,10 @@
         type="text" 
         id="search-input" 
         class="search-box" 
-        placeholder="🔍 Search for words, verbs, translations..."
+        placeholder="🔍 Type to search words, verbs, translations..."
         autocomplete="off"
+        autofocus
       />
-      <div class="filters" id="filters"></div>
     </div>
 
     <div class="stats" id="stats">Loading dictionary...</div>
