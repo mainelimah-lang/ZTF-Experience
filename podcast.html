@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ZTF Podcast - Coming Soon</title>
+  <link rel="stylesheet" href="style.css?v=20251101-01" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Hub</a>
+      <div class="header-content">
+        <div class="header-text">
+          <h1>🎙️ ZTF Podcast</h1>
+          <p class="header-subtitle">Listen, learn, and level up your English</p>
+        </div>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div style="text-align: center; padding: 80px 20px;">
+      <div style="font-size: 80px; margin-bottom: 24px;">🎙️</div>
+      <h2 style="font-size: 32px; margin-bottom: 16px;">Coming Soon</h2>
+      <p style="color: var(--muted); font-size: 18px; max-width: 600px; margin: 0 auto;">
+        The ZTF Podcast is being prepared for you. Get ready for engaging English podcasts designed 
+        for all levels, helping you improve your listening skills and learn naturally.
+      </p>
+    </div>
+  </main>
+
+  <div class="table-separator"></div>
+  
+  <footer>
+    Part of the ZTF Universe ✦
+  </footer>
+
+  <script>
+    // Theme toggle functionality
+    const toggle = document.getElementById('theme-toggle');
+    const icon = toggle.querySelector('.theme-icon');
+    const root = document.documentElement;
+    
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    root.setAttribute('data-theme', savedTheme);
+    icon.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+    
+    toggle.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      icon.textContent = next === 'dark' ? '🌙' : '☀️';
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>
+
