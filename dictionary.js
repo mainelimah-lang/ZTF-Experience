@@ -154,7 +154,6 @@ function createDictionaryCard(entry) {
     </div>
     
     <div class="dict-section">
-      <div class="dict-section-title">Definition</div>
       <div class="dict-definition">${entry.contextual_translation}</div>
     </div>
     
