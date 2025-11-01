@@ -17,7 +17,7 @@ const hubSections = [
     title: 'ZTF Dictionary',
     description: '📖 Comprehensive English dictionary with pronunciations, examples, and translations',
     link: 'dictionary.html',
-    available: false,
+    available: true,
     emoji: '📖',
     order: 2
   },
