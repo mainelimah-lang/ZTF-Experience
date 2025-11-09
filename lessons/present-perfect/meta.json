@@ -1,0 +1,35 @@
+{
+  "number": 7,
+  "name": "Present Perfect",
+  "status": "pending",
+  "intro_printable_file": null,
+  "files": {
+    "pdf": {
+      "students": null,
+      "teachers_guide": null
+    },
+    "word_bank": null,
+    "audios_dir": null,
+    "images_dir": null,
+    "youtube_topic_research_dir": "Youtube Research/",
+    "storytelling_file": "Storytelling/storytelling_Present Perfect_20250904_122656.txt"
+  },
+  "podcast": {
+    "video": null,
+    "captions": {
+      "en": null,
+      "pt": null
+    }
+  },
+  "flashcards": {
+    "dir": null
+  },
+  "directories": {
+    "flashcard": null,
+    "podcast": null,
+    "printable": null,
+    "teacher_guide": null,
+    "word_bank": null
+  },
+  "thumbnail": null
+}

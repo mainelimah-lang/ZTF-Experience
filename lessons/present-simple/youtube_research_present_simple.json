@@ -1,0 +1,815 @@
+{
+  "total_videos_found": 50,
+  "videos": [
+    {
+      "id": {
+        "videoId": "br_mock_1"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 1 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 1",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_2"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 2 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 2",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_3"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 3 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 3",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_4"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 4 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 4",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_5"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 5 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 5",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_6"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 6 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 6",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_7"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 7 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 7",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_8"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 8 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 8",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_9"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 9 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 9",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_10"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 10 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 10",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_11"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 11 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 11",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_12"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 12 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 12",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_13"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 13 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 13",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_14"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 14 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 14",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_15"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 15 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 15",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_16"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 16 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 16",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_17"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 17 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 17",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_18"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 18 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 18",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_19"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 19 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 19",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "br_mock_20"
+      },
+      "snippet": {
+        "title": "Present Simple - Aula 20 | Professor Brasileiro",
+        "channelTitle": "Inglês com Professor 20",
+        "description": "Aula completa sobre present simple em português. Explicação detalhada com exemplos práticos.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/0066CC/FFFFFF?text=BR"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_1"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 1 | English Teacher",
+        "channelTitle": "English Learning Channel 1",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_2"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 2 | English Teacher",
+        "channelTitle": "English Learning Channel 2",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_3"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 3 | English Teacher",
+        "channelTitle": "English Learning Channel 3",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_4"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 4 | English Teacher",
+        "channelTitle": "English Learning Channel 4",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_5"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 5 | English Teacher",
+        "channelTitle": "English Learning Channel 5",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_6"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 6 | English Teacher",
+        "channelTitle": "English Learning Channel 6",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_7"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 7 | English Teacher",
+        "channelTitle": "English Learning Channel 7",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_8"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 8 | English Teacher",
+        "channelTitle": "English Learning Channel 8",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_9"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 9 | English Teacher",
+        "channelTitle": "English Learning Channel 9",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_10"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 10 | English Teacher",
+        "channelTitle": "English Learning Channel 10",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_11"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 11 | English Teacher",
+        "channelTitle": "English Learning Channel 11",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_12"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 12 | English Teacher",
+        "channelTitle": "English Learning Channel 12",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_13"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 13 | English Teacher",
+        "channelTitle": "English Learning Channel 13",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_14"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 14 | English Teacher",
+        "channelTitle": "English Learning Channel 14",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_15"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 15 | English Teacher",
+        "channelTitle": "English Learning Channel 15",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_16"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 16 | English Teacher",
+        "channelTitle": "English Learning Channel 16",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_17"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 17 | English Teacher",
+        "channelTitle": "English Learning Channel 17",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_18"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 18 | English Teacher",
+        "channelTitle": "English Learning Channel 18",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_19"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 19 | English Teacher",
+        "channelTitle": "English Learning Channel 19",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_20"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 20 | English Teacher",
+        "channelTitle": "English Learning Channel 20",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_21"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 21 | English Teacher",
+        "channelTitle": "English Learning Channel 21",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_22"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 22 | English Teacher",
+        "channelTitle": "English Learning Channel 22",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_23"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 23 | English Teacher",
+        "channelTitle": "English Learning Channel 23",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_24"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 24 | English Teacher",
+        "channelTitle": "English Learning Channel 24",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_25"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 25 | English Teacher",
+        "channelTitle": "English Learning Channel 25",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_26"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 26 | English Teacher",
+        "channelTitle": "English Learning Channel 26",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_27"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 27 | English Teacher",
+        "channelTitle": "English Learning Channel 27",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_28"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 28 | English Teacher",
+        "channelTitle": "English Learning Channel 28",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_29"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 29 | English Teacher",
+        "channelTitle": "English Learning Channel 29",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    },
+    {
+      "id": {
+        "videoId": "int_mock_30"
+      },
+      "snippet": {
+        "title": "Present Simple Grammar Lesson 30 | English Teacher",
+        "channelTitle": "English Learning Channel 30",
+        "description": "Complete present simple grammar lesson with examples and exercises.",
+        "publishedAt": "2023-01-01T00:00:00Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://via.placeholder.com/120x90/CC0000/FFFFFF?text=INT"
+          }
+        }
+      }
+    }
+  ],
+  "search_topic": "present simple",
+  "timestamp": "2025-10-13T09:29:43.128080",
+  "search_queries_used": [
+    "present simple inglês aula",
+    "present simple grammar lesson"
+  ],
+  "brazilian_count": 20,
+  "international_count": 30,
+  "mock_data": true,
+  "note": "Dados mock gerados devido à API key inválida"
+}

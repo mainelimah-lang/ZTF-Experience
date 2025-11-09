@@ -1,0 +1,31 @@
+{
+  "number": 4,
+  "name": "The Numbers",
+  "status": "pending",
+  "intro_file": null,
+  "intro_printable_file": null,
+  "thumbnail": "thumbnail.png",
+  "files": {
+    "pdf": {
+      "students": null,
+      "teachers_guide": null
+    },
+    "word_bank": null,
+    "audios_dir": null,
+    "images_dir": null,
+    "podcast_dir": null,
+    "flashcards_dir": null,
+    "youtube_topic_research_dir": "Youtube Research/",
+    "storytelling_file": "Storytelling/storytelling_The Numbers_20250904_133237.txt"
+  },
+  "podcast": {
+    "video": null,
+    "captions": {
+      "en": null,
+      "pt": null
+    }
+  },
+  "approval": {
+    "intro": "missing"
+  }
+}

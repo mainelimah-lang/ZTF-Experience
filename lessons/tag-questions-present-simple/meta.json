@@ -1,0 +1,32 @@
+{
+  "number": 2,
+  "name": "Present Simple",
+  "status": "active",
+  "intro_file": "",
+  "intro_printable_file": "",
+  "thumbnail": "",
+  "files": {
+    "pdf": {
+      "students": "",
+      "teachers_guide": ""
+    },
+    "word_bank": "",
+    "audios_dir": "",
+    "images_dir": "",
+    "podcast_dir": "",
+    "flashcards_dir": "",
+    "teacher_guide_dir": "",
+    "youtube_topic_research_dir": "",
+    "storytelling_file": ""
+  },
+  "podcast": {
+    "video": "",
+    "captions": {
+      "en": "",
+      "pt": ""
+    }
+  },
+  "approval": {
+    "intro": ""
+  }
+}

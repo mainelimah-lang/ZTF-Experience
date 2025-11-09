@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <style>
     :root {
       /* ZTF Studio Look (Dark Theme) */
@@ -24,14 +23,14 @@
 
     [data-theme='light'] {
       /* ZTF Paper Universe (Light Theme) */
-      --color-bg: #FFFFFF;
+      --color-bg: #E8DDC9;
       --color-text: #0F1112;
-      --color-text-secondary: #6B7280;
+      --color-text-secondary: #3C3B3A;
       --color-accent-purple: #6B4EFF;
       --color-accent-yellow: #FFD54A;
-      --color-border: #E5E7EB;
-      --color-hover: #F9FAFB;
-      --color-card: #F9FAFB;
+      --color-border: #D9CBB4;
+      --color-hover: #F0E7D9;
+      --color-card: #F5F0E8;
       --color-shadow: rgba(107, 78, 255, 0.1);
     }
 
@@ -105,20 +104,9 @@
       max-width: 1200px;
     }
 
-    .search-icon {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 18px;
-      height: 18px;
-      color: var(--color-accent-purple);
-      pointer-events: none;
-    }
-
     input[type="search"] {
       width: 100%;
-      padding: 0.875rem 1rem 0.875rem 3rem;
+      padding: 0.875rem 1rem;
       border: 2px solid var(--color-border);
       border-radius: 12px;
       font-size: clamp(0.9rem, 2vw, 1rem);
@@ -678,11 +666,7 @@
     <h1>Your First Verbs</h1>
     <div class="header-controls">
       <div class="search-container">
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/>
-          <path d="m21 21-4.35-4.35"/>
-        </svg>
-        <input id="search" type="search" placeholder="Search verbs or translations…" />
+      <input id="search" type="search" placeholder="Search verbs or translations…" />
       </div>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
         <span id="theme-icon">🌙</span>
@@ -777,7 +761,7 @@
   </div>
 
   <script>
-    const CSV_URL = './your_first_verbs.csv';
+    const CSV_URL = 'your_first_verbs.csv';
     const AUDIO_BASE = './audios/';
 
     // Theme Management

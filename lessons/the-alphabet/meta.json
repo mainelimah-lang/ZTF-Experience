@@ -1,0 +1,35 @@
+{
+  "number": 1,
+  "name": "The Alphabet",
+  "folder_path": "ZTF Experience English Course/1. The Alphabet",
+  "status": "pending",
+  "intro_file": null,
+  "intro_printable_file": null,
+  "thumbnail": null,
+  "files": {
+    "pdf": {
+      "students": null,
+      "teachers_guide": null
+    },
+    "word_bank": null,
+    "audios_dir": null,
+    "images_dir": null,
+    "podcast_dir": null,
+    "flashcards_dir": null,
+    "youtube_topic_research_dir": null
+  },
+  "podcast": {
+    "video": null,
+    "captions": {
+      "en": null,
+      "pt": null
+    }
+  },
+  "approval": {
+    "intro": "missing"
+  },
+  "metadata": {
+    "created_date": "2025-09-07T14:28:41.684199",
+    "last_modified": "2025-09-07T14:28:41.684227"
+  }
+}
