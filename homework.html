@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ZTF Homework - Practice & Assignments</title>
+  <link rel="stylesheet" href="style.css?v=20251113-01" />
+  <link rel="stylesheet" href="theme.css" />
+  <style>
+    .homework-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .homework-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .homework-header h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      margin-bottom: 16px;
+    }
+
+    .homework-header p {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .homework-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .homework-card {
+      background: var(--card);
+      border: 1px solid #222;
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--paper);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .homework-card:hover {
+      transform: translateY(-4px);
+      border-color: #6B4EFF;
+      box-shadow: 0 8px 24px rgba(107, 78, 255, 0.2);
+    }
+
+    .homework-card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .homework-emoji {
+      font-size: 48px;
+    }
+
+    .homework-card-info h3 {
+      margin: 0 0 8px 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .homework-card-info p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .homework-badge {
+      background: #6B4EFF;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .homework-badge.completed {
+      background: #10B981;
+    }
+
+    .homework-badge.in-progress {
+      background: #F59E0B;
+    }
+
+    .homework-badge.locked {
+      background: #6B7280;
+    }
+
+    .homework-stats {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid rgba(107, 78, 255, 0.2);
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 80px 24px;
+      color: var(--muted);
+    }
+
+    .empty-state .emoji {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+
+    .empty-state h2 {
+      margin: 0 0 8px 0;
+      color: var(--paper);
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-text">
+          <a href="index.html" class="back-link">← Back to Hub</a>
+          <h1>📝 ZTF Homework</h1>
+          <p class="header-subtitle">Practice exercises and assignments to reinforce your learning</p>
+        </div>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="homework-container">
+    <div id="homework-list" class="homework-grid">
+      <!-- Homework cards will be inserted here by JavaScript -->
+    </div>
+
+    <div id="empty-state" class="empty-state" style="display: none;">
+      <div class="emoji">📚</div>
+      <h2>No homework available yet</h2>
+      <p>Check back soon for new assignments!</p>
+    </div>
+  </main>
+
+  <div class="table-separator"></div>
+  
+  <footer>
+    Part of the ZTF Universe ✦
+  </footer>
+
+  <script>
+    // Homework data
+    const homeworkAssignments = [
+      {
+        id: 'hw-001',
+        title: 'Grammar Basics',
+        description: 'Practice verb tenses and sentence structure',
+        emoji: '✍️',
+        status: 'available', // available, in-progress, completed, locked
+        exercises: 15,
+        difficulty: 'Beginner',
+        link: '#' // Will link to specific homework page later
+      },
+      {
+        id: 'hw-002',
+        title: 'Vocabulary Builder',
+        description: 'Learn and practice essential English words',
+        emoji: '📖',
+        status: 'available',
+        exercises: 20,
+        difficulty: 'Beginner',
+        link: '#'
+      },
+      {
+        id: 'hw-003',
+        title: 'Reading Comprehension',
+        description: 'Improve your understanding through practice texts',
+        emoji: '📰',
+        status: 'locked',
+        exercises: 10,
+        difficulty: 'Intermediate',
+        link: '#'
+      },
+      {
+        id: 'hw-004',
+        title: 'Writing Practice',
+        description: 'Develop your writing skills with guided exercises',
+        emoji: '✏️',
+        status: 'locked',
+        exercises: 12,
+        difficulty: 'Intermediate',
+        link: '#'
+      }
+    ];
+
+    function initHomework() {
+      const container = document.getElementById('homework-list');
+      const emptyState = document.getElementById('empty-state');
+
+      if (homeworkAssignments.length === 0) {
+        container.style.display = 'none';
+        emptyState.style.display = 'block';
+        return;
+      }
+
+      homeworkAssignments.forEach(hw => {
+        const card = createHomeworkCard(hw);
+        container.appendChild(card);
+      });
+
+      // Initialize theme toggle
+      initThemeToggle();
+    }
+
+    function createHomeworkCard(hw) {
+      const card = document.createElement('div');
+      card.className = 'homework-card';
+      
+      if (hw.status === 'locked') {
+        card.style.opacity = '0.6';
+        card.style.cursor = 'not-allowed';
+      } else {
+        card.onclick = () => {
+          if (hw.link !== '#') {
+            window.location.href = hw.link;
+          } else {
+            alert('This homework will be available soon!');
+          }
+        };
+      }
+
+      const badgeClass = hw.status === 'completed' ? 'completed' : 
+                        hw.status === 'in-progress' ? 'in-progress' : 
+                        hw.status === 'locked' ? 'locked' : '';
+      
+      const badgeText = hw.status === 'completed' ? 'Completed ✓' : 
+                       hw.status === 'in-progress' ? 'In Progress' : 
+                       hw.status === 'locked' ? '🔒 Locked' : 'Start';
+
+      card.innerHTML = `
+        <div class="homework-card-header">
+          <div class="homework-emoji">${hw.emoji}</div>
+          <div class="homework-card-info">
+            <h3>${hw.title}</h3>
+            <p>${hw.description}</p>
+          </div>
+        </div>
+        <div>
+          <span class="homework-badge ${badgeClass}">${badgeText}</span>
+        </div>
+        <div class="homework-stats">
+          <span>📊 ${hw.exercises} exercises</span>
+          <span>🎯 ${hw.difficulty}</span>
+        </div>
+      `;
+
+      return card;
+    }
+
+    function initThemeToggle() {
+      const toggle = document.getElementById('theme-toggle');
+      const icon = toggle.querySelector('.theme-icon');
+      const root = document.documentElement;
+      
+      // Load saved theme or default to dark
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      root.setAttribute('data-theme', savedTheme);
+      icon.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+      
+      toggle.addEventListener('click', () => {
+        const current = root.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        
+        root.setAttribute('data-theme', next);
+        icon.textContent = next === 'dark' ? '🌙' : '☀️';
+        localStorage.setItem('theme', next);
+      });
+    }
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', initHomework);
+  </script>
+</body>
+</html>
+

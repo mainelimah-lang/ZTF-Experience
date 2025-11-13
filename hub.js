@@ -22,13 +22,22 @@ const hubSections = [
     order: 2
   },
   {
+    id: 'homework',
+    title: 'ZTF Homework',
+    description: '📝 Practice exercises and assignments to reinforce your learning',
+    link: 'homework.html',
+    available: true,
+    emoji: '📝',
+    order: 3
+  },
+  {
     id: 'podcast',
     title: 'ZTF Podcast',
     description: '🎙️ Listen and learn with engaging English podcasts for all levels',
     link: 'podcast.html',
     available: false,
     emoji: '🎙️',
-    order: 3
+    order: 4
   }
 ];
 
